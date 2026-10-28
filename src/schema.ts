@@ -5,7 +5,7 @@ export const itemSchema = z.object({
   title: z.string().max(1000),
   body: z.string().max(200000),
   richText: z.string().max(400000).default(""),
-  meta: z.record(z.string().max(60), z.string().max(2000)).default({}),
+  meta: z.record(z.string().max(60), z.string().max(100000)).default({}),
   time: z.string(),
   sender: z.string(),
   avatar: z.string().default(""),
