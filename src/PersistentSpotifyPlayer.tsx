@@ -6,6 +6,7 @@ type Mode = "order" | "repeat-one" | "shuffle";
 const player = typeof Audio !== "undefined" ? new Audio() : null;
 let activeId = "";
 let playing = false;
+let playbackError = "";
 let mode: Mode = "order";
 let list: Item[] = [];
 let timer: ReturnType<typeof setTimeout> | undefined;
@@ -26,9 +27,10 @@ function clearPending() {
 function start(item: Item, fade = false) {
   if (!player) return;
   const src = source(item);
-  if (!src) { playing = false; notify(); return; }
+  if (!src) { playing = false; playbackError = "此歌曲尚未配置音频文件"; notify(); return; }
   clearPending();
   activeId = item.id;
+  playbackError = "";
   player.src = src;
   player.loop = false;
   player.volume = fade ? 0 : 1;
@@ -43,7 +45,7 @@ function start(item: Item, fade = false) {
       player.volume = Math.min(1, step / 10);
       if (step >= 10 && fadeTimer) { clearInterval(fadeTimer); fadeTimer = undefined; }
     }, 100);
-  }).catch(() => { playing = false; notify(); });
+  }).catch(() => { playing = false; playbackError = "音频未上传或无法播放，请检查 public/audio 文件"; notify(); });
 }
 function nextIndex() {
   const available = list.filter(i => !!source(i));
@@ -69,7 +71,8 @@ function next(delay = false) {
 if (player) {
   player.addEventListener("ended", () => next(true));
   player.addEventListener("pause", () => { if (!player.ended) { playing = false; notify(); } });
-  player.addEventListener("play", () => { playing = true; notify(); });
+  player.addEventListener("play", () => { playing = true; playbackError = ""; notify(); });
+  player.addEventListener("error", () => { playing = false; playbackError = "找不到音频文件或格式不受支持"; notify(); });
 }
 export function PersistentSpotifyPlayer({ items }: { items: Item[] }) {
   const [, rerender] = useState(0);
@@ -89,16 +92,21 @@ export function PersistentSpotifyPlayer({ items }: { items: Item[] }) {
     else player.pause();
   };
   return (
-    <div className="track-player" style={{display:"flex",alignItems:"center",gap:8}}>
-      <button aria-label="上一首" onClick={() => {
+    <div className="track-player" style={{display:"flex",alignItems:"center",justifyContent:"flex-start",gap:6,padding:"8px 10px",width:"100%",boxSizing:"border-box"}}>
+      <button aria-label={playing ? "暂停" : "播放"} title={playing ? "暂停" : "播放"} onClick={toggle} style={{flexShrink:0}}>
+        {playing ? <Pause size={20}/> : <Play size={20}/>}
+      </button>
+      <div style={{flex:"1 1 auto",minWidth:0,display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
+        <span style={{overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",maxWidth:"100%"}}>{current ? current.title : "选择歌曲开始播放"}</span>
+        {playbackError && <small role="status" style={{color:"#ffb7b7",fontSize:10,lineHeight:1.2}}>{playbackError}</small>}
+      </div>
+      <button aria-label="上一首" title="上一首" onClick={() => {
         const available = items.filter(i => !!source(i));
         const n = available.findIndex(i => i.id === activeId);
         if (available.length) start(available[(n - 1 + available.length) % available.length]);
-      }}><SkipBack size={18}/></button>
-      <button aria-label={playing ? "暂停" : "播放"} onClick={toggle}>{playing ? <Pause size={20}/> : <Play size={20}/>}</button>
-      <span style={{flex:1,minWidth:0,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{current ? current.title : "选择歌曲开始播放"}</span>
-      <button aria-label="下一首" onClick={() => next()}><SkipForward size={18}/></button>
-      <button aria-label={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} title={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} onClick={() => { mode = mode === "order" ? "repeat-one" : mode === "repeat-one" ? "shuffle" : "order"; notify(); }}>
+      }} style={{flexShrink:0}}><SkipBack size={18}/></button>
+      <button aria-label="下一首" title="下一首" onClick={() => next()} style={{flexShrink:0}}><SkipForward size={18}/></button>
+      <button aria-label={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} title={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} onClick={() => { mode = mode === "order" ? "repeat-one" : mode === "repeat-one" ? "shuffle" : "order"; notify(); }} style={{flexShrink:0}}>
         {mode === "repeat-one" ? <Repeat1 size={19}/> : mode === "shuffle" ? <Shuffle size={19}/> : <Repeat size={19}/>}
       </button>
     </div>
