@@ -167,11 +167,6 @@ export function HealthSkin(p: Props) {
               <p>{current?.body || healthDefaults[detail]?.description || "暂无记录"}</p>
             </section>
           </>
-              ) : (
-                <p>暂无数据</p>
-              )}
-            </section>
-          </>
         ) : tab === "摘要" ? (
           <>
             <div className="health-section-title">
