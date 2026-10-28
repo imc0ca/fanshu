@@ -175,7 +175,7 @@ export function XSkin(p: Props) {
             <article className="x-post" key={i.id}>
               <span className="catalog-avatar round x-feed-avatar">
                  <img
-                   src={xAvatarSrc(meta(i, "handle")) || `/fanshu/x-avatars/${meta(i, "handle").replace(/^@+/, "").toLowerCase()}.jpg`}
+                   src={xAvatarSrc(meta(i, "handle")) || undefined}
                    alt={`${i.sender}的头像`}
                    loading="eager"
                    onError={(e) => {
