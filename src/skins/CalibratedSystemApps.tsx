@@ -56,6 +56,16 @@ function recordFor(items: Item[], key: string) {
     map[key].some((s) => meta(i, "metric", i.title).includes(s)),
   );
 }
+const healthSamples: Record<string, number[]> = {
+  activity: [386, 512, 438, 465, 352, 548, 420, 479, 390, 456, 505, 370, 441, 420],
+  sleep: [7.2, 7.8, 7.4, 8.1, 6.8, 7.6, 7.5, 7.9, 7.1, 7.4, 8.0, 7.2, 7.6, 7.5],
+  steps: [5820, 7120, 6340, 7910, 4980, 6800, 6530, 7420, 5580, 6170, 7030, 5890, 6680, 6500],
+};
+const healthDefaults: Record<string, { value: string; unit: string; description: string }> = {
+  activity: { value: "420", unit: "千卡", description: "每日活动目标 420 千卡 · 平均每周健身 3 次" },
+  sleep: { value: "7小时30分钟", unit: "", description: "深度睡眠 30% · 核心睡眠 55% · 快速动眼睡眠 10% · 清醒 5%" },
+  steps: { value: "6,500", unit: "步/天", description: "每日步数随活动量变化，平均约 6,500 步" },
+};
 export function HealthSkin(p: Props) {
   const [tab, setTab] = useSkinState<string>(p, "tab", "摘要"),
     [pins, setPins] = useSkinState<string[]>(
@@ -65,6 +75,7 @@ export function HealthSkin(p: Props) {
         ? ["cycle", "activity", "sleep", "steps"]
         : ["activity", "sleep", "steps"],
     );
+  const [period, setPeriod] = useState("周");
   const [editing, setEditing] = useState(false),
     [detail, setDetail] = useState(""),
     [profile, setProfile] = useState(false);
@@ -126,43 +137,36 @@ export function HealthSkin(p: Props) {
           <>
             <div className="health-periods">
               {["日", "周", "月", "6个月", "年"].map((x) => (
-                <button
-                  key={x}
-                  onClick={(e) => {
-                    e.currentTarget.parentElement
-                      ?.querySelectorAll("button")
-                      .forEach((b) => b.removeAttribute("data-selected"));
-                    e.currentTarget.dataset.selected = "true";
-                  }}
-                >
-                  {x}
-                </button>
+                <button key={x} data-selected={period === x ? "true" : undefined} onClick={() => setPeriod(x)}>{x}</button>
               ))}
             </div>
             <p className="health-detail-value">
-              {current ? meta(current, "value", "—") : "无数据"}{" "}
-              <small>{current ? meta(current, "unit") : ""}</small>
+              {current ? meta(current, "value", healthDefaults[detail]?.value || "—") : healthDefaults[detail]?.value || "无数据"}{" "}
+              <small>{current ? meta(current, "unit") : healthDefaults[detail]?.unit}</small>
             </p>
-            <div className="health-detail-chart" aria-label="健康记录图表">
-              {Array.from({ length: 7 }, (_, i) => (
-                <span
-                  key={i}
-                  style={{
-                    height:
-                      seriesFor(current)[i] !== undefined
-                        ? `${Math.max(2, (seriesFor(current)[i] / Math.max(...seriesFor(current), 1)) * 100)}%`
-                        : "3px",
-                  }}
-                />
+            {detail === "activity" && <p style={{margin:"0 22px 12px",color:"#6e6e73"}}>锻炼 35 分钟 · 站立 7 小时 · 每周健身约 3 次</p>}
+            {detail === "sleep" && <p style={{margin:"0 22px 12px",color:"#6e6e73"}}>平均睡眠 7 小时 30 分钟</p>}
+            <div className="health-detail-chart" aria-label={period + "健康记录柱状图"}>
+              {(period === "日" ? healthSamples[detail]?.slice(-7) : period === "周" ? healthSamples[detail]?.slice(-7) : period === "月" ? healthSamples[detail] : period === "6个月" ? [...healthSamples[detail],...healthSamples[detail]] : [...healthSamples[detail],...healthSamples[detail],...healthSamples[detail]] )?.map((v, n, values) => (
+                <span key={n} title={detail === "sleep" ? v.toFixed(1) + "小时" : String(Math.round(v))} style={{height:`${Math.max(9,(v / Math.max(...values, 1))*100)}%`,background:detail === "sleep" ? "#8270ed" : detail === "steps" ? "#ff8a25" : "#ff466b",flex:"1 1 0",minWidth:0,borderRadius:"4px 4px 0 0"}} />
               ))}
             </div>
+            <div style={{display:"flex",justifyContent:"space-between",margin:"4px 22px 20px",fontSize:12,color:"#8e8e93"}}><span>{period === "日" ? "06:00" : period === "周" ? "周一" : "较早"}</span><span>{period === "日" ? "23:00" : period === "周" ? "周日" : "最近"}</span></div>
+            {detail === "sleep" && <section className="health-detail-description">
+              <h2>睡眠阶段</h2>
+              <div style={{display:"flex",height:20,borderRadius:8,overflow:"hidden",margin:"14px 0"}}>
+                {([["深度睡眠",30,"#4230aa"],["核心睡眠",55,"#8270ed"],["快速动眼睡眠",10,"#55b8e6"],["清醒",5,"#ff9d56"]] as const).map(([label,value,color]) => <div key={label} title={label+" "+value+"%"} style={{width:value+"%",background:color}} />)}
+              </div>
+              {([["深度睡眠","30%","#4230aa"],["核心睡眠","55%","#8270ed"],["快速动眼睡眠","10%","#55b8e6"],["清醒时间","5%","#ff9d56"]] as const).map(([label,value,color]) => <p key={label} style={{display:"flex",justifyContent:"space-between",alignItems:"center",margin:"10px 0"}}><span><i style={{display:"inline-block",height:10,width:10,borderRadius:3,background:color,marginRight:8}} />{label}</span><strong>{value}</strong></p>)}
+            </section>}
+            {detail === "activity" && <section className="health-detail-description">
+              <h2>本周健身</h2><p>周二 · 35 分钟　完成</p><p>周四 · 42 分钟　完成</p><p>周六 · 38 分钟　完成</p><p>每周约 3 次，其他日期以日常活动为主。</p>
+            </section>}
             <section className="health-detail-description">
               <h2>记录</h2>
-              {current ? (
-                <>
-                  <p>{current.body}</p>
-                  <small>{current.time}</small>
-                </>
+              <p>{current?.body || healthDefaults[detail]?.description || "暂无记录"}</p>
+            </section>
+          </>
               ) : (
                 <p>暂无数据</p>
               )}
@@ -229,7 +233,7 @@ export function HealthSkin(p: Props) {
                           >
                             <small>{name}</small>
                             <p>
-                              <b>{i ? meta(i, key, "—") : "—"}</b>
+                              <b>{i ? meta(i, key, "—") : ({active:"420",exercise:"35",stand:"7"} as Record<string,string>)[key]}</b>
                               <span>{unit}</span>
                             </p>
                           </div>
@@ -244,11 +248,9 @@ export function HealthSkin(p: Props) {
                       <div className="health-card-bottom">
                         <div>
                           <b>
-                            {i
-                              ? meta(i, "value", i.body || "无数据")
-                              : "无数据"}
+                            {i ? meta(i, "value", i.body || "无数据") : healthDefaults[id]?.value || "无数据"}
                           </b>
-                          <span>{i ? meta(i, "unit") : ""}</span>
+                          <span>{i ? meta(i, "unit") : healthDefaults[id]?.unit || ""}</span>
                         </div>
                         {id === "steps" && (
                           <div className="health-spark" aria-hidden="true">
@@ -257,8 +259,8 @@ export function HealthSkin(p: Props) {
                                 key={n}
                                 style={{
                                   height:
-                                    seriesFor(i)[n] !== undefined
-                                      ? `${Math.max(3, (seriesFor(i)[n] / Math.max(...seriesFor(i), 1)) * 45)}px`
+                                    (seriesFor(i)[n] ?? healthSamples.steps[n]) !== undefined
+                                      ? `${Math.max(3, ((seriesFor(i)[n] ?? healthSamples.steps[n]) / Math.max(...(seriesFor(i).length ? seriesFor(i) : healthSamples.steps), 1)) * 45)}px`
                                       : "8px",
                                 }}
                               />
@@ -278,7 +280,7 @@ export function HealthSkin(p: Props) {
             </button>
             <h2 className="health-trends-title">趋势</h2>
             <div className="health-trends-empty">
-              {p.items.length ? "查看健康数据中的记录" : "暂无趋势"}
+              平均每日 6,500 步 · 每周约 3 次健身 · 平均睡眠 7 小时 30 分钟
             </div>
           </>
         ) : tab === "共享" ? (
