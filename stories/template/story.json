@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 18,
+  "revision": 19,
   "phone": {
     "owner": "机主",
     "date": "2026-04-16",
@@ -990,7 +990,8 @@
           "album": "버스커 버스커 1집",
           "duration": "04:20",
           "source": "用户截图",
-          "audioStatus": "等待上传音频文件"
+          "audioStatus": "待上传到 public/audio",
+          "audioFile": "/audio/01.m4a"
         }
       },
       {
@@ -1006,7 +1007,8 @@
           "album": "RISE",
           "duration": "03:49",
           "source": "用户截图",
-          "audioStatus": "等待上传音频文件"
+          "audioStatus": "待上传到 public/audio",
+          "audioFile": "/audio/02.m4a"
         }
       },
       {
@@ -1022,7 +1024,8 @@
           "album": "봄봄봄（Bom Bom Bom）",
           "duration": "03:26",
           "source": "用户截图",
-          "audioStatus": "等待上传音频文件"
+          "audioStatus": "待上传到 public/audio",
+          "audioFile": "/audio/03.m4a"
         }
       },
       {
@@ -1038,7 +1041,8 @@
           "album": "double take",
           "duration": "02:51",
           "source": "用户截图",
-          "audioStatus": "等待上传音频文件"
+          "audioStatus": "待上传到 public/audio",
+          "audioFile": "/audio/04.m4a"
         }
       },
       {
@@ -1054,7 +1058,8 @@
           "album": "Santa Tell Me",
           "duration": "03:24",
           "source": "用户截图",
-          "audioStatus": "等待上传音频文件"
+          "audioStatus": "待上传到 public/audio",
+          "audioFile": "/audio/05.m4a"
         }
       },
       {
