@@ -42,7 +42,12 @@ function Actions({ p, item }: { p: Props; item: Item }) {
       </button>
       <button aria-label={`评论${item.title}`} onClick={() => p.onItem(item)}>
         <MessageCircle size={17} />
-        {meta(item, "commentCount", String(item.comments.length))}
+        {(() => {
+          const explicit = meta(item, "commentCount");
+          if (explicit !== "") return explicit;
+          const original = meta(item, "originalCounts").split("/")[0]?.trim();
+          return original || String(item.comments.length);
+        })()}
       </button>
       <button aria-label={`详情${item.title}`} onClick={() => p.onItem(item)}>
         <Repeat2 size={17} />
