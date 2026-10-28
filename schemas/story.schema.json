@@ -216,7 +216,7 @@
                   },
                   "additionalProperties": {
                     "type": "string",
-                    "maxLength": 2000
+                    "maxLength": 100000
                   }
                 },
                 "time": {
