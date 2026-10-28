@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import { useSkinState } from "../skinState";
 import { RichText } from "../RichText";
-import { Avatar, Media, meta } from "./shared";
+import { Avatar, Media, meta, xAvatarSrc } from "./shared";
 import type { Item, UiValue } from "../schema";
 import "./social-details.css";
 export const socialDetailApps = new Set(["twitter", "weibo"]);
@@ -121,7 +121,7 @@ export function SocialDetail(p: {
         <header className="post-detail-nav"><button aria-label="返回推文" onClick={() => setProfile(null)}><ChevronLeft size={27}/></button><strong>{profile.name}</strong><div /></header>
         <div className="post-detail-scroll x-profile-scroll">
           <div className="x-profile-cover" />
-          <div className="x-profile-summary"><Avatar name={profile.name}/><h2>{profile.name}</h2><p>{profile.handle}</p><div className="x-profile-tabs">帖子</div></div>
+          <div className="x-profile-summary"><Avatar name={profile.name} src={xAvatarSrc(profile.handle)}/><h2>{profile.name}</h2><p>{profile.handle}</p><div className="x-profile-tabs">帖子</div></div>
           {profilePosts.map((post) => <article key={post.id} className="x-profile-post"><strong>{post.sender}</strong><small> {meta(post,"handle")} · {post.time}</small><p>{post.body}</p>{meta(post,"imagePending")==="true" && <div className="x-pending-media">图片待上传</div>}<div className="x-profile-stats"><span><MessageCircle size={15}/>{meta(post,"commentCount","0")}</span><span><Heart size={15}/>{post.likes}</span><span>▥ {meta(post,"views","0")}</span></div></article>)}
           {profileReplies.map((reply:{id:string;body:string;replyTo:string;date:string;comments:number;likes:number;views:number}) => <article key={reply.id} className="x-profile-post"><strong>{profile.name}</strong><small> {profile.handle} · {reply.date}</small><div className="x-reply-to">回复 {reply.replyTo}</div><p>{reply.body}</p><div className="x-profile-stats"><span><MessageCircle size={15}/>{reply.comments}</span><span><Heart size={15}/>{reply.likes}</span><span>▥ {reply.views.toLocaleString("en-US")}</span></div></article>)}
           {!profilePosts.length && !profileReplies.length && <p className="post-comments-empty">暂无帖子</p>}
@@ -141,7 +141,7 @@ export function SocialDetail(p: {
       </header>
       <div className="post-detail-scroll">
         <div className="post-detail-author">
-          <button className="x-profile-trigger" onClick={() => openProfile(item.sender,meta(item,"handle"))} aria-label={"查看"+item.sender+"的主页"}><Avatar name={item.sender} src={item.avatar} /></button>
+          <button className="x-profile-trigger" onClick={() => openProfile(item.sender,meta(item,"handle"))} aria-label={"查看"+item.sender+"的主页"}><Avatar name={item.sender} src={weibo ? item.avatar : xAvatarSrc(meta(item, "handle")) || item.avatar} /></button>
           <div className="x-profile-trigger-text" onClick={() => openProfile(item.sender,meta(item,"handle"))} role="button" tabIndex={0} onKeyDown={(e) => {if(e.key==="Enter")openProfile(item.sender,meta(item,"handle"));}}>
             <strong>{item.sender || "用户"}</strong>
             <small>
@@ -226,7 +226,7 @@ export function SocialDetail(p: {
           <div className="post-detail-comments">
             {authoredReplies.map((reply) => (
               <article key={reply.id} className="post-detail-comment x-authored-reply">
-                <button className="x-profile-trigger" aria-label={"查看"+reply.name+"的主页"} onClick={() => openProfile(reply.name,reply.handle)}><Avatar name={reply.name} /></button>
+                <button className="x-profile-trigger" aria-label={"查看"+reply.name+"的主页"} onClick={() => openProfile(reply.name,reply.handle)}><Avatar name={reply.name} src={xAvatarSrc(reply.handle)} /></button>
                 <div className="x-reply-content">
                   <div className="x-reply-author"><strong role="button" tabIndex={0} onClick={() => openProfile(reply.name,reply.handle)} onKeyDown={(e)=>{if(e.key==="Enter")openProfile(reply.name,reply.handle);}}>{reply.name}</strong><small>{reply.handle} · {reply.date}</small></div>
                   <div className="x-reply-to">回复 <span>{reply.replyTo}</span></div>
