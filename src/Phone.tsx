@@ -1009,6 +1009,7 @@ function AppContent({
             <SocialDetail
               app={app.id}
               item={detail}
+              items={shown}
               back={back}
               owner={work.phone.owner}
               ui={state.ui?.[app.id]}
