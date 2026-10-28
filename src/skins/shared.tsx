@@ -84,6 +84,16 @@ export function SearchBox({
     </label>
   );
 }
+export function xAvatarSrc(handle: string): string {
+  const key = handle.trim().replace(/^@+/, "").toLowerCase();
+  const known = new Set([
+    "ynu_confession", "donotdisturb", "tjdcks_poqe", "chefmint",
+    "dmstjr_peq", "imfine3qandyou", "sohappyhappy", "holidayeveryday",
+    "shotaro1125", "passerby", "yesok", "meow33",
+    "blueberry", "21oclock", "ddori252", "anappleaday",
+  ]);
+  return known.has(key) ? `${import.meta.env.BASE_URL}x-avatars/${key}.jpg` : "";
+}
 export function Avatar({
   name,
   round = true,
@@ -93,10 +103,11 @@ export function Avatar({
   round?: boolean;
   src?: string;
 }) {
+  const image = src && (src.startsWith("data:image/") ? safeMedia(src) : src);
   return (
     <span className={`catalog-avatar ${round ? "round" : ""}`}>
-      {safeMedia(src)?.startsWith("data:image/") ? (
-        <img src={safeMedia(src)} alt="" />
+      {image ? (
+        <img src={image} alt="" onError={(e) => { e.currentTarget.style.display = "none"; }} />
       ) : (
         name.slice(0, 1) || "人"
       )}
