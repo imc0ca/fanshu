@@ -42,7 +42,7 @@ function Actions({ p, item }: { p: Props; item: Item }) {
       </button>
       <button aria-label={`评论${item.title}`} onClick={() => p.onItem(item)}>
         <MessageCircle size={17} />
-        {item.comments.length || ""}
+        {meta(item, "commentCount", String(item.comments.length))}
       </button>
       <button aria-label={`详情${item.title}`} onClick={() => p.onItem(item)}>
         <Repeat2 size={17} />
