@@ -729,7 +729,7 @@ export function MymyX(p: SkinProps) {
                       onClick={() => p.onItem(i)}
                     >
                       <MessageCircle />
-                      {i.comments.length}
+                      {i.meta.commentCount || i.meta.originalCounts?.split("/")[0]?.trim() || i.comments.length}
                     </button>
                     <button
                       aria-label={"转发" + i.title}
