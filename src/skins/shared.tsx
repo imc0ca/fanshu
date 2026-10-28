@@ -84,15 +84,43 @@ export function SearchBox({
     </label>
   );
 }
+const xAvatarHandles = new Set([
+  "ynu_confession",
+  "donotdisturb",
+  "tjdcks_poqe",
+  "chefmint",
+  "dmstjr_peq",
+  "imfine3qandyou",
+  "sohappyhappy",
+  "holidayeveryday",
+  "shotaro1125",
+  "passerby",
+  "yesok",
+  "meow33",
+  "blueberry",
+  "21oclock",
+  "ddori252",
+  "anappleaday",
+  "signal_lost_",
+  "mellowmellow",
+  "flyingnfreedom",
+  "idkwt",
+  "calmdown",
+  "antinitonny",
+  "lookaround",
+  "kugeinikan",
+  "imstupid",
+  "aliensdoexist",
+  "itsash77",
+  "awake_6am",
+  "4reading",
+  "lat37half",
+  "gn0127",
+  "oneul_sunny"
+]);
 export function xAvatarSrc(handle: string): string {
   const key = handle.trim().replace(/^@+/, "").toLowerCase();
-  const known = new Set([
-    "ynu_confession", "donotdisturb", "tjdcks_poqe", "chefmint",
-    "dmstjr_peq", "imfine3qandyou", "sohappyhappy", "holidayeveryday",
-    "shotaro1125", "passerby", "yesok", "meow33",
-    "blueberry", "21oclock", "ddori252", "anappleaday",
-  ]);
-  return known.has(key) ? `/fanshu/x-avatars/${key}.jpg` : "";
+  return xAvatarHandles.has(key) ? `/fanshu/x-avatars/${key}.jpg` : "";
 }
 export function Avatar({
   name,
