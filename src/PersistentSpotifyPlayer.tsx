@@ -15,8 +15,10 @@ const listeners = new Set<() => void>();
 function notify() { listeners.forEach(fn => fn()); }
 function source(item: Item) {
   const file = item.meta.audioFile;
-  if (!file || !/^\/audio\/[\w.-]+\.m4a$/.test(file)) return "";
-  return `${import.meta.env.BASE_URL.replace(/\/$/, "")}${file}`;
+  if (typeof file !== "string" || !file.startsWith("/") || !/\.m4a$/i.test(file)) return "";
+  // Files are in public/ and are published at /fanshu/ on GitHub Pages.
+  // Preserve URL-encoded Korean/Chinese names and spaces.
+  return `/fanshu${file}`;
 }
 function clearPending() {
   if (timer) clearTimeout(timer);
@@ -27,7 +29,7 @@ function clearPending() {
 function start(item: Item, fade = false) {
   if (!player) return;
   const src = source(item);
-  if (!src) { playing = false; playbackError = "此歌曲尚未配置音频文件"; notify(); return; }
+  if (!src) { playing = false; playbackError = "这首歌尚未上传音频；已上传的前五首可以播放"; notify(); return; }
   clearPending();
   activeId = item.id;
   playbackError = "";
@@ -45,7 +47,7 @@ function start(item: Item, fade = false) {
       player.volume = Math.min(1, step / 10);
       if (step >= 10 && fadeTimer) { clearInterval(fadeTimer); fadeTimer = undefined; }
     }, 100);
-  }).catch(() => { playing = false; playbackError = "音频未上传或无法播放，请检查 public/audio 文件"; notify(); });
+  }).catch(() => { playing = false; playbackError = "音频加载失败，请检查文件是否可以直接打开"; notify(); });
 }
 function nextIndex() {
   const available = list.filter(i => !!source(i));
@@ -72,7 +74,7 @@ if (player) {
   player.addEventListener("ended", () => next(true));
   player.addEventListener("pause", () => { if (!player.ended) { playing = false; notify(); } });
   player.addEventListener("play", () => { playing = true; playbackError = ""; notify(); });
-  player.addEventListener("error", () => { playing = false; playbackError = "找不到音频文件或格式不受支持"; notify(); });
+  player.addEventListener("error", () => { playing = false; playbackError = "音频文件无法加载或格式不兼容"; notify(); });
 }
 export function PersistentSpotifyPlayer({ items }: { items: Item[] }) {
   const [, rerender] = useState(0);
