@@ -160,7 +160,7 @@ export function HealthSkin(p: Props) {
               {([["深度睡眠","30%","#4230aa"],["核心睡眠","55%","#8270ed"],["快速动眼睡眠","10%","#55b8e6"],["清醒时间","5%","#ff9d56"]] as const).map(([label,value,color]) => <p key={label} style={{display:"flex",justifyContent:"space-between",alignItems:"center",margin:"10px 0"}}><span><i style={{display:"inline-block",height:10,width:10,borderRadius:3,background:color,marginRight:8}} />{label}</span><strong>{value}</strong></p>)}
             </section>}
             {detail === "activity" && <section className="health-detail-description">
-              <h2>本周健身</h2><p>周二 · 35 分钟　完成</p><p>周四 · 42 分钟　完成</p><p>周六 · 38 分钟　完成</p><p>每周约 3 次，其他日期以日常活动为主。</p>
+              <h2>本周健身</h2><p>周二 · 35 分钟 完成</p><p>周四 · 42 分钟 完成</p><p>周六 · 38 分钟 完成</p><p>每周约 3 次，其他日期以日常活动为主。</p>
             </section>}
             <section className="health-detail-description">
               <h2>记录</h2>
