@@ -173,7 +173,18 @@ export function XSkin(p: Props) {
           .filter((i) => tab === "为你推荐" || i.folder === "正在关注")
           .map((i) => (
             <article className="x-post" key={i.id}>
-              <Avatar name={i.sender} src={xAvatarSrc(meta(i, "handle"))} />
+              <span className="catalog-avatar round x-feed-avatar">
+                 <img
+                   src={xAvatarSrc(meta(i, "handle")) || `/fanshu/x-avatars/${meta(i, "handle").replace(/^@+/, "").toLowerCase()}.jpg`}
+                   alt={`${i.sender}的头像`}
+                   loading="eager"
+                   onError={(e) => {
+                     e.currentTarget.style.display = "none";
+                     e.currentTarget.parentElement?.classList.add("x-avatar-fallback");
+                   }}
+                 />
+                 <span className="x-avatar-initial">{i.sender.slice(0, 1)}</span>
+               </span>
               <div>
                 <button className="x-byline" onClick={() => p.onItem(i)}>
                   <strong>{i.sender}</strong>
