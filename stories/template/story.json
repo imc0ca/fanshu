@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 16,
+  "revision": 17,
   "phone": {
     "owner": "机主",
     "date": "2026-04-16",
@@ -340,12 +340,23 @@
     ],
     "weather": [
       {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "seoul-weather-reference",
+        "title": "首尔",
+        "body": "晴。今天将持续晴朗，阵风风速最高8米/秒。以下为用户提供的天气截图数据，不代表实时预报。",
+        "sender": "天气",
+        "time": "截图天气",
         "kind": "text",
-        "meta": {}
+        "meta": {
+          "locationLabel": "首尔",
+          "temperature": "19",
+          "high": "20",
+          "low": "8",
+          "condition": "晴",
+          "summary": "今天将持续晴朗。阵风风速最高8米/秒。",
+          "wind": "8米/秒",
+          "hourly": "[{\"time\":\"现在\",\"temperature\":\"19\"},{\"time\":\"13时\",\"temperature\":\"19\"},{\"time\":\"14时\",\"temperature\":\"19\"},{\"time\":\"15时\",\"temperature\":\"20\"},{\"time\":\"16时\",\"temperature\":\"19\"},{\"time\":\"17时\",\"temperature\":\"18\"}]",
+          "daily": "[{\"label\":\"今天\",\"low\":\"8\",\"high\":\"20\",\"condition\":\"晴\"},{\"label\":\"周三\",\"low\":\"9\",\"high\":\"23\",\"condition\":\"晴\"},{\"label\":\"周四\",\"low\":\"11\",\"high\":\"19\",\"condition\":\"雨 60%\"},{\"label\":\"周五\",\"low\":\"9\",\"high\":\"20\",\"condition\":\"晴\"},{\"label\":\"周六\",\"low\":\"9\",\"high\":\"22\",\"condition\":\"晴\"},{\"label\":\"周日\",\"low\":\"10\",\"high\":\"23\",\"condition\":\"晴\"},{\"label\":\"周一\",\"low\":\"13\",\"high\":\"22\",\"condition\":\"多云转晴\"},{\"label\":\"周二\",\"low\":\"12\",\"high\":\"24\",\"condition\":\"晴\"},{\"label\":\"周三\",\"low\":\"15\",\"high\":\"24\",\"condition\":\"晴\"},{\"label\":\"周四\",\"low\":\"15\",\"high\":\"25\",\"condition\":\"多云转晴\"}]"
+        }
       }
     ],
     "settings": [
