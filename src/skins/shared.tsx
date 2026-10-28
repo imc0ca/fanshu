@@ -92,7 +92,7 @@ export function xAvatarSrc(handle: string): string {
     "shotaro1125", "passerby", "yesok", "meow33",
     "blueberry", "21oclock", "ddori252", "anappleaday",
   ]);
-  return known.has(key) ? `${import.meta.env.BASE_URL}x-avatars/${key}.jpg` : "";
+  return known.has(key) ? `/fanshu/x-avatars/${key}.jpg` : "";
 }
 export function Avatar({
   name,
