@@ -349,3 +349,14 @@
   font-size: inherit;
   line-height: inherit;
 }
+
+/* Authored X conversation replies */
+.x-authored-reply .x-reply-content { min-width: 0; flex: 1; }
+.x-authored-reply .x-reply-author { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px; }
+.x-authored-reply .x-reply-author small { color: #71767b; font-size: 12px; }
+.x-authored-reply .x-reply-to { color: #71767b; font-size: 12px; margin: 3px 0 6px; }
+.x-authored-reply .x-reply-to span { color: #1d9bf0; }
+.x-authored-reply .x-reply-content p { white-space: pre-wrap; overflow-wrap: anywhere; }
+.x-authored-reply .x-reply-metrics { display: flex; justify-content: space-between; margin-top: 12px; color: #71767b; }
+.x-authored-reply .x-reply-metrics span { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; }
+.x-authored-reply .x-pending-media { border: 1px solid #38444d; border-radius: 12px; padding: 28px 12px; color: #71767b; text-align: center; margin-top: 8px; font-size: 12px; }
