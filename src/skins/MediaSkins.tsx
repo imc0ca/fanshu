@@ -1,3 +1,4 @@
+import { PersistentSpotifyPlayer, playSpotify } from "../PersistentSpotifyPlayer";
 import { AudioPlayer, useTrack } from "../audio";
 import { useSkinState } from "../skinState";
 import {
@@ -61,8 +62,7 @@ function TrackPlayer({
 }
 export function SpotifySkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "首页");
-  const [playlist, setPlaylist] = useState(""),
-    [track, setTrack] = useTrack(p, items);
+  const [playlist, setPlaylist] = useState("");
   const list = playlist
     ? items.filter((i) => (i.folder || "我的音乐") === playlist)
     : items;
@@ -107,7 +107,7 @@ export function SpotifySkin(p: Props) {
             <button
               key={i.id}
               onClick={() => {
-                setTrack(i);
+                playSpotify(i, items);
               }}
             >
               <span>{n + 1}</span>
@@ -123,19 +123,7 @@ export function SpotifySkin(p: Props) {
         </div>
         <Empty items={list} />
       </div>
-      {track && (
-        <TrackPlayer
-          item={track}
-          p={p}
-          onNext={() =>
-            setTrack(
-              items[
-                (items.findIndex((i) => i.id === track.id) + 1) % items.length
-              ],
-            )
-          }
-        />
-      )}
+      <PersistentSpotifyPlayer items={items} />
       <Tabs
         tabs={["首页", "搜索", "音乐库"]}
         value={tab}
