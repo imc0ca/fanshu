@@ -29,6 +29,7 @@ const count = (n: number) =>
 export function SocialDetail(p: {
   app: string;
   item: Item;
+  items?: Item[];
   back: () => void;
   owner: string;
   ui?: Record<string, UiValue>;
@@ -44,13 +45,17 @@ export function SocialDetail(p: {
       false,
     ),
     [extra, setExtra] = useSkinState<string[]>(p, "replies-" + item.id, []);
-  const [tab, setTab] = useState("评论"),
+  const [profile, setProfile] = useState<{name:string;handle:string}|null>(null),
+    [tab, setTab] = useState("评论"),
     [draft, setDraft] = useState(""),
     [target, setTarget] = useState(""),
     [menu, setMenu] = useState(false),
     [sort, setSort] = useState(false),
     [copied, setCopied] = useState(false);
   const authoredReplies: Array<{id:string;name:string;handle:string;replyTo:string;body:string;comments:number;likes:number;views:number;date:string;imagePending?:boolean}> = (() => { try { const data = JSON.parse(meta(item, "repliesData", "[]")); return Array.isArray(data) ? data : []; } catch { return []; } })();
+  const openProfile = (name:string,handle:string) => { if (!weibo) setProfile({name,handle}); };
+  const profilePosts = (p.items || [item]).filter((post) => meta(post, "handle") === profile?.handle);
+  const profileReplies = (p.items || [item]).flatMap((post) => { try { const data = JSON.parse(meta(post, "repliesData", "[]")); return Array.isArray(data) ? data.filter((reply:{handle:string}) => reply.handle === profile?.handle) : []; } catch { return []; } });
   const comments = [...item.comments, ...extra],
     replies = sort ? [...comments].reverse() : comments;
   const copy = async () => {
@@ -112,6 +117,16 @@ export function SocialDetail(p: {
             (p.ui?.["x-dark"] !== false ? " x-reference-dark" : ""))
       }
     >
+      {profile ? <>
+        <header className="post-detail-nav"><button aria-label="返回推文" onClick={() => setProfile(null)}><ChevronLeft size={27}/></button><strong>{profile.name}</strong><div /></header>
+        <div className="post-detail-scroll x-profile-scroll">
+          <div className="x-profile-cover" />
+          <div className="x-profile-summary"><Avatar name={profile.name}/><h2>{profile.name}</h2><p>{profile.handle}</p><div className="x-profile-tabs">帖子</div></div>
+          {profilePosts.map((post) => <article key={post.id} className="x-profile-post"><strong>{post.sender}</strong><small> {meta(post,"handle")} · {post.time}</small><p>{post.body}</p>{meta(post,"imagePending")==="true" && <div className="x-pending-media">图片待上传</div>}<div className="x-profile-stats"><span><MessageCircle size={15}/>{meta(post,"commentCount","0")}</span><span><Heart size={15}/>{post.likes}</span><span>▥ {meta(post,"views","0")}</span></div></article>)}
+          {profileReplies.map((reply:{id:string;body:string;replyTo:string;date:string;comments:number;likes:number;views:number}) => <article key={reply.id} className="x-profile-post"><strong>{profile.name}</strong><small> {profile.handle} · {reply.date}</small><div className="x-reply-to">回复 {reply.replyTo}</div><p>{reply.body}</p><div className="x-profile-stats"><span><MessageCircle size={15}/>{reply.comments}</span><span><Heart size={15}/>{reply.likes}</span><span>▥ {reply.views.toLocaleString("en-US")}</span></div></article>)}
+          {!profilePosts.length && !profileReplies.length && <p className="post-comments-empty">暂无帖子</p>}
+        </div>
+      </> : <>
       <header className="post-detail-nav">
         <button aria-label="返回帖子列表" onClick={p.back}>
           <ChevronLeft size={27} />
@@ -126,8 +141,8 @@ export function SocialDetail(p: {
       </header>
       <div className="post-detail-scroll">
         <div className="post-detail-author">
-          <Avatar name={item.sender} src={item.avatar} />
-          <div>
+          <button className="x-profile-trigger" onClick={() => openProfile(item.sender,meta(item,"handle"))} aria-label={"查看"+item.sender+"的主页"}><Avatar name={item.sender} src={item.avatar} /></button>
+          <div className="x-profile-trigger-text" onClick={() => openProfile(item.sender,meta(item,"handle"))} role="button" tabIndex={0} onKeyDown={(e) => {if(e.key==="Enter")openProfile(item.sender,meta(item,"handle"));}}>
             <strong>{item.sender || "用户"}</strong>
             <small>
               {weibo
@@ -211,9 +226,9 @@ export function SocialDetail(p: {
           <div className="post-detail-comments">
             {authoredReplies.map((reply) => (
               <article key={reply.id} className="post-detail-comment x-authored-reply">
-                <Avatar name={reply.name} />
+                <button className="x-profile-trigger" aria-label={"查看"+reply.name+"的主页"} onClick={() => openProfile(reply.name,reply.handle)}><Avatar name={reply.name} /></button>
                 <div className="x-reply-content">
-                  <div className="x-reply-author"><strong>{reply.name}</strong><small>{reply.handle} · {reply.date}</small></div>
+                  <div className="x-reply-author"><strong role="button" tabIndex={0} onClick={() => openProfile(reply.name,reply.handle)} onKeyDown={(e)=>{if(e.key==="Enter")openProfile(reply.name,reply.handle);}}>{reply.name}</strong><small>{reply.handle} · {reply.date}</small></div>
                   <div className="x-reply-to">回复 <span>{reply.replyTo}</span></div>
                   <p>{reply.body}</p>
                   {reply.imagePending && <div className="x-pending-media">图片待上传</div>}
@@ -319,6 +334,7 @@ export function SocialDetail(p: {
           <button onClick={() => setMenu(false)}>取消</button>
         </div>
       )}
+      </>}
     </div>
   );
 }
