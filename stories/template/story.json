@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 5,
+  "revision": 6,
   "phone": {
     "owner": "机主",
     "date": "2026-04-16",
@@ -396,6 +396,86 @@
         "sender": "测试用户",
         "kind": "text",
         "meta": {}
+      },
+      {
+        "id": "x-confessions-001",
+        "sender": "有江国立大接线中...",
+        "body": "这俩人谈了？",
+        "time": "",
+        "meta": {
+          "handle": "@ynu_confessions",
+          "views": "3,913",
+          "originalCounts": "9 / 32 / 239",
+          "imagePending": "false"
+        },
+        "title": "这俩人谈了？",
+        "likes": 0,
+        "comments": [],
+        "kind": "post"
+      },
+      {
+        "id": "x-jeju-002",
+        "sender": "ㄴㅅㅐㅜㄷ",
+        "body": "成灿日出峰 ㅋㅋ",
+        "time": "2023/05/11",
+        "meta": {
+          "handle": "@dmstjr_peqo",
+          "views": "239",
+          "originalCounts": "9 / 32 / 239",
+          "imagePending": "true"
+        },
+        "title": "成灿日出峰 ㅋㅋ",
+        "likes": 0,
+        "comments": [],
+        "kind": "post"
+      },
+      {
+        "id": "x-jeju-003",
+        "sender": "ddeongchan",
+        "body": "成灿日出峰 ^^",
+        "time": "",
+        "meta": {
+          "handle": "@tjdcks_poqe",
+          "views": "332",
+          "originalCounts": "16 / 52 / 332",
+          "imagePending": "true"
+        },
+        "title": "成灿日出峰 ^^",
+        "likes": 0,
+        "comments": [],
+        "kind": "post"
+      },
+      {
+        "id": "x-jeju-004",
+        "sender": "ddeongchan",
+        "body": "好天气☀️\n\n快艇差点把ses甩水里 ㅋㅋㅋ 他超兴奋，一直怪叫...",
+        "time": "",
+        "meta": {
+          "handle": "@tjdcks_poqe",
+          "views": "385",
+          "originalCounts": "20 / 45 / 385",
+          "imagePending": "true"
+        },
+        "title": "好天气☀️",
+        "likes": 0,
+        "comments": [],
+        "kind": "post"
+      },
+      {
+        "id": "x-jeju-005",
+        "sender": "ddeongchan",
+        "body": "hello jeju",
+        "time": "",
+        "meta": {
+          "handle": "@tjdcks_poqe",
+          "views": "206",
+          "originalCounts": "15 / 39 / 206",
+          "imagePending": "true"
+        },
+        "title": "hello jeju",
+        "likes": 0,
+        "comments": [],
+        "kind": "post"
       }
     ],
     "youtube": [
