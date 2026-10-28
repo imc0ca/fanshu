@@ -18,6 +18,8 @@ import {
   Map,
   List,
   Cloud,
+  Sun,
+  CloudRain,
   Activity,
   Search,
 } from "lucide-react";
@@ -354,6 +356,7 @@ function listMeta(
   low?: string;
   high?: string;
   label?: string;
+  condition?: string;
 }[] {
   try {
     const v = JSON.parse(meta(item, key, "[]"));
@@ -413,7 +416,7 @@ export function WeatherSkin(p: Props) {
           }}
         >
           <strong>
-            {meta(item, "aqi", "—")} · {meta(item, "aqiLabel", "空气质量")}
+            {meta(item, "summary", "天气概况")}
           </strong>
           <div className="weather-aqi-scale">
             <i
@@ -426,9 +429,7 @@ export function WeatherSkin(p: Props) {
             />
           </div>
           <p>
-            {item?.meta.aqi
-              ? `当前 AQI (CN) 为 ${item.meta.aqi}。`
-              : "暂无空气质量数据"}
+            {meta(item, "summary", "暂无天气数据")}
           </p>
         </button>
         <section className="weather-native-card weather-hourly">
@@ -479,7 +480,7 @@ export function WeatherSkin(p: Props) {
                 {n === 5 ? (
                   <Sunrise size={28} color="#ffd60a" />
                 ) : (
-                  <MoonStar size={28} />
+                  <Sun size={28} color="#ffd60a" />
                 )}
                 <span>
                   {n === 5
@@ -513,7 +514,7 @@ export function WeatherSkin(p: Props) {
               }}
             >
               <strong>{d.label || d.time || "—"}</strong>
-              <CloudSun size={23} />
+              {d.condition?.includes("雨") ? <CloudRain size={23} color="#d9f2ff" /> : d.condition?.includes("多云") ? <CloudSun size={23} color="#ffd60a" /> : <Sun size={23} color="#ffd60a" />}
               <span>{d.low || "—"}°</span>
               <i />
               <b>{d.high || "—"}°</b>
