@@ -110,6 +110,21 @@
 .catalog-avatar.round {
   border-radius: 50%;
 }
+/* Keep uploaded profile photos inside the avatar circle instead of allowing
+   intrinsic JPEG dimensions to overflow the X timeline. */
+.catalog-avatar {
+  overflow: hidden;
+}
+.catalog-avatar > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
 .catalog-row {
   display: flex;
   align-items: center;
