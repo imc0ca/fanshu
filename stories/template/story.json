@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 9,
+  "revision": 10,
   "phone": {
     "owner": "机主",
     "date": "2026-04-16",
@@ -564,6 +564,25 @@
           "imagePending": "true",
           "originalCounts": "9 / 39 / 204",
           "countsMeaning": "comments / likes / views"
+        }
+      },
+      {
+        "id": "x-confessions-003",
+        "title": "[confession] open line_6503",
+        "sender": "有江国立大接线中...",
+        "body": "[confession] open line_6503\n\n秋天到了，想念男神",
+        "time": "06:07 下午 · 12 10月 23",
+        "kind": "post",
+        "likes": 689,
+        "comments": [],
+        "meta": {
+          "handle": "@ynu_confessions",
+          "views": "4,862",
+          "reposts": "19",
+          "quotes": "5",
+          "imagePending": "true",
+          "repliesData": "[{\"id\":\"x-oct-reply-001\",\"name\":\"周休七日\",\"handle\":\"@holidayeveryday\",\"replyTo\":\"\",\"body\":\"这谁???!!!\",\"comments\":30,\"likes\":185,\"views\":3341,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-002\",\"name\":\"我睡了 可以不回我消息\",\"handle\":\"@donotdisturb\",\"replyTo\":\"@holidayeveryday\",\"body\":\"郑成灿\",\"comments\":4,\"likes\":267,\"views\":3299,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-003\",\"name\":\"周休七日\",\"handle\":\"@holidayeveryday\",\"replyTo\":\"@donotdisturb\",\"body\":\"上次去济州岛的就是他吗\",\"comments\":5,\"likes\":32,\"views\":3283,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-004\",\"name\":\"我睡了 可以不回我消息\",\"handle\":\"@donotdisturb\",\"replyTo\":\"@holidayeveryday\",\"body\":\"对\",\"comments\":1,\"likes\":121,\"views\":3211,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-005\",\"name\":\"周休七日\",\"handle\":\"@holidayeveryday\",\"replyTo\":\"@donotdisturb\",\"body\":\"那最后一张另外一个人就是他男朋友吗\",\"comments\":26,\"likes\":264,\"views\":3206,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-006\",\"name\":\"苹果不是平凡的水果\",\"handle\":\"@anappleaday\",\"replyTo\":\"@holidayeveryday\",\"body\":\"希望是\",\"comments\":37,\"likes\":288,\"views\":3198,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-007\",\"name\":\"周休七日\",\"handle\":\"@holidayeveryday\",\"replyTo\":\"@anappleaday\",\"body\":\"什么意思 o.o\",\"comments\":18,\"likes\":6,\"views\":3097,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-008\",\"name\":\"厨师长Minttt\",\"handle\":\"@chefmint\",\"replyTo\":\"@holidayeveryday\",\"body\":\"因为大家都是在猜吧哈哈哈哈，但是就是他们俩一起去济州的\",\"comments\":42,\"likes\":265,\"views\":3085,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-009\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@chefmint\",\"body\":\"可靠消息 他们没谈!\",\"comments\":58,\"likes\":317,\"views\":3286,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-010\",\"name\":\"冷脸不是不开心\",\"handle\":\"@sohappyhappy\",\"replyTo\":\"@ynu_confessions\",\"body\":\"稿主最后一张图从哪来的?! 还有吗，能私发我吗\\n\\n还有你投稿郑成灿就投单人照片不行吗\",\"comments\":30,\"likes\":199,\"views\":2988,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-011\",\"name\":\"厨师长Minttt\",\"handle\":\"@chefmint\",\"replyTo\":\"@sohappyhappy\",\"body\":\"哈哈哈哈哈哈你怎么既要又要啊\",\"comments\":15,\"likes\":207,\"views\":2868,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-012\",\"name\":\"面包重度依赖\",\"handle\":\"@breadluv\",\"replyTo\":\"@ynu_confessions\",\"body\":\"男神什么时候回来啊 ㅠㅠ 感觉好久好久没看到他了\",\"comments\":8,\"likes\":231,\"views\":3166,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-013\",\"name\":\"路过一只松鼠\",\"handle\":\"@passerby\",\"replyTo\":\"@breadluv\",\"body\":\"帮大家问过了 明年1月\",\"comments\":54,\"likes\":365,\"views\":3245,\"date\":\"2023/10/12\",\"imagePending\":true},{\"id\":\"x-oct-reply-014\",\"name\":\"好的收到\",\"handle\":\"@yesok\",\"replyTo\":\"@passerby\",\"body\":\"前辈前辈，另一位呢，所以明年有机会在学校里看到他们俩吗\",\"comments\":14,\"likes\":164,\"views\":3121,\"date\":\"2023/10/12\",\"imagePending\":false},{\"id\":\"x-oct-reply-015\",\"name\":\"我美式你呢\",\"handle\":\"@imfine3qandyou\",\"replyTo\":\"@yesok\",\"body\":\"ses好像比他晚几个月，但是明年应该也回来了\",\"comments\":31,\"likes\":197,\"views\":3108,\"date\":\"2023/10/12\",\"imagePending\":false}]",
+          "commentCount": "15"
         }
       }
     ],
