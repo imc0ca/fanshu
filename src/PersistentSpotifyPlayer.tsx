@@ -1,0 +1,107 @@
+import { useEffect, useState } from "react";
+import { Pause, Play, Repeat, Repeat1, Shuffle, SkipBack, SkipForward } from "lucide-react";
+import type { Item } from "./schema";
+
+type Mode = "order" | "repeat-one" | "shuffle";
+const player = typeof Audio !== "undefined" ? new Audio() : null;
+let activeId = "";
+let playing = false;
+let mode: Mode = "order";
+let list: Item[] = [];
+let timer: ReturnType<typeof setTimeout> | undefined;
+let fadeTimer: ReturnType<typeof setInterval> | undefined;
+const listeners = new Set<() => void>();
+function notify() { listeners.forEach(fn => fn()); }
+function source(item: Item) {
+  const file = item.meta.audioFile;
+  if (!file || !/^\/audio\/[\w.-]+\.m4a$/.test(file)) return "";
+  return `${import.meta.env.BASE_URL.replace(/\/$/, "")}${file}`;
+}
+function clearPending() {
+  if (timer) clearTimeout(timer);
+  if (fadeTimer) clearInterval(fadeTimer);
+  timer = undefined;
+  fadeTimer = undefined;
+}
+function start(item: Item, fade = false) {
+  if (!player) return;
+  const src = source(item);
+  if (!src) { playing = false; notify(); return; }
+  clearPending();
+  activeId = item.id;
+  player.src = src;
+  player.loop = false;
+  player.volume = fade ? 0 : 1;
+  playing = true;
+  notify();
+  void player.play().then(() => {
+    if (!fade) return;
+    let step = 0;
+    fadeTimer = setInterval(() => {
+      if (!player || player.paused) { clearPending(); return; }
+      step++;
+      player.volume = Math.min(1, step / 10);
+      if (step >= 10 && fadeTimer) { clearInterval(fadeTimer); fadeTimer = undefined; }
+    }, 100);
+  }).catch(() => { playing = false; notify(); });
+}
+function nextIndex() {
+  const available = list.filter(i => !!source(i));
+  if (!available.length) return null;
+  const current = available.findIndex(i => i.id === activeId);
+  if (mode === "repeat-one") return available[Math.max(0, current)];
+  if (mode === "shuffle" && available.length > 1) {
+    const choices = available.filter(i => i.id !== activeId);
+    return choices[Math.floor(Math.random() * choices.length)];
+  }
+  return available[(current + 1) % available.length];
+}
+function next(delay = false) {
+  if (!player) return;
+  clearPending();
+  const item = nextIndex();
+  if (!item) return;
+  if (delay) {
+    playing = false; notify();
+    timer = setTimeout(() => start(item, true), 1000);
+  } else start(item);
+}
+if (player) {
+  player.addEventListener("ended", () => next(true));
+  player.addEventListener("pause", () => { if (!player.ended) { playing = false; notify(); } });
+  player.addEventListener("play", () => { playing = true; notify(); });
+}
+export function PersistentSpotifyPlayer({ items }: { items: Item[] }) {
+  const [, rerender] = useState(0);
+  useEffect(() => {
+    const fn = () => rerender(v => v + 1);
+    listeners.add(fn);
+    return () => { listeners.delete(fn); };
+  }, []);
+  // Keep audio alive in this module even when the Spotify screen unmounts.
+  list = items;
+  const current = items.find(i => i.id === activeId);
+  const toggle = () => {
+    if (!player) return;
+    clearPending();
+    if (!activeId) { const first = items.find(i => !!source(i)); if (first) start(first); }
+    else if (player.paused) { void player.play().catch(() => { playing = false; notify(); }); }
+    else player.pause();
+  };
+  return (
+    <div className="track-player" style={{display:"flex",alignItems:"center",gap:8}}>
+      <button aria-label="上一首" onClick={() => {
+        const available = items.filter(i => !!source(i));
+        const n = available.findIndex(i => i.id === activeId);
+        if (available.length) start(available[(n - 1 + available.length) % available.length]);
+      }}><SkipBack size={18}/></button>
+      <button aria-label={playing ? "暂停" : "播放"} onClick={toggle}>{playing ? <Pause size={20}/> : <Play size={20}/>}</button>
+      <span style={{flex:1,minWidth:0,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{current ? current.title : "选择歌曲开始播放"}</span>
+      <button aria-label="下一首" onClick={() => next()}><SkipForward size={18}/></button>
+      <button aria-label={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} title={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} onClick={() => { mode = mode === "order" ? "repeat-one" : mode === "repeat-one" ? "shuffle" : "order"; notify(); }}>
+        {mode === "repeat-one" ? <Repeat1 size={19}/> : mode === "shuffle" ? <Shuffle size={19}/> : <Repeat size={19}/>}
+      </button>
+    </div>
+  );
+}
+export function playSpotify(item: Item, items: Item[]) { list = items; start(item); }
