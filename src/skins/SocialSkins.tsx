@@ -21,6 +21,7 @@ import { useState } from "react";
 import type { Item } from "../schema";
 import {
   Avatar,
+  xAvatarSrc,
   Empty,
   groupItems,
   Header,
@@ -172,7 +173,7 @@ export function XSkin(p: Props) {
           .filter((i) => tab === "为你推荐" || i.folder === "正在关注")
           .map((i) => (
             <article className="x-post" key={i.id}>
-              <Avatar name={i.sender} />
+              <Avatar name={i.sender} src={xAvatarSrc(meta(i, "handle"))} />
               <div>
                 <button className="x-byline" onClick={() => p.onItem(i)}>
                   <strong>{i.sender}</strong>
