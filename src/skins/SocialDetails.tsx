@@ -50,6 +50,7 @@ export function SocialDetail(p: {
     [menu, setMenu] = useState(false),
     [sort, setSort] = useState(false),
     [copied, setCopied] = useState(false);
+  const authoredReplies: Array<{id:string;name:string;handle:string;replyTo:string;body:string;comments:number;likes:number;views:number;date:string;imagePending?:boolean}> = (() => { try { const data = JSON.parse(meta(item, "repliesData", "[]")); return Array.isArray(data) ? data : []; } catch { return []; } })();
   const comments = [...item.comments, ...extra],
     replies = sort ? [...comments].reverse() : comments;
   const copy = async () => {
@@ -71,7 +72,7 @@ export function SocialDetail(p: {
     <div className="post-detail-actions">
       <button aria-label="查看评论" onClick={() => setTab("评论")}>
         <MessageCircle />
-        {count(comments.length)}
+        {meta(item, "commentCount", String(authoredReplies.length || comments.length))}
       </button>
       <button aria-label="查看转发" onClick={() => setTab("转发")}>
         <Repeat2 />
@@ -208,6 +209,23 @@ export function SocialDetail(p: {
         )}
         {tab === "评论" ? (
           <div className="post-detail-comments">
+            {authoredReplies.map((reply) => (
+              <article key={reply.id} className="post-detail-comment x-authored-reply">
+                <Avatar name={reply.name} />
+                <div className="x-reply-content">
+                  <div className="x-reply-author"><strong>{reply.name}</strong><small>{reply.handle} · {reply.date}</small></div>
+                  <div className="x-reply-to">回复 <span>{reply.replyTo}</span></div>
+                  <p>{reply.body}</p>
+                  {reply.imagePending && <div className="x-pending-media">图片待上传</div>}
+                  <div className="post-comment-actions x-reply-metrics">
+                    <span><MessageCircle size={15} />{reply.comments}</span>
+                    <span><Heart size={15} />{reply.likes}</span>
+                    <span><span aria-hidden="true">▥</span>{reply.views.toLocaleString("en-US")}</span>
+                  </div>
+                </div>
+                <MoreHorizontal size={17} />
+              </article>
+            ))}
             {replies.map((c, index) => {
               const split = c.search(/[：:]/),
                 hasName = split > 0 && split < 24,
@@ -240,7 +258,7 @@ export function SocialDetail(p: {
                 </article>
               );
             })}
-            {!replies.length && <p className="post-comments-empty">暂无评论</p>}
+            {!replies.length && !authoredReplies.length && <p className="post-comments-empty">暂无评论</p>}
           </div>
         ) : (
           <p className="post-comments-empty">
