@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 15,
+  "revision": 16,
   "phone": {
     "owner": "机主",
     "date": "2026-04-16",
@@ -595,38 +595,6 @@
         }
       },
       {
-        "id": "x-feb24-ddori-001",
-        "title": "谁要害我...",
-        "body": "谁要害我...",
-        "sender": "또리",
-        "time": "2024/02/24",
-        "kind": "post",
-        "likes": 66,
-        "comments": [],
-        "meta": {
-          "handle": "@ddori252",
-          "views": "431",
-          "commentCount": "52"
-        }
-      },
-      {
-        "id": "x-feb24-confession-6692",
-        "title": "[confession] open line_6692",
-        "body": "[confession] open line_6692\n\n这两位也谈了吗？",
-        "sender": "有江国立大接线中...",
-        "time": "06:13 下午 · 24 2月 24",
-        "kind": "post",
-        "likes": 386,
-        "comments": [],
-        "meta": {
-          "handle": "@ynu_confessions",
-          "views": "3,975",
-          "commentCount": "242",
-          "imagePending": "true",
-          "repliesData": "[{\"id\":\"feb24-confession-reply-1\",\"name\":\"周休七日\",\"handle\":\"@holidayeveryday\",\"replyTo\":\"@ynu_confessions\",\"body\":\"男神是这样的人吗 o.o\",\"comments\":26,\"likes\":122,\"views\":3521,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-2\",\"name\":\"我睡了 可以不回我消息\",\"handle\":\"@donotdisturb\",\"replyTo\":\"@holidayeveryday\",\"body\":\"郑成灿要谈几个🤨\",\"comments\":26,\"likes\":53,\"views\":3521,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-3\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@donotdisturb\",\"body\":\"澄清!! 没有在谈!!!!!\",\"comments\":63,\"likes\":485,\"views\":3462,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-4\",\"name\":\"面包重度依赖\",\"handle\":\"@breadluv\",\"replyTo\":\"@ddori252\",\"body\":\"那是在搞暧昧吗？我不介意男神同时和好几个人搞暧昧，我也想加入！\",\"comments\":39,\"likes\":217,\"views\":3411,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-5\",\"name\":\"冷脸不是不开心\",\"handle\":\"@sohappyhappy\",\"replyTo\":\"@breadluv\",\"body\":\"什么啊，只能说明郑成灿和ses也没有什么，搞什么暧昧啊\",\"comments\":20,\"likes\":219,\"views\":4268,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-6\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@sohappyhappy\",\"body\":\"总算有个聪明人了\",\"comments\":18,\"likes\":186,\"views\":4173,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-7\",\"name\":\"苹果不是平凡的水果\",\"handle\":\"@anappleaday\",\"replyTo\":\"@ddori252\",\"body\":\"但他和ses是不是有点不一样\",\"comments\":19,\"likes\":231,\"views\":3166,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-8\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@anappleaday\",\"body\":\"无可奉告！反正他们说没有\",\"comments\":44,\"likes\":377,\"views\":4371,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-9\",\"name\":\"厨师长Minttt\",\"handle\":\"@chefmint\",\"replyTo\":\"@ddori252\",\"body\":\"很耐人寻味的无可奉告...\",\"comments\":14,\"likes\":288,\"views\":4161,\"date\":\"2024/02/24\"}]"
-        }
-      },
-      {
         "id": "x-feb24-ddeongchan-001",
         "title": "果然练歌房要和昭熙一起去",
         "body": "果然练歌房要和昭熙一起去",
@@ -656,6 +624,38 @@
           "views": "341",
           "commentCount": "15",
           "imagePending": "true"
+        }
+      },
+      {
+        "id": "x-feb24-ddori-001",
+        "title": "谁要害我...",
+        "body": "谁要害我...",
+        "sender": "또리",
+        "time": "2024/02/24",
+        "kind": "post",
+        "likes": 66,
+        "comments": [],
+        "meta": {
+          "handle": "@ddori252",
+          "views": "431",
+          "commentCount": "52"
+        }
+      },
+      {
+        "id": "x-feb24-confession-6692",
+        "title": "[confession] open line_6692",
+        "body": "[confession] open line_6692\n\n这两位也谈了吗？",
+        "sender": "有江国立大接线中...",
+        "time": "06:13 下午 · 24 2月 24",
+        "kind": "post",
+        "likes": 386,
+        "comments": [],
+        "meta": {
+          "handle": "@ynu_confessions",
+          "views": "3,975",
+          "commentCount": "242",
+          "imagePending": "true",
+          "repliesData": "[{\"id\":\"feb24-confession-reply-1\",\"name\":\"周休七日\",\"handle\":\"@holidayeveryday\",\"replyTo\":\"@ynu_confessions\",\"body\":\"男神是这样的人吗 o.o\",\"comments\":26,\"likes\":122,\"views\":3521,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-2\",\"name\":\"我睡了 可以不回我消息\",\"handle\":\"@donotdisturb\",\"replyTo\":\"@holidayeveryday\",\"body\":\"郑成灿要谈几个🤨\",\"comments\":26,\"likes\":53,\"views\":3521,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-3\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@donotdisturb\",\"body\":\"澄清!! 没有在谈!!!!!\",\"comments\":63,\"likes\":485,\"views\":3462,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-4\",\"name\":\"面包重度依赖\",\"handle\":\"@breadluv\",\"replyTo\":\"@ddori252\",\"body\":\"那是在搞暧昧吗？我不介意男神同时和好几个人搞暧昧，我也想加入！\",\"comments\":39,\"likes\":217,\"views\":3411,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-5\",\"name\":\"冷脸不是不开心\",\"handle\":\"@sohappyhappy\",\"replyTo\":\"@breadluv\",\"body\":\"什么啊，只能说明郑成灿和ses也没有什么，搞什么暧昧啊\",\"comments\":20,\"likes\":219,\"views\":4268,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-6\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@sohappyhappy\",\"body\":\"总算有个聪明人了\",\"comments\":18,\"likes\":186,\"views\":4173,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-7\",\"name\":\"苹果不是平凡的水果\",\"handle\":\"@anappleaday\",\"replyTo\":\"@ddori252\",\"body\":\"但他和ses是不是有点不一样\",\"comments\":19,\"likes\":231,\"views\":3166,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-8\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@anappleaday\",\"body\":\"无可奉告！反正他们说没有\",\"comments\":44,\"likes\":377,\"views\":4371,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-9\",\"name\":\"厨师长Minttt\",\"handle\":\"@chefmint\",\"replyTo\":\"@ddori252\",\"body\":\"很耐人寻味的无可奉告...\",\"comments\":14,\"likes\":288,\"views\":4161,\"date\":\"2024/02/24\"}]"
         }
       },
       {
