@@ -990,8 +990,8 @@
           "album": "버스커 버스커 1집",
           "duration": "04:20",
           "source": "用户截图",
-          "audioStatus": "待上传到 public/audio",
-          "audioFile": "/audio/01.m4a"
+          "audioStatus": "已上传",
+          "audioFile": "/%E6%A8%B1%E8%8A%B1%E7%BB%93%E5%B1%80%E1%84%87%E1%85%A5%E1%86%BD%E1%84%81%E1%85%A9%E1%86%BE%20%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%83%E1%85%B5%E1%86%BC.m4a"
         }
       },
       {
@@ -1007,8 +1007,8 @@
           "album": "RISE",
           "duration": "03:49",
           "source": "用户截图",
-          "audioStatus": "待上传到 public/audio",
-          "audioFile": "/audio/02.m4a"
+          "audioStatus": "已上传",
+          "audioFile": "/%E7%9C%BC%E9%BC%BB%E5%98%B4%E1%84%82%E1%85%AE%E1%86%AB%2C%20%E1%84%8F%E1%85%A9%2C%20%E1%84%8B%E1%85%B5%E1%86%B8.m4a"
         }
       },
       {
@@ -1024,8 +1024,8 @@
           "album": "봄봄봄（Bom Bom Bom）",
           "duration": "03:26",
           "source": "用户截图",
-          "audioStatus": "待上传到 public/audio",
-          "audioFile": "/audio/03.m4a"
+          "audioStatus": "已上传",
+          "audioFile": "/bombombom%20%E1%84%87%E1%85%A9%E1%86%B7%E1%84%87%E1%85%A9%E1%86%B7%E1%84%87%E1%85%A9%E1%86%B7.m4a"
         }
       },
       {
@@ -1041,8 +1041,8 @@
           "album": "double take",
           "duration": "02:51",
           "source": "用户截图",
-          "audioStatus": "待上传到 public/audio",
-          "audioFile": "/audio/04.m4a"
+          "audioStatus": "已上传",
+          "audioFile": "/double%20take.m4a"
         }
       },
       {
@@ -1058,8 +1058,8 @@
           "album": "Santa Tell Me",
           "duration": "03:24",
           "source": "用户截图",
-          "audioStatus": "待上传到 public/audio",
-          "audioFile": "/audio/05.m4a"
+          "audioStatus": "已上传",
+          "audioFile": "/Santa%20tell%20me.m4a"
         }
       },
       {
