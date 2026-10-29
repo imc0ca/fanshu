@@ -441,3 +441,15 @@
   object-position: center;
   border-radius: 12px;
 }
+
+/* Round both outside edges of two-photo X galleries. */
+.x-post-photo-gallery[data-photo-count="2"] {
+  overflow: hidden;
+  border-radius: 14px;
+}
+.x-post-photo-gallery[data-photo-count="2"] img:first-child {
+  border-radius: 14px 0 0 14px;
+}
+.x-post-photo-gallery[data-photo-count="2"] img:last-child {
+  border-radius: 0 14px 14px 0;
+}
