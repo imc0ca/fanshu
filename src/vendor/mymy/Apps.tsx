@@ -160,7 +160,7 @@ export function MymyKakao(p: SkinProps) {
                 </div>
                 </div>
               );
-            })
+            })}
             {!messages.length && <Blank />}
           </div>
           <form
