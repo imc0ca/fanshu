@@ -2478,15 +2478,15 @@
         "id": "kkt-dongchan-20230511-22",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "[图片]",
+        "body": "[图片待上传]",
         "time": "2023-05-11 08:16",
-        "kind": "image",
-        "media": "/kkt-images/kkt-dongchan-20230511-0816.jpg",
+        "kind": "text",
         "outgoing": true,
         "meta": {
           "dateLabel": "Thursday, May 11, 2023",
           "chatDate": "2023-05-11",
-          "contact": "咚灿"
+          "contact": "咚灿",
+          "pendingImagePath": "kkt-images/kkt-dongchan-20230511-0816.jpg"
         }
       },
       {
