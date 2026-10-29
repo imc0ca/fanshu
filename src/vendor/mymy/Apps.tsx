@@ -24,6 +24,8 @@ import {
   Smile,
   Menu,
   Compass,
+  PhoneMissed,
+  Video,
 } from "lucide-react";
 import type { SkinProps } from "../../AppSkins";
 import { Avatar, Media, xAvatarSrc, XPostGallery } from "../../skins/shared";
@@ -123,7 +125,7 @@ export function MymyKakao(p: SkinProps) {
               const prevDate = prev ? (prev.meta?.chatDate || prev.time.slice(0, 10)) : "";
               return (
                 <div key={m.id} className="kkt-dated-message">
-                  {chatDate !== prevDate && (
+                  {chatDate !== prevDate && m.meta?.hideDateHeading !== "true" && (
                     <div className="kkt-date-heading">{m.meta?.dateLabel || chatDate}</div>
                   )}
                 <div
@@ -152,7 +154,20 @@ export function MymyKakao(p: SkinProps) {
                     className={"kzbub" + (m.media ? " kzimg" : "")}
                     onClick={() => m.meta.local !== "true" && read(p, m)}
                   >
-                    {m.media ? <Media item={m} /> : m.body}
+                    {m.meta?.pendingImagePath ? (
+                      <img
+                        className="kkt-uploaded-photo"
+                        src={`${import.meta.env.BASE_URL}${m.meta.pendingImagePath}`}
+                        alt={m.outgoing ? "宋小鱼发送的照片" : "咚灿发送的照片"}
+                        loading="lazy"
+                        onError={(e) => { e.currentTarget.style.display = "none"; }}
+                      />
+                    ) : m.meta?.callType ? (
+                      <span className="kkt-missed-call">
+                        {m.meta.callType === "video" ? <Video size={21} /> : <PhoneMissed size={21} />}
+                        <span>{m.meta.callType === "video" ? "视频通话" : "语音通话"}<small>未接通</small></span>
+                      </span>
+                    ) : m.media ? <Media item={m} /> : m.body}
                   </button>
                   {!m.outgoing && run.last && (
                     <span className="kzt">{m.time.slice(-5)}</span>
