@@ -230,53 +230,8 @@
       "icon": ""
     }
   ],
-  "contacts": [
-    {
-      "id": "test-contact",
-      "name": "测试联系人",
-      "phone": "",
-      "bio": "这是一条测试内容。"
-    }
-  ],
-  "chats": [
-    {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-kakao",
-      "app": "kakao",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        },
-        {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
-          "senderId": "owner"
-        }
-      ]
-    }
-  ],
+  "contacts": [],
+  "chats": [],
   "content": {
     "phone": [],
     "photos": [],
@@ -539,8 +494,8 @@
       },
       {
         "id": "x-feb24-ddeongchan-001",
-        "title": "果然练歌房要和昭熙一起去",
-        "body": "果然练歌房要和昭熙一起去",
+        "title": "果然练歌房要和炤熙一起去",
+        "body": "果然练歌房要和炤熙一起去",
         "sender": "ddeongchan",
         "time": "2024/02/24",
         "kind": "post",
@@ -7452,7 +7407,7 @@
         "id": "kkt-dongchan-20231012-05",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "昭熙发我的",
+        "body": "炤熙发我的",
         "time": "2023-10-12 19:19",
         "kind": "text",
         "outgoing": true,
