@@ -86,7 +86,7 @@ export function SearchBox({
 }
 export function xAvatarSrc(handle: string): string {
   const key = handle.trim().replace(/^@+/, "").toLowerCase();
-  return key ? `/fanshu/x-avatars/${encodeURIComponent(key)}.jpg` : "";
+  return key ? `https://raw.githubusercontent.com/imc0ca/fanshu/main/public/x-avatars/${encodeURIComponent(key)}.jpg` : "";
 }
 export function Avatar({
   name,
@@ -108,7 +108,15 @@ export function Avatar({
           src={image}
           alt={`${name}的头像`}
           loading="eager"
-          onError={() => setFailedSrc(image)}
+          onError={(e) => {
+            const local = image.match(/\/x-avatars\/([^/?#]+\.jpg)/)?.[1];
+            if (local && image.startsWith("https://raw.githubusercontent.com/")) {
+              e.currentTarget.src = `/fanshu/x-avatars/${local}`;
+              e.currentTarget.onerror = () => setFailedSrc(image);
+            } else {
+              setFailedSrc(image);
+            }
+          }}
         />
       ) : (
         name.slice(0, 1) || "人"
