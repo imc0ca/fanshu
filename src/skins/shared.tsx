@@ -91,7 +91,7 @@ export function SearchBox({
 }
 export function xAvatarSrc(handle: string): string {
   const key = handle.trim().replace(/^@+/, "").toLowerCase();
-  return xAvatarImages[key] ?? "";
+  return xAvatarImages[key] ?? (key === "ynu_confessions" ? xAvatarImages["ynu_confession"] : "") ?? "";
 }
 export function Avatar({
   name,
