@@ -670,3 +670,27 @@
   border-radius: 10px;
   margin: 0;
 }
+
+
+/* KKT call messages: white cards with correct voice/video icons and status. */
+.mymy-kakao .kzm .kzbub.kkt-call-only,
+.mymy-kakao .kzm.kzmy .kzbub.kkt-call-only,
+.mymy-kakao .kzm.kzot .kzbub.kkt-call-only {
+  background: #fff !important;
+  color: #202124 !important;
+  border: 0 !important;
+  border-radius: 17px !important;
+  box-shadow: none !important;
+  padding: 12px 15px !important;
+  min-width: 174px;
+}
+.mymy-kakao .kzbub.kkt-call-only::before,
+.mymy-kakao .kzbub.kkt-call-only::after { display:none !important; content:none !important; }
+.kkt-call-card { display:flex; align-items:center; gap:14px; text-align:left; }
+.kkt-call-icon { color:#00bf50; display:flex; align-items:center; justify-content:center; flex:none; }
+.kkt-call-icon.is-missed { color:#92989b; }
+.kkt-call-copy { display:flex; flex-direction:column; gap:2px; line-height:1.25; }
+.kkt-call-copy strong { color:#202124; font-size:15px; font-weight:500; }
+.kkt-call-copy small { color:#8b9297; font-size:12px; }
+.kkt-missing-photo { display:block; padding:12px 16px; border-radius:9px; background:rgba(255,255,255,.8); color:#57636c; font-size:13px; line-height:1.4; }
+.mymy-kakao .kkt-photo-only:has(.kkt-missing-photo) { line-height:normal !important; }
