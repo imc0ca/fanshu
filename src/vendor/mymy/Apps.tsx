@@ -26,7 +26,7 @@ import {
   Compass,
 } from "lucide-react";
 import type { SkinProps } from "../../AppSkins";
-import { Avatar, Media } from "../../skins/shared";
+import { Avatar, Media, xAvatarSrc } from "../../skins/shared";
 import { useSkinState } from "../../skinState";
 import { makeItem, type Item } from "../../schema";
 import "./ui.css";
@@ -694,7 +694,7 @@ export function MymyX(p: SkinProps) {
             .filter((i) => (i.title + i.body).includes(query))
             .map((i) => (
               <article className="kzxt" key={i.id}>
-                <Avatar name={i.sender} src={i.avatar} />
+                <Avatar name={i.sender} src={xAvatarSrc(String(i.meta?.handle || "")) || i.avatar} />
                 <div className="kzxb">
                   <div className="kzxn">
                     <b>{i.sender}</b>
