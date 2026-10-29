@@ -26,7 +26,7 @@ import {
   Compass,
 } from "lucide-react";
 import type { SkinProps } from "../../AppSkins";
-import { Avatar, Media, xAvatarSrc } from "../../skins/shared";
+import { Avatar, Media, xAvatarSrc, XPostGallery } from "../../skins/shared";
 import { useSkinState } from "../../skinState";
 import { makeItem, type Item } from "../../schema";
 import "./ui.css";
@@ -714,6 +714,7 @@ export function MymyX(p: SkinProps) {
                   >
                     {i.body}
                   </button>
+                  <XPostGallery item={i} />
                   {i.media && (
                     <button
                       className="kzxv"
