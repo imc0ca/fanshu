@@ -151,7 +151,7 @@ export function MymyKakao(p: SkinProps) {
                     </span>
                   )}
                   <button
-                    className={"kzbub" + (m.media ? " kzimg" : "")}
+                    className={"kzbub" + (m.media ? " kzimg" : "") + (m.meta?.pendingImagePath ? " kkt-photo-only" : "")}
                     onClick={() => m.meta.local !== "true" && read(p, m)}
                   >
                     {m.meta?.pendingImagePath ? (
