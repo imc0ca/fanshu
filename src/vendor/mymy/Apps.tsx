@@ -100,8 +100,8 @@ export function MymyKakao(p: SkinProps) {
     scroll = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const node = scroll.current;
-    if (node) node.scrollTop = node.scrollHeight;
-  }, [p.thread, messages.length]);
+    if (node) node.scrollTop = 0;
+  }, [p.thread]);
   return (
     <div className="mymy-ui mymy-kakao" data-mymy="kakao">
       {p.thread ? (
@@ -118,9 +118,15 @@ export function MymyKakao(p: SkinProps) {
           <div className="msgs kk" ref={scroll}>
             {messages.map((m, i) => {
               const run = messageRun(messages, i);
+              const chatDate = m.meta?.chatDate || m.time.slice(0, 10);
+              const prev = messages[i - 1];
+              const prevDate = prev ? (prev.meta?.chatDate || prev.time.slice(0, 10)) : "";
               return (
+                <div key={m.id} className="kkt-dated-message">
+                  {chatDate !== prevDate && (
+                    <div className="kkt-date-heading">{m.meta?.dateLabel || chatDate}</div>
+                  )}
                 <div
-                  key={m.id}
                   className={
                     "kzm " +
                     (m.outgoing ? "kzmy" : "kzot") +
@@ -152,8 +158,9 @@ export function MymyKakao(p: SkinProps) {
                     <span className="kzt">{m.time.slice(-5)}</span>
                   )}
                 </div>
+                </div>
               );
-            })}
+            })
             {!messages.length && <Blank />}
           </div>
           <form
@@ -270,7 +277,7 @@ export function MymyKakao(p: SkinProps) {
                     key={g.title}
                     onClick={() => p.onThread(g.title)}
                   >
-                    <Avatar name={last.sender || g.title} src={last.avatar} />
+                    <Avatar name={g.title} src={g.items.find((m) => !m.outgoing)?.avatar || last.avatar} />
                     <span className="kzkn">
                       <b>{g.title}</b>
                       <small>{tab === "好友" ? last.sender : last.body}</small>
