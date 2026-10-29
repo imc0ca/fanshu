@@ -25,7 +25,9 @@ import {
   Menu,
   Compass,
   PhoneMissed,
+  Phone,
   Video,
+  VideoOff,
 } from "lucide-react";
 import type { SkinProps } from "../../AppSkins";
 import { Avatar, Media, xAvatarSrc, XPostGallery } from "../../skins/shared";
@@ -62,6 +64,35 @@ function Back({ onClick }: { onClick: () => void }) {
     <button aria-label="返回" onClick={onClick}>
       <ArrowLeft size={22} />
     </button>
+  );
+}
+function KktPhoto({ path, outgoing }: { path: string; outgoing: boolean }) {
+  const [failed, setFailed] = useState(false);
+  return failed ? (
+    <span className="kkt-missing-photo">📷 图片待上传</span>
+  ) : (
+    <img
+      className="kkt-uploaded-photo"
+      src={`${import.meta.env.BASE_URL}${path.replace(/^\\/+/, "")}`}
+      alt={outgoing ? "宋小鱼发送的照片" : "联系人发送的照片"}
+      loading="lazy"
+      onError={() => setFailed(true)}
+    />
+  );
+}
+function KktCallCard({ type, missed }: { type: string; missed: boolean }) {
+  const video = type === "video";
+  const Glyph = video ? (missed ? VideoOff : Video) : (missed ? PhoneMissed : Phone);
+  return (
+    <span className="kkt-call-card">
+      <span className={"kkt-call-icon" + (missed ? " is-missed" : "")}>
+        <Glyph size={23} strokeWidth={2} />
+      </span>
+      <span className="kkt-call-copy">
+        <strong>{video ? "Video Call" : "Voice Call"}</strong>
+        <small>{missed ? "Missed Call" : "Call"}</small>
+      </span>
+    </span>
   );
 }
 export function MymyKakao(p: SkinProps) {
@@ -151,22 +182,13 @@ export function MymyKakao(p: SkinProps) {
                     </span>
                   )}
                   <button
-                    className={"kzbub" + (m.media ? " kzimg" : "") + (m.meta?.pendingImagePath ? " kkt-photo-only" : "")}
+                    className={"kzbub" + (m.media ? " kzimg" : "") + (m.meta?.pendingImagePath ? " kkt-photo-only" : "") + (m.meta?.callType ? " kkt-call-only" : "")}
                     onClick={() => m.meta.local !== "true" && read(p, m)}
                   >
                     {m.meta?.pendingImagePath ? (
-                      <img
-                        className="kkt-uploaded-photo"
-                        src={`${import.meta.env.BASE_URL}${m.meta.pendingImagePath}`}
-                        alt={m.outgoing ? "宋小鱼发送的照片" : "咚灿发送的照片"}
-                        loading="lazy"
-                        onError={(e) => { e.currentTarget.style.display = "none"; }}
-                      />
+                      <KktPhoto path={m.meta.pendingImagePath} outgoing={!!m.outgoing} />
                     ) : m.meta?.callType ? (
-                      <span className="kkt-missed-call">
-                        {m.meta.callType === "video" ? <Video size={21} /> : <PhoneMissed size={21} />}
-                        <span>{m.meta.callType === "video" ? "视频通话" : "语音通话"}<small>未接通</small></span>
-                      </span>
+                      <KktCallCard type={m.meta.callType} missed={m.meta.callStatus !== "completed"} />
                     ) : m.media ? <Media item={m} /> : m.body}
                   </button>
                   {!m.outgoing && run.last && (
