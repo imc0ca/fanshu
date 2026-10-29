@@ -1,3 +1,8 @@
+import { xAvatarChunk0 } from "./xAvatarChunk0";
+import { xAvatarChunk1 } from "./xAvatarChunk1";
+import { xAvatarChunk2 } from "./xAvatarChunk2";
+import { xAvatarChunk3 } from "./xAvatarChunk3";
+const xAvatarImages: Record<string,string> = { ...xAvatarChunk0, ...xAvatarChunk1, ...xAvatarChunk2, ...xAvatarChunk3 };
 import {
   ChevronLeft,
   ChevronRight,
@@ -86,7 +91,7 @@ export function SearchBox({
 }
 export function xAvatarSrc(handle: string): string {
   const key = handle.trim().replace(/^@+/, "").toLowerCase();
-  return key ? `https://raw.githubusercontent.com/imc0ca/fanshu/main/public/x-avatars/${encodeURIComponent(key)}.jpg` : "";
+  return xAvatarImages[key] ?? "";
 }
 export function Avatar({
   name,
