@@ -534,15 +534,33 @@ export function MailSkin(p: Props) {
   );
 }
 export function ClockSkin(p: Props) {
-  const { tab, setTab, items } = useContent(p, "闹钟");
-  const [enabled, setEnabled] = useSkinState<string[]>(p, "alarms", []),
-    [seconds, setSeconds] = useState(0),
-    [running, setRunning] = useState(false);
+  const [tab, setTab] = useState("世界时钟");
+  const [enabled, setEnabled] = useSkinState<string[]>(p, "alarms-v2", ["wake-0830"]);
+  const [seconds, setSeconds] = useState(0);
+  const [running, setRunning] = useState(false);
+  const [now, setNow] = useState(() => new Date());
+  useEffect(() => {
+    const timer = setInterval(() => setNow(new Date()), 60000);
+    return () => clearInterval(timer);
+  }, []);
   useEffect(() => {
     if (!running) return;
     const timer = setInterval(() => setSeconds((s) => s + 1), 1000);
     return () => clearInterval(timer);
   }, [running]);
+  const cities = [
+    { id: "tokyo", name: "东京", zone: "Asia/Tokyo" },
+    { id: "paris", name: "巴黎", zone: "Europe/Paris" },
+    { id: "new-york", name: "纽约 · 美国", zone: "America/New_York" },
+  ];
+  const alarms = [
+    { id: "wake-0830", clock: "08:30", label: "起床" },
+    { id: "depart-1145", clock: "11:45", label: "出发" },
+    { id: "early-0700", clock: "07:00", label: "早起" },
+    { id: "morning-0915", clock: "09:15", label: "上午" },
+    { id: "afternoon-1400", clock: "14:00", label: "提醒" },
+    { id: "evening-1930", clock: "19:30", label: "晚上" },
+  ];
   return (
     <div className="catalog-skin native-clock">
       <Header p={p} />
@@ -550,62 +568,41 @@ export function ClockSkin(p: Props) {
         <h1>{tab}</h1>
         {tab === "秒表" ? (
           <div className="stopwatch">
-            <output>
-              {String(Math.floor(seconds / 60)).padStart(2, "0")}:
-              {String(seconds % 60).padStart(2, "0")}
-            </output>
+            <output>{String(Math.floor(seconds / 60)).padStart(2, "0")}:{String(seconds % 60).padStart(2, "0")}</output>
             <div>
-              <button
-                onClick={() => {
-                  setSeconds(0);
-                  setRunning(false);
-                }}
-              >
-                复位
-              </button>
-              <button onClick={() => setRunning(!running)}>
-                {running ? "暂停" : "开始"}
-              </button>
+              <button onClick={() => { setSeconds(0); setRunning(false); }}>复位</button>
+              <button onClick={() => setRunning(!running)}>{running ? "暂停" : "开始"}</button>
             </div>
           </div>
+        ) : tab === "世界时钟" ? (
+          cities.map((city) => (
+            <div className="alarm-row" key={city.id}>
+              <div className="clock-entry">
+                <time>{new Intl.DateTimeFormat("zh-CN", { timeZone: city.zone, hour: "2-digit", minute: "2-digit", hour12: false }).format(now)}</time>
+                <small>{city.name}</small>
+              </div>
+              <Globe size={25} />
+            </div>
+          ))
         ) : (
-          items.map((i) => (
-            <div className="alarm-row" key={i.id}>
-              <button onClick={() => p.onItem(i)}>
-                <time>{meta(i, "clock", i.time.slice(-5))}</time>
-                <small>
-                  {tab === "世界时钟" ? meta(i, "city", i.title) : i.title}
-                </small>
-              </button>
-              {tab === "闹钟" ? (
-                <button
-                  role="switch"
-                  aria-label={`闹钟${i.title}`}
-                  aria-checked={enabled.includes(i.id)}
-                  className={`native-switch ${enabled.includes(i.id) ? "on" : ""}`}
-                  onClick={() =>
-                    setEnabled(
-                      enabled.includes(i.id)
-                        ? enabled.filter((x) => x !== i.id)
-                        : [...enabled, i.id],
-                    )
-                  }
-                >
-                  <span />
-                </button>
-              ) : (
-                <Clock size={35} />
-              )}
+          alarms.map((alarm) => (
+            <div className="alarm-row" key={alarm.id}>
+              <div className="clock-entry">
+                <time>{alarm.clock}</time>
+                <small>{alarm.label}</small>
+              </div>
+              <button
+                role="switch"
+                aria-label={`闹钟${alarm.clock} ${alarm.label}`}
+                aria-checked={enabled.includes(alarm.id)}
+                className={`native-switch ${enabled.includes(alarm.id) ? "on" : ""}`}
+                onClick={() => setEnabled(enabled.includes(alarm.id) ? enabled.filter((id) => id !== alarm.id) : [...enabled, alarm.id])}
+              ><span /></button>
             </div>
           ))
         )}
       </div>
-      <Tabs
-        tabs={["世界时钟", "闹钟", "秒表"]}
-        value={tab}
-        set={setTab}
-        icons={[<Globe />, <Clock />, <Clock />]}
-      />
+      <Tabs tabs={["世界时钟", "闹钟", "秒表"]} value={tab} set={setTab} icons={[<Globe />, <Clock />, <Clock />]} />
     </div>
   );
 }
