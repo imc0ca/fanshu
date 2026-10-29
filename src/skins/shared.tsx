@@ -129,6 +129,22 @@ export function Avatar({
     </span>
   );
 }
+export function XPostGallery({ item }: { item: Item }) {
+  const photos = (item.meta?.postImages || "").split("|").filter(Boolean);
+  if (!photos.length) return null;
+  return (
+    <div className="x-post-photo-gallery" data-photo-count={photos.length}>
+      {photos.map((path, index) => (
+        <img
+          key={path}
+          src={`${import.meta.env.BASE_URL}${path.replace(/^\\/+/, "")}`}
+          alt={`推文照片 ${index + 1}`}
+          loading="lazy"
+        />
+      ))}
+    </div>
+  );
+}
 export function Media({
   item,
   className = "",
