@@ -628,3 +628,18 @@
   width: 25px;
   height: 25px;
 }
+
+/* Keep Kakao's existing message positioning while showing a date before each day. */
+.kkt-dated-message { display: contents; }
+.kkt-date-heading {
+  width: fit-content;
+  max-width: 90%;
+  align-self: center;
+  margin: 16px auto 18px;
+  padding: 6px 13px;
+  border-radius: 16px;
+  background: rgba(0,0,0,.12);
+  color: rgba(30,40,50,.7);
+  font-size: 12px;
+  text-align: center;
+}
