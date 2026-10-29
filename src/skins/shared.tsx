@@ -137,7 +137,7 @@ export function XPostGallery({ item }: { item: Item }) {
       {photos.map((path, index) => (
         <img
           key={path}
-          src={`${import.meta.env.BASE_URL}${path.replace(/^\\/+/, "")}`}
+          src={`${import.meta.env.BASE_URL}${path}`}
           alt={`推文照片 ${index + 1}`}
           loading="lazy"
         />
