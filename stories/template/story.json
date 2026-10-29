@@ -6422,30 +6422,32 @@
       {
         "id": "kkt-dongchan-20230812-47",
         "title": "咚灿",
-        "sender": "송아지",
+        "sender": "덜떵찬",
         "body": "📷 图片待上传",
         "time": "2023-08-12 14:37",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "dateLabel": "Saturday, August 12, 2023",
           "chatDate": "2023-08-12",
           "contact": "咚灿",
-          "pendingImagePath": "kkt-images/kkt-dongchan-20230812-1437.png"
+          "pendingImagePath": "kkt-images/kkt-dongchan-20230812-1437.png",
+          "displaySender": "덜떵찬"
         }
       },
       {
         "id": "kkt-dongchan-20230812-48",
         "title": "咚灿",
-        "sender": "송아지",
+        "sender": "덜떵찬",
         "body": "你也像玩水的小狗",
         "time": "2023-08-12 14:37",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "dateLabel": "Saturday, August 12, 2023",
           "chatDate": "2023-08-12",
-          "contact": "咚灿"
+          "contact": "咚灿",
+          "displaySender": "덜떵찬"
         }
       },
       {
