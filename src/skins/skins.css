@@ -833,6 +833,19 @@
   padding: 0;
   gap: 6px;
 }
+.alarm-row > .clock-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.native-clock .catalog-scroll {
+  background: #050505;
+  color: #eee;
+}
+.native-clock .catalog-scroll > h1 {
+  color: #fff;
+}
 .alarm-row time {
   font-size: 43px;
   line-height: 1;
