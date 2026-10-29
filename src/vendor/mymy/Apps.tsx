@@ -73,7 +73,7 @@ function KktPhoto({ path, outgoing }: { path: string; outgoing: boolean }) {
   ) : (
     <img
       className="kkt-uploaded-photo"
-      src={`${import.meta.env.BASE_URL}${path.replace(/^\\/+/, "")}`}
+      src={`${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`}
       alt={outgoing ? "宋小鱼发送的照片" : "联系人发送的照片"}
       loading="lazy"
       onError={() => setFailed(true)}
