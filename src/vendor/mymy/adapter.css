@@ -643,3 +643,10 @@
   font-size: 12px;
   text-align: center;
 }
+
+/* KakaoTalk-style photo messages and missed call cards */
+.kkt-uploaded-photo { display:block; width:min(220px, 56vw); max-height:310px; object-fit:cover; border-radius:9px; }
+.kkt-missed-call { display:flex; align-items:center; gap:10px; min-width:145px; text-align:left; }
+.kkt-missed-call svg { color:#d95858; flex-shrink:0; }
+.kkt-missed-call span { display:flex; flex-direction:column; gap:3px; font-size:13px; }
+.kkt-missed-call small { color:#d95858; font-size:12px; }
