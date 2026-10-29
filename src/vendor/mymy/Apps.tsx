@@ -138,7 +138,7 @@ export function MymyKakao(p: SkinProps) {
                       <div className="kzmav">
                         <Avatar name={m.sender} src={m.avatar} />
                       </div>
-                      <div className="kzmn">{m.sender}</div>
+                      <div className="kzmn">{m.meta?.displaySender || m.sender}</div>
                     </>
                   )}
                   {m.outgoing && run.last && (
