@@ -650,3 +650,23 @@
 .kkt-missed-call svg { color:#d95858; flex-shrink:0; }
 .kkt-missed-call span { display:flex; flex-direction:column; gap:3px; font-size:13px; }
 .kkt-missed-call small { color:#d95858; font-size:12px; }
+
+/* Image messages are photos, not yellow or white text bubbles. */
+.kzm .kzbub.kkt-photo-only,
+.kzm.kzmy .kzbub.kkt-photo-only,
+.kzm.kzot .kzbub.kkt-photo-only {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  line-height: 0;
+}
+.kzm .kzbub.kkt-photo-only::before,
+.kzm .kzbub.kkt-photo-only::after { display: none !important; content: none !important; }
+.kzm .kkt-photo-only .kkt-uploaded-photo {
+  display: block;
+  border-radius: 10px;
+  margin: 0;
+}
