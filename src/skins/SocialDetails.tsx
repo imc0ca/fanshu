@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import { useSkinState } from "../skinState";
 import { RichText } from "../RichText";
-import { Avatar, Media, meta, xAvatarSrc } from "./shared";
+import { Avatar, Media, meta, xAvatarSrc, XPostGallery } from "./shared";
 import type { Item, UiValue } from "../schema";
 import "./social-details.css";
 export const socialDetailApps = new Set(["twitter", "weibo"]);
@@ -168,6 +168,7 @@ export function SocialDetail(p: {
         </div>
         <div className="post-detail-body">
           <RichText value={item.richText} fallback={item.body} />
+          {!weibo && <XPostGallery item={item} />}
           {item.media && <Media item={item} />}
         </div>
         {weibo ? (
