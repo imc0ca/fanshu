@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 37,
+  "revision": 38,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -9535,16 +9535,16 @@
       {
         "id": "kkt-dongchan-20240119-19",
         "title": "咚灿",
-        "sender": "덜떵찬",
+        "sender": "송아지",
         "body": "",
         "time": "2024-01-19 18:11",
         "kind": "image",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "dateLabel": "Friday, January 19, 2024",
           "chatDate": "2024-01-19",
           "contact": "咚灿",
-          "displaySender": "덜떵찬"
+          "displaySender": "송아지"
         },
         "media": "/kkt-images/kkt-20240119-01.png"
       },
@@ -10362,12 +10362,12 @@
       {
         "id": "kkt-dongchan-20240224-photo-02",
         "title": "咚灿",
-        "sender": "송아지",
+        "sender": "덜떵찬",
         "body": "",
         "time": "2024-02-24 19:08",
         "kind": "image",
         "media": "/kkt-images/kkt-20240224-02.png",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "dateLabel": "Saturday, February 24, 2024",
           "chatDate": "2024-02-24",
@@ -10783,12 +10783,12 @@
       {
         "id": "kkt-dongchan-20240224-photo-03",
         "title": "咚灿",
-        "sender": "송아지",
+        "sender": "덜떵찬",
         "body": "",
         "time": "2024-02-24 19:14",
         "kind": "image",
         "media": "/kkt-images/kkt-20240224-03.png",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "dateLabel": "Saturday, February 24, 2024",
           "chatDate": "2024-02-24",
@@ -10798,12 +10798,12 @@
       {
         "id": "kkt-dongchan-20240224-photo-04",
         "title": "咚灿",
-        "sender": "송아지",
+        "sender": "덜떵찬",
         "body": "",
         "time": "2024-02-24 19:14",
         "kind": "image",
         "media": "/kkt-images/kkt-20240224-04.png",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "dateLabel": "Saturday, February 24, 2024",
           "chatDate": "2024-02-24",
