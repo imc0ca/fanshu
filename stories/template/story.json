@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 35,
+  "revision": 36,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -10343,6 +10343,20 @@
         }
       },
       {
+        "id": "kkt-dongchan-20240224-text-a5",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "有点看不出来",
+        "time": "2024-02-24 19:08",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-02-24",
+          "dateLabel": "Saturday, February 24, 2024",
+          "contact": "咚灿"
+        }
+      },
+      {
         "id": "kkt-dongchan-20240224-photo-02",
         "title": "咚灿",
         "sender": "송아지",
@@ -10354,20 +10368,6 @@
         "meta": {
           "dateLabel": "Saturday, February 24, 2024",
           "chatDate": "2024-02-24",
-          "contact": "咚灿"
-        }
-      },
-      {
-        "id": "kkt-dongchan-20240224-text-a5",
-        "title": "咚灿",
-        "sender": "송아지",
-        "body": "有点看不出来",
-        "time": "2024-02-24 19:08",
-        "kind": "text",
-        "outgoing": true,
-        "meta": {
-          "chatDate": "2024-02-24",
-          "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
         }
       },
