@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 28,
+  "revision": 29,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -9533,16 +9533,17 @@
         "id": "kkt-dongchan-20240119-19",
         "title": "咚灿",
         "sender": "덜떵찬",
-        "body": "[图片]",
+        "body": "",
         "time": "2024-01-19 18:11",
-        "kind": "text",
+        "kind": "image",
         "outgoing": false,
         "meta": {
           "dateLabel": "Friday, January 19, 2024",
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "media": "/kkt-images/kkt-20240119-01.png"
       },
       {
         "id": "kkt-dongchan-20240119-20",
@@ -10259,15 +10260,16 @@
         "id": "kkt-dongchan-20240131-41",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "[图片]",
+        "body": "",
         "time": "2024-01-31 18:10",
-        "kind": "text",
+        "kind": "image",
         "outgoing": true,
         "meta": {
           "dateLabel": "Wednesday, January 31, 2024",
           "chatDate": "2024-01-31",
           "contact": "咚灿"
-        }
+        },
+        "media": "/kkt-images/kkt-20240131-01.png"
       },
       {
         "id": "kkt-dongchan-20240315-001",
@@ -10492,16 +10494,17 @@
         "id": "kkt-dongchan-20240315-016",
         "title": "咚灿",
         "sender": "덩떵찬",
-        "body": "[图片]",
+        "body": "",
         "time": "2024-03-15 19:30",
-        "kind": "text",
+        "kind": "image",
         "outgoing": false,
         "meta": {
           "dateLabel": "Friday, March 15, 2024",
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "media": "/kkt-images/kkt-20240315-1930.png"
       },
       {
         "id": "kkt-dongchan-20240315-017",
@@ -11324,15 +11327,16 @@
         "id": "kkt-dongchan-20240315-073",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "[图片]",
+        "body": "",
         "time": "2024-03-15 19:39",
-        "kind": "text",
+        "kind": "image",
         "outgoing": true,
         "meta": {
           "dateLabel": "Friday, March 15, 2024",
           "chatDate": "2024-03-15",
           "contact": "咚灿"
-        }
+        },
+        "media": "/kkt-images/kkt-20240315-1939.png"
       },
       {
         "id": "kkt-dongchan-20240315-074",
@@ -12424,15 +12428,16 @@
         "id": "kkt-dongchan-20240321-036",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "[图片]",
+        "body": "",
         "time": "2024-03-21 19:57",
-        "kind": "text",
+        "kind": "image",
         "outgoing": true,
         "meta": {
           "dateLabel": "Thursday, March 21, 2024",
           "chatDate": "2024-03-21",
           "contact": "咚灿"
-        }
+        },
+        "media": "/kkt-images/kkt-20240321-1957.png"
       },
       {
         "id": "kkt-dongchan-20240321-037",
