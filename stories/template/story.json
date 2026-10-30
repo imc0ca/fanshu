@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 39,
+  "revision": 40,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -14918,6 +14918,1116 @@
         "meta": {
           "dateLabel": "Thursday, March 21, 2024",
           "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-001",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "从公司出来了",
+        "time": "2024-04-05 14:27",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-002",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "第一次meeting很简单",
+        "time": "2024-04-05 14:27",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-003",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "来的是上次给我递名片的部长",
+        "time": "2024-04-05 14:28",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-004",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "还有一个人好像是次长",
+        "time": "2024-04-05 14:28",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-005",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "一直在看我然后在记东西",
+        "time": "2024-04-05 14:28",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-006",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "一直看着然后在记录",
+        "time": "2024-04-05 14:28",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-007",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "大概半小时？就结束了",
+        "time": "2024-04-05 14:30",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-008",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "最后给我拍了几张照片",
+        "time": "2024-04-05 14:30",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-009",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "就让我走了",
+        "time": "2024-04-05 14:30",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-010",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "说之后会联系我",
+        "time": "2024-04-05 14:30",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-011",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你觉得这是完蛋了吗",
+        "time": "2024-04-05 14:30",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-012",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "他们公司楼下有个超级大的屏幕",
+        "time": "2024-04-05 14:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-013",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "一直在放艺人的画面",
+        "time": "2024-04-05 14:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-014",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "还挺唬人的呢",
+        "time": "2024-04-05 14:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-015",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你以后也会在这个屏幕上的",
+        "time": "2024-04-05 15:06",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-016",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "所以不会完蛋的",
+        "time": "2024-04-05 15:06",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-017",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "什么啊",
+        "time": "2024-04-05 15:07",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-018",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "有点不像宋恩硕了",
+        "time": "2024-04-05 15:07",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-019",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你到底把我想成什么样的人了",
+        "time": "2024-04-05 15:07",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-020",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "还以为你又要逗我玩",
+        "time": "2024-04-05 15:07",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-021",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "从来没有拿这种事开玩笑",
+        "time": "2024-04-05 15:08",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-022",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不是这个意思",
+        "time": "2024-04-05 15:08",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-023",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你就算又说奇怪的话我也不介意",
+        "time": "2024-04-05 15:08",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-024",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不会在这种时候说奇怪的话",
+        "time": "2024-04-05 15:08",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-025",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "难道以前有过吗",
+        "time": "2024-04-05 15:09",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-026",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "没有 ^^",
+        "time": "2024-04-05 15:09",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-027",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "嗯",
+        "time": "2024-04-05 15:09",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-028",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "今天都问了什么",
+        "time": "2024-04-05 15:09",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-029",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "还决定不了吗",
+        "time": "2024-04-05 15:09",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-030",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "问我的学校专业，读几年级，是不是复学",
+        "time": "2024-04-05 15:09",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-031",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "课多不多，能不能兼顾学校",
+        "time": "2024-04-05 15:09",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-032",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "有没有和家里商量过",
+        "time": "2024-04-05 15:09",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-033",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "有没有SNS",
+        "time": "2024-04-05 15:09",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-034",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我给他们看了ig账号",
+        "time": "2024-04-05 15:10",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-035",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "还问了运动的情况",
+        "time": "2024-04-05 15:10",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-036",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "最后问我有想过演艺圈的工作吗",
+        "time": "2024-04-05 15:11",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-037",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "大概就这些",
+        "time": "2024-04-05 15:11",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-038",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "和想象中不一样",
+        "time": "2024-04-05 15:11",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-039",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "ㅋㅋㅋ 你以为会是什么样",
+        "time": "2024-04-05 15:11",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-040",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不知道",
+        "time": "2024-04-05 15:11",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-041",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "就是感觉",
+        "time": "2024-04-05 15:11",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-042",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "会很吓人",
+        "time": "2024-04-05 15:11",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-043",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "ㅋㅋㅋ 部长还说我比想象中更不紧张",
+        "time": "2024-04-05 15:11",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-044",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你一直都是这样",
+        "time": "2024-04-05 15:11",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-045",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "什么样?",
+        "time": "2024-04-05 15:12",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-046",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "好像什么都不怕",
+        "time": "2024-04-05 15:12",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-047",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "大一刚开学的时候记得吗",
+        "time": "2024-04-05 15:12",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-048",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "足球社的活动",
+        "time": "2024-04-05 15:12",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-049",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "只有你一个新人",
+        "time": "2024-04-05 15:12",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-050",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "每个游戏你都举手说要试试",
+        "time": "2024-04-05 15:12",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-051",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "ㅋㅋㅋㅋ 当时感觉你认生得快要晕过去了",
+        "time": "2024-04-05 15:14",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-052",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "以为你一个人不行才一起去的",
+        "time": "2024-04-05 15:14",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-053",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "结果根本是白担心",
+        "time": "2024-04-05 15:14",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-054",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "可能因为你也在我才那样的",
+        "time": "2024-04-05 15:14",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-055",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "少骗人了",
+        "time": "2024-04-05 15:14",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-056",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "是真的啊",
+        "time": "2024-04-05 15:15",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-057",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你在的话 鬼屋我也可以进去了",
+        "time": "2024-04-05 15:15",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-058",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "还不如不进去呢",
+        "time": "2024-04-05 15:15",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-059",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "耳朵痛死了",
+        "time": "2024-04-05 15:15",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-060",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "^^",
+        "time": "2024-04-05 15:15",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-061",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你当时说",
+        "time": "2024-04-05 15:15",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-062",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "出去之后什么都答应我",
+        "time": "2024-04-05 15:15",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-063",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "嗯",
+        "time": "2024-04-05 15:15",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-064",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "还算数吗",
+        "time": "2024-04-05 15:15",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-065",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "嗯",
+        "time": "2024-04-05 15:16",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-066",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "但是你想做什么从来都是答应你",
+        "time": "2024-04-05 15:16",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-067",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "这个不一样",
+        "time": "2024-04-05 15:16",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-068",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你想要什么",
+        "time": "2024-04-05 15:16",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-069",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "没想好",
+        "time": "2024-04-05 15:16",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-070",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "以后想到了告诉你",
+        "time": "2024-04-05 15:16",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-071",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "到时候不可以拒绝",
+        "time": "2024-04-05 15:16",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240405-072",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "嗯",
+        "time": "2024-04-05 15:17",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240405-073",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "这个也答应你",
+        "time": "2024-04-05 15:17",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Friday, April 5, 2024",
+          "chatDate": "2024-04-05",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
         },
