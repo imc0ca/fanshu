@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 38,
+  "revision": 39,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -1064,7 +1064,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-02",
@@ -1093,7 +1094,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-04",
@@ -1136,7 +1138,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-07",
@@ -1165,7 +1168,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-09",
@@ -1194,7 +1198,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-11",
@@ -1223,7 +1228,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-13",
@@ -1266,7 +1272,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-16",
@@ -1281,7 +1288,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-17",
@@ -1338,7 +1346,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-21",
@@ -1353,7 +1362,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-22",
@@ -1368,7 +1378,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-23",
@@ -1383,7 +1394,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-24",
@@ -1412,7 +1424,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-26",
@@ -1427,7 +1440,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-27",
@@ -1442,7 +1456,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-28",
@@ -1457,7 +1472,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-29",
@@ -1500,7 +1516,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-32",
@@ -1529,7 +1546,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230501-34",
@@ -1572,7 +1590,8 @@
           "chatDate": "2023-05-01",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230507-01",
@@ -1587,7 +1606,8 @@
           "chatDate": "2023-05-07",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230507-02",
@@ -1602,7 +1622,8 @@
           "chatDate": "2023-05-07",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230507-03",
@@ -1645,7 +1666,8 @@
           "chatDate": "2023-05-07",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230507-06",
@@ -1660,7 +1682,8 @@
           "chatDate": "2023-05-07",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230507-07",
@@ -1717,7 +1740,8 @@
           "chatDate": "2023-05-07",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230507-11",
@@ -1746,7 +1770,8 @@
           "chatDate": "2023-05-07",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230507-13",
@@ -1775,7 +1800,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-02",
@@ -1790,7 +1816,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-03",
@@ -1819,7 +1846,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-05",
@@ -1848,7 +1876,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-07",
@@ -1891,7 +1920,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-10",
@@ -1920,7 +1950,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-12",
@@ -1935,7 +1966,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-13",
@@ -1950,7 +1982,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-14",
@@ -1979,7 +2012,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-16",
@@ -2008,7 +2042,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-18",
@@ -2023,7 +2058,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-19",
@@ -2108,7 +2144,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-25",
@@ -2123,7 +2160,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230510-26",
@@ -2138,7 +2176,8 @@
           "chatDate": "2023-05-10",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-01",
@@ -2167,7 +2206,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-03",
@@ -2196,7 +2236,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-05",
@@ -2211,7 +2252,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-06",
@@ -2226,7 +2268,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-07",
@@ -2283,7 +2326,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-11",
@@ -2298,7 +2342,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-12",
@@ -2369,7 +2414,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-17",
@@ -2412,7 +2458,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-20",
@@ -2470,7 +2517,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-24",
@@ -2485,7 +2533,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230511-25",
@@ -2528,7 +2577,8 @@
           "chatDate": "2023-05-11",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-sohee-20230511-01",
@@ -2543,7 +2593,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-02",
@@ -2558,7 +2609,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-03",
@@ -2587,7 +2639,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-05",
@@ -2602,7 +2655,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-06",
@@ -2617,7 +2671,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-07",
@@ -2632,7 +2687,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-08",
@@ -2661,7 +2717,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-10",
@@ -2690,7 +2747,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-12",
@@ -2747,7 +2805,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-16",
@@ -2762,7 +2821,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-17",
@@ -2791,7 +2851,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-19",
@@ -2834,7 +2895,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-22",
@@ -2849,7 +2911,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-23",
@@ -2906,7 +2969,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-27",
@@ -2963,7 +3027,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-31",
@@ -3034,7 +3099,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-36",
@@ -3049,7 +3115,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-37",
@@ -3064,7 +3131,8 @@
           "chatDate": "2023-05-11",
           "contact": "炤熙",
           "displaySender": "ddori"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20230511-38",
@@ -3149,7 +3217,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-02",
@@ -3164,7 +3233,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-03",
@@ -3180,7 +3250,8 @@
           "hideDateHeading": "true",
           "displaySender": "덩떵찬",
           "pendingImagePath": "kkt-images/kkt-dongchan-spider.jpg"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-04",
@@ -3195,7 +3266,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-05",
@@ -3224,7 +3296,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-07",
@@ -3267,7 +3340,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-10",
@@ -3296,7 +3370,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-12",
@@ -3311,7 +3386,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-13",
@@ -3354,7 +3430,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-16",
@@ -3369,7 +3446,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-17",
@@ -3384,7 +3462,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-18",
@@ -3399,7 +3478,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-19",
@@ -3428,7 +3508,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-21",
@@ -3443,7 +3524,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-22",
@@ -3472,7 +3554,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-24",
@@ -3487,7 +3570,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-25",
@@ -3516,7 +3600,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-27",
@@ -3531,7 +3616,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-28",
@@ -3546,7 +3632,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-29",
@@ -3562,7 +3649,8 @@
           "hideDateHeading": "true",
           "displaySender": "덩떵찬",
           "callType": "voice"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-30",
@@ -3577,7 +3665,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-31",
@@ -3593,7 +3682,8 @@
           "hideDateHeading": "true",
           "displaySender": "덩떵찬",
           "callType": "video"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-32",
@@ -3608,7 +3698,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-33",
@@ -3666,7 +3757,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-37",
@@ -3681,7 +3773,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-38",
@@ -3696,7 +3789,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-39",
@@ -3739,7 +3833,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-42",
@@ -3768,7 +3863,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-44",
@@ -3797,7 +3893,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-46",
@@ -3826,7 +3923,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-48",
@@ -3841,7 +3939,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-49",
@@ -3884,7 +3983,8 @@
           "contact": "咚灿",
           "hideDateHeading": "true",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-undated-evening-52",
@@ -3927,7 +4027,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-02",
@@ -3956,7 +4057,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-04",
@@ -3985,7 +4087,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-06",
@@ -4000,7 +4103,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-07",
@@ -4015,7 +4119,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-08",
@@ -4044,7 +4149,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-10",
@@ -4073,7 +4179,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-12",
@@ -4102,7 +4209,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-14",
@@ -4131,7 +4239,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-16",
@@ -4146,7 +4255,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-17",
@@ -4217,7 +4327,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-22",
@@ -4260,7 +4371,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-25",
@@ -4303,7 +4415,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-28",
@@ -4318,7 +4431,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-29",
@@ -4347,7 +4461,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-31",
@@ -4390,7 +4505,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-34",
@@ -4461,7 +4577,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-39",
@@ -4504,7 +4621,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-42",
@@ -4519,7 +4637,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-43",
@@ -4534,7 +4653,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-44",
@@ -4577,7 +4697,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-47",
@@ -4606,7 +4727,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-49",
@@ -4621,7 +4743,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-50",
@@ -4664,7 +4787,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-53",
@@ -4735,7 +4859,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-58",
@@ -4750,7 +4875,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-59",
@@ -4793,7 +4919,8 @@
           "chatDate": "2023-07-13",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230713-62",
@@ -4822,7 +4949,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-02",
@@ -4851,7 +4979,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-04",
@@ -4880,7 +5009,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-06",
@@ -4909,7 +5039,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-08",
@@ -4953,7 +5084,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-11",
@@ -4968,7 +5100,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-12",
@@ -4983,7 +5116,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-13",
@@ -4998,7 +5132,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-14",
@@ -5041,7 +5176,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-17",
@@ -5070,7 +5206,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-19",
@@ -5099,7 +5236,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-21",
@@ -5114,7 +5252,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-22",
@@ -5129,7 +5268,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-23",
@@ -5158,7 +5298,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-25",
@@ -5173,7 +5314,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-26",
@@ -5216,7 +5358,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-29",
@@ -5245,7 +5388,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-31",
@@ -5274,7 +5418,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-33",
@@ -5303,7 +5448,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-35",
@@ -5346,7 +5492,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-38",
@@ -5403,7 +5550,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-42",
@@ -5446,7 +5594,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-45",
@@ -5489,7 +5638,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-48",
@@ -5532,7 +5682,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-51",
@@ -5547,7 +5698,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-52",
@@ -5576,7 +5728,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-54",
@@ -5605,7 +5758,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-56",
@@ -5648,7 +5802,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-59",
@@ -5663,7 +5818,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-60",
@@ -5692,7 +5848,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-62",
@@ -5707,7 +5864,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-63",
@@ -5736,7 +5894,8 @@
           "chatDate": "2023-07-22",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230722-65",
@@ -5779,7 +5938,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-02",
@@ -5794,7 +5954,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-03",
@@ -5823,7 +5984,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-05",
@@ -5838,7 +6000,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-06",
@@ -5881,7 +6044,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-09",
@@ -5926,7 +6090,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-12",
@@ -6026,7 +6191,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-19",
@@ -6055,7 +6221,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-21",
@@ -6098,7 +6265,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-24",
@@ -6127,7 +6295,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-26",
@@ -6142,7 +6311,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-27",
@@ -6157,7 +6327,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-28",
@@ -6186,7 +6357,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-30",
@@ -6229,7 +6401,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-33",
@@ -6258,7 +6431,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-35",
@@ -6287,7 +6461,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-37",
@@ -6359,7 +6534,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-42",
@@ -6402,7 +6578,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-45",
@@ -6446,7 +6623,8 @@
           "contact": "咚灿",
           "pendingImagePath": "kkt-images/kkt-dongchan-20230812-1437.png",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-48",
@@ -6461,7 +6639,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-49",
@@ -6505,7 +6684,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-52",
@@ -6548,7 +6728,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-55",
@@ -6592,7 +6773,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-58",
@@ -6621,7 +6803,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-60",
@@ -6650,7 +6833,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-62",
@@ -6693,7 +6877,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-65",
@@ -6708,7 +6893,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-66",
@@ -6737,7 +6923,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-68",
@@ -6766,7 +6953,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-70",
@@ -6809,7 +6997,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-73",
@@ -6880,7 +7069,8 @@
           "chatDate": "2023-08-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20230812-78",
@@ -6908,7 +7098,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-02",
@@ -6923,7 +7114,8 @@
           "chatDate": "2023-10-12",
           "contact": "炤熙",
           "pendingImagePath": "kkt-images/kkt-sohee-20231012-1911.png"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-03",
@@ -6951,7 +7143,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-05",
@@ -6965,7 +7158,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-06",
@@ -6979,7 +7173,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-07",
@@ -7035,7 +7230,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-11",
@@ -7063,7 +7259,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-13",
@@ -7119,7 +7316,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-17",
@@ -7147,7 +7345,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-19",
@@ -7175,7 +7374,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-21",
@@ -7301,7 +7501,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-30",
@@ -7329,7 +7530,8 @@
           "dateLabel": "Thursday, October 12, 2023",
           "chatDate": "2023-10-12",
           "contact": "炤熙"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
       },
       {
         "id": "kkt-sohee-20231012-32",
@@ -7401,7 +7603,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-04",
@@ -7416,7 +7619,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-05",
@@ -7445,7 +7649,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-07",
@@ -7474,7 +7679,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-09",
@@ -7517,7 +7723,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-12",
@@ -7560,7 +7767,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-15",
@@ -7589,7 +7797,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-17",
@@ -7604,7 +7813,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-18",
@@ -7619,7 +7829,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-19",
@@ -7648,7 +7859,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-21",
@@ -7677,7 +7889,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-23",
@@ -7692,7 +7905,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-24",
@@ -7721,7 +7935,8 @@
           "chatDate": "2023-10-12",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231012-26",
@@ -7794,7 +8009,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-05",
@@ -7823,7 +8039,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-07",
@@ -7866,7 +8083,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-10",
@@ -7895,7 +8113,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-12",
@@ -7910,7 +8129,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-13",
@@ -7939,7 +8159,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-15",
@@ -7968,7 +8189,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-17",
@@ -7997,7 +8219,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-19",
@@ -8012,7 +8235,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-20",
@@ -8041,7 +8265,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-22",
@@ -8084,7 +8309,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-25",
@@ -8099,7 +8325,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-26",
@@ -8114,7 +8341,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-27",
@@ -8129,7 +8357,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-28",
@@ -8186,7 +8415,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-32",
@@ -8215,7 +8445,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-34",
@@ -8244,7 +8475,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-36",
@@ -8274,7 +8506,8 @@
           "contact": "咚灿",
           "displaySender": "덜떵찬"
         },
-        "media": "/kkt-images/kkt-20231024-03.png"
+        "media": "/kkt-images/kkt-20231024-03.png",
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-38",
@@ -8289,7 +8522,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-39",
@@ -8318,7 +8552,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-41",
@@ -8347,7 +8582,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-43",
@@ -8390,7 +8626,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-46",
@@ -8419,7 +8656,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-48",
@@ -8434,7 +8672,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-49",
@@ -8477,7 +8716,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-52",
@@ -8520,7 +8760,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-55",
@@ -8535,7 +8776,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-56",
@@ -8550,7 +8792,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-57",
@@ -8565,7 +8808,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-58",
@@ -8580,7 +8824,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-59",
@@ -8595,7 +8840,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-60",
@@ -8610,7 +8856,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-61",
@@ -8625,7 +8872,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-62",
@@ -8640,7 +8888,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-63",
@@ -8655,7 +8904,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-64",
@@ -8698,7 +8948,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-67",
@@ -8727,7 +8978,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-69",
@@ -8742,7 +8994,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-70",
@@ -8771,7 +9024,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-72",
@@ -8786,7 +9040,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-73",
@@ -8815,7 +9070,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-75",
@@ -8830,7 +9086,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20231024-76",
@@ -8859,7 +9116,8 @@
           "chatDate": "2023-10-24",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-01",
@@ -8902,7 +9160,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-04",
@@ -8917,7 +9176,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-05",
@@ -8946,7 +9206,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-07",
@@ -8961,7 +9222,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-08",
@@ -8990,7 +9252,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-10",
@@ -9005,7 +9268,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-11",
@@ -9034,7 +9298,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-13",
@@ -9077,7 +9342,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-16",
@@ -9092,7 +9358,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-17",
@@ -9107,7 +9374,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-18",
@@ -9122,7 +9390,8 @@
           "chatDate": "2024-01-08",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240108-19",
@@ -9179,7 +9448,8 @@
           "chatDate": "2024-01-16",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240116-02",
@@ -9208,7 +9478,8 @@
           "chatDate": "2024-01-16",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240116-04",
@@ -9223,7 +9494,8 @@
           "chatDate": "2024-01-16",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240116-05",
@@ -9238,7 +9510,8 @@
           "chatDate": "2024-01-16",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240116-06",
@@ -9267,7 +9540,8 @@
           "chatDate": "2024-01-16",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-01",
@@ -9282,7 +9556,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-02",
@@ -9297,7 +9572,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-03",
@@ -9312,7 +9588,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-04",
@@ -9327,7 +9604,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-05",
@@ -9342,7 +9620,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-06",
@@ -9385,7 +9664,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-09",
@@ -9400,7 +9680,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-10",
@@ -9443,7 +9724,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-13",
@@ -9472,7 +9754,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-15",
@@ -9501,7 +9784,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-17",
@@ -9530,7 +9814,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-19",
@@ -9589,7 +9874,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-23",
@@ -9618,7 +9904,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-25",
@@ -9633,7 +9920,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-26",
@@ -9648,7 +9936,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-27",
@@ -9663,7 +9952,8 @@
           "chatDate": "2024-01-19",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240119-28",
@@ -9692,7 +9982,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-02",
@@ -9707,7 +9998,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-03",
@@ -9736,7 +10028,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-05",
@@ -9751,7 +10044,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-06",
@@ -9766,7 +10060,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-07",
@@ -9823,7 +10118,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-11",
@@ -9838,7 +10134,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-12",
@@ -9867,7 +10164,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-14",
@@ -9882,7 +10180,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-15",
@@ -9897,7 +10196,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-16",
@@ -9926,7 +10226,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-18",
@@ -9955,7 +10256,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-20",
@@ -9984,7 +10286,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-22",
@@ -10013,7 +10316,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-24",
@@ -10042,7 +10346,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-26",
@@ -10057,7 +10362,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-27",
@@ -10072,7 +10378,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-28",
@@ -10101,7 +10408,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-30",
@@ -10144,7 +10452,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-33",
@@ -10257,7 +10566,8 @@
           "chatDate": "2024-01-31",
           "contact": "咚灿",
           "displaySender": "덜떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240131-41",
@@ -10315,7 +10625,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a3",
@@ -10329,7 +10640,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a4",
@@ -10343,7 +10655,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a5",
@@ -10372,7 +10685,8 @@
           "dateLabel": "Saturday, February 24, 2024",
           "chatDate": "2024-02-24",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a6",
@@ -10386,7 +10700,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a7",
@@ -10414,7 +10729,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a9",
@@ -10442,7 +10758,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a11",
@@ -10456,7 +10773,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a12",
@@ -10498,7 +10816,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a15",
@@ -10512,7 +10831,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a16",
@@ -10554,7 +10874,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a19",
@@ -10582,7 +10903,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a21",
@@ -10596,7 +10918,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a22",
@@ -10624,7 +10947,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a24",
@@ -10680,7 +11004,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a28",
@@ -10694,7 +11019,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a29",
@@ -10708,7 +11034,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a30",
@@ -10750,7 +11077,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-a33",
@@ -10778,7 +11106,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-photo-03",
@@ -10793,7 +11122,8 @@
           "dateLabel": "Saturday, February 24, 2024",
           "chatDate": "2024-02-24",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-photo-04",
@@ -10808,7 +11138,8 @@
           "dateLabel": "Saturday, February 24, 2024",
           "chatDate": "2024-02-24",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b1",
@@ -10836,7 +11167,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b3",
@@ -10878,7 +11210,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b6",
@@ -10892,7 +11225,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b7",
@@ -10920,7 +11254,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b9",
@@ -10962,7 +11297,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b12",
@@ -10990,7 +11326,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b14",
@@ -11004,7 +11341,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b15",
@@ -11018,7 +11356,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b16",
@@ -11088,7 +11427,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b21",
@@ -11116,7 +11456,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b23",
@@ -11158,7 +11499,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b26",
@@ -11172,7 +11514,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b27",
@@ -11228,7 +11571,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b31",
@@ -11242,7 +11586,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b32",
@@ -11256,7 +11601,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b33",
@@ -11341,7 +11687,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b38",
@@ -11355,7 +11702,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-photo-06",
@@ -11371,7 +11719,8 @@
           "chatDate": "2024-02-24",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b39",
@@ -11413,7 +11762,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b42",
@@ -11427,7 +11777,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b43",
@@ -11441,7 +11792,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b44",
@@ -11483,7 +11835,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b47",
@@ -11511,7 +11864,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b49",
@@ -11539,7 +11893,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b51",
@@ -11567,7 +11922,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b53",
@@ -11595,7 +11951,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b55",
@@ -11637,7 +11994,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b58",
@@ -11651,7 +12009,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b59",
@@ -11665,7 +12024,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240224-text-b60",
@@ -11707,7 +12067,8 @@
           "chatDate": "2024-02-24",
           "dateLabel": "Saturday, February 24, 2024",
           "contact": "咚灿"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-001",
@@ -11722,7 +12083,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-002",
@@ -11737,7 +12099,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-003",
@@ -11752,7 +12115,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-004",
@@ -11767,7 +12131,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-005",
@@ -11796,7 +12161,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-007",
@@ -11825,7 +12191,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-009",
@@ -11840,7 +12207,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-010",
@@ -11869,7 +12237,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-012",
@@ -11898,7 +12267,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-014",
@@ -11942,7 +12312,8 @@
           "contact": "咚灿",
           "displaySender": "덩떵찬"
         },
-        "media": "/kkt-images/kkt-20240315-1930.png"
+        "media": "/kkt-images/kkt-20240315-1930.png",
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-017",
@@ -11957,7 +12328,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-018",
@@ -11972,7 +12344,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-019",
@@ -11987,7 +12360,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-020",
@@ -12016,7 +12390,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-022",
@@ -12045,7 +12420,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-024",
@@ -12060,7 +12436,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-025",
@@ -12075,7 +12452,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-026",
@@ -12090,7 +12468,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-027",
@@ -12105,7 +12484,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-028",
@@ -12120,7 +12500,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-029",
@@ -12135,7 +12516,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-030",
@@ -12150,7 +12532,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-031",
@@ -12165,7 +12548,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-032",
@@ -12194,7 +12578,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-034",
@@ -12279,7 +12664,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-040",
@@ -12294,7 +12680,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-041",
@@ -12323,7 +12710,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-043",
@@ -12338,7 +12726,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-044",
@@ -12353,7 +12742,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-045",
@@ -12396,7 +12786,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-048",
@@ -12453,7 +12844,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-052",
@@ -12468,7 +12860,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-053",
@@ -12483,7 +12876,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-054",
@@ -12498,7 +12892,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-055",
@@ -12527,7 +12922,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-057",
@@ -12542,7 +12938,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-058",
@@ -12571,7 +12968,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-060",
@@ -12600,7 +12998,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-062",
@@ -12643,7 +13042,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-065",
@@ -12686,7 +13086,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-068",
@@ -12701,7 +13102,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-069",
@@ -12744,7 +13146,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-072",
@@ -12759,7 +13162,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240315-073",
@@ -12817,7 +13221,8 @@
           "chatDate": "2024-03-15",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-001",
@@ -12832,7 +13237,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-002",
@@ -12861,7 +13267,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-004",
@@ -12876,7 +13283,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-005",
@@ -12905,7 +13313,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-007",
@@ -12934,7 +13343,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-009",
@@ -12963,7 +13373,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-011",
@@ -12992,7 +13403,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-013",
@@ -13007,7 +13419,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-014",
@@ -13022,7 +13435,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-015",
@@ -13037,7 +13451,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-016",
@@ -13066,7 +13481,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-018",
@@ -13081,7 +13497,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-019",
@@ -13110,7 +13527,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-021",
@@ -13181,7 +13599,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-026",
@@ -13210,7 +13629,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-028",
@@ -13225,7 +13645,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-029",
@@ -13240,7 +13661,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-030",
@@ -13255,7 +13677,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-031",
@@ -13270,7 +13693,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-032",
@@ -13285,7 +13709,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-033",
@@ -13328,7 +13753,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-036",
@@ -13372,7 +13798,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-039",
@@ -13387,7 +13814,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-040",
@@ -13416,7 +13844,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-042",
@@ -13445,7 +13874,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-044",
@@ -13460,7 +13890,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-045",
@@ -13475,7 +13906,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-046",
@@ -13518,7 +13950,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-049",
@@ -13561,7 +13994,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-052",
@@ -13576,7 +14010,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-053",
@@ -13633,7 +14068,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-057",
@@ -13648,7 +14084,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-058",
@@ -13663,7 +14100,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-059",
@@ -13720,7 +14158,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-063",
@@ -13749,7 +14188,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-065",
@@ -13764,7 +14204,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-066",
@@ -13779,7 +14220,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-067",
@@ -13808,7 +14250,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-069",
@@ -13823,7 +14266,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-070",
@@ -13838,7 +14282,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-071",
@@ -13881,7 +14326,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-074",
@@ -13896,7 +14342,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-075",
@@ -13911,7 +14358,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240321-076",
@@ -13926,7 +14374,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-01",
@@ -13955,7 +14404,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-03",
@@ -14040,7 +14490,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-09",
@@ -14083,7 +14534,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-12",
@@ -14182,7 +14634,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-19",
@@ -14239,7 +14692,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-23",
@@ -14268,7 +14722,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-25",
@@ -14297,7 +14752,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-27",
@@ -14312,7 +14768,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-28",
@@ -14341,7 +14798,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-30",
@@ -14370,7 +14828,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-32",
@@ -14399,7 +14858,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-34",
@@ -14414,7 +14874,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-35",
@@ -14443,7 +14904,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-20240319-37",
@@ -14458,7 +14920,8 @@
           "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
-        }
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       }
     ]
   },
