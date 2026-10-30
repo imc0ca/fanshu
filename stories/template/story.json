@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 27,
+  "revision": 28,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -11905,6 +11905,1114 @@
         "meta": {
           "dateLabel": "Tuesday, March 19, 2024",
           "chatDate": "2024-03-19",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-001",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "有事想和你说",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-002",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "什么事",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-003",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "还记得我去训练所的时候把 ig 给你了吗",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-004",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "让你帮我处理一下消息",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-005",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "嗯",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-006",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "当时你说有一些问我接不接广告的",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-007",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "嗯",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-008",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我现在觉得要不要试试？",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-009",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "突然孔雀开屏什么意思",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-010",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "什么啊",
+        "time": "2024-03-21 19:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-011",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "为什么突然想接了",
+        "time": "2024-03-21 19:53",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-012",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不是要接私信找我的那些",
+        "time": "2024-03-21 19:53",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-013",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "昨天我在路上被递名片了",
+        "time": "2024-03-21 19:53",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-014",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "SW Entertainment",
+        "time": "2024-03-21 19:53",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-015",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你听过吧",
+        "time": "2024-03-21 19:53",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-016",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "嗯",
+        "time": "2024-03-21 19:53",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-017",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "说是新人开发部的部长",
+        "time": "2024-03-21 19:54",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-018",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "问我有没有兴趣做模特",
+        "time": "2024-03-21 19:54",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-019",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你这几天好忙啊",
+        "time": "2024-03-21 19:54",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-020",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "什么",
+        "time": "2024-03-21 19:54",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-021",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "前天去给我过生日",
+        "time": "2024-03-21 19:54",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-022",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "昨天被娱乐公司递名片",
+        "time": "2024-03-21 19:54",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-023",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "今天呢 做了什么？",
+        "time": "2024-03-21 19:54",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-024",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "爬山又是什么时候去的",
+        "time": "2024-03-21 19:54",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-025",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你说和灿荣一起吗",
+        "time": "2024-03-21 19:54",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-026",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "嗯 我甚至不是从你这里知道他叫李灿荣",
+        "time": "2024-03-21 19:55",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-027",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "上个周末去的",
+        "time": "2024-03-21 19:55",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-028",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "看他问了半天都没人陪他去",
+        "time": "2024-03-21 19:55",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-029",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "他说是生日愿望",
+        "time": "2024-03-21 19:55",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-030",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "看着那个样子很不忍心 ㅋㅋ",
+        "time": "2024-03-21 19:55",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-031",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "今天是他生日",
+        "time": "2024-03-21 19:57",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-032",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "大家都在一起呢",
+        "time": "2024-03-21 19:57",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-033",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "哦",
+        "time": "2024-03-21 19:57",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-034",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "确实很高",
+        "time": "2024-03-21 19:57",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-035",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "什么",
+        "time": "2024-03-21 19:57",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-036",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "[图片]",
+        "time": "2024-03-21 19:57",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-037",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "好像和你差不多了",
+        "time": "2024-03-21 19:58",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-038",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你又看学校那个账号了？",
+        "time": "2024-03-21 19:58",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-039",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那你应该也看到灿荣的回复了吧",
+        "time": "2024-03-21 19:58",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-040",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "看到了",
+        "time": "2024-03-21 19:58",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-041",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "嗯",
+        "time": "2024-03-21 19:58",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-042",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你不陪人家过生日找我干嘛",
+        "time": "2024-03-21 19:59",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-043",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "说了有事要和你说啊",
+        "time": "2024-03-21 19:59",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-044",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我想了想 决定去联系一下那个部长",
+        "time": "2024-03-21 19:59",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-045",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你觉得怎么样？",
+        "time": "2024-03-21 19:59",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-046",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "模特的话",
+        "time": "2024-03-21 19:59",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-047",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "很合适",
+        "time": "2024-03-21 20:00",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-048",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "真的？",
+        "time": "2024-03-21 20:00",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-049",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "早就该去做了吧",
+        "time": "2024-03-21 20:00",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-050",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "只是你不想而已",
+        "time": "2024-03-21 20:00",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-051",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "什么呀 ㅋㅋ",
+        "time": "2024-03-21 20:00",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-052",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "运气好才被大公司看上",
+        "time": "2024-03-21 20:01",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-053",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你不喜欢看私信",
+        "time": "2024-03-21 20:01",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-054",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你去训练所的时候",
+        "time": "2024-03-21 20:01",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-055",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "有些联系也是很不错的公司发来的",
+        "time": "2024-03-21 20:01",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-056",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那个时候没有想法嘛",
+        "time": "2024-03-21 20:01",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-057",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "现在觉得试试看也不错",
+        "time": "2024-03-21 20:02",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-058",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你也觉得可以吗",
+        "time": "2024-03-21 20:02",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-059",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "当然可以",
+        "time": "2024-03-21 20:02",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-060",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "但是为什么要一直问我",
+        "time": "2024-03-21 20:02",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-061",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "我如果说不可以你就不去了吗",
+        "time": "2024-03-21 20:03",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-062",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "就是想问你一下",
+        "time": "2024-03-21 20:03",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-063",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "问了多少人？",
+        "time": "2024-03-21 20:04",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-064",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你今天怎么这么奇怪",
+        "time": "2024-03-21 20:04",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-065",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "连爸妈和哥都还没商量呢",
+        "time": "2024-03-21 20:04",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-066",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "第一个就来找你了",
+        "time": "2024-03-21 20:04",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-067",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "哦",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-068",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "灿荣过来了",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-069",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "想打个招呼吗",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-070",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我们影通？",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-071",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不要了",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-072",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "我又不认识他",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-073",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不方便吗",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-074",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那我开视频",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-075",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你看着就好",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240321-076",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "[Video Call 视频通话]",
+        "time": "2024-03-21 20:05",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "dateLabel": "Thursday, March 21, 2024",
+          "chatDate": "2024-03-21",
           "contact": "咚灿",
           "displaySender": "덩떵찬"
         }
