@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 32,
+  "revision": 33,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
