@@ -22,6 +22,7 @@ import type { Item } from "../schema";
 import {
   Avatar,
   xAvatarSrc,
+  XPostGallery,
   Empty,
   groupItems,
   Header,
@@ -178,13 +179,14 @@ export function XSkin(p: Props) {
                 <button className="x-byline" onClick={() => p.onItem(i)}>
                   <strong>{i.sender}</strong>
                   <span>
-                    @{meta(i, "handle", i.sender)} · {i.time.slice(5, 10)}
+                    @{meta(i, "handle", i.sender)} · {/^\d{4}\/\d{2}\/\d{2}/.test(i.time) ? i.time.slice(0, 10) : i.time}
                   </span>
                 </button>
                 <button className="social-body" onClick={() => p.onItem(i)}>
                   <p>{i.body}</p>
                   {i.media && <Media item={i} />}
                 </button>
+                <XPostGallery item={i} />
                 <Actions p={p} item={i} />
               </div>
             </article>
