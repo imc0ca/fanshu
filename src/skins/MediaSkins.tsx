@@ -9,6 +9,7 @@ import {
   Home,
   MessageCircle,
   Music,
+  ChevronLeft,
   Play,
   Plus,
   Search,
@@ -63,6 +64,7 @@ function TrackPlayer({
 export function SpotifySkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "首页");
   const [playlist, setPlaylist] = useState("");
+  const [podcastPage, setPodcastPage] = useState(false);
   const list = playlist
     ? items.filter((i) => (i.folder || "我的音乐") === playlist)
     : items;
@@ -84,9 +86,26 @@ export function SpotifySkin(p: Props) {
           >
             音乐库
           </button>
+          <button className={podcastPage ? "selected" : ""} onClick={() => setPodcastPage(true)}>播客</button>
         </div>
         {tab === "搜索" && <SearchBox value={q} set={setQ} />}
-        <h1>{playlist || (tab === "音乐库" ? "音乐库" : "为你收藏")}</h1>
+        {podcastPage ? (
+          <section style={{padding:"10px 4px 24px",color:"#fff"}}>
+            <button onClick={() => setPodcastPage(false)} style={{display:"flex",alignItems:"center",gap:6,color:"#ddd",marginBottom:16}}><ChevronLeft size={19}/> 返回音乐库</button>
+            <img src="/fanshu/podcast-shihuashishuo.jpg" alt="石话石说播客封面" style={{width:"min(82%,260px)",aspectRatio:"1",objectFit:"cover",display:"block",margin:"0 auto 20px",borderRadius:8}}/>
+            <h1 style={{fontSize:29,margin:"8px 0"}}>石话石说</h1>
+            <p style={{color:"#bbb",margin:"4px 0 14px"}}>播客节目 · 主播 宋小鱼</p>
+            <p style={{lineHeight:1.7,color:"#ddd"}}>欢迎来到「石话石说」。节目单集即将更新。</p>
+            <h2 style={{fontSize:19,marginTop:28}}>所有单集</h2>
+            <p style={{color:"#aaa",padding:"18px 0"}}>暂无单集 · 敬请期待</p>
+          </section>
+        ) : (
+          <>
+          <button onClick={() => setPodcastPage(true)} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:10,margin:"8px 0 18px",background:"#292929",borderRadius:10,color:"#fff",textAlign:"left"}}>
+            <img src="/fanshu/podcast-shihuashishuo.jpg" alt="石话石说封面" style={{width:76,height:76,objectFit:"cover",borderRadius:6}}/>
+            <span style={{display:"flex",flexDirection:"column",gap:5}}><strong>石话石说</strong><small style={{color:"#aaa"}}>宋小鱼的播客 · 点击进入</small></span>
+          </button>
+                  <h1>{playlist || (tab === "音乐库" ? "音乐库" : "为你收藏")}</h1>
         {!playlist && (
           <div className="spotify-playlists">
             {groupItems(items, "我的音乐").map((g) => (
@@ -122,6 +141,8 @@ export function SpotifySkin(p: Props) {
           ))}
         </div>
         <Empty items={list} />
+          </>
+        )}
       </div>
       <PersistentSpotifyPlayer items={items} />
       <Tabs
@@ -130,6 +151,7 @@ export function SpotifySkin(p: Props) {
         set={(t) => {
           setTab(t);
           setPlaylist("");
+          setPodcastPage(false);
         }}
         icons={[<Home />, <Search />, <Music />]}
       />
