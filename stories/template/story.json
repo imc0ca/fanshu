@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 22,
+  "revision": 23,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -497,9 +497,9 @@
         "meta": {
           "handle": "@tjdcks_poqe",
           "views": "288",
-          "imagePending": "true",
           "repliesData": "[{\"id\":\"jan08-reply-1\",\"name\":\"melo taro\",\"handle\":\"@shotaro1125\",\"replyTo\":\"\",\"body\":\"今天退伍吗！\",\"comments\":1,\"likes\":19,\"views\":256,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-2\",\"name\":\"ddeongchan\",\"handle\":\"@tjdcks_poqe\",\"replyTo\":\"@shotaro1125\",\"body\":\"嗯嗯，哥在韩国吗？这段时间要出来玩吗？\",\"comments\":1,\"likes\":1,\"views\":237,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-3\",\"name\":\"melo taro\",\"handle\":\"@shotaro1125\",\"replyTo\":\"@tjdcks_poqe\",\"body\":\"3月份回首尔，到时候见面吧~\",\"comments\":0,\"likes\":1,\"views\":204,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-4\",\"name\":\"signal_lost_\",\"handle\":\"@ksh_0703\",\"replyTo\":\"\",\"body\":\"见面申请🧑‍🌾\",\"comments\":1,\"likes\":0,\"views\":203,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-5\",\"name\":\"ddeongchan\",\"handle\":\"@tjdcks_poqe\",\"replyTo\":\"@ksh_0703\",\"body\":\"ㅋㅋㅋ 什么申请啊，这段时间联系哥~\",\"comments\":1,\"likes\":1,\"views\":201,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-6\",\"name\":\"9pmstill\",\"handle\":\"@21oclock\",\"replyTo\":\"\",\"body\":\"我也申请🧑‍🌾\",\"comments\":1,\"likes\":0,\"views\":198,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-7\",\"name\":\"ddeongchan\",\"handle\":\"@tjdcks_poqe\",\"replyTo\":\"@21oclock\",\"body\":\"收到🧑‍🌾\",\"comments\":0,\"likes\":1,\"views\":196,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-8\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"\",\"body\":\"这张照片...要怎么理解？通过手勉强辨认出是个人...\",\"comments\":1,\"likes\":5,\"views\":231,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-9\",\"name\":\"ddeongchan\",\"handle\":\"@tjdcks_poqe\",\"replyTo\":\"@ddori252\",\"body\":\"ㅋㅋㅋ 戴着帽子低头在睡觉\",\"comments\":1,\"likes\":1,\"views\":227,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-10\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@tjdcks_poqe\",\"body\":\"衣服有点眼熟 🤔\",\"comments\":1,\"likes\":5,\"views\":221,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-11\",\"name\":\"ddeongchan\",\"handle\":\"@tjdcks_poqe\",\"replyTo\":\"@ddori252\",\"body\":\"嗯...\",\"comments\":1,\"likes\":3,\"views\":209,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-12\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@tjdcks_poqe\",\"body\":\"他现在就休假了吗？假不留到新年用吗？\",\"comments\":1,\"likes\":2,\"views\":200,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-13\",\"name\":\"ddeongchan\",\"handle\":\"@tjdcks_poqe\",\"replyTo\":\"@ddori252\",\"body\":\"新年不好请，他就算了\",\"comments\":1,\"likes\":1,\"views\":201,\"date\":\"2024/01/08\"},{\"id\":\"jan08-reply-14\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@tjdcks_poqe\",\"body\":\"还有一个 月，就直接...算了吗？\",\"comments\":0,\"likes\":3,\"views\":189,\"date\":\"2024/01/08\"}]",
-          "commentCount": "14"
+          "commentCount": "14",
+          "postImages": "x-posts/x-new-2024-01.png"
         }
       },
       {
@@ -515,7 +515,7 @@
           "handle": "@tjdcks_poqe",
           "views": "351",
           "commentCount": "17",
-          "imagePending": "true"
+          "postImages": "x-posts/x-new-2024-03.png"
         }
       },
       {
@@ -531,7 +531,7 @@
           "handle": "@ddori252",
           "views": "341",
           "commentCount": "15",
-          "imagePending": "true"
+          "postImages": "x-posts/x-new-2024-02.png"
         }
       },
       {
@@ -562,8 +562,8 @@
           "handle": "@ynu_confessions",
           "views": "3,975",
           "commentCount": "242",
-          "imagePending": "true",
-          "repliesData": "[{\"id\":\"feb24-confession-reply-1\",\"name\":\"周休七日\",\"handle\":\"@holidayeveryday\",\"replyTo\":\"@ynu_confessions\",\"body\":\"男神是这样的人吗 o.o\",\"comments\":26,\"likes\":122,\"views\":3521,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-2\",\"name\":\"我睡了 可以不回我消息\",\"handle\":\"@donotdisturb\",\"replyTo\":\"@holidayeveryday\",\"body\":\"郑成灿要谈几个🤨\",\"comments\":26,\"likes\":53,\"views\":3521,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-3\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@donotdisturb\",\"body\":\"澄清!! 没有在谈!!!!!\",\"comments\":63,\"likes\":485,\"views\":3462,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-4\",\"name\":\"面包重度依赖\",\"handle\":\"@breadluv\",\"replyTo\":\"@ddori252\",\"body\":\"那是在搞暧昧吗？我不介意男神同时和好几个人搞暧昧，我也想加入！\",\"comments\":39,\"likes\":217,\"views\":3411,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-5\",\"name\":\"冷脸不是不开心\",\"handle\":\"@sohappyhappy\",\"replyTo\":\"@breadluv\",\"body\":\"什么啊，只能说明郑成灿和ses也没有什么，搞什么暧昧啊\",\"comments\":20,\"likes\":219,\"views\":4268,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-6\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@sohappyhappy\",\"body\":\"总算有个聪明人了\",\"comments\":18,\"likes\":186,\"views\":4173,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-7\",\"name\":\"苹果不是平凡的水果\",\"handle\":\"@anappleaday\",\"replyTo\":\"@ddori252\",\"body\":\"但他和ses是不是有点不一样\",\"comments\":19,\"likes\":231,\"views\":3166,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-8\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@anappleaday\",\"body\":\"无可奉告！反正他们说没有\",\"comments\":44,\"likes\":377,\"views\":4371,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-9\",\"name\":\"厨师长Minttt\",\"handle\":\"@chefmint\",\"replyTo\":\"@ddori252\",\"body\":\"很耐人寻味的无可奉告...\",\"comments\":14,\"likes\":288,\"views\":4161,\"date\":\"2024/02/24\"}]"
+          "repliesData": "[{\"id\":\"feb24-confession-reply-1\",\"name\":\"周休七日\",\"handle\":\"@holidayeveryday\",\"replyTo\":\"@ynu_confessions\",\"body\":\"男神是这样的人吗 o.o\",\"comments\":26,\"likes\":122,\"views\":3521,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-2\",\"name\":\"我睡了 可以不回我消息\",\"handle\":\"@donotdisturb\",\"replyTo\":\"@holidayeveryday\",\"body\":\"郑成灿要谈几个🤨\",\"comments\":26,\"likes\":53,\"views\":3521,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-3\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@donotdisturb\",\"body\":\"澄清!! 没有在谈!!!!!\",\"comments\":63,\"likes\":485,\"views\":3462,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-4\",\"name\":\"面包重度依赖\",\"handle\":\"@breadluv\",\"replyTo\":\"@ddori252\",\"body\":\"那是在搞暧昧吗？我不介意男神同时和好几个人搞暧昧，我也想加入！\",\"comments\":39,\"likes\":217,\"views\":3411,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-5\",\"name\":\"冷脸不是不开心\",\"handle\":\"@sohappyhappy\",\"replyTo\":\"@breadluv\",\"body\":\"什么啊，只能说明郑成灿和ses也没有什么，搞什么暧昧啊\",\"comments\":20,\"likes\":219,\"views\":4268,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-6\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@sohappyhappy\",\"body\":\"总算有个聪明人了\",\"comments\":18,\"likes\":186,\"views\":4173,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-7\",\"name\":\"苹果不是平凡的水果\",\"handle\":\"@anappleaday\",\"replyTo\":\"@ddori252\",\"body\":\"但他和ses是不是有点不一样\",\"comments\":19,\"likes\":231,\"views\":3166,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-8\",\"name\":\"또리\",\"handle\":\"@ddori252\",\"replyTo\":\"@anappleaday\",\"body\":\"无可奉告！反正他们说没有\",\"comments\":44,\"likes\":377,\"views\":4371,\"date\":\"2024/02/24\"},{\"id\":\"feb24-confession-reply-9\",\"name\":\"厨师长Minttt\",\"handle\":\"@chefmint\",\"replyTo\":\"@ddori252\",\"body\":\"很耐人寻味的无可奉告...\",\"comments\":14,\"likes\":288,\"views\":4161,\"date\":\"2024/02/24\"}]",
+          "postImages": "x-posts/x-new-2024-04.png"
         }
       },
       {
@@ -579,7 +579,7 @@
           "handle": "@tjdcks_poqe",
           "views": "323",
           "commentCount": "11",
-          "imagePending": "true"
+          "postImages": "x-posts/x-new-2024-05.png"
         }
       },
       {
@@ -595,7 +595,7 @@
           "handle": "@ynu_confessions",
           "views": "4,863",
           "commentCount": "426",
-          "imagePending": "true"
+          "postImages": "x-posts/x-new-2024-06.png"
         }
       },
       {
