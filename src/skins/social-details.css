@@ -453,3 +453,22 @@
 .x-post-photo-gallery[data-photo-count="2"] img:last-child {
   border-radius: 0 14px 14px 0;
 }
+
+/* Four-photo X posts: reference-style two-by-two mosaic. */
+.x-post-photo-gallery[data-photo-count="4"] {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  aspect-ratio: 1.65 / 1;
+  overflow: hidden;
+  border-radius: 14px;
+}
+.x-post-photo-gallery[data-photo-count="4"] img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  border-radius: 0;
+}
