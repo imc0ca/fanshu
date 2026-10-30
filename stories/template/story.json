@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 24,
+  "revision": 25,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -10259,17 +10259,15 @@
         "id": "kkt-dongchan-20240131-41",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "",
+        "body": "[图片]",
         "time": "2024-01-31 18:10",
-        "kind": "image",
+        "kind": "text",
         "outgoing": true,
         "meta": {
           "dateLabel": "Wednesday, January 31, 2024",
           "chatDate": "2024-01-31",
-          "contact": "咚灿",
-          "imageUrl": "/kkt-images/kkt-20240131-01.png"
-        },
-        "image": "/kkt-images/kkt-20240131-01.png"
+          "contact": "咚灿"
+        }
       }
     ]
   },
