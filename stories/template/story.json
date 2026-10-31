@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 55,
+  "revision": 56,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -28041,14 +28041,12 @@
         "body": "晚饭?",
         "time": "2024-07-15 17:01",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "dateLabel": "Monday, July 15, 2024",
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-002",
@@ -28057,11 +28055,13 @@
         "body": "前辈拿到内定了",
         "time": "2024-07-15 17:01",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-003",
@@ -28070,11 +28070,13 @@
         "body": "说请客",
         "time": "2024-07-15 17:01",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-004",
@@ -28083,13 +28085,11 @@
         "body": "ㅇㅋ",
         "time": "2024-07-15 17:01",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-005",
@@ -28098,13 +28098,11 @@
         "body": "回来会晚吗?",
         "time": "2024-07-15 17:02",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-006",
@@ -28113,11 +28111,13 @@
         "body": "应该吃完就回去了",
         "time": "2024-07-15 17:02",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-007",
@@ -28126,13 +28126,11 @@
         "body": "那买个西瓜吧",
         "time": "2024-07-15 17:02",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-008",
@@ -28141,11 +28139,13 @@
         "body": "ㅇㅋ",
         "time": "2024-07-15 17:02",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-009",
@@ -28154,11 +28154,13 @@
         "body": "不过你要来吗?",
         "time": "2024-07-15 17:03",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-010",
@@ -28167,13 +28169,11 @@
         "body": "不要",
         "time": "2024-07-15 17:03",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-011",
@@ -28182,11 +28182,13 @@
         "body": "说是你的话",
         "time": "2024-07-15 17:03",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-012",
@@ -28195,11 +28197,13 @@
         "body": "前辈不会有意见的",
         "time": "2024-07-15 17:03",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-013",
@@ -28208,13 +28212,11 @@
         "body": "我认识的人吗",
         "time": "2024-07-15 17:03",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-014",
@@ -28223,11 +28225,13 @@
         "body": "俊锡哥",
         "time": "2024-07-15 17:04",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-015",
@@ -28236,13 +28240,11 @@
         "body": "肯定都是你们系的人",
         "time": "2024-07-15 17:04",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-016",
@@ -28251,13 +28253,11 @@
         "body": "我不去了",
         "time": "2024-07-15 17:04",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-017",
@@ -28266,11 +28266,13 @@
         "body": "嗯",
         "time": "2024-07-15 17:04",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-018",
@@ -28279,11 +28281,13 @@
         "body": "除了西瓜还有什么要买的吗",
         "time": "2024-07-15 17:05",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-019",
@@ -28292,13 +28296,11 @@
         "body": "洗发水快用完了",
         "time": "2024-07-15 17:06",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-020",
@@ -28307,13 +28309,11 @@
         "body": "还有垃圾袋",
         "time": "2024-07-15 17:06",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-021",
@@ -28322,13 +28322,11 @@
         "body": "食品垃圾袋不太够了",
         "time": "2024-07-15 17:07",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-022",
@@ -28337,13 +28335,11 @@
         "body": "现在做饭太多了",
         "time": "2024-07-15 17:07",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-023",
@@ -28352,11 +28348,13 @@
         "body": "这些明天一起去买吧",
         "time": "2024-07-15 17:08",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-024",
@@ -28365,11 +28363,13 @@
         "body": "你不是不喜欢这个洗发水的味道吗",
         "time": "2024-07-15 17:08",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-025",
@@ -28378,11 +28378,13 @@
         "body": "你自己挑",
         "time": "2024-07-15 17:08",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-1-026",
@@ -28391,13 +28393,11 @@
         "body": "那你回来带个西瓜就行",
         "time": "2024-07-15 17:08",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-1-027",
@@ -28406,11 +28406,13 @@
         "body": "嗯嗯",
         "time": "2024-07-15 17:08",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-15",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-2-001",
@@ -29096,14 +29098,12 @@
         "body": "你上次说的那个麻薯想吃吗",
         "time": "2024-07-22 14:22",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "dateLabel": "Monday, July 22, 2024",
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-002",
@@ -29112,13 +29112,11 @@
         "body": "刚好这附近有",
         "time": "2024-07-22 14:22",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-003",
@@ -29127,11 +29125,13 @@
         "body": "一口",
         "time": "2024-07-22 14:22",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-004",
@@ -29140,13 +29140,11 @@
         "body": "四个起卖",
         "time": "2024-07-22 14:23",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-005",
@@ -29155,11 +29153,13 @@
         "body": "剩下的你吃",
         "time": "2024-07-22 14:23",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-006",
@@ -29168,11 +29168,13 @@
         "body": "今天这个觉得怎么样",
         "time": "2024-07-22 14:23",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-007",
@@ -29181,13 +29183,11 @@
         "body": "还行",
         "time": "2024-07-22 14:23",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-008",
@@ -29196,13 +29196,11 @@
         "body": "就是离你那里稍微有点远",
         "time": "2024-07-22 14:23",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-009",
@@ -29211,11 +29209,13 @@
         "body": "不然你还住我这",
         "time": "2024-07-22 14:23",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-010",
@@ -29224,13 +29224,11 @@
         "body": "当时就说了开学要搬走",
         "time": "2024-07-22 14:24",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-011",
@@ -29239,11 +29237,13 @@
         "body": "也可以不搬",
         "time": "2024-07-22 14:24",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-012",
@@ -29252,13 +29252,11 @@
         "body": "天天见你不嫌烦吗",
         "time": "2024-07-22 14:24",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-013",
@@ -29267,13 +29265,11 @@
         "body": "感觉还是一个人住比较舒服",
         "time": "2024-07-22 14:25",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-014",
@@ -29282,11 +29278,13 @@
         "body": "你嫌我烦吗",
         "time": "2024-07-22 14:25",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-015",
@@ -29295,13 +29293,11 @@
         "body": "也没有",
         "time": "2024-07-22 14:25",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-016",
@@ -29310,13 +29306,11 @@
         "body": "但是偶尔?",
         "time": "2024-07-22 14:25",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-017",
@@ -29325,11 +29319,13 @@
         "body": ",,",
         "time": "2024-07-22 14:25",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-018",
@@ -29338,13 +29334,11 @@
         "body": "但是寄人篱下",
         "time": "2024-07-22 14:26",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-019",
@@ -29353,13 +29347,11 @@
         "body": "觉得烦也没法说",
         "time": "2024-07-22 14:26",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-020",
@@ -29368,13 +29360,11 @@
         "body": "搬走就可以直说你很烦了",
         "time": "2024-07-22 14:26",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-021",
@@ -29383,11 +29373,13 @@
         "body": "寄！人！篱！下！",
         "time": "2024-07-22 14:27",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-022",
@@ -29396,11 +29388,13 @@
         "body": "怎么能说这种话",
         "time": "2024-07-22 14:27",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-023",
@@ -29409,13 +29403,11 @@
         "body": "ㅋㅋㅋㅋㅋ",
         "time": "2024-07-22 14:27",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-024",
@@ -29424,13 +29416,11 @@
         "body": "不动产说有一个离你近一点的",
         "time": "2024-07-22 14:27",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-025",
@@ -29439,13 +29429,11 @@
         "body": "昨天刚拿到的房源",
         "time": "2024-07-22 14:27",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-026",
@@ -29454,13 +29442,11 @@
         "body": "现在准备去看看",
         "time": "2024-07-22 14:27",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-027",
@@ -29469,11 +29455,13 @@
         "body": "我也要进去",
         "time": "2024-07-22 14:27",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-028",
@@ -29482,11 +29470,13 @@
         "body": "过会来接我吗",
         "time": "2024-07-22 14:28",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-029",
@@ -29495,13 +29485,11 @@
         "body": "那你找地方坐会儿等我一下",
         "time": "2024-07-22 14:28",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-030",
@@ -29510,11 +29498,13 @@
         "body": "我去找你吧",
         "time": "2024-07-22 14:28",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-031",
@@ -29523,11 +29513,13 @@
         "body": "还有别的要看的吗",
         "time": "2024-07-22 14:29",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-032",
@@ -29536,13 +29528,11 @@
         "body": "还有几套",
         "time": "2024-07-22 14:29",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-dongchan-202407-4-033",
@@ -29551,11 +29541,13 @@
         "body": "那我结束了去找你",
         "time": "2024-07-22 14:29",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-034",
@@ -29564,11 +29556,13 @@
         "body": "走了",
         "time": "2024-07-22 14:29",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿"
-        }
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-dongchan-202407-4-035",
@@ -29577,13 +29571,11 @@
         "body": "嗯",
         "time": "2024-07-22 14:29",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-07-22",
-          "contact": "咚灿",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+          "contact": "咚灿"
+        }
       },
       {
         "id": "kkt-sohee-20240723-001",
@@ -32142,14 +32134,12 @@
         "body": "小组发表的资料忘记带了",
         "time": "2024-09-24 11:12",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
           "contact": "宋小鱼",
-          "dateLabel": "Tuesday, September 24, 2024",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "dateLabel": "Tuesday, September 24, 2024"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-002",
@@ -32158,13 +32148,11 @@
         "body": "帮我去拿一下吧",
         "time": "2024-09-24 11:12",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-003",
@@ -32173,13 +32161,11 @@
         "body": "过会儿带过来",
         "time": "2024-09-24 11:12",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-004",
@@ -32188,11 +32174,13 @@
         "body": "放哪了",
         "time": "2024-09-24 11:12",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-005",
@@ -32201,13 +32189,11 @@
         "body": "应该在书房桌子上",
         "time": "2024-09-24 11:12",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-006",
@@ -32216,13 +32202,11 @@
         "body": "贴了便签的一叠纸",
         "time": "2024-09-24 11:12",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-007",
@@ -32231,11 +32215,13 @@
         "body": "ㅇㅋ",
         "time": "2024-09-24 11:14",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-008",
@@ -32244,11 +32230,13 @@
         "body": "中午吃什么呀",
         "time": "2024-09-24 11:14",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-009",
@@ -32257,13 +32245,11 @@
         "body": "食堂",
         "time": "2024-09-24 11:14",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-010",
@@ -32272,13 +32258,11 @@
         "body": "下午我们都是第一节课",
         "time": "2024-09-24 11:14",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-011",
@@ -32287,11 +32271,13 @@
         "body": "食堂吃什么呢",
         "time": "2024-09-24 11:15",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-012",
@@ -32300,13 +32286,11 @@
         "body": "你想吃什么",
         "time": "2024-09-24 11:15",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-013",
@@ -32315,11 +32299,13 @@
         "body": "没想好",
         "time": "2024-09-24 11:16",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-014",
@@ -32328,13 +32314,11 @@
         "body": "那路上慢慢想",
         "time": "2024-09-24 11:16",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-015",
@@ -32343,13 +32327,11 @@
         "body": "你来找我还是去食堂等我",
         "time": "2024-09-24 11:16",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-016",
@@ -32358,11 +32340,13 @@
         "body": "不知道去哪个食堂",
         "time": "2024-09-24 11:16",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-017",
@@ -32371,11 +32355,13 @@
         "body": "我去经营馆找你吧",
         "time": "2024-09-24 11:17",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-018",
@@ -32384,13 +32370,11 @@
         "body": "嗯",
         "time": "2024-09-24 11:17",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-019",
@@ -32399,11 +32383,13 @@
         "body": "有什么想喝的吗",
         "time": "2024-09-24 11:17",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-020",
@@ -32412,11 +32398,13 @@
         "body": "我买了带过去",
         "time": "2024-09-24 11:17",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-021",
@@ -32425,13 +32413,11 @@
         "body": "草莓拿铁",
         "time": "2024-09-24 11:17",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20240924-0-022",
@@ -32440,11 +32426,13 @@
         "body": "草莓拿铁?",
         "time": "2024-09-24 11:17",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20240924-0-023",
@@ -32453,13 +32441,11 @@
         "body": "ㅋㅋㅋ",
         "time": "2024-09-24 11:18",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-09-24",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241005-1-001",
@@ -32811,14 +32797,12 @@
         "body": "午饭?",
         "time": "2024-10-15 11:17",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
           "contact": "宋小鱼",
-          "dateLabel": "Tuesday, October 15, 2024",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "dateLabel": "Tuesday, October 15, 2024"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-002",
@@ -32827,11 +32811,13 @@
         "body": "上午有casting",
         "time": "2024-10-15 11:17",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-003",
@@ -32840,11 +32826,13 @@
         "body": "和时宇哥吃完直接去学校了",
         "time": "2024-10-15 11:17",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-004",
@@ -32853,13 +32841,11 @@
         "body": "嗯",
         "time": "2024-10-15 11:17",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-005",
@@ -32868,11 +32854,13 @@
         "body": "下午下课直接回家了吗",
         "time": "2024-10-15 11:18",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-006",
@@ -32881,13 +32869,11 @@
         "body": "等你也行",
         "time": "2024-10-15 11:18",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-007",
@@ -32896,11 +32882,13 @@
         "body": "那来找我吧",
         "time": "2024-10-15 11:18",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-008",
@@ -32909,11 +32897,13 @@
         "body": "晚上一​​起吃",
         "time": "2024-10-15 11:18",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-009",
@@ -32922,13 +32912,11 @@
         "body": "嗯",
         "time": "2024-10-15 11:19",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-010",
@@ -32937,11 +32925,13 @@
         "body": "还没过来吧?",
         "time": "2024-10-15 16:34",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-011",
@@ -32950,13 +32940,11 @@
         "body": "刚准备收拾东西",
         "time": "2024-10-15 16:34",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-012",
@@ -32965,13 +32953,11 @@
         "body": "怎么了",
         "time": "2024-10-15 16:34",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-013",
@@ -32980,13 +32966,11 @@
         "body": "你有事了吗",
         "time": "2024-10-15 16:34",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-014",
@@ -32995,11 +32979,13 @@
         "body": "ㅠㅠ",
         "time": "2024-10-15 16:34",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-015",
@@ -33008,13 +32994,11 @@
         "body": "晚饭吃不了了?",
         "time": "2024-10-15 16:35",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-016",
@@ -33023,11 +33007,13 @@
         "body": "ㅠㅠ",
         "time": "2024-10-15 16:35",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-017",
@@ -33036,11 +33022,13 @@
         "body": "样衣刚到",
         "time": "2024-10-15 16:35",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-018",
@@ -33049,11 +33037,13 @@
         "body": "过会下课就过去试一下",
         "time": "2024-10-15 16:35",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-019",
@@ -33062,13 +33052,11 @@
         "body": "嗯",
         "time": "2024-10-15 16:35",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-020",
@@ -33077,13 +33065,11 @@
         "body": "那晚饭呢",
         "time": "2024-10-15 16:35",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-021",
@@ -33092,11 +33078,13 @@
         "body": "不能一起吃了 ㅠㅠ",
         "time": "2024-10-15 16:35",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-022",
@@ -33105,13 +33093,11 @@
         "body": "不是",
         "time": "2024-10-15 16:35",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-023",
@@ -33120,13 +33106,11 @@
         "body": "我是说你晚饭怎么办",
         "time": "2024-10-15 16:35",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-024",
@@ -33135,11 +33119,13 @@
         "body": "结束了随便吃两口就行了",
         "time": "2024-10-15 16:37",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-025",
@@ -33148,11 +33134,13 @@
         "body": "反正也不能多吃",
         "time": "2024-10-15 16:37",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-026",
@@ -33161,13 +33149,11 @@
         "body": "那我等你吧",
         "time": "2024-10-15 16:37",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-027",
@@ -33176,13 +33162,11 @@
         "body": "结束了叫我 过去找你",
         "time": "2024-10-15 16:37",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-028",
@@ -33191,11 +33175,13 @@
         "body": "不知道要多久",
         "time": "2024-10-15 16:38",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-029",
@@ -33204,13 +33190,11 @@
         "body": "之前都挺快的",
         "time": "2024-10-15 16:38",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-030",
@@ -33219,13 +33203,11 @@
         "body": "你五点下课",
         "time": "2024-10-15 16:38",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-031",
@@ -33234,13 +33216,11 @@
         "body": "再怎么样7点也结束了吧",
         "time": "2024-10-15 16:38",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-2-032",
@@ -33249,11 +33229,13 @@
         "body": "那你再等等我",
         "time": "2024-10-15 16:39",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-033",
@@ -33262,11 +33244,13 @@
         "body": "结束了和你说",
         "time": "2024-10-15 16:39",
         "kind": "text",
-        "outgoing": true,
+        "outgoing": false,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼"
-        }
+          "contact": "宋小鱼",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
       {
         "id": "kkt-autumn-20241015-2-034",
@@ -33275,13 +33259,11 @@
         "body": "嗯",
         "time": "2024-10-15 16:39",
         "kind": "text",
-        "outgoing": false,
+        "outgoing": true,
         "meta": {
           "chatDate": "2024-10-15",
-          "contact": "宋小鱼",
-          "displaySender": "송아지"
-        },
-        "avatar": "/fanshu/kkt-avatars/eunseok.png"
+          "contact": "宋小鱼"
+        }
       },
       {
         "id": "kkt-autumn-20241015-3-001",
@@ -34172,6 +34154,2506 @@
           "chatDate": "2024-10-17",
           "contact": "咚灿"
         }
+      },
+      {
+        "id": "kkt-october-20241019-0-001",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "想来江陵玩吗？",
+        "time": "2024-10-19 15:17",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "dateLabel": "Saturday, October 19, 2024"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-002",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "这么突然？",
+        "time": "2024-10-19 15:17",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-003",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "酒店现在没法退了",
+        "time": "2024-10-19 15:18",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-004",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "周一你有课吗",
+        "time": "2024-10-19 15:18",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-005",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "没课",
+        "time": "2024-10-19 15:18",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-006",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "那刚好",
+        "time": "2024-10-19 15:18",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-007",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "你想来吗",
+        "time": "2024-10-19 15:18",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-008",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "这几天天气挺好，海确实挺好看的",
+        "time": "2024-10-19 15:18",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-009",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "什么情况？",
+        "time": "2024-10-19 15:19",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-010",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "我还没搞明白",
+        "time": "2024-10-19 15:19",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-011",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "酒店周一才退房",
+        "time": "2024-10-19 15:20",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-012",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "临时有事要回去",
+        "time": "2024-10-19 15:20",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-013",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "你如果想来刚好可以过来玩两天",
+        "time": "2024-10-19 15:20",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-014",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "不过嫌麻烦就算了",
+        "time": "2024-10-19 15:20",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-015",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "倒也不远",
+        "time": "2024-10-19 15:20",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-016",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "那我和前台说一声",
+        "time": "2024-10-19 15:21",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-017",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "你过来报成灿的名字拿房卡就行",
+        "time": "2024-10-19 15:21",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-018",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "？",
+        "time": "2024-10-19 15:21",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-019",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "成灿哥？",
+        "time": "2024-10-19 15:21",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-020",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "嗯",
+        "time": "2024-10-19 15:21",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-021",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "他订的酒店 所以报他的名字",
+        "time": "2024-10-19 15:22",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-022",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "你们一起去的？",
+        "time": "2024-10-19 15:22",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-023",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "是啊",
+        "time": "2024-10-19 15:22",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-024",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "怎么了",
+        "time": "2024-10-19 15:22",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-025",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "没怎么",
+        "time": "2024-10-19 15:22",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-026",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "什么事这么着急回来啊",
+        "time": "2024-10-19 15:22",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-027",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "他明天突然有个拍摄",
+        "time": "2024-10-19 15:22",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-028",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "还得跑到大邱去",
+        "time": "2024-10-19 15:22",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-029",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "所以我们今天就回去了",
+        "time": "2024-10-19 15:23",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-030",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "成灿哥现在不是有经纪人了吗",
+        "time": "2024-10-19 15:23",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-031",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "嗯",
+        "time": "2024-10-19 15:23",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-032",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "那你也回去干嘛？",
+        "time": "2024-10-19 15:23",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-033",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "本来就是他想来的",
+        "time": "2024-10-19 15:24",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-034",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "我一个人在这也没什么好玩的",
+        "time": "2024-10-19 15:24",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-035",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "我来了你不就不是一个人了",
+        "time": "2024-10-19 15:24",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-036",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "🥺",
+        "time": "2024-10-19 15:24",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-037",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "但是我还是和他一起回去吧",
+        "time": "2024-10-19 15:24",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-038",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "我们现在就准备走了",
+        "time": "2024-10-19 15:24",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-039",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "能住两个人是不",
+        "time": "2024-10-19 15:25",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-040",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "嗯",
+        "time": "2024-10-19 15:25",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-041",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "你想叫朋友也行",
+        "time": "2024-10-19 15:25",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-042",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "那我和灿荣一起去了",
+        "time": "2024-10-19 15:25",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-043",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "谢谢哥哥们 :P",
+        "time": "2024-10-19 15:25",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241019-0-044",
+        "title": "炤熙",
+        "sender": "송아지",
+        "body": "买的饮料给你们留冰箱里了",
+        "time": "2024-10-19 15:27",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙"
+        }
+      },
+      {
+        "id": "kkt-october-20241019-0-045",
+        "title": "炤熙",
+        "sender": "ddori",
+        "body": "okok",
+        "time": "2024-10-19 15:27",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-19",
+          "contact": "炤熙",
+          "displaySender": "ddori"
+        },
+        "avatar": "/fanshu/kkt-avatars/sohee.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-001",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "睡了吗",
+        "time": "2024-10-20 23:08",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "dateLabel": "Sunday, October 20, 2024",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-002",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "明天没课今天睡这么早吗",
+        "time": "2024-10-20 23:11",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-003",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那明天起来回我消息 ㅠ",
+        "time": "2024-10-20 23:14",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-004",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "刚刚洗澡去了",
+        "time": "2024-10-20 23:22",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-005",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "结束了？",
+        "time": "2024-10-20 23:22",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-006",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "嗯",
+        "time": "2024-10-20 23:22",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-007",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "已经到首尔了",
+        "time": "2024-10-20 23:22",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-008",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你先别睡",
+        "time": "2024-10-20 23:22",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-009",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "干嘛",
+        "time": "2024-10-20 23:22",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-010",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我买了夜宵",
+        "time": "2024-10-20 23:22",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-011",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你能吃吗",
+        "time": "2024-10-20 23:23",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-012",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "是给你买的",
+        "time": "2024-10-20 23:23",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-013",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "我吃晚饭了",
+        "time": "2024-10-20 23:23",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-014",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "为什么突然给我买夜宵",
+        "time": "2024-10-20 23:23",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-015",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "ㅠㅠㅠㅠㅠㅠ",
+        "time": "2024-10-20 23:23",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-016",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "干嘛啊",
+        "time": "2024-10-20 23:23",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-017",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你怎么了",
+        "time": "2024-10-20 23:23",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-018",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "随便吃两口行吗",
+        "time": "2024-10-20 23:24",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-019",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "多浪费啊",
+        "time": "2024-10-20 23:24",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-020",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "剩下的我带走明天吃",
+        "time": "2024-10-20 23:24",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-021",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "到底怎么了",
+        "time": "2024-10-20 23:24",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-022",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "还有二十分钟左右到",
+        "time": "2024-10-20 23:24",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-023",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "给我开门",
+        "time": "2024-10-20 23:24",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-024",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你不是知道密码吗",
+        "time": "2024-10-20 23:24",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-025",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你是不是不想见我啊",
+        "time": "2024-10-20 23:25",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-026",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "没有啊",
+        "time": "2024-10-20 23:25",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-027",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那就给我开门",
+        "time": "2024-10-20 23:25",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-028",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "然后吃我买的夜宵",
+        "time": "2024-10-20 23:25",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-029",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "我没生气",
+        "time": "2024-10-20 23:25",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-030",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "，，",
+        "time": "2024-10-20 23:25",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-031",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "是想听这个吧？",
+        "time": "2024-10-20 23:26",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-032",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不是我想听不想听的问题",
+        "time": "2024-10-20 23:26",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-033",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你真的没生气吗",
+        "time": "2024-10-20 23:26",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-034",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "真的",
+        "time": "2024-10-20 23:26",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-035",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "可是我 ㅠ",
+        "time": "2024-10-20 23:26",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-036",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "又不是故意的",
+        "time": "2024-10-20 23:26",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-037",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "而且是公司安排的",
+        "time": "2024-10-20 23:27",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-038",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "为什么要生你的气",
+        "time": "2024-10-20 23:27",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-039",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你是机器人吗",
+        "time": "2024-10-20 23:28",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-040",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "什么啊",
+        "time": "2024-10-20 23:28",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-041",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "是公司安排的，所以不生郑成灿的气",
+        "time": "2024-10-20 23:29",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-042",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "哪有这样的",
+        "time": "2024-10-20 23:29",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-043",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不就是应该这样吗",
+        "time": "2024-10-20 23:29",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-044",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "什么应该不应该",
+        "time": "2024-10-20 23:29",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-045",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你偶尔也生一下气不行吗",
+        "time": "2024-10-20 23:29",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-046",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你好奇怪",
+        "time": "2024-10-20 23:29",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-047",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "哪有希望别人生气的",
+        "time": "2024-10-20 23:30",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-048",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不是希望你生气",
+        "time": "2024-10-20 23:30",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-049",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "哎呀",
+        "time": "2024-10-20 23:30",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-050",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不是",
+        "time": "2024-10-20 23:30",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-051",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "真烦",
+        "time": "2024-10-20 23:30",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-052",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你在讲什么啊",
+        "time": "2024-10-20 23:30",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-053",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你为什么不生气",
+        "time": "2024-10-20 23:31",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-054",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "刚刚不是还担心我生气",
+        "time": "2024-10-20 23:31",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-055",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "所以带着夜宵来找你了",
+        "time": "2024-10-20 23:31",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-056",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "然后我就告诉你我没生气啊",
+        "time": "2024-10-20 23:31",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-057",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不能为了我生气一下吗",
+        "time": "2024-10-20 23:32",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-058",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你要是实在觉得累就回家睡觉吧",
+        "time": "2024-10-20 23:32",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-059",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你果然不想见我",
+        "time": "2024-10-20 23:32",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-060",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "...",
+        "time": "2024-10-20 23:32",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-061",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你到底想干嘛",
+        "time": "2024-10-20 23:32",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-062",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我不重要吗",
+        "time": "2024-10-20 23:33",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-063",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "？",
+        "time": "2024-10-20 23:33",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-064",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "说点听得懂的",
+        "time": "2024-10-20 23:33",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-065",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你根本不在意我所以才不生气的",
+        "time": "2024-10-20 23:33",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-066",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "真被你搞烦了",
+        "time": "2024-10-20 23:34",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-067",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "ㅠㅠ",
+        "time": "2024-10-20 23:34",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-068",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你到底来不来",
+        "time": "2024-10-20 23:35",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-069",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不来我睡了",
+        "time": "2024-10-20 23:35",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-070",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "去呀去呀",
+        "time": "2024-10-20 23:36",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-071",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "自己开门",
+        "time": "2024-10-20 23:36",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-072",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "还有十分钟！",
+        "time": "2024-10-20 23:36",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-073",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那你到底生气没有嘛",
+        "time": "2024-10-20 23:36",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-074",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "随你",
+        "time": "2024-10-20 23:36",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-075",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "什么啊",
+        "time": "2024-10-20 23:36",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-076",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你想让我生气那就是生气了",
+        "time": "2024-10-20 23:37",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-077",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你不想让我生气那就是没生气",
+        "time": "2024-10-20 23:37",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-078",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你这么说我更着急了 ㅠㅠ",
+        "time": "2024-10-20 23:38",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-079",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "着急你就赶紧过来",
+        "time": "2024-10-20 23:38",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-080",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "说半天也说不明白",
+        "time": "2024-10-20 23:38",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-081",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你看到我不就知道生没生气了",
+        "time": "2024-10-20 23:38",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-082",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "还以为你不想见我",
+        "time": "2024-10-20 23:39",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-083",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你真的烦",
+        "time": "2024-10-20 23:39",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-084",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "上面不是说了没有吗",
+        "time": "2024-10-20 23:39",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-085",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "给你开门行了吧",
+        "time": "2024-10-20 23:39",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241020-1-086",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "嗯 ㅠㅠ",
+        "time": "2024-10-20 23:39",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241020-1-087",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那我按门铃你要开",
+        "time": "2024-10-20 23:39",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-20",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-001",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "下课了吧",
+        "time": "2024-10-25 11:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "dateLabel": "Friday, October 25, 2024",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-002",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "下午陪我去拍摄行嘛",
+        "time": "2024-10-25 11:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-003",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "今天外景",
+        "time": "2024-10-25 11:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-004",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "饿了好几天了",
+        "time": "2024-10-25 11:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-005",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "晚上我们一起吃顿好的去",
+        "time": "2024-10-25 11:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-006",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "下午可以陪你去",
+        "time": "2024-10-25 11:46",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-007",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "但是可能得早走",
+        "time": "2024-10-25 11:46",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-008",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "今天系里一起吃饭",
+        "time": "2024-10-25 11:47",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-009",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "😔",
+        "time": "2024-10-25 11:47",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-010",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那你下午别过来了",
+        "time": "2024-10-25 11:47",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-011",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "那你自己去吗",
+        "time": "2024-10-25 11:48",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-012",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "时宇哥会送我",
+        "time": "2024-10-25 11:48",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-013",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "那还要我去干嘛",
+        "time": "2024-10-25 11:48",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-014",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "就是想让你看着我啊",
+        "time": "2024-10-25 11:48",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-015",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "上次你就这么说",
+        "time": "2024-10-25 11:48",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-016",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "晚上要不要去接你?",
+        "time": "2024-10-25 11:49",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-017",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不用 我自己回去就行",
+        "time": "2024-10-25 11:49",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-018",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你们结束了吗",
+        "time": "2024-10-25 18:41",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-019",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "没有",
+        "time": "2024-10-25 18:41",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-020",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "刚准备开始",
+        "time": "2024-10-25 18:41",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-021",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "在哪呀",
+        "time": "2024-10-25 18:41",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-022",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "就在新村这边",
+        "time": "2024-10-25 18:42",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-023",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "系里聚餐的话",
+        "time": "2024-10-25 18:42",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-024",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "很多人吗",
+        "time": "2024-10-25 18:42",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-025",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "有点",
+        "time": "2024-10-25 18:42",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-026",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "这次怎么去了?",
+        "time": "2024-10-25 18:42",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-027",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "前辈叫我",
+        "time": "2024-10-25 18:43",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-028",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不太好不来",
+        "time": "2024-10-25 18:43",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-029",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我不认识的前辈吗",
+        "time": "2024-10-25 18:43",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-030",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "姜灿哥",
+        "time": "2024-10-25 18:43",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-031",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "认识吗?",
+        "time": "2024-10-25 18:43",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-032",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "快要毕业了",
+        "time": "2024-10-25 18:44",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-033",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "也不总来学校",
+        "time": "2024-10-25 18:44",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-034",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "所以今天说无论如何要一起聚一下",
+        "time": "2024-10-25 18:44",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-035",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "也是灿啊",
+        "time": "2024-10-25 18:44",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-036",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "什么",
+        "time": "2024-10-25 18:45",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-037",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "他的名字里也有灿",
+        "time": "2024-10-25 18:45",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-038",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "然后呢",
+        "time": "2024-10-25 18:45",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-039",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "没有然后",
+        "time": "2024-10-25 18:45",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-040",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "一直有人过来找我",
+        "time": "2024-10-25 18:46",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-041",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "先不聊了",
+        "time": "2024-10-25 18:46",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-042",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "找你干嘛",
+        "time": "2024-10-25 18:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-043",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "喝酒吗",
+        "time": "2024-10-25 18:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-044",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "喝酒的话你自己能回去吗",
+        "time": "2024-10-25 18:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-045",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "可以",
+        "time": "2024-10-25 18:46",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-october-20241025-2-046",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那可以不喝吗",
+        "time": "2024-10-25 18:47",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-october-20241025-2-047",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "宋银硕?",
+        "time": "2024-10-25 18:50",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-10-25",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       }
     ]
   },
