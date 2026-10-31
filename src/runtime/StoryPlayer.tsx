@@ -95,7 +95,8 @@ function VideoCallExperience() {
   if (phase === "idle") return null;
   const screen = document.querySelector(".story-runtime .phone-shell");
   if (!screen) return null;
-  const scene = callTimeline[Math.min(Math.floor(seconds / 2), callTimeline.length - 1)];
+  const sceneIndex = Math.min(Math.floor(seconds / 2), callTimeline.length - 1);
+  const scene = callTimeline[sceneIndex];
   const asset = (name: string) => "./video-call-20240321/" + name;
   return createPortal(
     <div className="story-video-call" role="dialog" aria-label="咚灿视频通话">
@@ -103,11 +104,11 @@ function VideoCallExperience() {
         <div className="story-video-incoming">
           <img src="./kkt-avatars/dongchan-2024.png" alt="咚灿头像" />
           <h2>咚灿</h2><p>视频通话邀请…</p>
-          <button onClick={() => { setSeconds(0); setPhase("connected"); }} className="story-video-accept" aria-label="接听视频通话"><CallIcon size={33} fill="white" strokeWidth={2.3} /></button>
+          <button onClick={() => { setSeconds(0); setPhase("connected"); }} className="story-video-accept" aria-label="接听视频通话"><CallIcon size={25} fill="white" strokeWidth={2.3} /></button>
         </div>
       ) : (
         <div className="story-video-connected">
-          <img className="story-video-main" src={asset(scene.image)} alt="视频通话画面" />
+          <div className="story-video-photo-stage">{callScenes.map((photo) => <img key={photo.image} className={"story-video-main" + (photo.image === scene.image ? " is-active" : "")} src={asset(photo.image)} alt="视频通话画面" />)}</div>
           <div className="story-video-header"><strong>咚灿</strong><span>{String(Math.floor(seconds / 60)).padStart(2, "0")}:{String(seconds % 60).padStart(2, "0")}</span></div>
           <img className="story-video-self" src={asset("b813ec9132da2e69c492ec81a3885887.jpeg")} alt="宋小鱼的视频小窗" />
           {scene.caption && <div className="story-video-subtitle" key={seconds >> 1}>{scene.caption}</div>}
