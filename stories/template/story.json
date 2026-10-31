@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 52,
+  "revision": 53,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -31329,6 +31329,798 @@
         "body": "[图片]",
         "time": "2024-08-06 14:46",
         "kind": "image",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-001",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "?",
+        "time": "2024-08-06 14:46",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-002",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "欸",
+        "time": "2024-08-06 14:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-003",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不小心截到了",
+        "time": "2024-08-06 14:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-004",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "?",
+        "time": "2024-08-06 14:46",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-005",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "?",
+        "time": "2024-08-06 14:46",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-006",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "[图片]",
+        "time": "2024-08-06 14:48",
+        "kind": "image",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-007",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "这堂是什么",
+        "time": "2024-08-06 14:48",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-008",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你想要照片吗",
+        "time": "2024-08-06 14:48",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-009",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我发你",
+        "time": "2024-08-06 14:48",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-010",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不是...",
+        "time": "2024-08-06 14:48",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-011",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "为什么我会出现在这里",
+        "time": "2024-08-06 14:49",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-012",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "因为我拍了",
+        "time": "2024-08-06 14:50",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-013",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "...",
+        "time": "2024-08-06 14:50",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-014",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "拍我干嘛",
+        "time": "2024-08-06 14:50",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-015",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "就",
+        "time": "2024-08-06 14:50",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-016",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "顺手",
+        "time": "2024-08-06 14:50",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-017",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "有点奇怪了吧",
+        "time": "2024-08-06 14:52",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-018",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "哪里奇怪",
+        "time": "2024-08-06 14:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-019",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你手机里没有我照片吗",
+        "time": "2024-08-06 14:52",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-020",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "有是有",
+        "time": "2024-08-06 14:52",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-021",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "但是没有像你这样偷拍",
+        "time": "2024-08-06 14:52",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-022",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "发来检查下",
+        "time": "2024-08-06 14:53",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-023",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不准删",
+        "time": "2024-08-06 14:53",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-024",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "现在就截图",
+        "time": "2024-08-06 14:53",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-025",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "快点快点",
+        "time": "2024-08-06 14:53",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-026",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "[图片]",
+        "time": "2024-08-06 14:53",
+        "kind": "image",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-027",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你也很可疑啊",
+        "time": "2024-08-06 14:53",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-028",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "哪里可疑",
+        "time": "2024-08-06 14:53",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-029",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不都是你让我拍的",
+        "time": "2024-08-06 14:53",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-030",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "最上面两张自拍怎么回事",
+        "time": "2024-08-06 14:54",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-031",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "不是你发过来问我发哪张吗",
+        "time": "2024-08-06 14:54",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-032",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "[图片]",
+        "time": "2024-08-06 14:55",
+        "kind": "image",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-033",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "这几张呢",
+        "time": "2024-08-06 14:55",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-034",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "都是你发过来的",
+        "time": "2024-08-06 14:55",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-035",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "fitting的时候吧",
+        "time": "2024-08-06 14:55",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-036",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你记不得了就翻翻聊天记录行吗",
+        "time": "2024-08-06 14:56",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-037",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "当然记得 ^^",
+        "time": "2024-08-06 14:56",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-038",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "但是你存这些干嘛",
+        "time": "2024-08-06 14:56",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-039",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "还说我奇怪",
+        "time": "2024-08-06 14:56",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-040",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你就是奇怪",
+        "time": "2024-08-06 14:57",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-041",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "小心哪天被人抓住",
+        "time": "2024-08-06 14:57",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-042",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "你来抓我吧",
+        "time": "2024-08-06 14:57",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-043",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "除了你没拍别人",
+        "time": "2024-08-06 14:57",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-044",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "哦",
+        "time": "2024-08-06 14:57",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-045",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我现在要自拍发网去找你呢",
+        "time": "2024-08-06 14:57",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-046",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "不过",
+        "time": "2024-08-06 14:58",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-047",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "那几个截图是什么",
+        "time": "2024-08-06 14:58",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-048",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "什么",
+        "time": "2024-08-06 14:58",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-049",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "让他早点吃饭",
+        "time": "2024-08-06 14:58",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-050",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "他是谁",
+        "time": "2024-08-06 14:58",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-051",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "我吗",
+        "time": "2024-08-06 14:58",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-052",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "都是你的行程",
+        "time": "2024-08-06 14:59",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-053",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "除了你还有谁",
+        "time": "2024-08-06 14:59",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-054",
+        "title": "咚灿",
+        "sender": "송아지",
+        "body": "你不觉得今早吃饭很早吗",
+        "time": "2024-08-06 14:59",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-055",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "嗯 ^^",
+        "time": "2024-08-06 14:59",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-08-06",
+          "contact": "咚灿",
+          "displaySender": "덩떵찬"
+        },
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+      },
+      {
+        "id": "kkt-dongchan-20240806-follow-056",
+        "title": "咚灿",
+        "sender": "덩떵찬",
+        "body": "很早",
+        "time": "2024-08-06 14:59",
+        "kind": "text",
         "outgoing": false,
         "meta": {
           "chatDate": "2024-08-06",
