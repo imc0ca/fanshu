@@ -46,12 +46,22 @@ export function messageRun(items: Item[], index: number) {
   const m = items[index],
     previous = items[index - 1],
     next = items[index + 1];
+  // A new date or minute begins a new visible message group.
+  // In particular, the first incoming message beneath a date heading
+  // must always display its sender's avatar.
+  const groupKey = (item: Item) =>
+    (item.meta?.chatDate || item.time.slice(0, 10)) + "|" + item.time.slice(-5);
   return {
     first:
       !previous ||
       previous.outgoing !== m.outgoing ||
-      previous.sender !== m.sender,
-    last: !next || next.outgoing !== m.outgoing || next.sender !== m.sender,
+      previous.sender !== m.sender ||
+      groupKey(previous) !== groupKey(m),
+    last:
+      !next ||
+      next.outgoing !== m.outgoing ||
+      next.sender !== m.sender ||
+      groupKey(next) !== groupKey(m),
   };
 }
 const read = (p: SkinProps, i: Item) =>
