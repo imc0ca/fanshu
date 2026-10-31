@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 53,
+  "revision": 54,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -31305,7 +31305,8 @@
           "contact": "咚灿",
           "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20240806-01.jpeg"
       },
       {
         "id": "kkt-dongchan-20240806-084",
@@ -31320,7 +31321,8 @@
           "contact": "咚灿",
           "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20240806-02.jpeg"
       },
       {
         "id": "kkt-dongchan-20240806-085",
@@ -31335,7 +31337,8 @@
           "contact": "咚灿",
           "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20240806-03.jpeg"
       },
       {
         "id": "kkt-dongchan-20240806-follow-001",
@@ -31419,7 +31422,8 @@
         "meta": {
           "chatDate": "2024-08-06",
           "contact": "咚灿"
-        }
+        },
+        "media": "/kkt-images/kkt-20240806-04.jpeg"
       },
       {
         "id": "kkt-dongchan-20240806-follow-007",
@@ -31701,7 +31705,8 @@
         "meta": {
           "chatDate": "2024-08-06",
           "contact": "咚灿"
-        }
+        },
+        "media": "/kkt-images/kkt-20240806-05.jpeg"
       },
       {
         "id": "kkt-dongchan-20240806-follow-027",
@@ -31785,7 +31790,8 @@
           "contact": "咚灿",
           "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20240806-06.jpeg"
       },
       {
         "id": "kkt-dongchan-20240806-follow-033",
