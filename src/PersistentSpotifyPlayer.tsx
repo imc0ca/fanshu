@@ -94,23 +94,24 @@ export function PersistentSpotifyPlayer({ items, musicStyle = false }: { items: 
     else player.pause();
   };
   return (
-    <div className="track-player" style={{display:"flex",alignItems:"center",justifyContent:"flex-start",gap:musicStyle ? 12 : 6,padding:musicStyle ? "14px 16px" : "8px 10px",minHeight:musicStyle ? 82 : undefined,width:"100%",boxSizing:"border-box",...(musicStyle ? {background:"#ffffff",color:"#202020",borderTop:"1px solid #f5dce4",boxShadow:"0 -3px 14px rgba(0,0,0,.06)"} : {})}}>
-      <button aria-label={playing ? "暂停" : "播放"} title={playing ? "暂停" : "播放"} onClick={toggle} style={{flexShrink:0,...(musicStyle ? {color:"#f04476",background:"#fff0f5",border:"none",borderRadius:14,minWidth:42,minHeight:42,display:"inline-flex",alignItems:"center",justifyContent:"center"} : {})}}>
+    <div className="track-player" style={{display:"flex",alignItems:"center",justifyContent:"flex-start",gap:musicStyle ? 8 : 6,padding:musicStyle ? "12px 10px" : "8px 10px",minHeight:musicStyle ? 82 : undefined,width:"100%",boxSizing:"border-box",...(musicStyle ? {background:"#ffffff",color:"#202020",borderTop:"1px solid #f5dce4",boxShadow:"0 -3px 14px rgba(0,0,0,.06)"} : {})}}>
+      <button aria-label={playing ? "暂停" : "播放"} title={playing ? "暂停" : "播放"} onClick={toggle} style={{flexShrink:0,...(musicStyle ? {color:"#f04476",background:"#fff0f5",border:"none",borderRadius:14,minWidth:38,minHeight:42,display:"inline-flex",alignItems:"center",justifyContent:"center"} : {})}}>
         {playing ? <Pause size={20}/> : <Play size={20}/>}
       </button>
       <div style={{flex:"1 1 auto",minWidth:0,display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
         <span style={{overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",maxWidth:"100%",fontSize:musicStyle ? 15 : undefined,fontWeight:musicStyle ? 600 : undefined}}>{current ? current.title : "选择歌曲开始播放"}</span>
         {playbackError && <small role="status" style={{color:musicStyle ? "#c3295b" : "#ffb7b7",fontSize:11,lineHeight:1.2}}>{playbackError}</small>}
       </div>
+      <button aria-label={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} title={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} onClick={() => { mode = mode === "order" ? "repeat-one" : mode === "repeat-one" ? "shuffle" : "order"; notify(); }} style={{flexShrink:0,...(musicStyle ? {color:"#f04476",background:"#fff0f5",border:"none",borderRadius:14,minWidth:38,minHeight:42,display:"inline-flex",alignItems:"center",justifyContent:"center"} : {})}}>
+        {mode === "repeat-one" ? <Repeat1 size={19}/> : mode === "shuffle" ? <Shuffle size={19}/> : <Repeat size={19}/>}
+      </button>
       <button aria-label="上一首" title="上一首" onClick={() => {
         const available = items.filter(i => !!source(i));
         const n = available.findIndex(i => i.id === activeId);
         if (available.length) start(available[(n - 1 + available.length) % available.length]);
-      }} style={{flexShrink:0,...(musicStyle ? {color:"#f04476",background:"#fff0f5",border:"none",borderRadius:14,minWidth:42,minHeight:42,display:"inline-flex",alignItems:"center",justifyContent:"center"} : {})}}><SkipBack size={18}/></button>
-      <button aria-label="下一首" title="下一首" onClick={() => next()} style={{flexShrink:0,...(musicStyle ? {color:"#f04476",background:"#fff0f5",border:"none",borderRadius:14,minWidth:42,minHeight:42,display:"inline-flex",alignItems:"center",justifyContent:"center"} : {})}}><SkipForward size={18}/></button>
-      <button aria-label={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} title={mode === "order" ? "顺序播放" : mode === "repeat-one" ? "单曲循环" : "随机播放"} onClick={() => { mode = mode === "order" ? "repeat-one" : mode === "repeat-one" ? "shuffle" : "order"; notify(); }} style={{flexShrink:0,...(musicStyle ? {color:"#f04476",background:"#fff0f5",border:"none",borderRadius:14,minWidth:42,minHeight:42,display:"inline-flex",alignItems:"center",justifyContent:"center"} : {})}}>
-        {mode === "repeat-one" ? <Repeat1 size={19}/> : mode === "shuffle" ? <Shuffle size={19}/> : <Repeat size={19}/>}
-      </button>
+      }} style={{flexShrink:0,...(musicStyle ? {color:"#f04476",background:"#fff0f5",border:"none",borderRadius:14,minWidth:38,minHeight:42,display:"inline-flex",alignItems:"center",justifyContent:"center"} : {})}}><SkipBack size={18}/></button>
+      <button aria-label="下一首" title="下一首" onClick={() => next()} style={{flexShrink:0,...(musicStyle ? {color:"#f04476",background:"#fff0f5",border:"none",borderRadius:14,minWidth:38,minHeight:42,display:"inline-flex",alignItems:"center",justifyContent:"center"} : {})}}><SkipForward size={18}/></button>
+
     </div>
   );
 }
