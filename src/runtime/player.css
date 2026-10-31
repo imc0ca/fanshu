@@ -55,3 +55,15 @@
 .story-runtime .phone-shell > .story-video-call{position:absolute;inset:0;width:100%;height:100%;z-index:9999;overflow:hidden;border-radius:inherit;box-sizing:border-box}
 .story-runtime .phone-shell .story-video-incoming,.story-runtime .phone-shell .story-video-connected{width:100%;height:100%;min-width:0;min-height:0}
 .story-runtime .phone-shell .story-video-main{object-fit:cover}
+
+/* Refined shared video-call presentation: smaller incoming UI and gentle scene fades. */
+.story-runtime .phone-shell .story-video-incoming img{width:84px;height:84px;margin-bottom:15px}
+.story-runtime .phone-shell .story-video-incoming h2{font-size:27px}
+.story-runtime .phone-shell .story-video-incoming p{font-size:15px}
+.story-runtime .phone-shell .story-video-accept{width:56px;height:56px;bottom:13%;box-shadow:0 5px 15px #0005,inset 0 1px 2px #ffffff55}
+.story-runtime .phone-shell .story-video-accept svg{width:25px;height:25px}
+.story-video-photo-stage{position:absolute;inset:0;overflow:hidden;background:#101216}
+.story-runtime .phone-shell .story-video-photo-stage .story-video-main{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;opacity:0;transition:opacity .75s ease-in-out;will-change:opacity}
+.story-runtime .phone-shell .story-video-photo-stage .story-video-main.is-active{opacity:1}
+.story-runtime .phone-shell .story-video-self{object-fit:contain;background:#15171a}
+@media (prefers-reduced-motion:reduce){.story-runtime .phone-shell .story-video-photo-stage .story-video-main{transition:none}}
