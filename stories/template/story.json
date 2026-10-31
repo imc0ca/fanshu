@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 43,
+  "revision": 44,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -19627,7 +19627,9 @@
           "dateLabel": "Saturday, May 18, 2024",
           "chatDate": "2024-05-18",
           "contact": "咚灿",
-          "displaySender": "덩떵찬"
+          "displaySender": "덩떵찬",
+          "callType": "video",
+          "callStatus": "started"
         },
         "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
@@ -19635,7 +19637,7 @@
         "id": "kkt-dongchan-20240518-021",
         "title": "咚灿",
         "sender": "덩떵찬",
-        "body": "Video Call ended · 0:01",
+        "body": "End video call 0:01",
         "time": "2024-05-18 18:01",
         "kind": "call",
         "outgoing": false,
@@ -19643,7 +19645,10 @@
           "dateLabel": "Saturday, May 18, 2024",
           "chatDate": "2024-05-18",
           "contact": "咚灿",
-          "displaySender": "덩떵찬"
+          "displaySender": "덩떵찬",
+          "callType": "video",
+          "callStatus": "ended",
+          "callDuration": "0:01"
         },
         "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
       },
