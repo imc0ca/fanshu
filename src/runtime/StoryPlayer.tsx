@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { createPortal } from "react-dom";
-import { Phone, Video, MicOff, Volume2 } from "lucide-react";
+import { Phone as PhoneIcon, Video, MicOff, Volume2 } from "lucide-react";
 import { Phone } from "../Phone";
 import { validateWork, type Work } from "../schema";
 import "../styles.css";
@@ -108,7 +108,7 @@ function VideoCallExperience() {
         <div className="story-video-incoming">
           <img src="./kkt-avatars/dongchan-2024.png" alt="咚灿头像" />
           <h2>咚灿</h2><p>视频通话邀请…</p>
-          <button onClick={() => { setSeconds(0); setPhase("connected"); }} className="story-video-accept" aria-label="接听视频通话"><Phone size={33} fill="white" strokeWidth={2.3} /></button>
+          <button onClick={() => { setSeconds(0); setPhase("connected"); }} className="story-video-accept" aria-label="接听视频通话"><PhoneIcon size={33} fill="white" strokeWidth={2.3} /></button>
         </div>
       ) : (
         <div className="story-video-connected">
@@ -154,7 +154,7 @@ function StoryPlayer() {
   return (
     <main className="story-runtime">
       {work ? (
-        <><Phone work={work} /><VideoCallExperience /></>
+        <><PhoneIcon work={work} /><VideoCallExperience /></>
       ) : (
         <p role="status">{error || "正在打开手机…"}</p>
       )}
