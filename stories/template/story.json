@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 47,
+  "revision": 48,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -240,7 +240,7 @@
     "notes": [],
     "music": [
       {
-        "id": "music-song-01",
+        "id": "spotify-song-01",
         "title": "벚꽃 엔딩（樱花结局）",
         "sender": "Busker Busker",
         "body": "",
@@ -257,7 +257,7 @@
         }
       },
       {
-        "id": "music-song-02",
+        "id": "spotify-song-02",
         "title": "눈, 코, 입（眼,鼻,嘴）",
         "sender": "TAEYANG",
         "body": "",
@@ -274,7 +274,7 @@
         }
       },
       {
-        "id": "music-song-03",
+        "id": "spotify-song-03",
         "title": "봄봄봄（春 春 春）",
         "sender": "Roy Kim",
         "body": "",
@@ -291,7 +291,7 @@
         }
       },
       {
-        "id": "music-song-04",
+        "id": "spotify-song-04",
         "title": "double take",
         "sender": "Dhruv",
         "body": "",
@@ -308,7 +308,7 @@
         }
       },
       {
-        "id": "music-song-05",
+        "id": "spotify-song-05",
         "title": "Santa Tell Me",
         "sender": "Ariana Grande",
         "body": "",
@@ -325,7 +325,7 @@
         }
       },
       {
-        "id": "music-song-06",
+        "id": "spotify-song-06",
         "title": "airplane thoughts",
         "sender": "Dhruv",
         "body": "",
@@ -341,7 +341,7 @@
         }
       },
       {
-        "id": "music-song-07",
+        "id": "spotify-song-07",
         "title": "Galaxy",
         "sender": "AKMU",
         "body": "",
@@ -357,7 +357,7 @@
         }
       },
       {
-        "id": "music-song-08",
+        "id": "spotify-song-08",
         "title": "I Feel It Coming",
         "sender": "The Weeknd / Daft Punk",
         "body": "",
@@ -373,7 +373,7 @@
         }
       },
       {
-        "id": "music-song-09",
+        "id": "spotify-song-09",
         "title": "Don't Know Why",
         "sender": "Norah Jones",
         "body": "",
@@ -389,7 +389,7 @@
         }
       },
       {
-        "id": "music-song-10",
+        "id": "spotify-song-10",
         "title": "LADY",
         "sender": "米津玄師",
         "body": "",
@@ -405,7 +405,7 @@
         }
       },
       {
-        "id": "music-song-11",
+        "id": "spotify-song-11",
         "title": "Youngblood",
         "sender": "5 Seconds of Summer",
         "body": "",
