@@ -21,3 +21,21 @@
     background: #000;
   }
 }
+
+
+.story-video-call{position:fixed;inset:0;z-index:99999;background:#090b10;color:#fff;display:flex;justify-content:center;align-items:center;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+.story-video-incoming,.story-video-ended{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%,#46515b,#101218 70%);text-align:center}
+.story-video-incoming img{width:112px;height:112px;object-fit:cover;border-radius:50%;margin-bottom:18px}
+.story-video-incoming h2{font-size:32px;margin:0 0 10px}.story-video-incoming p{color:#d4d7db;margin:0}
+.story-video-accept{position:absolute;bottom:12%;border:0;border-radius:50%;background:#34c759;color:#fff;width:76px;height:76px;font-size:29px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px}
+.story-video-accept span{font-size:12px}
+.story-video-connected{position:relative;width:100%;height:100%;overflow:hidden;background:#111}
+.story-video-main{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.story-video-header{position:absolute;top:max(30px,env(safe-area-inset-top));left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:4px;text-shadow:0 1px 8px #000;font-size:17px}
+.story-video-header span{font-variant-numeric:tabular-nums;font-size:14px}
+.story-video-self{position:absolute;top:max(72px,calc(env(safe-area-inset-top) + 42px));right:15px;width:25%;max-width:120px;aspect-ratio:3/4;object-fit:cover;border-radius:13px;border:1px solid #ffffff55;box-shadow:0 3px 18px #0007}
+.story-video-subtitle{position:absolute;bottom:19%;left:10%;right:10%;width:fit-content;max-width:80%;margin:auto;background:#1010109c;backdrop-filter:blur(5px);border-radius:10px;padding:9px 14px;text-align:center;font-size:15px;line-height:1.5;text-shadow:0 1px 3px #000}
+.story-video-controls{position:absolute;bottom:5%;left:0;right:0;display:flex;justify-content:space-evenly;text-align:center}
+.story-video-controls span{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:22px;background:#303037a8;border-radius:30px;width:62px;padding:10px 0}
+.story-video-controls small{font-size:10px}
+.story-video-ended{font-size:24px}
