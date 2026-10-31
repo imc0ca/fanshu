@@ -752,7 +752,7 @@ export function MusicSkin(p: Props) {
         ))}
         <Empty items={items} />
       </div>
-      <PersistentSpotifyPlayer items={items} />
+      <PersistentSpotifyPlayer items={items} musicStyle />
       <Tabs tabs={["资料库", "歌单"]} value={tab} set={setTab} icons={[<Music />, <Folder />]} />
     </div>
   );
