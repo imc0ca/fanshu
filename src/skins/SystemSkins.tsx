@@ -1,6 +1,5 @@
 import { PersistentSpotifyPlayer, playSpotify } from "../PersistentSpotifyPlayer";
 export { WeatherSkin, HealthSkin } from "./CalibratedSystemApps";
-import { AudioPlayer, useTrack } from "../audio";
 import { useSkinState } from "../skinState";
 import {
   Calendar,
@@ -21,14 +20,13 @@ import {
   Music,
   Phone,
   Search,
-  SkipForward,
   Star,
   Users,
   Wallet,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { download } from "../io";
-import { safeMedia, type Item } from "../schema";
+import { type Item } from "../schema";
 import {
   Add,
   Avatar,
