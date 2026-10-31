@@ -20,7 +20,7 @@ const callTimeline = callScenes.flatMap((scene) =>
   [{ image: scene.image, caption: "" }]
 );
 function VideoCallExperience() {
-  const [phase, setPhase] = useState<"idle" | "ringing" | "connected" | "ended">("idle");
+  const [phase, setPhase] = useState<"idle" | "ringing" | "connected">("idle");
   const [seconds, setSeconds] = useState(0);
   const fired = React.useRef(false);
   const ringtone = React.useRef<AudioContext | null>(null);
@@ -77,7 +77,7 @@ function VideoCallExperience() {
       const elapsed = Math.floor((Date.now() - started) / 1000);
       setSeconds(elapsed);
       if (elapsed >= callTimeline.length * 2) {
-        setPhase("ended");
+        setPhase("idle");
         try {
           const context = new AudioContext();
           const oscillator = context.createOscillator();
@@ -92,13 +92,8 @@ function VideoCallExperience() {
     }, 150);
     return () => clearInterval(interval);
   }, [phase]);
-  useEffect(() => {
-    if (phase !== "ended") return;
-    const timeout = setTimeout(() => setPhase("idle"), 0);
-    return () => clearTimeout(timeout);
-  }, [phase]);
-  if (phase === "idle" || phase === "ended") return null;
-  const screen = document.querySelector(".story-runtime .phone-screen");
+  if (phase === "idle") return null;
+  const screen = document.querySelector(".story-runtime .phone-shell");
   if (!screen) return null;
   const scene = callTimeline[Math.min(Math.floor(seconds / 2), callTimeline.length - 1)];
   const asset = (name: string) => "./video-call-20240321/" + name;
