@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { createPortal } from "react-dom";
+import { Phone, Video, MicOff, Volume2 } from "lucide-react";
 import { Phone } from "../Phone";
 import { validateWork, type Work } from "../schema";
 import "../styles.css";
@@ -92,32 +94,32 @@ function VideoCallExperience() {
   }, [phase]);
   useEffect(() => {
     if (phase !== "ended") return;
-    const timeout = setTimeout(() => setPhase("idle"), 1500);
+    const timeout = setTimeout(() => setPhase("idle"), 0);
     return () => clearTimeout(timeout);
   }, [phase]);
-  if (phase === "idle") return null;
+  if (phase === "idle" || phase === "ended") return null;
+  const screen = document.querySelector(".story-runtime .phone-screen");
+  if (!screen) return null;
   const scene = callTimeline[Math.min(Math.floor(seconds / 2), callTimeline.length - 1)];
   const asset = (name: string) => "./video-call-20240321/" + name;
-  return (
+  return createPortal(
     <div className="story-video-call" role="dialog" aria-label="咚灿视频通话">
       {phase === "ringing" ? (
         <div className="story-video-incoming">
           <img src="./kkt-avatars/dongchan-2024.png" alt="咚灿头像" />
           <h2>咚灿</h2><p>视频通话邀请…</p>
-          <button onClick={() => { setSeconds(0); setPhase("connected"); }} className="story-video-accept">▣<span>接听</span></button>
+          <button onClick={() => { setSeconds(0); setPhase("connected"); }} className="story-video-accept" aria-label="接听视频通话"><Phone size={33} fill="white" strokeWidth={2.3} /></button>
         </div>
-      ) : phase === "ended" ? (
-        <div className="story-video-ended">通话结束</div>
       ) : (
         <div className="story-video-connected">
           <img className="story-video-main" src={asset(scene.image)} alt="视频通话画面" />
           <div className="story-video-header"><strong>咚灿</strong><span>{String(Math.floor(seconds / 60)).padStart(2, "0")}:{String(seconds % 60).padStart(2, "0")}</span></div>
           <img className="story-video-self" src={asset("b813ec9132da2e69c492ec81a3885887.jpeg")} alt="宋小鱼的视频小窗" />
           {scene.caption && <div className="story-video-subtitle" key={seconds >> 1}>{scene.caption}</div>}
-          <div className="story-video-controls"><span>♩<small>静音</small></span><span>▣<small>摄像头</small></span><span>◉<small>扬声器</small></span></div>
+          <div className="story-video-controls"><span><MicOff size={24}/><small>静音</small></span><span><Video size={24}/><small>摄像头</small></span><span><Volume2 size={24}/><small>扬声器</small></span></div>
         </div>
       )}
-    </div>
+    </div>, screen
   );
 }
 
