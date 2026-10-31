@@ -45,7 +45,6 @@ function VideoCallExperience() {
   }, []);
   useEffect(() => {
     if (phase !== "ringing") return;
-    let interval: ReturnType<typeof setInterval> | undefined;
     const play = () => {
       try {
         const ctx = ringtone.current ?? new AudioContext();
@@ -66,7 +65,7 @@ function VideoCallExperience() {
       } catch { /* browsers can block automatic audio */ }
     };
     play();
-    interval = setInterval(play, 1800);
+    const interval = setInterval(play, 1800);
     return () => { clearInterval(interval); if (ringtone.current) { void ringtone.current.close(); ringtone.current = null; } };
   }, [phase]);
   useEffect(() => {
