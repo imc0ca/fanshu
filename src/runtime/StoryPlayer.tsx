@@ -13,7 +13,7 @@ const callScenes = [
   { image: "10903.jpeg", captions: ["这是在干嘛，好诡异的聊天…"] },
   { image: "10904.jpeg", captions: ["真的有点困了", "那我先挂了"] },
 ];
-const callTimeline = callScenes.flatMap((scene, index) =>
+const callTimeline = callScenes.flatMap((scene) =>
   scene.captions.length ? scene.captions.map((caption) => ({ image: scene.image, caption })) :
   [{ image: scene.image, caption: "" }]
 );
@@ -21,6 +21,7 @@ function VideoCallExperience() {
   const [phase, setPhase] = useState<"idle" | "ringing" | "connected" | "ended">("idle");
   const [seconds, setSeconds] = useState(0);
   const fired = React.useRef(false);
+  const ringtone = React.useRef<AudioContext | null>(null);
   const phaseRef = React.useRef(phase);
   phaseRef.current = phase;
   useEffect(() => {
@@ -42,6 +43,32 @@ function VideoCallExperience() {
     search();
     return () => { mutations.disconnect(); observer.disconnect(); clearTimeout(timer); };
   }, []);
+  useEffect(() => {
+    if (phase !== "ringing") return;
+    let interval: ReturnType<typeof setInterval> | undefined;
+    const play = () => {
+      try {
+        const ctx = ringtone.current ?? new AudioContext();
+        ringtone.current = ctx;
+        if (ctx.state === "suspended") void ctx.resume();
+        [0, 0.23].forEach((delay) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = "sine";
+          osc.frequency.value = 660;
+          gain.gain.setValueAtTime(0.0001, ctx.currentTime + delay);
+          gain.gain.exponentialRampToValueAtTime(0.055, ctx.currentTime + delay + 0.025);
+          gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + delay + 0.19);
+          osc.connect(gain).connect(ctx.destination);
+          osc.start(ctx.currentTime + delay);
+          osc.stop(ctx.currentTime + delay + 0.2);
+        });
+      } catch { /* browsers can block automatic audio */ }
+    };
+    play();
+    interval = setInterval(play, 1800);
+    return () => { clearInterval(interval); if (ringtone.current) { void ringtone.current.close(); ringtone.current = null; } };
+  }, [phase]);
   useEffect(() => {
     if (phase !== "connected") return;
     const started = Date.now();
