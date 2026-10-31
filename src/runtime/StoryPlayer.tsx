@@ -154,7 +154,7 @@ function StoryPlayer() {
   return (
     <main className="story-runtime">
       {work ? (
-        <><PhoneIcon work={work} /><VideoCallExperience /></>
+        <><Phone work={work} /><VideoCallExperience /></>
       ) : (
         <p role="status">{error || "正在打开手机…"}</p>
       )}
