@@ -80,17 +80,18 @@ function KktPhoto({ path, outgoing }: { path: string; outgoing: boolean }) {
     />
   );
 }
-function KktCallCard({ type, missed }: { type: string; missed: boolean }) {
+function KktCallCard({ type, missed, status, duration }: { type: string; missed: boolean; status?: string; duration?: string }) {
   const video = type === "video";
-  const Glyph = video ? (missed ? VideoOff : Video) : (missed ? PhoneMissed : Phone);
+  const ended = status === "ended";
+  const Glyph = video ? (missed && !ended ? VideoOff : Video) : (missed && !ended ? PhoneMissed : Phone);
   return (
-    <span className="kkt-call-card">
-      <span className={"kkt-call-icon" + (missed ? " is-missed" : "")}>
-        <Glyph size={23} strokeWidth={2} />
+    <span className={"kkt-call-card" + (ended ? " is-ended" : "")}>
+      <span className={"kkt-call-icon" + (ended || missed ? " is-ended-icon" : "")}>
+        <Glyph size={23} strokeWidth={2} fill={video ? "currentColor" : "none"} />
       </span>
       <span className="kkt-call-copy">
-        <strong>{video ? "Video Call" : "Voice Call"}</strong>
-        <small>{missed ? "Missed Call" : "Call"}</small>
+        <strong>{ended ? (video ? "End video call" : "End voice call") : (video ? "Video Call" : "Voice Call")}</strong>
+        {ended ? <small className="kkt-call-duration">{duration || "0:01"}</small> : missed ? <small>Missed Call</small> : null}
       </span>
     </span>
   );
@@ -188,7 +189,7 @@ export function MymyKakao(p: SkinProps) {
                     {m.meta?.pendingImagePath ? (
                       <KktPhoto path={m.meta.pendingImagePath} outgoing={!!m.outgoing} />
                     ) : m.meta?.callType ? (
-                      <KktCallCard type={m.meta.callType} missed={m.meta.callStatus !== "completed"} />
+                      <KktCallCard type={m.meta.callType} status={m.meta.callStatus} duration={m.meta.callDuration} missed={m.meta.callStatus === "missed"} />
                     ) : m.media ? <Media item={m} /> : m.body}
                   </button>
                   {!m.outgoing && run.last && (
