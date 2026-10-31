@@ -1,3 +1,4 @@
+import { PersistentSpotifyPlayer, playSpotify } from "../PersistentSpotifyPlayer";
 export { WeatherSkin, HealthSkin } from "./CalibratedSystemApps";
 import { AudioPlayer, useTrack } from "../audio";
 import { useSkinState } from "../skinState";
@@ -723,7 +724,6 @@ export function FilesSkin(p: Props) {
 }
 export function MusicSkin(p: Props) {
   const { tab, setTab, items } = useContent(p, "资料库");
-  const [song, setSong] = useTrack(p, items);
   return (
     <div className="catalog-skin native-music">
       <Header p={p} />
@@ -732,71 +732,30 @@ export function MusicSkin(p: Props) {
         {tab === "歌单" ? (
           <div className="music-albums">
             {groupItems(items, "我的音乐").map((g) => (
-              <button
-                key={g}
-                onClick={() => {
-                  const i = items.find((i) => (i.folder || "我的音乐") === g);
-                  if (i) setSong(i);
-                }}
-              >
+              <button key={g} onClick={() => {
+                const first = items.find(i => (i.folder || "我的音乐") === g);
+                if (first) playSpotify(first, items);
+                setTab("资料库");
+              }}>
                 <Music size={51} />
                 <strong>{g}</strong>
               </button>
             ))}
           </div>
-        ) : (
-          items.map((i, n) => (
-            <button
-              className="music-track"
-              key={i.id}
-              onClick={() => {
-                setSong(i);
-              }}
-            >
-              <small>{n + 1}</small>
-              <span>
-                <strong>{i.title}</strong>
-                <small>
-                  {i.sender} · {meta(i, "album")}
-                </small>
-              </span>
-              <span>{meta(i, "duration")}</span>
-            </button>
-          ))
-        )}
+        ) : items.map((i, n) => (
+          <button className="music-track" key={i.id} onClick={() => playSpotify(i, items)}>
+            <small>{n + 1}</small>
+            <span>
+              <strong>{i.title}</strong>
+              <small>{i.sender} · {meta(i, "album")}</small>
+            </span>
+            <span>{meta(i, "duration")}</span>
+          </button>
+        ))}
         <Empty items={items} />
       </div>
-      {song && (
-        <div className="native-now-playing">
-          <button onClick={() => p.onItem(song)}>
-            <Music size={20} />
-            {song.title}
-          </button>
-          {song.kind === "audio" && safeMedia(song.media) ? (
-            <AudioPlayer p={p} item={song} />
-          ) : (
-            <button onClick={() => p.onItem(song)}>查看歌曲内容</button>
-          )}
-          <button
-            aria-label="下一首"
-            onClick={() =>
-              setSong(
-                items[
-                  (items.findIndex((i) => i.id === song.id) + 1) % items.length
-                ],
-              )
-            }
-          >
-            <SkipForward size={18} />
-          </button>
-        </div>
-      )}
-      <Tabs
-        tabs={["资料库", "歌单"]}
-        value={tab}
-        set={setTab}
-        icons={[<Music />, <Folder />]}
-      />
+      <PersistentSpotifyPlayer items={items} />
+      <Tabs tabs={["资料库", "歌单"]} value={tab} set={setTab} icons={[<Music />, <Folder />]} />
     </div>
   );
 }
