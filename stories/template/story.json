@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 46,
+  "revision": 47,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -238,7 +238,189 @@
     "camera": [],
     "safari": [],
     "notes": [],
-    "music": [],
+    "music": [
+      {
+        "id": "music-song-01",
+        "title": "벚꽃 엔딩（樱花结局）",
+        "sender": "Busker Busker",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "버스커 버스커 1집",
+          "duration": "04:20",
+          "source": "用户截图",
+          "audioStatus": "已上传",
+          "audioFile": "/%E6%A8%B1%E8%8A%B1%E7%BB%93%E5%B1%80%E1%84%87%E1%85%A5%E1%86%BD%E1%84%81%E1%85%A9%E1%86%BE%20%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%83%E1%85%B5%E1%86%BC.m4a"
+        }
+      },
+      {
+        "id": "music-song-02",
+        "title": "눈, 코, 입（眼,鼻,嘴）",
+        "sender": "TAEYANG",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "RISE",
+          "duration": "03:49",
+          "source": "用户截图",
+          "audioStatus": "已上传",
+          "audioFile": "/%E7%9C%BC%E9%BC%BB%E5%98%B4%E1%84%82%E1%85%AE%E1%86%AB%2C%20%E1%84%8F%E1%85%A9%2C%20%E1%84%8B%E1%85%B5%E1%86%B8.m4a"
+        }
+      },
+      {
+        "id": "music-song-03",
+        "title": "봄봄봄（春 春 春）",
+        "sender": "Roy Kim",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "봄봄봄（Bom Bom Bom）",
+          "duration": "03:26",
+          "source": "用户截图",
+          "audioStatus": "已上传",
+          "audioFile": "/bombombom%20%E1%84%87%E1%85%A9%E1%86%B7%E1%84%87%E1%85%A9%E1%86%B7%E1%84%87%E1%85%A9%E1%86%B7.m4a"
+        }
+      },
+      {
+        "id": "music-song-04",
+        "title": "double take",
+        "sender": "Dhruv",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "double take",
+          "duration": "02:51",
+          "source": "用户截图",
+          "audioStatus": "已上传",
+          "audioFile": "/double%20take.m4a"
+        }
+      },
+      {
+        "id": "music-song-05",
+        "title": "Santa Tell Me",
+        "sender": "Ariana Grande",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "Santa Tell Me",
+          "duration": "03:24",
+          "source": "用户截图",
+          "audioStatus": "已上传",
+          "audioFile": "/Santa%20tell%20me.m4a"
+        }
+      },
+      {
+        "id": "music-song-06",
+        "title": "airplane thoughts",
+        "sender": "Dhruv",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "airplane thoughts",
+          "duration": "03:30",
+          "source": "用户截图",
+          "audioStatus": "等待上传音频文件"
+        }
+      },
+      {
+        "id": "music-song-07",
+        "title": "Galaxy",
+        "sender": "AKMU",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "PLAY",
+          "duration": "02:59",
+          "source": "用户截图",
+          "audioStatus": "等待上传音频文件"
+        }
+      },
+      {
+        "id": "music-song-08",
+        "title": "I Feel It Coming",
+        "sender": "The Weeknd / Daft Punk",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "Starboy",
+          "duration": "04:29",
+          "source": "用户截图",
+          "audioStatus": "等待上传音频文件"
+        }
+      },
+      {
+        "id": "music-song-09",
+        "title": "Don't Know Why",
+        "sender": "Norah Jones",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "Don't Know Why",
+          "duration": "03:07",
+          "source": "用户截图",
+          "audioStatus": "等待上传音频文件"
+        }
+      },
+      {
+        "id": "music-song-10",
+        "title": "LADY",
+        "sender": "米津玄師",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "LADY",
+          "duration": "03:27",
+          "source": "用户截图",
+          "audioStatus": "等待上传音频文件"
+        }
+      },
+      {
+        "id": "music-song-11",
+        "title": "Youngblood",
+        "sender": "5 Seconds of Summer",
+        "body": "",
+        "time": "",
+        "kind": "audio",
+        "media": "",
+        "folder": "我的音乐",
+        "meta": {
+          "album": "Youngblood (Deluxe)",
+          "duration": "03:23",
+          "source": "用户截图",
+          "audioStatus": "等待上传音频文件"
+        }
+      }
+    ],
     "weather": [
       {
         "id": "seoul-weather-reference",
