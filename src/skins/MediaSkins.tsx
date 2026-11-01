@@ -444,7 +444,6 @@ export function DouyinSkin(p: Props) {
 export function TikTokSkin(_p: Props) {
   // Screenshot-based fiction feed: no video files or external TikTok requests.
   const [index, setIndex] = useState(0);
-  const [liked, setLiked] = useState<number[]>([]);
   const posts = [
     { file: "post-01.jpg", label: "Mia Rue · puppy" },
     { file: "post-02.jpg", label: "Tex_dachshund · fun dog" },
