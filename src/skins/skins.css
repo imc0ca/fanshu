@@ -4246,3 +4246,27 @@
 .health-share-calories span{font-size:17px;font-weight:700}
 .health-share-calories small{font-size:11px;color:#9c9ca2;margin-top:4px}
 .health-share-other{display:block;margin-top:12px;padding:12px;color:white;background:#29292b;border-radius:12px;width:100%;text-align:left}
+
+
+/* Snapchat Stories: bright two-column story board, ready for user photos */
+.snapchat-ui.snapchat-story-mode{background:#fff;color:#111}
+.snap-story-page{height:100%;min-height:0;overflow-y:auto;background:#fff;position:relative}
+.snap-story-heading{position:sticky;top:0;z-index:2;background:#fff}
+.snap-story-toolbar{display:flex;align-items:center;gap:8px;padding:10px 9px 12px}
+.snap-story-toolbar button{flex-shrink:0;border-radius:50%;background:#f0f1f3;color:#68717a;width:35px;height:35px;display:grid;place-items:center;font-size:18px}
+.snap-story-toolbar strong{flex:1;text-align:center;font-size:23px;color:#111}
+.snap-story-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:4px 10px 24px}
+.snap-story-tile{height:205px;position:relative;border-radius:9px;overflow:hidden;background:#e9edf2;text-align:left}
+.snap-story-placeholder{position:absolute;inset:0;display:grid;place-items:center;color:#9da6b1;background:linear-gradient(140deg,#e7ebf2,#cdd6e3)}
+.snap-story-placeholder-1{background:linear-gradient(140deg,#e9e3f2,#cbd4e5)}
+.snap-story-placeholder-2{background:linear-gradient(140deg,#e8eee9,#c9d9d3)}
+.snap-story-placeholder-3{background:linear-gradient(140deg,#ede8e0,#d4d8e2)}
+.snap-story-tile:after{content:"";position:absolute;bottom:0;left:0;right:0;height:65px;background:linear-gradient(transparent,#0008)}
+.snap-story-tile strong{position:absolute;bottom:12px;left:12px;right:8px;color:white;font-size:15px;font-weight:750;z-index:1;text-shadow:0 1px 3px #0007;overflow-wrap:anywhere}
+.snap-story-viewer{position:absolute;inset:0;background:#151515;color:white;z-index:8}
+.snap-story-progress{position:absolute;top:11px;left:12px;right:12px;height:3px;border-radius:3px;background:#ffffff50}
+.snap-story-progress span{display:block;background:white;width:0%;height:100%}
+.snap-story-back{position:absolute;top:23px;left:13px;color:white;font-size:34px;z-index:2}
+.snap-story-viewer-name{position:absolute;top:34px;left:48px;font-size:15px}
+.snap-story-awaiting{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#999;font-size:13px}
+.snap-story-viewer-next{position:absolute;top:85px;right:0;bottom:0;width:28%;background:transparent}
