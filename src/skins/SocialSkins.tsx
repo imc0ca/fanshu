@@ -606,8 +606,8 @@ function FolderIcon() {
 export function SnapchatSkin(p: Props) {
   const { tab, setTab, items } = useContent(p, "故事");
   const [index, setIndex] = useState(0);
-  const [storyOpen, setStoryOpen] = useState<string | null>(null);
-  const storyUsers = ["Daechi", "Taro1125", "Dorri252", "BurgerSC913"];
+  const [storyOpen, setStoryOpen] = useState<number | null>(null);
+  const storyPosts = [{name:"Taro1125",image:"taro1125.jpg"},{name:"Daechi",image:"daechi.jpg"},{name:"Dorri252",image:"dorri252-01.jpg"},{name:"Dorri252",image:"dorri252-02.jpg"},{name:"BurgerSC913",image:"burgersc913.jpg"}];
   const list = items.filter((i) => tab === "聊天" ? i.folder === "聊天" : i.folder !== "聊天");
   const i = list[index % Math.max(list.length, 1)];
   return (
@@ -618,19 +618,19 @@ export function SnapchatSkin(p: Props) {
             <div className="snap-story-toolbar"><button aria-label="个人资料" onClick={() => setTab("聊天")}><User size={23}/></button><button aria-label="搜索" onClick={() => setTab("聊天")}><SearchBoxIcon /></button><strong>故事</strong><button aria-label="通知" onClick={() => setTab("聊天")}>♧</button><button aria-label="添加好友" onClick={() => setTab("聊天")}><Users size={22}/></button><button aria-label="更多选项" onClick={() => setTab("聊天")}>•••</button></div>
           </div>
           <div className="snap-story-grid">
-            {storyUsers.map((name, n) => (
-              <button key={name} className="snap-story-tile" onClick={() => setStoryOpen(name)} aria-label={name + " 的故事"}>
-                <div className={"snap-story-placeholder snap-story-placeholder-" + n}><Camera size={33} strokeWidth={1.4}/></div>
-                <strong>{name}</strong>
+            {storyPosts.map((post, n) => (
+              <button key={post.image} className="snap-story-tile" onClick={() => setStoryOpen(n)} aria-label={post.name + " 的故事"}>
+                <div className={"snap-story-placeholder snap-story-placeholder-" + n}><img src={"/fanshu/snapchat-images/" + post.image} alt={post.name + " 的故事"} style={{width:"100%",height:"100%",objectFit:"cover"}} /></div>
+                <strong>{post.name}</strong>
               </button>
             ))}
           </div>
-          {storyOpen && <div className="snap-story-viewer">
+          {storyOpen !== null && <div className="snap-story-viewer">
             <button className="snap-story-back" onClick={() => setStoryOpen(null)} aria-label="返回故事">‹</button>
             <div className="snap-story-progress"><span /></div>
-            <strong className="snap-story-viewer-name">{storyOpen}</strong>
-            <div className="snap-story-awaiting"><Camera size={38}/><span>照片待上传</span></div>
-            <button className="snap-story-viewer-next" aria-label="下一条故事" onClick={() => setStoryOpen(storyUsers[(storyUsers.indexOf(storyOpen)+1)%storyUsers.length])}/>
+            <strong className="snap-story-viewer-name">{storyPosts[storyOpen].name}</strong>
+            <div className="snap-story-awaiting"><img src={"/fanshu/snapchat-images/" + storyPosts[storyOpen].image} alt={storyPosts[storyOpen].name + " 的故事"} style={{width:"100%",height:"100%",objectFit:"contain"}} /></div>
+            <button className="snap-story-viewer-next" aria-label="下一条故事" onClick={() => setStoryOpen((storyOpen+1)%storyPosts.length)}/>
           </div>}
         </div>
       ) : <>
