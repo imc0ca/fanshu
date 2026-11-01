@@ -18,7 +18,7 @@ import {
   Users,
   Video,
 } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { safeMedia, type Item } from "../schema";
 import {
   Avatar,
@@ -441,43 +441,44 @@ export function DouyinSkin(p: Props) {
     </div>
   );
 }
-export function TikTokSkin(p: Props) {
-  const { tab, setTab, items } = useContent(p, "For You");
-  const list =
-    tab === "For You"
-      ? items
-      : tab === "Following"
-        ? items.filter((i) => i.folder === "关注" || i.folder === "Following")
-        : items.filter((i) => i.folder === "个人主页");
+export function TikTokSkin(_p: Props) {
+  // Screenshot-based fiction feed: no video files or external TikTok requests.
+  const [index, setIndex] = useState(0);
+  const [liked, setLiked] = useState<number[]>([]);
+  const posts = [
+    { file: "post-01.jpg", label: "Mia Rue · puppy" },
+    { file: "post-02.jpg", label: "Tex_dachshund · fun dog" },
+    { file: "post-03.jpg", label: "Niki · bunny" },
+    { file: "post-04.jpg", label: "cat memes · Aura" },
+  ];
+  const start = useRef<number | null>(null);
+  const change = (step: number) => setIndex((i) => Math.max(0, Math.min(posts.length - 1, i + step)));
   return (
-    <div className="catalog-skin tiktok-ui">
-      <Header p={p} />
-      <div className="tiktok-top">
-        <button
-          className={tab === "Following" ? "selected" : ""}
-          onClick={() => setTab("Following")}
-        >
-          Following
-        </button>
-        <button
-          className={tab === "For You" ? "selected" : ""}
-          onClick={() => setTab("For You")}
-        >
-          For You
-        </button>
-      </div>
-      <div className="vertical-feed">
-        {list.map((i) => (
-          <VerticalVideo key={i.id} p={p} item={i} />
+    <div className="catalog-skin tiktok-ui tiktok-static-feed"
+      onTouchStart={(e) => { start.current = e.touches[0]?.clientY ?? null; }}
+      onTouchEnd={(e) => {
+        if (start.current === null) return;
+        const delta = start.current - (e.changedTouches[0]?.clientY ?? start.current);
+        if (Math.abs(delta) > 45) change(delta > 0 ? 1 : -1);
+        start.current = null;
+      }}
+      onWheel={(e) => { if (Math.abs(e.deltaY) > 20) change(e.deltaY > 0 ? 1 : -1); }}
+    >
+      <div className="tiktok-static-viewport" aria-label="TikTok 静态帖子，向上滑动查看下一条">
+        {posts.map((post, i) => (
+          <div key={post.file} className="tiktok-static-slide"
+            style={{ transform: `translateY(${(i - index) * 100}%)` }}
+            aria-hidden={i !== index}>
+            <img src={`${import.meta.env.BASE_URL}tiktok-images/${post.file}`}
+              alt={post.label} draggable={false} />
+          </div>
         ))}
-        <Empty items={list} />
       </div>
-      <Tabs
-        tabs={["For You", "Following", "Profile"]}
-        value={tab}
-        set={setTab}
-        icons={[<Home />, <Users />, <User />]}
-      />
+      <div className="tiktok-static-controls">
+        <button aria-label="上一条" disabled={index === 0} onClick={() => change(-1)}>↑</button>
+        <button aria-label="下一条" disabled={index === posts.length - 1} onClick={() => change(1)}>↓</button>
+      </div>
+      <span className="tiktok-static-count">{index + 1} / {posts.length}</span>
     </div>
   );
 }
