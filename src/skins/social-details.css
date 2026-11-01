@@ -472,3 +472,25 @@
   object-fit: cover;
   border-radius: 0;
 }
+
+
+/* Photo framing refinements: reveal the lower portion of the upper-right
+   image in three-photo posts without changing the mosaic layout. */
+.ios18 .x-post-photo-gallery[data-photo-count="3"] img:nth-child(2) {
+  object-position: center 85%;
+}
+
+/* Reply photos should keep their full original landscape framing instead
+   of inheriting cropped portrait dimensions from other post media. */
+.ios18 .x-authored-reply .x-reply-photo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  margin-top: 8px;
+  border-radius: 12px;
+}
