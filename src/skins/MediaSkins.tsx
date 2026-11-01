@@ -442,42 +442,55 @@ export function DouyinSkin(p: Props) {
   );
 }
 export function TikTokSkin(_p: Props) {
-  // Screenshot-based fiction feed: no video files or external TikTok requests.
-  const [index, setIndex] = useState(0);
   const posts = [
-    { file: "post-01.jpg", label: "Mia Rue · puppy" },
-    { file: "post-02.jpg", label: "Tex_dachshund · fun dog" },
-    { file: "post-03.jpg", label: "Niki · bunny" },
-    { file: "post-04.jpg", label: "cat memes · Aura" },
+    { file: "post-01.jpg", user: "Mia Rue", date: "10-9", avatar: "🐶", caption: "#dog #dachshund #puppy #puppies #cute", music: "Beautiful Boy (Darling...)", likes: 4500000, comments: 6434, saves: 251700, shares: 733800 },
+    { file: "post-02.jpg", user: "Tex_dachshund", date: "5-29", avatar: "🐕", caption: "Which is your favorite ?\n#dachshund #puppydog #fy ...", music: "I'm A Believer - @Smash Mouth", likes: 29600, comments: 126, saves: 1828, shares: 17400 },
+    { file: "post-03.jpg", user: "Niki 🐰", date: "", avatar: "🐰", caption: "#cute #bunny #funny #funnyvideo #animals", music: "咩的每一步都很坚定 - ...", likes: 240200, comments: 1720, saves: 30800, shares: 43000 },
+    { file: "post-04.jpg", user: "cat memes", date: "", avatar: "🐱", caption: "Aura.", music: "AURA (Super Slowed) - @Ogryzek", likes: 1500000, comments: 5588, saves: 111000, shares: 621800 },
   ];
+  const [index, setIndex] = useState(0);
+  const [liked, setLiked] = useState<number[]>([]);
+  const [saved, setSaved] = useState<number[]>([]);
+  const [following, setFollowing] = useState<number[]>([]);
+  const [panel, setPanel] = useState<"comments" | "search" | "share" | null>(null);
+  const [query, setQuery] = useState("");
+  const [comment, setComment] = useState("");
+  const [comments, setComments] = useState<Record<number, string[]>>({});
+  const [tab, setTab] = useState("推荐");
   const start = useRef<number | null>(null);
-  const change = (step: number) => setIndex((i) => Math.max(0, Math.min(posts.length - 1, i + step)));
+  const lastWheel = useRef(0);
+  const change = (step: number) => { setPanel(null); setIndex(i => Math.max(0, Math.min(posts.length - 1, i + step))); };
+  const fmt = (n: number) => n >= 1000000 ? (n / 1000000).toFixed(1) + "M" : n >= 10000 ? (n / 1000).toFixed(1) + "K" : String(n);
+  const post = posts[index];
   return (
-    <div className="catalog-skin tiktok-ui tiktok-static-feed"
-      onTouchStart={(e) => { start.current = e.touches[0]?.clientY ?? null; }}
-      onTouchEnd={(e) => {
-        if (start.current === null) return;
-        const delta = start.current - (e.changedTouches[0]?.clientY ?? start.current);
-        if (Math.abs(delta) > 45) change(delta > 0 ? 1 : -1);
-        start.current = null;
-      }}
-      onWheel={(e) => { if (Math.abs(e.deltaY) > 20) change(e.deltaY > 0 ? 1 : -1); }}
+    <div className="catalog-skin tiktok-ui tiktok-native-feed"
+      onTouchStart={e => { start.current = e.touches[0]?.clientY ?? null; }}
+      onTouchEnd={e => { if (start.current === null || panel) return; const delta = start.current - (e.changedTouches[0]?.clientY ?? start.current); if (Math.abs(delta) > 48) change(delta > 0 ? 1 : -1); start.current = null; }}
+      onWheel={e => { if (panel || Math.abs(e.deltaY) < 25 || Date.now() - lastWheel.current < 550) return; lastWheel.current = Date.now(); change(e.deltaY > 0 ? 1 : -1); }}
     >
-      <div className="tiktok-static-viewport" aria-label="TikTok 静态帖子，向上滑动查看下一条">
-        {posts.map((post, i) => (
-          <div key={post.file} className="tiktok-static-slide"
-            style={{ transform: `translateY(${(i - index) * 100}%)` }}
-            aria-hidden={i !== index}>
-            <img src={`${import.meta.env.BASE_URL}tiktok-images/${post.file}`}
-              alt={post.label} draggable={false} />
-          </div>
-        ))}
+      <div className="tiktok-native-media" aria-label="上下滑动切换帖子">
+        {posts.map((p, i) => <div key={p.file} className="tiktok-native-slide" style={{ transform: `translateY(${(i-index)*100}%)` }} aria-hidden={i !== index}>
+          <img src={`${import.meta.env.BASE_URL}tiktok-images/${p.file}`} alt={p.user + " 帖子画面"} draggable={false} />
+        </div>)}
       </div>
-      <div className="tiktok-static-controls">
-        <button aria-label="上一条" disabled={index === 0} onClick={() => change(-1)}>↑</button>
-        <button aria-label="下一条" disabled={index === posts.length - 1} onClick={() => change(1)}>↓</button>
+      <div className="tiktok-native-top"><button onClick={() => setPanel("search")} aria-label="搜索"><Search size={20}/></button>{["关注", "推荐"].map(t => <button key={t} className={tab === t ? "active" : ""} onClick={() => setTab(t)}>{t}</button>)}</div>
+      <div className="tiktok-native-actions">
+        <button className="tiktok-native-avatar" aria-label="关注作者" onClick={() => setFollowing(a => a.includes(index) ? a.filter(x => x !== index) : [...a,index])}><span>{post.avatar}</span><b>{following.includes(index) ? "✓" : "+"}</b></button>
+        <button aria-label="点赞" onClick={() => setLiked(a => a.includes(index) ? a.filter(x => x !== index) : [...a,index])}><Heart size={31} fill={liked.includes(index) ? "#fe2c55" : "white"} color={liked.includes(index) ? "#fe2c55" : "white"}/><small>{fmt(post.likes + (liked.includes(index) ? 1 : 0))}</small></button>
+        <button aria-label="查看评论" onClick={() => setPanel("comments")}><MessageCircle size={31} fill="white" color="white"/><small>{fmt(post.comments + (comments[index]?.length ?? 0))}</small></button>
+        <button aria-label="收藏" onClick={() => setSaved(a => a.includes(index) ? a.filter(x => x !== index) : [...a,index])}><Bookmark size={31} fill={saved.includes(index) ? "#ffcf4b" : "white"} color={saved.includes(index) ? "#ffcf4b" : "white"}/><small>{fmt(post.saves + (saved.includes(index) ? 1 : 0))}</small></button>
+        <button aria-label="分享" onClick={() => setPanel("share")}><span className="tiktok-native-share">➦</span><small>{fmt(post.shares)}</small></button>
       </div>
-      <span className="tiktok-static-count">{index + 1} / {posts.length}</span>
+      <div className="tiktok-native-caption"><strong>{post.user} <span>· {post.date}</span></strong><p>{post.caption}</p><div><Music size={14}/>{post.music}</div></div>
+      <div className="tiktok-native-bottom">{["首页","商城","+","收件箱","主页"].map(t => <button key={t} onClick={() => t === "首页" ? (setIndex(0),setPanel(null)) : setTab(t)} className={t === "+" ? "create" : ""}>{t}</button>)}</div>
+      {panel && <div className="tiktok-native-overlay" onClick={() => setPanel(null)}>
+        <section className="tiktok-native-sheet" onClick={e => e.stopPropagation()}>
+          <button className="tiktok-native-close" onClick={() => setPanel(null)}>✕</button>
+          {panel === "comments" ? <><h3>{fmt(post.comments + (comments[index]?.length ?? 0))} 条评论</h3><div className="tiktok-native-comments">{(comments[index] ?? []).map((c,i) => <p key={i}><strong>我</strong> {c}</p>)}<p className="tiktok-native-muted">可以在下方添加评论</p></div><form onSubmit={e => {e.preventDefault(); if(!comment.trim())return; setComments(a=>({...a,[index]:[...(a[index]??[]),comment.trim()]}));setComment("");}}><input value={comment} onChange={e=>setComment(e.target.value)} placeholder="添加评论..."/><button type="submit">发送</button></form></> :
+          panel === "search" ? <><h3>搜索</h3><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索相关内容"/><div>{posts.filter(p=>p.user.toLowerCase().includes(query.toLowerCase())||p.caption.toLowerCase().includes(query.toLowerCase())).map(p=><button key={p.file} onClick={()=>{setIndex(posts.indexOf(p));setPanel(null);}}>{p.user}</button>)}</div></> :
+          <><h3>分享帖子</h3><p>复制网站链接分享给朋友</p><button onClick={()=>setPanel(null)}>完成</button></>}
+        </section>
+      </div>}
     </div>
   );
 }
