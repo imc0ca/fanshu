@@ -447,6 +447,7 @@ export function TikTokSkin(_p: Props) {
     { file: "post-02.jpg", user: "Tex_dachshund", date: "5-29", avatar: "🐕", caption: "Which is your favorite ?\n#dachshund #puppydog #fy ...", music: "I'm A Believer - @Smash Mouth", likes: 29600, comments: 126, saves: 1828, shares: 17400 },
     { file: "post-03.jpg", user: "Niki 🐰", date: "", avatar: "🐰", caption: "#cute #bunny #funny #funnyvideo #animals", music: "咩的每一步都很坚定 - ...", likes: 240200, comments: 1720, saves: 30800, shares: 43000 },
     { file: "post-04.jpg", user: "cat memes", date: "", avatar: "🐱", caption: "Aura.", music: "AURA (Super Slowed) - @Ogryzek", likes: 1500000, comments: 5588, saves: 111000, shares: 621800 },
+    { file: "post-05.jpg", user: "bunnydreamland", date: "10-12", avatar: "🐰", caption: "♡･Bunny Dreamland ･ ♡", music: "original sound - bunnydreamland", likes: 128400, comments: 876, saves: 12900, shares: 5620 },
   ];
   const [index, setIndex] = useState(0);
   const [liked, setLiked] = useState<number[]>([]);
