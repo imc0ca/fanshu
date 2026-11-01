@@ -607,6 +607,8 @@ export function SnapchatSkin(p: Props) {
   const { tab, setTab, items } = useContent(p, "故事");
   const [index, setIndex] = useState(0);
   const [storyOpen, setStoryOpen] = useState<number | null>(null);
+  const [snapEffect, setSnapEffect] = useState(0);
+  const [snapTaken, setSnapTaken] = useState(false);
   const storyPosts = [{name:"Taro1125",image:"taro1125.jpg"},{name:"Ton4321",image:"ton4321-01.jpg"},{name:"Dorri252",image:"dorri252-01.jpg"},{name:"Daechi",image:"daechi.jpg"},{name:"BurgerSC913",image:"burgersc913.jpg"},{name:"Ton4321",image:"ton4321-02.jpg"},{name:"Dorri252",image:"dorri252-02.jpg"},{name:"BurgerSC913",image:"burgersc913-02.jpg"}];
   const list = items.filter((i) => tab === "聊天" ? i.folder === "聊天" : i.folder !== "聊天");
   const i = list[index % Math.max(list.length, 1)];
@@ -637,6 +639,7 @@ export function SnapchatSkin(p: Props) {
         <Header p={p} />
         <div className="snap-content">
           {tab === "聊天" ? <div className="snap-chats">{list.map(x => <button key={x.id} onClick={() => p.onItem(x)}><Avatar name={x.sender}/><div><strong>{x.sender}</strong><small>{x.body}</small></div><Camera size={20}/></button>)}</div>
+          : tab === "快拍" ? <div style={{position:"relative",height:"100%",minHeight:530,overflow:"hidden",background:"#342b34",color:"white"}}><img src="/fanshu/snapchat-images/snap-camera-background.jpg" alt="快拍相机背景" style={{position:"absolute",width:"100%",height:"100%",objectFit:"cover",filter:snapEffect===1?"grayscale(1)":snapEffect===2?"sepia(.7)":"none"}}/><div style={{position:"absolute",top:15,right:16,display:"grid",gap:16,fontSize:23,textShadow:"0 1px 5px #333"}}><span>⚡</span><span>♫</span><span>◉</span><span>⌄</span></div><div style={{position:"absolute",bottom:40,width:"100%",display:"flex",alignItems:"center",justifyContent:"space-evenly"}}><button onClick={()=>setSnapEffect(v=>(v+1)%3)} style={{border:0,borderRadius:30,padding:12,background:"#ffffffbb"}} aria-label="切换特效">✨ 特效</button><button onClick={()=>setSnapTaken(v=>!v)} aria-label="拍照" style={{width:78,height:78,border:"7px solid white",borderRadius:"50%",background:snapTaken?"#ffe400":"#ffffff55",boxShadow:"0 0 0 2px #ffffffaa"}}/><button onClick={()=>setTab("故事")} style={{border:0,borderRadius:30,padding:12,background:"#ffffffbb"}}>故事</button></div></div>
           : i ? <><Media item={i}/><button className="snap-author" onClick={() => p.onItem(i)}><Avatar name={i.sender}/>{i.sender}</button><button className="snap-next" aria-label="下一条快拍" onClick={() => {setIndex(n=>n+1);p.onRead(i.id);}}><ChevronRight size={25}/></button><button className="snap-caption" onClick={() => p.onItem(i)}>{i.body}</button></>
           : <p className="catalog-empty">暂无{tab}</p>}
         </div>
