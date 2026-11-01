@@ -31461,7 +31461,7 @@
         "id": "kkt-dongchan-20240806-follow-007",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "这堂是什么",
+        "body": "这些是什么",
         "time": "2024-08-06 14:48",
         "kind": "text",
         "outgoing": true,
@@ -36913,7 +36913,7 @@
         "id": "kkt-november-20241101-0-016",
         "title": "炤熙",
         "sender": "ddori",
-        "body": "kkt-images/20241101-ddori-1.png",
+        "body": "",
         "time": "2024-11-01 15:18",
         "kind": "image",
         "outgoing": false,
@@ -36922,13 +36922,14 @@
           "contact": "炤熙",
           "displaySender": "ddori"
         },
-        "avatar": "/fanshu/kkt-avatars/sohee.png"
+        "avatar": "/fanshu/kkt-avatars/sohee.png",
+        "media": "/kkt-images/20241101-ddori-1.png"
       },
       {
         "id": "kkt-november-20241101-0-017",
         "title": "炤熙",
         "sender": "ddori",
-        "body": "kkt-images/20241101-ddori-2.png",
+        "body": "",
         "time": "2024-11-01 15:18",
         "kind": "image",
         "outgoing": false,
@@ -36937,7 +36938,8 @@
           "contact": "炤熙",
           "displaySender": "ddori"
         },
-        "avatar": "/fanshu/kkt-avatars/sohee.png"
+        "avatar": "/fanshu/kkt-avatars/sohee.png",
+        "media": "/kkt-images/20241101-ddori-2.png"
       },
       {
         "id": "kkt-november-20241101-0-018",
@@ -38588,14 +38590,15 @@
         "id": "kkt-november-20241101-1-090",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "kkt-images/20241101-cake.png",
+        "body": "",
         "time": "2024-11-01 15:48",
         "kind": "image",
         "outgoing": true,
         "meta": {
           "chatDate": "2024-11-01",
           "contact": "咚灿"
-        }
+        },
+        "media": "/kkt-images/20241101-cake.png"
       },
       {
         "id": "kkt-november-20241101-1-091",
