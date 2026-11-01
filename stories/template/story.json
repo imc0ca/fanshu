@@ -40146,15 +40146,15 @@
         "id": "kkt-dongchan-20250117-027",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "[图片待上传]",
+        "body": "[图片]",
         "time": "2025-01-17 16:30",
-        "kind": "text",
+        "kind": "image",
         "outgoing": true,
         "meta": {
           "chatDate": "2025-01-17",
-          "contact": "咚灿",
-          "pendingImage": "true"
-        }
+          "contact": "咚灿"
+        },
+        "media": "/kkt-images/kkt-20250117-01.png"
       },
       {
         "id": "kkt-dongchan-20250117-028",
@@ -40300,17 +40300,17 @@
         "id": "kkt-dongchan-20250117-038",
         "title": "咚灿",
         "sender": "덩떵찬",
-        "body": "[图片待上传]",
+        "body": "[图片]",
         "time": "2025-01-17 16:34",
-        "kind": "text",
+        "kind": "image",
         "outgoing": false,
         "meta": {
           "chatDate": "2025-01-17",
           "contact": "咚灿",
-          "displaySender": "덩떵찬",
-          "pendingImage": "true"
+          "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20250117-02.png"
       },
       {
         "id": "kkt-dongchan-20250117-039",
@@ -40415,17 +40415,17 @@
         "id": "kkt-dongchan-20250117-046",
         "title": "咚灿",
         "sender": "덩떵찬",
-        "body": "[图片待上传]",
+        "body": "[图片]",
         "time": "2025-01-17 16:44",
-        "kind": "text",
+        "kind": "image",
         "outgoing": false,
         "meta": {
           "chatDate": "2025-01-17",
           "contact": "咚灿",
-          "displaySender": "덩떵찬",
-          "pendingImage": "true"
+          "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20250117-03.png"
       },
       {
         "id": "kkt-dongchan-20250117-047",
@@ -40517,18 +40517,18 @@
         "id": "kkt-dongchan-20250212-001",
         "title": "咚灿",
         "sender": "덩떵찬",
-        "body": "[图片待上传]",
+        "body": "[图片]",
         "time": "2025-02-12 16:44",
-        "kind": "text",
+        "kind": "image",
         "outgoing": false,
         "meta": {
           "chatDate": "2025-02-12",
           "contact": "咚灿",
           "dateLabel": "Wednesday, February 12, 2025",
-          "displaySender": "덩떵찬",
-          "pendingImage": "true"
+          "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20250212-01.png"
       },
       {
         "id": "kkt-dongchan-20250212-002",
@@ -42436,17 +42436,17 @@
         "id": "kkt-dongchan-20250329-050",
         "title": "咚灿",
         "sender": "덩떵찬",
-        "body": "[图片待上传]",
+        "body": "[图片]",
         "time": "2025-03-29 14:19",
-        "kind": "text",
+        "kind": "image",
         "outgoing": false,
         "meta": {
           "chatDate": "2025-03-29",
           "contact": "咚灿",
-          "displaySender": "덩떵찬",
-          "pendingImage": "true"
+          "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20250329-01.png"
       },
       {
         "id": "kkt-dongchan-20250329-051",
@@ -45644,18 +45644,18 @@
         "id": "kkt-dongchan-20250826-001",
         "title": "咚灿",
         "sender": "덩떵찬",
-        "body": "[图片待上传]",
+        "body": "[图片]",
         "time": "2025-08-26 16:08",
-        "kind": "text",
+        "kind": "image",
         "outgoing": false,
         "meta": {
           "chatDate": "2025-08-26",
           "contact": "咚灿",
           "dateLabel": "Tuesday, August 26, 2025",
-          "displaySender": "덩떵찬",
-          "pendingImage": "true"
+          "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20250826-01.png"
       },
       {
         "id": "kkt-dongchan-20250826-002",
@@ -46779,31 +46779,31 @@
         "id": "kkt-dongchan-20251015-035",
         "title": "咚灿",
         "sender": "송아지",
-        "body": "[图片待上传]",
+        "body": "[图片]",
         "time": "2025-10-15 14:48",
-        "kind": "text",
+        "kind": "image",
         "outgoing": true,
         "meta": {
           "chatDate": "2025-10-15",
-          "contact": "咚灿",
-          "pendingImage": "true"
-        }
+          "contact": "咚灿"
+        },
+        "media": "/kkt-images/kkt-20251015-01.png"
       },
       {
         "id": "kkt-dongchan-20251015-036",
         "title": "咚灿",
         "sender": "덩떵찬",
-        "body": "[图片待上传]",
+        "body": "[图片]",
         "time": "2025-10-15 14:50",
-        "kind": "text",
+        "kind": "image",
         "outgoing": false,
         "meta": {
           "chatDate": "2025-10-15",
           "contact": "咚灿",
-          "displaySender": "덩떵찬",
-          "pendingImage": "true"
+          "displaySender": "덩떵찬"
         },
-        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png"
+        "avatar": "/fanshu/kkt-avatars/dongchan-2024.png",
+        "media": "/kkt-images/kkt-20251015-02.png"
       },
       {
         "id": "kkt-dongchan-20251015-037",
