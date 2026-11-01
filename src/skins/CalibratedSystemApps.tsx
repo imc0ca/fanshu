@@ -279,17 +279,24 @@ export function HealthSkin(p: Props) {
             </div>
           </>
         ) : tab === "共享" ? (
-          <section className="health-sharing">
-            <Users size={54} />
-            <h2>共享健康数据</h2>
-            <p>尚未共享数据</p>
-            {p.items
-              .filter((i) => i.folder === "共享")
-              .map((i) => (
-                <button key={i.id} onClick={() => p.onItem(i)}>
-                  {i.title}
-                </button>
-              ))}
+          <section className="health-share-dashboard">
+            <h1>共享</h1>
+            <h2>摘要</h2>
+            <article className="health-share-activity-card">
+              <div className="health-share-person">
+                <span className="health-share-person-icon"><User size={29} /></span>
+                <div><strong>SSC0913@0199.com 合上了活动圆环</strong><small>昨天</small></div>
+              </div>
+              <div className="health-share-ring" role="img" aria-label="活动 580 千卡，目标 450 千卡，完成 129%">
+                <svg viewBox="0 0 240 240" aria-hidden="true">
+                  <circle cx="120" cy="120" r="86" fill="none" stroke="#451022" strokeWidth="43" />
+                  <circle cx="120" cy="120" r="86" fill="none" stroke="#ff0754" strokeWidth="43" transform="rotate(-90 120 120)" />
+                  <circle cx="120" cy="120" r="86" fill="none" stroke="#ff0754" strokeWidth="43" strokeLinecap="round" strokeDasharray="155 540.35" transform="rotate(-90 120 120)" style={{filter:"drop-shadow(0 5px 4px #0009)"}} />
+                </svg>
+              </div>
+              <div className="health-share-calories"><strong>580 千卡</strong><span>活动</span><small>目标 450 千卡 · 完成 129%</small></div>
+            </article>
+            {p.items.filter(i => i.folder === "共享").map(i => <button key={i.id} className="health-share-other" onClick={() => p.onItem(i)}>{i.title}</button>)}
           </section>
         ) : (
           <>
