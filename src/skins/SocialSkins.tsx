@@ -646,6 +646,3 @@ export function SnapchatSkin(p: Props) {
   );
 }
 function SearchBoxIcon() { return <span style={{fontSize:25,lineHeight:1}}>⌕</span>; }
-function ImageIcon() {
-  return <Grid />;
-}
