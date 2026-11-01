@@ -4191,3 +4191,40 @@
 .tiktok-static-controls button { width: 27px; height: 27px; border-radius: 50%; color: white; background: #1119; font-size: 18px; }
 .tiktok-static-controls button:disabled { opacity: .2; }
 .tiktok-static-count { position: absolute; top: 8px; right: 9px; font-size: 10px; color: #fff; background: #0007; padding: 2px 6px; border-radius: 12px; }
+
+
+/* Interactive TikTok fiction feed: image layer and real clickable controls. */
+.tiktok-native-feed{position:relative;height:100%;min-height:0;overflow:hidden;background:#000;color:#fff;touch-action:pan-y}
+.tiktok-native-media{position:absolute;inset:0;overflow:hidden}
+.tiktok-native-slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transition:transform .34s cubic-bezier(.2,.75,.2,1);background:#000}
+.tiktok-native-slide img{display:block;width:100%;height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.tiktok-native-top{position:absolute;top:10px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:24px;z-index:2;text-shadow:0 1px 4px #000}
+.tiktok-native-top button{color:#ddd;font-size:14px;padding:6px 3px}
+.tiktok-native-top button.active{color:white;font-weight:800;border-bottom:2px solid white}
+.tiktok-native-top button:first-child{position:absolute;right:12px;top:0}
+.tiktok-native-actions{position:absolute;right:9px;bottom:105px;display:flex;flex-direction:column;align-items:center;gap:17px;z-index:2}
+.tiktok-native-actions button{color:#fff;display:flex;align-items:center;flex-direction:column;gap:3px;padding:0;text-shadow:0 1px 4px #000}
+.tiktok-native-actions small{font-size:11px;font-weight:600}
+.tiktok-native-avatar{margin-bottom:6px;position:relative}
+.tiktok-native-avatar span{height:39px;width:39px;border:2px solid white;border-radius:50%;display:grid;place-items:center;background:#333;font-size:23px}
+.tiktok-native-avatar b{position:absolute;bottom:-9px;border-radius:50%;width:19px;height:19px;background:#fe2c55;display:grid;place-items:center;font-size:15px}
+.tiktok-native-share{font-size:35px;line-height:31px}
+.tiktok-native-caption{position:absolute;bottom:69px;left:12px;right:63px;z-index:2;text-shadow:0 1px 4px #000;pointer-events:none}
+.tiktok-native-caption strong{font-size:14px}
+.tiktok-native-caption strong span{font-size:11px;font-weight:400;color:#ddd}
+.tiktok-native-caption p{font-size:13px;white-space:pre-line;margin:7px 0}
+.tiktok-native-caption div{display:flex;align-items:center;gap:5px;font-size:12px;overflow:hidden;white-space:nowrap}
+.tiktok-native-bottom{position:absolute;bottom:0;left:0;right:0;height:53px;display:flex;justify-content:space-around;align-items:center;background:#050505;z-index:3}
+.tiktok-native-bottom button{color:white;font-size:11px;padding:10px 3px}
+.tiktok-native-bottom .create{background:#fff;color:#000;border-radius:5px;padding:3px 14px;font-size:20px;font-weight:800;box-shadow:-4px 0 #23f4ee,4px 0 #fe2c55}
+.tiktok-native-overlay{position:absolute;inset:0;background:#0007;z-index:8;display:flex;align-items:flex-end}
+.tiktok-native-sheet{position:relative;width:100%;min-height:43%;max-height:80%;overflow:auto;border-radius:16px 16px 0 0;background:#191919;color:#fff;padding:16px 14px 20px}
+.tiktok-native-sheet h3{text-align:center;font-size:14px;margin:0 25px 18px}
+.tiktok-native-close{position:absolute;right:13px;top:10px;color:white}
+.tiktok-native-sheet input{width:100%;background:#303030;border:1px solid #555;border-radius:18px;padding:9px 12px;color:white}
+.tiktok-native-sheet form{display:flex;gap:6px}
+.tiktok-native-sheet form button{color:#fe2c55;font-weight:700}
+.tiktok-native-comments{min-height:90px;max-height:220px;overflow:auto}
+.tiktok-native-comments p{font-size:12px}
+.tiktok-native-muted{color:#aaa}
+.tiktok-native-sheet>div>button{display:block;color:white;padding:9px}
