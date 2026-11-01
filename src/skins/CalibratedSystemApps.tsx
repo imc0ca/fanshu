@@ -287,11 +287,28 @@ export function HealthSkin(p: Props) {
                 <span className="health-share-person-icon"><User size={29} /></span>
                 <div><strong>SSC0913@0199.com 合上了活动圆环</strong><small>昨天</small></div>
               </div>
-              <div className="health-share-ring" role="img" aria-label="活动 580 千卡，目标 450 千卡，完成 129%">
-                <svg viewBox="0 0 240 240" aria-hidden="true">
-                  <circle cx="120" cy="120" r="86" fill="none" stroke="#451022" strokeWidth="43" />
-                  <circle cx="120" cy="120" r="86" fill="none" stroke="#ff0754" strokeWidth="43" transform="rotate(-90 120 120)" />
-                  <circle cx="120" cy="120" r="86" fill="none" stroke="#ff0754" strokeWidth="43" strokeLinecap="round" strokeDasharray="155 540.35" transform="rotate(-90 120 120)" style={{filter:"drop-shadow(0 5px 4px #0009)"}} />
+              <div className="health-share-ring" role="img" aria-label="活动 580 千卡，目标 450 千卡：完整一圈后又超出 29%，以立体叠加圆弧显示">
+                <svg viewBox="0 0 260 260" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="share-ring-base" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#ff467d" />
+                      <stop offset="55%" stopColor="#ff0754" />
+                      <stop offset="100%" stopColor="#e60048" />
+                    </linearGradient>
+                    <linearGradient id="share-ring-over" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#ff789d" />
+                      <stop offset="45%" stopColor="#ff1c61" />
+                      <stop offset="100%" stopColor="#f9004e" />
+                    </linearGradient>
+                    <filter id="share-ring-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                      <feGaussianBlur stdDeviation="5" />
+                    </filter>
+                  </defs>
+                  <circle cx="130" cy="130" r="88" fill="none" stroke="#390c1e" strokeWidth="45" />
+                  <circle cx="130" cy="130" r="88" fill="none" stroke="url(#share-ring-base)" strokeWidth="45" />
+                  <circle cx="130" cy="137" r="88" fill="none" stroke="#000" opacity=".55" strokeWidth="46" strokeLinecap="round" strokeDasharray="160.35 552.92" transform="rotate(-90 130 137)" filter="url(#share-ring-shadow)" />
+                  <circle cx="130" cy="130" r="88" fill="none" stroke="url(#share-ring-over)" strokeWidth="45" strokeLinecap="round" strokeDasharray="160.35 552.92" transform="rotate(-90 130 130)" />
+                  <circle cx="130" cy="130" r="88" fill="none" stroke="#ff9ab6" strokeOpacity=".38" strokeWidth="3" strokeLinecap="round" strokeDasharray="150 553" transform="rotate(-90 130 130)" />
                 </svg>
               </div>
               <div className="health-share-calories"><strong>580 千卡</strong><span>活动</span><small>目标 450 千卡 · 完成 129%</small></div>
