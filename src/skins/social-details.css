@@ -494,3 +494,8 @@
   margin-top: 8px;
   border-radius: 12px;
 }
+
+/* Keep both heads visible in the upper-right tile of the three-photo confession. */
+.ios18 .x-post-photo-gallery[data-photo-count="3"] img:nth-child(2) {
+  object-position: center 48%;
+}
