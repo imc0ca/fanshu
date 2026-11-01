@@ -67,3 +67,12 @@
 .story-runtime .phone-shell .story-video-photo-stage .story-video-main.is-active{opacity:1}
 .story-runtime .phone-shell .story-video-self{object-fit:contain;background:#15171a}
 @media (prefers-reduced-motion:reduce){.story-runtime .phone-shell .story-video-photo-stage .story-video-main{transition:none}}
+
+/* Video call: local camera disabled and decorative hang-up control. */
+.story-runtime .phone-shell .story-video-self-wrap{position:absolute;top:max(72px,calc(env(safe-area-inset-top) + 42px));right:15px;width:25%;max-width:120px;aspect-ratio:3/4}
+.story-runtime .phone-shell .story-video-self-wrap .story-video-self{position:relative;top:auto;right:auto;width:100%;height:100%;max-width:none;display:block}
+.story-video-self-off{position:absolute;right:7px;bottom:7px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#101216d9;color:white;border:1px solid #ffffff75;box-shadow:0 2px 7px #0008}
+.story-video-controls .story-video-hangup{background:linear-gradient(145deg,#ff6459,#d71925);border:1px solid #ffb1aa9c;box-shadow:inset 0 2px 3px #ffffff75,inset 0 -4px 6px #89000b8c,0 6px 13px #0008;cursor:default;pointer-events:none}
+.story-video-controls .story-video-hangup svg{transform:rotate(-15deg)}
+.story-runtime .phone-shell .story-video-controls{gap:7px;padding:0 9px;justify-content:space-between}
+.story-runtime .phone-shell .story-video-controls span{width:58px;height:58px;flex:0 0 58px}
