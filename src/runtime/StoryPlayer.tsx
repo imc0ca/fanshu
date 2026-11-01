@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { createPortal } from "react-dom";
-import { Phone as CallIcon, Video, MicOff, Volume2 } from "lucide-react";
+import { Phone as CallIcon, VideoOff, MicOff, Volume2, PhoneOff } from "lucide-react";
 import { Phone as PhoneApp } from "../Phone";
 import { validateWork, type Work } from "../schema";
 import "../styles.css";
@@ -110,9 +110,9 @@ function VideoCallExperience() {
         <div className="story-video-connected">
           <div className="story-video-photo-stage">{callScenes.map((photo) => <img key={photo.image} className={"story-video-main" + (photo.image === scene.image ? " is-active" : "")} src={asset(photo.image)} alt="视频通话画面" />)}</div>
           <div className="story-video-header"><strong>咚灿</strong><span>{String(Math.floor(seconds / 60)).padStart(2, "0")}:{String(seconds % 60).padStart(2, "0")}</span></div>
-          <img className="story-video-self" src={asset("b813ec9132da2e69c492ec81a3885887.jpeg")} alt="宋小鱼的视频小窗" />
+          <div className="story-video-self-wrap"><img className="story-video-self" src={asset("b813ec9132da2e69c492ec81a3885887.jpeg")} alt="宋小鱼的视频小窗" /><span className="story-video-self-off" aria-label="宋小鱼摄像头已关闭"><VideoOff size={17} strokeWidth={2.5}/></span></div>
           {scene.caption && <div className="story-video-subtitle" key={seconds >> 1}>{scene.caption}</div>}
-          <div className="story-video-controls"><span><MicOff size={24}/><small>静音</small></span><span><Video size={24}/><small>摄像头</small></span><span><Volume2 size={24}/><small>扬声器</small></span></div>
+          <div className="story-video-controls"><span><MicOff size={24}/><small>静音</small></span><span><VideoOff size={24}/><small>摄像头</small></span><span className="story-video-hangup" aria-label="挂断按钮（装饰，不可操作）"><PhoneOff size={25}/></span><span><Volume2 size={24}/><small>扬声器</small></span></div>
         </div>
       )}
     </div>, screen
