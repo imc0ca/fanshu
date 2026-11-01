@@ -681,6 +681,7 @@ export function FilesSkin(p: Props) {
           </div>
         ) : (
           <div className="file-grid">
+            {!folder && <div><button type="button" aria-label="简历（内容待添加）" style={{cursor:"default"}}><FileText size={49} /><strong>简历</strong><small>内容待添加</small></button></div>}
             {list.map((i) => (
               <div key={i.id}>
                 <button onClick={() => p.onItem(i)}>
