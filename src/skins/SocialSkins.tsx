@@ -607,7 +607,7 @@ export function SnapchatSkin(p: Props) {
   const { tab, setTab, items } = useContent(p, "故事");
   const [index, setIndex] = useState(0);
   const [storyOpen, setStoryOpen] = useState<number | null>(null);
-  const storyPosts = [{name:"Taro1125",image:"taro1125.jpg"},{name:"Daechi",image:"daechi.jpg"},{name:"Dorri252",image:"dorri252-01.jpg"},{name:"Dorri252",image:"dorri252-02.jpg"},{name:"BurgerSC913",image:"burgersc913.jpg"}];
+  const storyPosts = [{name:"Taro1125",image:"taro1125.jpg"},{name:"Ton4321",image:"ton4321-01.jpg"},{name:"Dorri252",image:"dorri252-01.jpg"},{name:"Daechi",image:"daechi.jpg"},{name:"BurgerSC913",image:"burgersc913.jpg"},{name:"Ton4321",image:"ton4321-02.jpg"},{name:"Dorri252",image:"dorri252-02.jpg"},{name:"BurgerSC913",image:"burgersc913-02.jpg"}];
   const list = items.filter((i) => tab === "聊天" ? i.folder === "聊天" : i.folder !== "聊天");
   const i = list[index % Math.max(list.length, 1)];
   return (
