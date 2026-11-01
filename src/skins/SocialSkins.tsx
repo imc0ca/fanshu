@@ -604,70 +604,48 @@ function FolderIcon() {
   return <Hash size={27} />;
 }
 export function SnapchatSkin(p: Props) {
-  const { tab, setTab, items } = useContent(p, "快拍");
+  const { tab, setTab, items } = useContent(p, "故事");
   const [index, setIndex] = useState(0);
-  const list = items.filter((i) =>
-    tab === "回忆"
-      ? i.favorite || i.folder === "回忆"
-      : tab === "聊天"
-        ? i.folder === "聊天"
-        : i.folder !== "聊天",
-  );
+  const [storyOpen, setStoryOpen] = useState<string | null>(null);
+  const storyUsers = ["Daechi", "Taro1125", "Dorri252", "BurgerSC913"];
+  const list = items.filter((i) => tab === "聊天" ? i.folder === "聊天" : i.folder !== "聊天");
   const i = list[index % Math.max(list.length, 1)];
   return (
-    <div className="catalog-skin snapchat-ui">
-      <Header p={p} />
-      <div className="snap-content">
-        {tab === "聊天" ? (
-          <div className="snap-chats">
-            {list.map((x) => (
-              <button key={x.id} onClick={() => p.onItem(x)}>
-                <Avatar name={x.sender} />
-                <div>
-                  <strong>{x.sender}</strong>
-                  <small>{x.body}</small>
-                </div>
-                <Camera size={20} />
+    <div className={"catalog-skin snapchat-ui" + (tab === "故事" ? " snapchat-story-mode" : "")}>
+      {tab === "故事" ? (
+        <div className="snap-story-page">
+          <div className="snap-story-heading">
+            <div className="snap-story-toolbar"><button aria-label="个人资料" onClick={() => setTab("聊天")}><User size={23}/></button><button aria-label="搜索" onClick={() => setTab("聊天")}><SearchBoxIcon /></button><strong>故事</strong><button aria-label="通知" onClick={() => setTab("聊天")}>♧</button><button aria-label="添加好友" onClick={() => setTab("聊天")}><Users size={22}/></button><button aria-label="更多选项" onClick={() => setTab("聊天")}>•••</button></div>
+          </div>
+          <div className="snap-story-grid">
+            {storyUsers.map((name, n) => (
+              <button key={name} className="snap-story-tile" onClick={() => setStoryOpen(name)} aria-label={name + " 的故事"}>
+                <div className={"snap-story-placeholder snap-story-placeholder-" + n}><Camera size={33} strokeWidth={1.4}/></div>
+                <strong>{name}</strong>
               </button>
             ))}
           </div>
-        ) : i ? (
-          <>
-            <Media item={i} />
-            <button className="snap-author" onClick={() => p.onItem(i)}>
-              <Avatar name={i.sender} />
-              {i.sender}
-            </button>
-            <button
-              className="snap-next"
-              aria-label="下一条快拍"
-              onClick={() => {
-                setIndex((n) => n + 1);
-                p.onRead(i.id);
-              }}
-            >
-              <ChevronRight size={25} />
-            </button>
-            <button className="snap-caption" onClick={() => p.onItem(i)}>
-              {i.body}
-            </button>
-          </>
-        ) : (
-          <p className="catalog-empty">暂无{tab}</p>
-        )}
-      </div>
-      <Tabs
-        tabs={["聊天", "快拍", "回忆"]}
-        value={tab}
-        set={(t) => {
-          setTab(t);
-          setIndex(0);
-        }}
-        icons={[<MessageCircle />, <Camera />, <ImageIcon />]}
-      />
+          {storyOpen && <div className="snap-story-viewer">
+            <button className="snap-story-back" onClick={() => setStoryOpen(null)} aria-label="返回故事">‹</button>
+            <div className="snap-story-progress"><span /></div>
+            <strong className="snap-story-viewer-name">{storyOpen}</strong>
+            <div className="snap-story-awaiting"><Camera size={38}/><span>照片待上传</span></div>
+            <button className="snap-story-viewer-next" aria-label="下一条故事" onClick={() => setStoryOpen(storyUsers[(storyUsers.indexOf(storyOpen)+1)%storyUsers.length])}/>
+          </div>}
+        </div>
+      ) : <>
+        <Header p={p} />
+        <div className="snap-content">
+          {tab === "聊天" ? <div className="snap-chats">{list.map(x => <button key={x.id} onClick={() => p.onItem(x)}><Avatar name={x.sender}/><div><strong>{x.sender}</strong><small>{x.body}</small></div><Camera size={20}/></button>)}</div>
+          : i ? <><Media item={i}/><button className="snap-author" onClick={() => p.onItem(i)}><Avatar name={i.sender}/>{i.sender}</button><button className="snap-next" aria-label="下一条快拍" onClick={() => {setIndex(n=>n+1);p.onRead(i.id);}}><ChevronRight size={25}/></button><button className="snap-caption" onClick={() => p.onItem(i)}>{i.body}</button></>
+          : <p className="catalog-empty">暂无{tab}</p>}
+        </div>
+      </>}
+      <Tabs tabs={["聊天","快拍","故事"]} value={tab} set={t=>{setTab(t);setIndex(0);setStoryOpen(null);}} icons={[<MessageCircle/>,<Camera/>,<Grid/>]}/>
     </div>
   );
 }
+function SearchBoxIcon() { return <span style={{fontSize:25,lineHeight:1}}>⌕</span>; }
 function ImageIcon() {
   return <Grid />;
 }
