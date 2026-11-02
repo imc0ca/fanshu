@@ -1,4 +1,5 @@
 import { PersistentSpotifyPlayer, playSpotify } from "../PersistentSpotifyPlayer";
+import { podcastEpisodes } from "../podcastEpisodes";
 import { AudioPlayer, useTrack } from "../audio";
 import { useSkinState } from "../skinState";
 import {
@@ -65,6 +66,8 @@ export function SpotifySkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "首页");
   const [playlist, setPlaylist] = useState("");
   const [podcastPage, setPodcastPage] = useState(false);
+  const [selectedEpisode, setSelectedEpisode] = useState<number | null>(null);
+  const [episodeSearch, setEpisodeSearch] = useState("");
   const list = playlist
     ? items.filter((i) => (i.folder || "我的音乐") === playlist)
     : items;
@@ -90,20 +93,46 @@ export function SpotifySkin(p: Props) {
         </div>
         {tab === "搜索" && <SearchBox value={q} set={setQ} />}
         {podcastPage ? (
-          <section style={{padding:"10px 4px 24px",color:"#fff"}}>
-            <button onClick={() => setPodcastPage(false)} style={{display:"flex",alignItems:"center",gap:6,color:"#ddd",marginBottom:16}}><ChevronLeft size={19}/> 返回音乐库</button>
-            <img src="/fanshu/podcast-shihuashishuo.jpg" alt="石话石说播客封面" style={{width:"min(82%,260px)",aspectRatio:"1",objectFit:"cover",display:"block",margin:"0 auto 20px",borderRadius:8}}/>
-            <h1 style={{fontSize:29,margin:"8px 0"}}>石话石说</h1>
-            <p style={{color:"#bbb",margin:"4px 0 14px"}}>播客节目 · 主播 Eunseok</p>
-            <p style={{lineHeight:1.7,color:"#ddd"}}>欢迎来到「石话石说」。节目单集即将更新。</p>
-            <h2 style={{fontSize:19,marginTop:28}}>所有单集</h2>
-            <p style={{color:"#aaa",padding:"18px 0"}}>暂无单集 · 敬请期待</p>
+          <section style={{padding:"10px 5px 32px",color:"#fff"}}>
+            <button onClick={() => { if(selectedEpisode!==null) setSelectedEpisode(null); else setPodcastPage(false); }} style={{display:"flex",alignItems:"center",gap:6,color:"#ddd",marginBottom:18}}><ChevronLeft size={19}/> {selectedEpisode!==null ? "所有单集" : "返回音乐库"}</button>
+            {selectedEpisode!==null ? (() => {
+              const ep = podcastEpisodes.find(e => e.number===selectedEpisode);
+              return ep ? <div>
+                <img src="/fanshu/podcast-shihuashishuo.jpg" alt="石话石说" style={{width:156,height:156,objectFit:"cover",borderRadius:9,marginBottom:18}}/>
+                <div style={{color:"#1ed760",fontSize:12,fontWeight:700,marginBottom:9}}>石话石说 · EP{String(ep.number).padStart(2,"0")}</div>
+                <h1 style={{fontSize:25,lineHeight:1.4,margin:"0 0 12px",fontWeight:800}}>{ep.title}</h1>
+                <div style={{color:"#a9a9a9",fontSize:12,marginBottom:22}}>{ep.date.replaceAll("/","-")} · seok {ep.number===77 ? "· 特别嘉宾 郑成灿" : ""}</div>
+                <h2 style={{fontSize:17,marginBottom:12}}>本期简介</h2>
+                <p style={{whiteSpace:"pre-wrap",lineHeight:1.85,color:"#dedede",fontSize:14}}>{ep.description}</p>
+                <p style={{color:"#999",fontSize:12,marginTop:24}}>本页面为节目目录，尚未添加单集音频。</p>
+              </div> : null;
+            })() : <>
+              <div style={{display:"flex",alignItems:"center",gap:16,marginBottom:18}}>
+                <img src="/fanshu/podcast-shihuashishuo.jpg" alt="石话石说播客封面" style={{width:126,height:126,flexShrink:0,objectFit:"cover",borderRadius:9,boxShadow:"0 5px 24px #0007"}}/>
+                <div><div style={{fontSize:11,color:"#1ed760",fontWeight:700,letterSpacing:1}}>PODCAST</div><h1 style={{fontSize:27,lineHeight:1.25,margin:"8px 0",fontWeight:800}}>石话石说</h1><div style={{fontSize:13,color:"#bdbdbd"}}>seok · 104 期节目</div></div>
+              </div>
+              <p style={{lineHeight:1.65,color:"#eee",fontSize:14,marginBottom:8}}>每周日更新，关于没有标准答案的生活开放题。</p>
+              <p style={{color:"#a9a9a9",fontSize:12,lineHeight:1.7,marginBottom:23}}>固定主播 seok · 生活观察、个人分享、开放式讨论、偶尔邀请嘉宾</p>
+              <h2 style={{fontSize:20,margin:"0 0 14px",fontWeight:800}}>所有单集 <span style={{color:"#999",fontSize:13,fontWeight:400}}>104</span></h2>
+              <input aria-label="搜索播客单集" placeholder="搜索单集标题或期数" value={episodeSearch} onChange={e=>setEpisodeSearch(e.target.value)} style={{width:"100%",boxSizing:"border-box",border:"1px solid #383838",borderRadius:9,background:"#242424",color:"#fff",padding:"11px 12px",fontSize:13,marginBottom:12}}/>
+              {podcastEpisodes.filter(ep => !episodeSearch || ep.title.includes(episodeSearch) || String(ep.number).includes(episodeSearch)).slice().reverse().map(ep => (
+                <button key={ep.number} onClick={() => setSelectedEpisode(ep.number)} style={{width:"100%",display:"flex",gap:12,alignItems:"flex-start",textAlign:"left",color:"#fff",padding:"13px 2px",borderBottom:"1px solid #303030"}}>
+                  <img src="/fanshu/podcast-shihuashishuo.jpg" alt="" style={{width:56,height:56,borderRadius:5,objectFit:"cover",flexShrink:0}}/>
+                  <span style={{display:"flex",flexDirection:"column",minWidth:0,gap:5,flex:1}}>
+                    <strong style={{fontSize:14,fontWeight:750,lineHeight:1.45}}>EP{String(ep.number).padStart(2,"0")} · {ep.title}</strong>
+                    <small style={{color:"#aaa",fontSize:11}}>{ep.date.replaceAll("/","-")} · seok</small>
+                    <span style={{fontSize:12,color:"#b6b6b6",lineHeight:1.4,overflow:"hidden",display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical"}}>{ep.description}</span>
+                  </span>
+                  <ChevronLeft size={16} style={{transform:"rotate(180deg)",marginTop:20,color:"#aaa",flexShrink:0}}/>
+                </button>
+              ))}
+            </>}
           </section>
         ) : (
           <>
           <button onClick={() => setPodcastPage(true)} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:10,margin:"8px 0 18px",background:"#292929",borderRadius:10,color:"#fff",textAlign:"left"}}>
             <img src="/fanshu/podcast-shihuashishuo.jpg" alt="石话石说封面" style={{width:76,height:76,objectFit:"cover",borderRadius:6}}/>
-            <span style={{display:"flex",flexDirection:"column",gap:5}}><strong>石话石说</strong><small style={{color:"#aaa"}}>Eunseok 的播客 · 点击进入</small></span>
+            <span style={{display:"flex",flexDirection:"column",gap:5}}><strong>石话石说</strong><small style={{color:"#aaa"}}>seok 的播客 · 104 期节目</small></span>
           </button>
                   <h1>{playlist || (tab === "音乐库" ? "音乐库" : "为你收藏")}</h1>
         {!playlist && (
