@@ -68,6 +68,7 @@ export function SpotifySkin(p: Props) {
   const [podcastPage, setPodcastPage] = useState(false);
   const [selectedEpisode, setSelectedEpisode] = useState<number | null>(null);
   const [episodeSearch, setEpisodeSearch] = useState("");
+  const [episodeOrder, setEpisodeOrder] = useState<"desc" | "asc">("desc");
   const list = playlist
     ? items.filter((i) => (i.folder || "我的音乐") === playlist)
     : items;
@@ -113,9 +114,9 @@ export function SpotifySkin(p: Props) {
               </div>
               <p style={{lineHeight:1.65,color:"#eee",fontSize:14,marginBottom:8}}>每周日更新，关于没有标准答案的生活开放题。</p>
               <p style={{color:"#a9a9a9",fontSize:12,lineHeight:1.7,marginBottom:23}}>固定主播 seok · 生活观察、个人分享、开放式讨论、偶尔邀请嘉宾</p>
-              <h2 style={{fontSize:20,margin:"0 0 14px",fontWeight:800}}>所有单集 <span style={{color:"#999",fontSize:13,fontWeight:400}}>104</span></h2>
+              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",gap:8,marginBottom:14}}><h2 style={{fontSize:20,margin:0,fontWeight:800}}>所有单集 <span style={{color:"#999",fontSize:13,fontWeight:400}}>104</span></h2><div role="group" aria-label="单集排序" style={{display:"flex",gap:3,padding:3,background:"#292929",borderRadius:9,flexShrink:0}}><button onClick={() => setEpisodeOrder("desc")} aria-pressed={episodeOrder==="desc"} style={{fontSize:12,fontWeight:episodeOrder==="desc"?700:400,color:episodeOrder==="desc"?"#111":"#bbb",background:episodeOrder==="desc"?"#1ed760":"transparent",padding:"7px 9px",borderRadius:7}}>倒序</button><button onClick={() => setEpisodeOrder("asc")} aria-pressed={episodeOrder==="asc"} style={{fontSize:12,fontWeight:episodeOrder==="asc"?700:400,color:episodeOrder==="asc"?"#111":"#bbb",background:episodeOrder==="asc"?"#1ed760":"transparent",padding:"7px 9px",borderRadius:7}}>顺序</button></div></div>
               <input aria-label="搜索播客单集" placeholder="搜索单集标题或期数" value={episodeSearch} onChange={e=>setEpisodeSearch(e.target.value)} style={{width:"100%",boxSizing:"border-box",border:"1px solid #383838",borderRadius:9,background:"#242424",color:"#fff",padding:"11px 12px",fontSize:13,marginBottom:12}}/>
-              {podcastEpisodes.filter(ep => !episodeSearch || ep.title.includes(episodeSearch) || String(ep.number).includes(episodeSearch)).slice().reverse().map(ep => (
+              {podcastEpisodes.filter(ep => !episodeSearch || ep.title.includes(episodeSearch) || String(ep.number).includes(episodeSearch)).slice().sort((a,b) => episodeOrder==="desc" ? b.number-a.number : a.number-b.number).map(ep => (
                 <button key={ep.number} onClick={() => setSelectedEpisode(ep.number)} style={{width:"100%",display:"flex",gap:12,alignItems:"flex-start",textAlign:"left",color:"#fff",padding:"13px 2px",borderBottom:"1px solid #303030"}}>
                   <img src="/fanshu/podcast-shihuashishuo.jpg" alt="" style={{width:56,height:56,borderRadius:5,objectFit:"cover",flexShrink:0}}/>
                   <span style={{display:"flex",flexDirection:"column",minWidth:0,gap:5,flex:1}}>
