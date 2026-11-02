@@ -131,9 +131,9 @@ export function SpotifySkin(p: Props) {
           </section>
         ) : (
           <>
-          <button onClick={() => setPodcastPage(true)} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:10,margin:"8px 0 18px",background:"#292929",borderRadius:10,color:"#fff",textAlign:"left"}}>
-            <img src="/fanshu/podcast-shihuashishuo.jpg" alt="石话石说封面" style={{width:76,height:76,objectFit:"cover",borderRadius:6}}/>
-            <span style={{display:"flex",flexDirection:"column",gap:5}}><strong>石话石说</strong><small style={{color:"#aaa"}}>seok 的播客 · 104 期节目</small></span>
+          <button onClick={() => setPodcastPage(true)} style={{display:"flex",alignItems:"center",justifyContent:"flex-start",gap:10,width:"100%",padding:"9px 12px",margin:"5px 0 15px",background:"#242424",borderRadius:9,color:"#fff",textAlign:"left",minHeight:0}}>
+            <img src="/fanshu/podcast-shihuashishuo.jpg" alt="石话石说封面" style={{width:48,height:48,objectFit:"cover",borderRadius:5,flexShrink:0}}/>
+            <span style={{display:"flex",flexDirection:"column",alignItems:"flex-start",gap:3,minWidth:0,flex:"0 1 auto"}}><strong style={{fontSize:14,lineHeight:1.3}}>石话石说</strong><small style={{color:"#aaa",fontSize:11}}>seok 的播客 · 104 期节目</small></span>
           </button>
                   <h1>{playlist || (tab === "音乐库" ? "音乐库" : "为你收藏")}</h1>
         {!playlist && (
