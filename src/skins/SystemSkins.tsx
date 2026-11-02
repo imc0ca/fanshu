@@ -549,6 +549,7 @@ export function ClockSkin(p: Props) {
   }, [running]);
   const cities = [
     { id: "tokyo", name: "东京", zone: "Asia/Tokyo" },
+    { id: "seoul", name: "首尔", zone: "Asia/Seoul" },
     { id: "paris", name: "巴黎", zone: "Europe/Paris" },
     { id: "new-york", name: "纽约 · 美国", zone: "America/New_York" },
   ];
