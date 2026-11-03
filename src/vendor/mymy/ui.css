@@ -896,3 +896,25 @@
 .mymy-ui .kzxx {
   white-space: pre-line;
 }
+
+
+/* Kakao call records: distinct connected and missed-call bubbles. */
+.mymy-ui .kkt-bubble-holder { display: contents; }
+.mymy-ui .kkt-call-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  max-width: 78%;
+}
+.mymy-ui .kkt-call-stack > .kzbub {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mymy-ui .kkt-call-stack .kkt-missed-card .kkt-call-icon {
+  color: #9b9b9b;
+}
+.mymy-ui .kkt-call-stack .kkt-missed-card .kkt-call-copy strong {
+  color: #171717;
+}
