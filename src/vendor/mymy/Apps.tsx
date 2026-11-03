@@ -201,6 +201,8 @@ export function MymyKakao(p: SkinProps) {
                         <KktPhoto path={m.meta.pendingImagePath} outgoing={!!m.outgoing} />
                       ) : m.meta?.callType ? (
                         <KktCallCard type={m.meta.callType} status={m.meta.callStatus} duration={m.meta.callDuration} missed={false} />
+                      ) : /^\\[语音消息\\s+\\d+:\\d+\\]$/.test(m.body) ? (
+                        <span className="kkt-voice-card"><span className="kkt-voice-play" aria-hidden="true">▶</span><span className="kkt-voice-duration">{m.body.match(/\\d+:\\d+/)?.[0] || "0:05"}</span></span>
                       ) : m.media ? <Media item={m} /> : m.body}
                     </button>
                     {m.meta?.callType && (m.body.includes("未接通") || m.meta.callStatus === "missed") && (
