@@ -714,3 +714,28 @@
 .mymy-kakao .kkt-call-copy strong { font-size:13px; font-weight:500; white-space:nowrap; }
 .mymy-kakao .kkt-call-card.is-ended .kkt-call-copy { min-width:0; }
 .mymy-kakao .kkt-call-card.is-ended .kkt-call-duration { font-size:13px; color:#202124; line-height:1.2; white-space:nowrap; text-align:right; }
+
+/* Compact Kakao call and voice bubbles (2026-11-03 refinement). */
+.mymy-kakao .kzbub.kkt-call-only,
+.mymy-kakao .kzm.kzmy .kzbub.kkt-call-only,
+.mymy-kakao .kzm.kzot .kzbub.kkt-call-only {
+  width: 146px !important;
+  min-width: 146px !important;
+  max-width: 146px !important;
+  padding: 10px 10px !important;
+}
+.mymy-kakao .kkt-call-card { gap: 7px !important; }
+.mymy-kakao .kkt-call-icon { width: 20px !important; min-width: 20px !important; }
+.mymy-kakao .kkt-call-icon svg { width: 19px !important; height: 19px !important; }
+.mymy-kakao .kkt-call-copy strong,
+.mymy-kakao .kkt-call-card.is-ended .kkt-call-duration { font-size: 12px !important; }
+.mymy-kakao .kzbub:has(.kkt-voice-card) { border-radius: 14px !important; }
+.mymy-kakao .kkt-voice-card {
+  width: 133px !important;
+  min-height: 40px !important;
+  padding: 8px 12px !important;
+  gap: 18px !important;
+  font-size: 16px !important;
+}
+.mymy-kakao .kkt-voice-play { font-size: 18px !important; }
+.mymy-kakao .kkt-voice-duration { font-size: 16px !important; }
