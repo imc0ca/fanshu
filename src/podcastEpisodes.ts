@@ -39,8 +39,8 @@ export const podcastEpisodes: PodcastEpisode[] = [
   {
     "number": 7,
     "date": "2025/05/18",
-    "title": "喜欢一个人一定要告诉他吗？",
-    "description": "那些没有说出口的喜欢，究竟是遗憾，还是一种温柔的保留？"
+    "title": "你会和十年前的自己成为朋友吗？",
+    "description": "如果遇见小时候的自己，我们会聊些什么？又会不会喜欢彼此？"
   },
   {
     "number": 8,
