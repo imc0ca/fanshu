@@ -192,16 +192,28 @@ export function MymyKakao(p: SkinProps) {
                       {m.time.slice(-5)}
                     </span>
                   )}
-                  <button
-                    className={"kzbub" + (m.media ? " kzimg" : "") + (m.meta?.pendingImagePath ? " kkt-photo-only" : "") + (m.meta?.callType ? " kkt-call-only" : "")}
-                    onClick={() => m.meta.local !== "true" && read(p, m)}
-                  >
-                    {m.meta?.pendingImagePath ? (
-                      <KktPhoto path={m.meta.pendingImagePath} outgoing={!!m.outgoing} />
-                    ) : m.meta?.callType ? (
-                      <KktCallCard type={m.meta.callType} status={m.meta.callStatus} duration={m.meta.callDuration} missed={m.meta.callStatus === "missed"} />
-                    ) : m.media ? <Media item={m} /> : m.body}
-                  </button>
+                  <div className={m.meta?.callType && m.body.includes("未接通") ? "kkt-call-stack" : "kkt-bubble-holder"}>
+                    <button
+                      className={"kzbub" + (m.media ? " kzimg" : "") + (m.meta?.pendingImagePath ? " kkt-photo-only" : "") + (m.meta?.callType ? " kkt-call-only" : "")}
+                      onClick={() => m.meta.local !== "true" && read(p, m)}
+                    >
+                      {m.meta?.pendingImagePath ? (
+                        <KktPhoto path={m.meta.pendingImagePath} outgoing={!!m.outgoing} />
+                      ) : m.meta?.callType ? (
+                        <KktCallCard type={m.meta.callType} status={m.meta.callStatus} duration={m.meta.callDuration} missed={false} />
+                      ) : m.media ? <Media item={m} /> : m.body}
+                    </button>
+                    {m.meta?.callType && (m.body.includes("未接通") || m.meta.callStatus === "missed") && (
+                      <button className="kzbub kkt-call-only" onClick={() => read(p, m)}>
+                        <span className="kkt-call-card kkt-missed-card">
+                          <span className="kkt-call-icon is-ended-icon">
+                            {m.meta.callType === "video" ? <VideoOff size={23} strokeWidth={2} /> : <PhoneMissed size={23} strokeWidth={2} />}
+                          </span>
+                          <span className="kkt-call-copy"><strong>Missed Call</strong></span>
+                        </span>
+                      </button>
+                    )}
+                  </div>
                   {!m.outgoing && run.last && (
                     <span className="kzt">{m.time.slice(-5)}</span>
                   )}
