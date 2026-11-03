@@ -699,3 +699,18 @@
 .mymy-kakao .kkt-call-card.is-ended .kkt-call-icon.is-ended-icon { color:#101010; }
 .mymy-kakao .kkt-call-card.is-ended .kkt-call-copy { min-width: 110px; }
 .mymy-kakao .kkt-call-card.is-ended .kkt-call-duration { color:#202124; font-size:15px; text-align:right; line-height:1.1; }
+
+/* Kakao voice-message bubble, matching the reference play/duration layout. */
+.mymy-kakao .kzbub:has(.kkt-voice-card) { padding: 0 !important; min-width: 0 !important; overflow: hidden; }
+.mymy-kakao .kkt-voice-card { display:flex; align-items:center; justify-content:space-between; gap:44px; width:178px; min-height:54px; padding:10px 17px; box-sizing:border-box; color:#171717; font-size:19px; line-height:1; }
+.mymy-kakao .kkt-voice-play { font-size:24px; line-height:1; }
+.mymy-kakao .kkt-voice-duration { font-size:19px; font-weight:400; white-space:nowrap; }
+/* Align call icons and labels identically across start/end cards. */
+.mymy-kakao .kzbub.kkt-call-only { box-sizing:border-box; width:204px; min-width:204px; padding:12px 13px !important; }
+.mymy-kakao .kkt-call-card { width:100%; gap:11px; align-items:center; }
+.mymy-kakao .kkt-call-icon { width:24px; min-width:24px; justify-content:flex-start; }
+.mymy-kakao .kkt-call-icon svg { width:21px; height:21px; }
+.mymy-kakao .kkt-call-copy { flex:1; min-width:0; display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:6px; line-height:1.2; }
+.mymy-kakao .kkt-call-copy strong { font-size:13px; font-weight:500; white-space:nowrap; }
+.mymy-kakao .kkt-call-card.is-ended .kkt-call-copy { min-width:0; }
+.mymy-kakao .kkt-call-card.is-ended .kkt-call-duration { font-size:13px; color:#202124; line-height:1.2; white-space:nowrap; text-align:right; }
