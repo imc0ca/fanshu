@@ -1,3 +1,4 @@
+import { calendarEntries, type CalendarEntry } from "../calendarEntries";
 import { setPhotoSequence } from "../ios/Details";
 import { PersistentSpotifyPlayer, playSpotify } from "../PersistentSpotifyPlayer";
 export { WeatherSkin, HealthSkin } from "./CalibratedSystemApps";
@@ -488,79 +489,48 @@ export function NotesSkin(p: Props) {
   );
 }
 export function CalendarSkin(p: Props) {
-  const [month, setMonth] = useState(8),
-    [year, setYear] = useState(2026),
-    [day, setDay] = useState(1);
-  const prefix = `${year}-${String(month + 1).padStart(2, "0")}`;
-  const list = p.items.filter((i) =>
-    i.time.startsWith(`${prefix}-${String(day).padStart(2, "0")}`),
-  );
-  const move = (d: number) => {
-    const date = new Date(Date.UTC(year, month + d, 1));
-    setYear(date.getUTCFullYear());
-    setMonth(date.getUTCMonth());
-    setDay(1);
-  };
-  const first = new Date(Date.UTC(year, month, 1)).getUTCDay(),
-    days = new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
-  return (
-    <div className="catalog-skin native-calendar">
-      <Header p={p} />
-      <div className="catalog-scroll">
-        <div className="month-title">
-          <button aria-label="上个月" onClick={() => move(-1)}>
-            <ChevronLeft />
-          </button>
-          <h2>
-            {year} 年 {month + 1} 月
-          </h2>
-          <button aria-label="下个月" onClick={() => move(1)}>
-            <ChevronRight />
-          </button>
-        </div>
-        <div className="calendar-grid">
-          {["日", "一", "二", "三", "四", "五", "六"].map((t) => (
-            <small key={t}>{t}</small>
-          ))}
-          {Array.from({ length: first }, (_, i) => (
-            <span key={"blank" + i} />
-          ))}
-          {Array.from({ length: days }, (_, i) => (
-            <button
-              className={day === i + 1 ? "selected" : ""}
-              key={i}
-              onClick={() => setDay(i + 1)}
-            >
-              {i + 1}
-              {p.items.some((x) =>
-                x.time.startsWith(
-                  `${prefix}-${String(i + 1).padStart(2, "0")}`,
-                ),
-              ) && <i />}
-            </button>
-          ))}
-        </div>
-        <h4 className="native-section">
-          {month + 1} 月 {day} 日
-        </h4>
-        {list.map((i) => (
-          <button
-            className="calendar-event"
-            key={i.id}
-            onClick={() => p.onItem(i)}
-          >
-            <time>{i.time.slice(-5)}</time>
-            <div>
-              <strong>{i.title}</strong>
-              <p>{meta(i, "location", i.body)}</p>
-            </div>
-          </button>
-        ))}
-        <Empty items={list} label="当天没有日程" />
-        <Add p={p} label="添加日程" />
+  const [month,setMonth]=useState(8),[year,setYear]=useState(2024),[day,setDay]=useState(2);
+  const prefix=`${year}-${String(month+1).padStart(2,"0")}`;
+  const dateKey=`${prefix}-${String(day).padStart(2,"0")}`;
+  const storyEntries:CalendarEntry[]=p.items.map(i=>({date:i.time.slice(0,10),title:i.title,start:/\\d{2}:\\d{2}/.test(i.time.slice(11))?i.time.slice(11,16):undefined,location:meta(i,"location",i.body)}));
+  const all=[...calendarEntries,...storyEntries];
+  const list=all.filter(i=>i.date===dateKey).sort((a,b)=>(a.start||"").localeCompare(b.start||""));
+  const move=(d:number)=>{const date=new Date(Date.UTC(year,month+d,1));setYear(date.getUTCFullYear());setMonth(date.getUTCMonth());setDay(1);};
+  const first=new Date(Date.UTC(year,month,1)).getUTCDay();
+  const days=new Date(Date.UTC(year,month+1,0)).getUTCDate();
+  return <div className="catalog-skin native-calendar">
+    <Header p={p}/>
+    <div className="catalog-scroll">
+      <div className="month-title">
+        <button aria-label="上个月" onClick={()=>move(-1)}><ChevronLeft/></button>
+        <h2>{year} 年 {month+1} 月</h2>
+        <button aria-label="下个月" onClick={()=>move(1)}><ChevronRight/></button>
       </div>
+      <div className="calendar-grid">
+        {["日","一","二","三","四","五","六"].map(t=><small key={t}>{t}</small>)}
+        {Array.from({length:first},(_,i)=><span key={"blank"+i}/>)}
+        {Array.from({length:days},(_,i)=>{
+          const date=`${prefix}-${String(i+1).padStart(2,"0")}`;
+          const entries=all.filter(x=>x.date===date);
+          return <button className={day===i+1?"selected":""} key={i} onClick={()=>setDay(i+1)} style={{position:"relative",minHeight:52}}>
+            <span>{i+1}</span>
+            {entries.length>0&&<span style={{display:"flex",gap:2,justifyContent:"center",flexWrap:"wrap",marginTop:4}}>
+              {entries.slice(0,3).map((entry,j)=><i key={j} style={{display:"block",width:entries.length===1?24:10,height:5,borderRadius:4,background:entry.category==="class"?"#4c86dd":"#e5a34c",position:"static"}}/>)}
+            </span>}
+          </button>;
+        })}
+      </div>
+      <h4 className="native-section">{month+1} 月 {day} 日</h4>
+      {list.map((entry,index)=><div className="calendar-event" key={entry.date+"-"+entry.title+"-"+index} style={{display:"flex",alignItems:"stretch",gap:10,marginBottom:8}}>
+        <time style={{minWidth:88,whiteSpace:"nowrap"}}>{entry.start?entry.start+(entry.end?"–"+entry.end:""):"全天"}</time>
+        <div style={{borderLeft:"5px solid "+(entry.category==="class"?"#4c86dd":"#e5a34c"),background:entry.category==="class"?"#eaf2ff":"#fff2df",padding:"9px 12px",borderRadius:8,flex:1,color:"#222"}}>
+          <strong>{entry.title}</strong>{entry.location&&<p style={{margin:"4px 0 0",fontSize:12}}>{entry.location}</p>}
+        </div>
+      </div>)}
+      {list.length===0&&<p style={{padding:16,color:"#888"}}>当天没有日程</p>}
+      <Add p={p} label="添加日程"/>
     </div>
-  );
+  </div>;
 }
 export function MailSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "收件箱");
