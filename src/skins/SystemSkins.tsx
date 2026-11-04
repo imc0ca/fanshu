@@ -262,7 +262,7 @@ export function PhotosSkin(p: Props) {
   const regular = dedupedItems.filter((item) => !item.id.startsWith("gallery-extra-"));
   const galleryStart = regular.findIndex((item) => item.id === "gallery-photo-1");
   const insertAt = galleryStart < 0 ? regular.length : galleryStart + 8;
-  const flowingItems = [...regular.slice(0, insertAt), ...extras, ...regular.slice(insertAt)];
+  const flowingItems = [...regular.slice(0, insertAt), ...extras.slice(0, 9), ...regular.slice(insertAt), ...extras.slice(9)];
   const [album, setAlbum] = useState("");
   const list =
     tab === "收藏"
