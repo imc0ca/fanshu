@@ -213,9 +213,9 @@ export function PhotosSkin(p: Props) {
   // All appear in the main library; only the new set belongs to 大大笨蛋.
   const galleryItems: Item[] = Array.from({ length: 20 }, (_, index) => ({
     id: `gallery-photo-${index + 1}`, title: `照片 ${index + 1}`, body: "", richText: "",
-    meta: { album: "大大笨蛋" }, time: "", sender: "相册", avatar: "",
+    meta: { album: "普通照片" }, time: "", sender: "相册", avatar: "",
     kind: "image", media: `/fanshu/gallery-${String(index + 1).padStart(2, "0")}.jpg`,
-    hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: false,
+    hidden: false, unlock: "", password: "", folder: "普通照片", favorite: false,
     outgoing: false, read: true, likes: 0, comments: [],
   }));
   const dadabendanExtensions = ["jpeg","jpeg","jpeg","png","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"];
