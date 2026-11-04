@@ -263,7 +263,11 @@ export function PhotosSkin(p: Props) {
   const regular = dedupedItems.filter((item) => !item.id.startsWith("gallery-extra-"));
   const galleryStart = regular.findIndex((item) => item.id === "gallery-photo-1");
   const insertAt = galleryStart < 0 ? regular.length : galleryStart + 8;
-  const flowingItems = [...regular.slice(0, insertAt), ...extras.slice(0, 9), ...regular.slice(insertAt), ...extras.slice(9)];
+  // Put the original 2024 shoot sequence at the beginning, as in the supplied reference.
+  // Retain every existing item and its album; only change the main library ordering.
+  const originalShoot = regular.filter((item) => item.id.startsWith("dadabendan-original-"));
+  const remainingRegular = regular.filter((item) => !item.id.startsWith("dadabendan-original-"));
+  const flowingItems = [...originalShoot, ...remainingRegular.slice(0, insertAt), ...extras.slice(0, 9), ...remainingRegular.slice(insertAt), ...extras.slice(9)];
   const [album, setAlbum] = useState("");
   const list =
     tab === "收藏"
@@ -439,9 +443,31 @@ export function SafariSkin(p: Props) {
 export function NotesSkin(p: Props) {
   const { q, setQ, items } = useContent(p, "备忘录");
   const [folder, setFolder] = useState<string | null>(null);
-  const list = folder
-    ? items.filter((i) => (i.folder || "备忘录") === folder)
-    : items;
+  const seongchanNote: Item = {
+    id: "note-jeong-seongchan-schedule-2024",
+    title: "郑成灿",
+    body: "07.07\n\n14:00 COMMON FIELD\n\n서울 마포구 성미산로29길 41\n\nLookbook Casting\n\n白T\n\n运动鞋\n\n07.12\n\n10:00 COMMON FIELD\n\n서울 마포구 성미산로29길 41\n\nLookbook 棚拍\n\n带一件外套\n\n结束后确认下次拍摄服装\n\n07.13\n\n14:00 training\n\n带水\n\n07.14\n\n14:00 COMMON FIELD\n\nLookbook 外景拍摄\n\n防晒\n\n提前看天气\n\n07.15\n\n10:00 FW Campaign casting\n\n带上之前的资料\n\n07.20\n\n10:00 COMMON FIELD\n\nLookbook 外景拍摄\n\n14:00 training\n\n中午记得吃饭\n\n07.21\n\n14:00 FW Campaign lookbook fitting\n\n确认衣服尺寸\n\n07.24\n\n14:00 FW Campaign lookbook 二次fitting\n\n确认上次修改的地方\n\n07.27\n\n14:00 training\n\n运动鞋\n\n07.28\n\n10:00 SATUR casting\n\n서울 강남구 도산대로49길 12\n\n14:00 FW Campaign lookbook 拍摄\n\n让他早点吃早饭\n\n08.02 周五\n\n14:00 OFF RECORD\n\n서울 마포구 성미산로17길 58\n\neditorial test\n\n08.03 周六\n\n14:00 SATUR fitting&前拍\n\n结束后确认样衣\n\n08.06\n\n10:00 SATUR\n\n서울 강남구 도산대로49길 12\n\nFW Campaign 拍摄\n\n让他早点吃早饭\n\n서울 용산구 한남대로27길 31\n\nLookbook 拍摄\n\n停车 B2\n\n结束后取样衣\n\n09.26\n\n15:00–17:00圣诞企划策划会\n\n带电脑\n\n确认拍摄安排\n\n10.06\n\n15:00美容室\n\n18:00 SATUR Seoul\n\n快闪开幕\n\n提前确认造型\n\n10.15\n\n9:00 casting\n\n17:00 SW fitting\n\n带黑色运动鞋",
+    richText: "",
+    time: "2024-07-07 14:00",
+    sender: "备忘录",
+    avatar: "",
+    kind: "text",
+    media: "",
+    meta: {},
+    hidden: false,
+    unlock: "",
+    password: "",
+    folder: "备忘录",
+    favorite: false,
+    outgoing: false,
+    read: true,
+    likes: 0,
+    comments: [],
+  };
+  const noteItems = [seongchanNote, ...items.filter((i) => i.id !== seongchanNote.id)];
+  const list = (folder
+    ? noteItems.filter((i) => (i.folder || "备忘录") === folder)
+    : noteItems).filter((i) => (i.title + i.body).toLowerCase().includes(q.toLowerCase()));
   return (
     <div className="catalog-skin native-notes">
       <Header p={p} />
@@ -454,12 +480,12 @@ export function NotesSkin(p: Props) {
         <SearchBox value={q} set={setQ} />
         {!folder && (
           <div className="note-folders">
-            {groupItems(items, "备忘录").map((g) => (
+            {groupItems(noteItems, "备忘录").map((g) => (
               <button key={g} onClick={() => setFolder(g)}>
                 <Folder size={17} />
                 {g}
                 <small>
-                  {items.filter((i) => (i.folder || "备忘录") === g).length}
+                  {noteItems.filter((i) => (i.folder || "备忘录") === g).length}
                 </small>
               </button>
             ))}
