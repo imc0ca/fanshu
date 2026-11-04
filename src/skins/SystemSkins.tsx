@@ -209,8 +209,27 @@ export function PhotosSkin(p: Props) {
     likes: 0,
     comments: [],
   }));
+  // Static photo assets are shipped separately in public/photo-library and public/dadabendan.
+  // All appear in the main library; only the new set belongs to 大大笨蛋.
+  const galleryItems: Item[] = Array.from({ length: 20 }, (_, index) => ({
+    id: `gallery-photo-${index + 1}`, title: `照片 ${index + 1}`, body: "", richText: "",
+    meta: { album: "普通照片" }, time: "", sender: "相册", avatar: "",
+    kind: "image", media: `/fanshu/photo-library/gallery-${String(index + 1).padStart(2, "0")}.jpg`,
+    hidden: false, unlock: "", password: "", folder: "普通照片", favorite: false,
+    outgoing: false, read: true, likes: 0, comments: [],
+  }));
+  const dadabendanExtensions = ["jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","png","png"];
+  const dadabendanItems: Item[] = dadabendanExtensions.map((ext, index) => ({
+    id: `dadabendan-photo-${index + 1}`, title: `大大笨蛋 ${index + 1}`, body: "", richText: "",
+    meta: { album: "大大笨蛋" }, time: "", sender: "相册", avatar: "",
+    kind: "image", media: `/fanshu/dadabendan/dadabendan-${String(index + 1).padStart(2, "0")}.${ext}`,
+    hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: false,
+    outgoing: false, read: true, likes: 0, comments: [],
+  }));
   const items = [
     ...originalItems,
+    ...galleryItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
+    ...dadabendanItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
     ...charlieItems.filter((i) =>
       (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase()),
     ),
