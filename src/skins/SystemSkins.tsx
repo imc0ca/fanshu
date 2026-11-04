@@ -248,7 +248,7 @@ export function PhotosSkin(p: Props) {
         <h1>{album || tab}</h1>
         {tab === "相簿" && !album ? (
           <div className="album-grid">
-            {groupItems(items, "未分类").map((g) => (
+            {["大大笨蛋", "查理"].filter((g) => items.some((i) => i.folder === g)).map((g) => (
               <button key={g} onClick={() => setAlbum(g)}>
                 <Media
                   item={items.find((i) => (i.folder || "未分类") === g)!}
