@@ -218,30 +218,27 @@ export function PhotosSkin(p: Props) {
     hidden: false, unlock: "", password: "", folder: "普通照片", favorite: false,
     outgoing: false, read: true, likes: 0, comments: [],
   }));
-  const dadabendanExtensions = ["jpeg","jpeg","jpeg","png","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"];
-  const dadabendanOrder = [5,10,0,13,7,3,15,1,9,17,6,11,2,18,4,12,8,16,14];
-  const dadabendanItems: Item[] = dadabendanOrder.map((index) => {
-    const ext = dadabendanExtensions[index];
-    return ({
-    id: `dadabendan-photo-${index + 1}`, title: `大大笨蛋 ${index + 1}`, body: "", richText: "",
+  const originalDadabendanItems: Item[] = Array.from({ length: 20 }, (_, index) => ({
+    id: `dadabendan-original-${index + 1}`, title: `大大笨蛋 原始 ${index + 1}`, body: "", richText: "",
+    meta: { album: "大大笨蛋" }, time: "", sender: "相册", avatar: "",
+    kind: "image",
+    media: `/fanshu/dadabendan-original/dadabendan-${String(index + 1).padStart(2, "0")}.${index >= 18 ? "png" : "jpeg"}`,
+    hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: false,
+    outgoing: false, read: true, likes: 0, comments: [],
+  }));
+  const dadabendanExtensions = ["jpeg","jpeg","jpeg","png","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"];
+  const dadabendanItems: Item[] = dadabendanExtensions.map((ext, index) => ({
+    id: `dadabendan-photo-${index + 1}`, title: `大大笨蛋 ${index + 21}`, body: "", richText: "",
     meta: { album: "大大笨蛋" }, time: "", sender: "相册", avatar: "",
     kind: "image", media: `/fanshu/dadabendan-${String(index + 1).padStart(2, "0")}.${ext}`,
     hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: false,
-    outgoing: false, read: true, likes: 0, comments: [],
-    });
-  });
-  // Standalone camera-roll photos: deliberately excluded from every album.
-  const standaloneGalleryItems: Item[] = Array.from({ length: 17 }, (_, index) => ({
-    id: `standalone-gallery-${index + 1}`, title: `图库照片 ${index + 1}`, body: "", richText: "",
-    meta: {}, time: "", sender: "相册", avatar: "",
-    kind: "image", media: `/fanshu/gallery-extra/gallery-extra-${String(index + 1).padStart(2, "0")}.jpeg`,
-    hidden: false, unlock: "", password: "", folder: "", favorite: false,
     outgoing: false, read: true, likes: 0, comments: [],
   }));
   const items = [
     ...originalItems,
     ...standaloneGalleryItems.filter((i) => (i.title + i.body).toLowerCase().includes(q.toLowerCase())),
     ...galleryItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
+    ...originalDadabendanItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
     ...dadabendanItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
     ...charlieItems.filter((i) =>
       (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase()),
