@@ -251,11 +251,12 @@ export function PhotosSkin(p: Props) {
       (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase()),
     ),
   ];
-  // Stable, gently interleaved order for the main library; preserve album contents.
-  const flowingItems = items
-    .map((item, index) => ({ item, index, order: (index * 17) % items.length }))
-    .sort((a, b) => a.order - b.order || a.index - b.index)
-    .map(({ item }) => item);
+  // Keep photo shoots together instead of scattering photos from the same session.
+  // The three known duplicate files remain in their albums but appear only once in the library.
+  const duplicateOriginalIds = new Set([
+    "dadabendan-original-4", "dadabendan-original-19", "dadabendan-original-20",
+  ]);
+  const flowingItems = items.filter((item) => !duplicateOriginalIds.has(item.id));
   const [album, setAlbum] = useState("");
   const list =
     tab === "收藏"
