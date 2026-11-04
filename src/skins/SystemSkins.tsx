@@ -230,8 +230,17 @@ export function PhotosSkin(p: Props) {
     outgoing: false, read: true, likes: 0, comments: [],
     });
   });
+  // Standalone camera-roll photos: deliberately excluded from every album.
+  const standaloneGalleryItems: Item[] = Array.from({ length: 17 }, (_, index) => ({
+    id: `standalone-gallery-${index + 1}`, title: `图库照片 ${index + 1}`, body: "", richText: "",
+    meta: {}, time: "", sender: "相册", avatar: "",
+    kind: "image", media: `/fanshu/gallery-extra/gallery-extra-${String(index + 1).padStart(2, "0")}.jpeg`,
+    hidden: false, unlock: "", password: "", folder: "", favorite: false,
+    outgoing: false, read: true, likes: 0, comments: [],
+  }));
   const items = [
     ...originalItems,
+    ...standaloneGalleryItems.filter((i) => (i.title + i.body).toLowerCase().includes(q.toLowerCase())),
     ...galleryItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
     ...dadabendanItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
     ...charlieItems.filter((i) =>
