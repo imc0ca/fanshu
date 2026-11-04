@@ -14,6 +14,8 @@ import {
 } from "lucide-react";
 import { RichText } from "../RichText";
 import { safeMedia, type Item } from "../schema";
+let photoSequence: Item[] = [];
+export function setPhotoSequence(items: Item[]) { photoSequence = items; }
 export const nativeDetailApps = new Set([
   "notes",
   "photos",
@@ -32,10 +34,13 @@ export function NativeDetail({
   item: Item;
   back: () => void;
 }) {
-  const [favorite, setFavorite] = useState(item.favorite),
+  const [photoIndex, setPhotoIndex] = useState(() => Math.max(0, photoSequence.findIndex((p) => p.id === item.id))),
+    [touchStart, setTouchStart] = useState<number | null>(null),
+    [favorite, setFavorite] = useState(item.favorite),
     [copied, setCopied] = useState(false),
     [call, setCall] = useState(false);
-  const media = safeMedia(item.media),
+  const currentPhoto = app === "photos" ? (photoSequence[photoIndex] || item) : item;
+  const media = safeMedia(currentPhoto.media),
     name =
       app === "notes"
         ? "备忘录"
@@ -81,9 +86,9 @@ export function NativeDetail({
       )}
       {app === "photos" ? (
         <>
-          <div className="native-photo-stage">
+          <div className="native-photo-stage" onTouchStart={(e) => setTouchStart(e.touches[0].clientX)} onTouchEnd={(e) => { if (touchStart === null) return; const dx = e.changedTouches[0].clientX - touchStart; if (Math.abs(dx) > 45) setPhotoIndex((i) => Math.max(0, Math.min(photoSequence.length - 1, i + (dx < 0 ? 1 : -1)))); setTouchStart(null); }}>
             {media ? (
-              <img src={media} alt={item.title} />
+              <img key={currentPhoto.id} src={media} alt={currentPhoto.title} draggable={false} />
             ) : (
               <div className="native-photo-caption">
                 <h2>{item.title}</h2>
@@ -101,7 +106,7 @@ export function NativeDetail({
             >
               <Heart fill={favorite ? "#007aff" : "none"} />
             </button>
-            <span>{copied ? "已复制" : item.title}</span>
+            <span />
           </footer>
         </>
       ) : app === "contacts" || app === "phone" ? (
