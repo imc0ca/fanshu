@@ -218,7 +218,7 @@ export function PhotosSkin(p: Props) {
     hidden: false, unlock: "", password: "", folder: "普通照片", favorite: false,
     outgoing: false, read: true, likes: 0, comments: [],
   }));
-  const dadabendanExtensions = ["jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","png","png"];
+  const dadabendanExtensions = ["jpeg","jpeg","jpeg","png","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"];
   const dadabendanItems: Item[] = dadabendanExtensions.map((ext, index) => ({
     id: `dadabendan-photo-${index + 1}`, title: `大大笨蛋 ${index + 1}`, body: "", richText: "",
     meta: { album: "大大笨蛋" }, time: "", sender: "相册", avatar: "",
