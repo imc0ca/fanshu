@@ -274,7 +274,7 @@ export function PhotosSkin(p: Props) {
                   key={i.id}
                   onClick={() => p.onItem(i)}
                 >
-                  <Media item={i} />
+                  {i.media ? <img src={i.media} alt={i.title} loading="eager" decoding="async" /> : <Media item={i} />}
                   {i.favorite && <Heart size={12} fill="white" />}
                 </button>
               ))}
