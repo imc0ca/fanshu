@@ -512,11 +512,9 @@ export function CalendarSkin(p: Props) {
         {Array.from({length:days},(_,i)=>{
           const date=`${prefix}-${String(i+1).padStart(2,"0")}`;
           const entries=all.filter(x=>x.date===date);
-          return <button className={day===i+1?"selected":""} key={i} onClick={()=>setDay(i+1)} style={{position:"relative",minHeight:52}}>
-            <span>{i+1}</span>
-            {entries.length>0&&<span style={{display:"flex",gap:2,justifyContent:"center",flexWrap:"wrap",marginTop:4}}>
-              {entries.slice(0,3).map((entry,j)=><i key={j} style={{display:"block",width:entries.length===1?24:10,height:5,borderRadius:4,background:entry.category==="class"?"#4c86dd":"#e5a34c",position:"static"}}/>)}
-            </span>}
+          return <button className="calendar-day-cell" aria-label={`${month+1}月${i+1}日，${entries.length}个日程`} key={i} onClick={()=>setDay(i+1)}>
+            <span className={day===i+1?"calendar-day-number is-selected":"calendar-day-number"}>{i+1}</span>
+            {entries.length>0&&<span className="calendar-day-dot" aria-hidden="true"/>}
           </button>;
         })}
       </div>
