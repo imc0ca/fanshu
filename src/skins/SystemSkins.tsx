@@ -218,6 +218,13 @@ export function PhotosSkin(p: Props) {
     hidden: false, unlock: "", password: "", folder: "普通照片", favorite: false,
     outgoing: false, read: true, likes: 0, comments: [],
   }));
+  const standaloneGalleryItems: Item[] = Array.from({ length: 17 }, (_, index) => ({
+    id: `gallery-extra-${index + 1}`, title: `照片 ${index + 1}`, body: "", richText: "",
+    meta: { album: "首页照片" }, time: "", sender: "相册", avatar: "",
+    kind: "image", media: `/fanshu/gallery-extra-${String(index + 1).padStart(2, "0")}.jpeg`,
+    hidden: false, unlock: "", password: "", folder: "首页照片", favorite: false,
+    outgoing: false, read: true, likes: 0, comments: [],
+  }));
   const originalDadabendanItems: Item[] = Array.from({ length: 20 }, (_, index) => ({
     id: `dadabendan-original-${index + 1}`, title: `大大笨蛋 原始 ${index + 1}`, body: "", richText: "",
     meta: { album: "大大笨蛋" }, time: "", sender: "相册", avatar: "",
