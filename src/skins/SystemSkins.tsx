@@ -492,7 +492,7 @@ export function CalendarSkin(p: Props) {
   const [month,setMonth]=useState(8),[year,setYear]=useState(2024),[day,setDay]=useState(2);
   const prefix=`${year}-${String(month+1).padStart(2,"0")}`;
   const dateKey=`${prefix}-${String(day).padStart(2,"0")}`;
-  const storyEntries:CalendarEntry[]=p.items.map(i=>({date:i.time.slice(0,10),title:i.title,start:/\\d{2}:\\d{2}/.test(i.time.slice(11))?i.time.slice(11,16):undefined,location:meta(i,"location",i.body)}));
+  const storyEntries:CalendarEntry[]=p.items.map(i=>({date:i.time.slice(0,10),title:i.title,start:/[0-9]{2}:[0-9]{2}/.test(i.time.slice(11))?i.time.slice(11,16):undefined,location:meta(i,"location",i.body)}));
   const all=[...calendarEntries,...storyEntries];
   const list=all.filter(i=>i.date===dateKey).sort((a,b)=>(a.start||"").localeCompare(b.start||""));
   const move=(d:number)=>{const date=new Date(Date.UTC(year,month+d,1));setYear(date.getUTCFullYear());setMonth(date.getUTCMonth());setDay(1);};
