@@ -233,7 +233,7 @@ export function PhotosSkin(p: Props) {
     hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: false,
     outgoing: false, read: true, likes: 0, comments: [],
   }));
-  const dadabendanExtensions = ["jpeg","jpeg","jpeg","png","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"];
+  const dadabendanExtensions = ["jpeg","jpeg","jpeg","png","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","png"];
   const dadabendanItems: Item[] = dadabendanExtensions.map((ext, index) => ({
     id: `dadabendan-photo-${index + 1}`, title: `大大笨蛋 ${index + 21}`, body: "", richText: "",
     meta: { album: "大大笨蛋" }, time: "", sender: "相册", avatar: "",
@@ -251,13 +251,18 @@ export function PhotosSkin(p: Props) {
       (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase()),
     ),
   ];
+  // Stable, gently interleaved order for the main library; preserve album contents.
+  const flowingItems = items
+    .map((item, index) => ({ item, index, order: (index * 17) % items.length }))
+    .sort((a, b) => a.order - b.order || a.index - b.index)
+    .map(({ item }) => item);
   const [album, setAlbum] = useState("");
   const list =
     tab === "收藏"
       ? items.filter((i) => i.favorite)
       : album
         ? items.filter((i) => (i.folder || "未分类") === album)
-        : items;
+        : flowingItems;
   return (
     <div className="catalog-skin native-photos">
       <Header p={p} />
@@ -268,7 +273,7 @@ export function PhotosSkin(p: Props) {
             {["大大笨蛋", "查理"].filter((g) => items.some((i) => i.folder === g)).map((g) => (
               <button key={g} onClick={() => setAlbum(g)}>
                 <Media
-                  item={items.find((i) => (i.folder || "未分类") === g)!}
+                  item={g === "大大笨蛋" ? originalDadabendanItems[3] : items.find((i) => (i.folder || "未分类") === g)!}
                 />
                 <strong>{g}</strong>
                 <small>
