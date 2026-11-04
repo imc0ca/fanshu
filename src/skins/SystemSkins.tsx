@@ -1,3 +1,4 @@
+import { setPhotoSequence } from "../ios/Details";
 import { PersistentSpotifyPlayer, playSpotify } from "../PersistentSpotifyPlayer";
 export { WeatherSkin, HealthSkin } from "./CalibratedSystemApps";
 import { useSkinState } from "../skinState";
@@ -256,7 +257,12 @@ export function PhotosSkin(p: Props) {
   const duplicateOriginalIds = new Set([
     "dadabendan-original-4", "dadabendan-original-19", "dadabendan-original-20",
   ]);
-  const flowingItems = items.filter((item) => !duplicateOriginalIds.has(item.id));
+  const dedupedItems = items.filter((item) => !duplicateOriginalIds.has(item.id));
+  const extras = dedupedItems.filter((item) => item.id.startsWith("gallery-extra-"));
+  const regular = dedupedItems.filter((item) => !item.id.startsWith("gallery-extra-"));
+  const galleryStart = regular.findIndex((item) => item.id === "gallery-photo-1");
+  const insertAt = galleryStart < 0 ? regular.length : galleryStart + 8;
+  const flowingItems = [...regular.slice(0, insertAt), ...extras, ...regular.slice(insertAt)];
   const [album, setAlbum] = useState("");
   const list =
     tab === "收藏"
@@ -291,7 +297,7 @@ export function PhotosSkin(p: Props) {
                 <button
                   aria-label={`查看${i.title}`}
                   key={i.id}
-                  onClick={() => p.onItem(i)}
+                  onClick={() => { setPhotoSequence(list); p.onItem(i); }}
                 >
                   {i.media ? <img src={i.media} alt={i.title} loading="eager" decoding="async" /> : <Media item={i} />}
                   {i.favorite && <Heart size={12} fill="white" />}
