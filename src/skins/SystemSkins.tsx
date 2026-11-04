@@ -182,7 +182,39 @@ export function ContactsSkin(p: Props) {
   );
 }
 export function PhotosSkin(p: Props) {
-  const { tab, setTab, q, setQ, items } = useContent(p, "图库");
+  const { tab, setTab, q, setQ, items: originalItems } = useContent(p, "图库");
+  const charlieDates = [
+    "2021-06-12", "2021-10-17", "2022-05-08", "2022-12-04",
+    "2023-07-23", "2023-11-19", "2024-04-14", "2024-08-25",
+    "2025-02-05", "2025-02-05", "2026-01-01", "2026-05-22", "2026-09-29",
+  ];
+  const charlieItems: Item[] = charlieDates.map((date, index) => ({
+    id: `charlie-photo-${index + 1}`,
+    title: `查理 · ${date}`,
+    body: `查理相册 · ${date}`,
+    richText: "",
+    meta: { date, album: "查理" },
+    time: date,
+    sender: "相册",
+    avatar: "",
+    kind: "image",
+    media: `/fanshu/charlie-${String(index + 1).padStart(2, "0")}.png`,
+    hidden: false,
+    unlock: "",
+    password: "",
+    folder: "查理",
+    favorite: false,
+    outgoing: false,
+    read: true,
+    likes: 0,
+    comments: [],
+  }));
+  const items = [
+    ...originalItems,
+    ...charlieItems.filter((i) =>
+      (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase()),
+    ),
+  ];
   const [album, setAlbum] = useState("");
   const list =
     tab === "收藏"
