@@ -281,12 +281,12 @@ export function NeteaseSkin(p: Props) {
   );
 }
 const youtubeDemo = [
-  { title:"🌾🔥【星露谷物语】超详细沙漠节全攻略科普", channel:"星露谷小土豆", views:"2673次观看", age:"1年前", duration:"9:36", color:"#68a66c" },
-  { title:"女主开局被校霸同桌一见钟情！本以为是纯情小奶狗，不料校霸竟是真病娇…", channel:"小白爆肝队", views:"23万次观看", age:"2年前", duration:"1:05:03", color:"#bd9878" },
-  { title:"想知道爱犬品种，记者觉得检测不靠谱，寄出自己的DNA，结果她变成…", channel:"M2档案", views:"52万次观看", age:"2年前", duration:"29:44", color:"#536b83" },
-  { title:"【宫崎骏 | Miyazaki Hayao】久石让 in 武道馆 音乐会 与宫崎骏动画一起走过的25年", channel:"The S Videos", views:"27万次观看", age:"8年前", duration:"4:32", color:"#464554" },
-  { title:"全网星际争霸最全时间线梳理", channel:"我是社恐宇", views:"5万次观看", age:"10个月前", duration:"", color:"#484568" },
-  { title:"Golden Lynel + 9 Silver Enemies | Testrun of BotW All-stars Challenge", channel:"Ordinary Champion", views:"236万次观看", age:"3年前", duration:"8:19", color:"#73856b" },
+  { title:"🌾🔥【星露谷物语】超详细沙漠节全攻略科普", channel:"星露谷小土豆", views:"2673次观看", age:"1年前", duration:"9:36", color:"#68a66c", image:"/fanshu/youtube-thumbnails/youtube-01.jpg" },
+  { title:"女主开局被校霸同桌一见钟情！本以为是纯情小奶狗，不料校霸竟是真病娇…", channel:"小白爆肝队", views:"23万次观看", age:"2年前", duration:"1:05:03", color:"#bd9878", image:"/fanshu/youtube-thumbnails/youtube-02.jpg" },
+  { title:"想知道爱犬品种，记者觉得检测不靠谱，寄出自己的DNA，结果她变成…", channel:"M2档案", views:"52万次观看", age:"2年前", duration:"29:44", color:"#536b83", image:"/fanshu/youtube-thumbnails/youtube-03.jpg" },
+  { title:"【宫崎骏 | Miyazaki Hayao】久石让 in 武道馆 音乐会 与宫崎骏动画一起走过的25年", channel:"The S Videos", views:"27万次观看", age:"8年前", duration:"4:32", color:"#464554", image:"/fanshu/youtube-thumbnails/youtube-04.jpg" },
+  { title:"全网星际争霸最全时间线梳理", channel:"我是社恐宇", views:"5万次观看", age:"10个月前", duration:"", color:"#484568", image:"/fanshu/youtube-thumbnails/youtube-05.jpg" },
+  { title:"Golden Lynel + 9 Silver Enemies | Testrun of BotW All-stars Challenge", channel:"Ordinary Champion", views:"236万次观看", age:"3年前", duration:"8:19", color:"#73856b", image:"/fanshu/youtube-thumbnails/youtube-06.jpg" },
 ];
 export function YouTubeSkin(_p: Props) {
   const [tab,setTab] = useState("首页");
@@ -301,7 +301,7 @@ export function YouTubeSkin(_p: Props) {
   const current = selected === null ? null : youtubeDemo[selected];
   const thumb = (v:typeof youtubeDemo[number]) => (
     <div style={{aspectRatio:"16/9",background:`linear-gradient(145deg,${v.color},#1c2631)`,position:"relative",display:"flex",alignItems:"center",justifyContent:"center",color:"white",overflow:"hidden"}}>
-      <span style={{fontSize:13,opacity:.75,letterSpacing:1}}>视频封面待上传</span>
+      <img src={v.image} alt={v.title} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover",position:"absolute",inset:0}} onError={e=>{e.currentTarget.style.display="none";}} />
       <span style={{position:"absolute",right:8,bottom:8,background:"#000c",padding:"3px 5px",borderRadius:4,fontSize:12,fontWeight:600}}>{v.duration||"视频"}</span>
     </div>
   );
