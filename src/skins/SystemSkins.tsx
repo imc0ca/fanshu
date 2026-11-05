@@ -256,17 +256,29 @@ export function PhotosSkin(p: Props) {
   // Keep photo shoots together instead of scattering photos from the same session.
   // The three known duplicate files remain in their albums but appear only once in the library.
   const duplicateOriginalIds = new Set([
-    "dadabendan-original-4", "dadabendan-original-19", "dadabendan-original-20",
+    "dadabendan-original-19", "dadabendan-original-20",
   ]);
   const dedupedItems = items.filter((item) => !duplicateOriginalIds.has(item.id));
   const extras = dedupedItems.filter((item) => item.id.startsWith("gallery-extra-"));
   const regular = dedupedItems.filter((item) => !item.id.startsWith("gallery-extra-"));
   const galleryStart = regular.findIndex((item) => item.id === "gallery-photo-1");
   const insertAt = galleryStart < 0 ? regular.length : galleryStart + 8;
-  // Put the original 2024 shoot sequence at the beginning, as in the supplied reference.
-  // Retain every existing item and its album; only change the main library ordering.
-  const originalShoot = regular.filter((item) => item.id.startsWith("dadabendan-original-"));
-  const remainingRegular = regular.filter((item) => !item.id.startsWith("dadabendan-original-"));
+  // The 2024 shoot starts with three schedule screenshots interleaved with the
+  // original photos, matching the author's reference (left-to-right, top-to-bottom).
+  // Do not sort these assets by filename: 01/02/03 are the three text cards.
+  const referenceShootOrder = [
+    1, 4, 5,
+    6, 7, 8,
+    2, 9, 10,
+    11, 12, 13,
+    14, 15, 3,
+    16, 17, 18,
+  ];
+  const originalShoot = referenceShootOrder
+    .map((n) => regular.find((item) => item.id === `dadabendan-original-${n}`))
+    .filter((item): item is Item => Boolean(item));
+  const orderedShootIds = new Set(originalShoot.map((item) => item.id));
+  const remainingRegular = regular.filter((item) => !orderedShootIds.has(item.id));
   const flowingItems = [...originalShoot, ...remainingRegular.slice(0, insertAt), ...extras.slice(0, 9), ...remainingRegular.slice(insertAt), ...extras.slice(9)];
   const [album, setAlbum] = useState("");
   const list =
