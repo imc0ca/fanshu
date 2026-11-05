@@ -487,7 +487,7 @@ export function NotesSkin(p: Props) {
   }));
   const customNotes = [seongchanNote, ...additionalNotes];
   const customIds = new Set(customNotes.map((i) => i.id));
-  const noteItems = [...customNotes, ...items.filter((i) => !customIds.has(i.id))];
+  const noteItems = [...customNotes, ...items.filter((i) => !customIds.has(i.id))].sort((a, b) => b.time.localeCompare(a.time));
   const [openedNote, setOpenedNote] = useState<Item | null>(null);
   const list = (folder
     ? noteItems.filter((i) => (i.folder || "备忘录") === folder)
