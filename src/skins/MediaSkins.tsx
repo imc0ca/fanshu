@@ -281,12 +281,12 @@ export function NeteaseSkin(p: Props) {
   );
 }
 const youtubeDemo = [
-  { title:"🌾🔥【星露谷物语】超详细沙漠节全攻略科普", channel:"星露谷小土豆", views:"2673次观看", age:"1年前", duration:"9:36", color:"#68a66c", image:"/fanshu/youtube-thumbnails/youtube-01.jpg" },
-  { title:"女主开局被校霸同桌一见钟情！本以为是纯情小奶狗，不料校霸竟是真病娇…", channel:"小白爆肝队", views:"23万次观看", age:"2年前", duration:"1:05:03", color:"#bd9878", image:"/fanshu/youtube-thumbnails/youtube-02.jpg" },
-  { title:"想知道爱犬品种，记者觉得检测不靠谱，寄出自己的DNA，结果她变成…", channel:"M2档案", views:"52万次观看", age:"2年前", duration:"29:44", color:"#536b83", image:"/fanshu/youtube-thumbnails/youtube-03.jpg" },
-  { title:"【宫崎骏 | Miyazaki Hayao】久石让 in 武道馆 音乐会 与宫崎骏动画一起走过的25年", channel:"The S Videos", views:"27万次观看", age:"8年前", duration:"4:32", color:"#464554", image:"/fanshu/youtube-thumbnails/youtube-04.jpg" },
-  { title:"全网星际争霸最全时间线梳理", channel:"我是社恐宇", views:"5万次观看", age:"10个月前", duration:"", color:"#484568", image:"/fanshu/youtube-thumbnails/youtube-05.jpg" },
-  { title:"Golden Lynel + 9 Silver Enemies | Testrun of BotW All-stars Challenge", channel:"Ordinary Champion", views:"236万次观看", age:"3年前", duration:"8:19", color:"#73856b", image:"/fanshu/youtube-thumbnails/youtube-06.jpg" },
+  { title:"🌾🔥【星露谷物语】超详细沙漠节全攻略科普", channel:"星露谷小土豆", views:"2673次观看", age:"1年前", duration:"9:36", color:"#68a66c", image:"/fanshu/youtube-thumbnails/youtube-01.jpg", avatar:"/fanshu/youtube-avatars/youtube-avatar-01.jpg" },
+  { title:"女主开局被校霸同桌一见钟情！本以为是纯情小奶狗，不料校霸竟是真病娇…", channel:"小白爆肝队", views:"23万次观看", age:"2年前", duration:"1:05:03", color:"#bd9878", image:"/fanshu/youtube-thumbnails/youtube-02.jpg", avatar:"/fanshu/youtube-avatars/youtube-avatar-02.jpg" },
+  { title:"想知道爱犬品种，记者觉得检测不靠谱，寄出自己的DNA，结果她变成…", channel:"M2档案", views:"52万次观看", age:"2年前", duration:"29:44", color:"#536b83", image:"/fanshu/youtube-thumbnails/youtube-03.jpg", avatar:"/fanshu/youtube-avatars/youtube-avatar-03.jpg" },
+  { title:"【宫崎骏 | Miyazaki Hayao】久石让 in 武道馆 音乐会 与宫崎骏动画一起走过的25年", channel:"The S Videos", views:"27万次观看", age:"8年前", duration:"4:32", color:"#464554", image:"/fanshu/youtube-thumbnails/youtube-04.jpg", avatar:"/fanshu/youtube-avatars/youtube-avatar-04.jpg" },
+  { title:"全网星际争霸最全时间线梳理", channel:"我是社恐宇", views:"5万次观看", age:"10个月前", duration:"", color:"#484568", image:"/fanshu/youtube-thumbnails/youtube-05.jpg", avatar:"/fanshu/youtube-avatars/youtube-avatar-05.jpg" },
+  { title:"Golden Lynel + 9 Silver Enemies | Testrun of BotW All-stars Challenge", channel:"Ordinary Champion", views:"236万次观看", age:"3年前", duration:"8:19", color:"#73856b", image:"/fanshu/youtube-thumbnails/youtube-06.jpg", avatar:"/fanshu/youtube-avatars/youtube-avatar-06.jpg" },
 ];
 export function YouTubeSkin(_p: Props) {
   const [tab,setTab] = useState("首页");
@@ -321,7 +321,7 @@ export function YouTubeSkin(_p: Props) {
         {items.map(v=>{const index=youtubeDemo.indexOf(v);return <article key={index} style={{marginBottom:18}}>
           <button onClick={()=>openVideo(index)} style={{display:"block",width:"100%",padding:0}}>{thumb(v)}</button>
           <div style={{display:"flex",gap:10,padding:"11px 12px 0",alignItems:"flex-start"}}>
-            <div style={{height:35,width:35,borderRadius:"50%",background:v.color,flexShrink:0,display:"grid",placeItems:"center",color:"#fff",fontWeight:700}}>{v.channel.slice(0,1)}</div>
+            <img src={v.avatar} alt={`${v.channel}头像`} loading="lazy" style={{height:35,width:35,borderRadius:"50%",objectFit:"cover",flexShrink:0}} />
             <button onClick={()=>openVideo(index)} style={{flex:1,textAlign:"left",padding:0}}>
               <div style={{fontSize:14,fontWeight:650,lineHeight:1.4,display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",overflow:"hidden"}}>{v.title}</div>
               <div style={{fontSize:11,color:"#737373",marginTop:5}}>{v.channel} · {v.views} · {v.age}</div>
@@ -340,7 +340,7 @@ export function YouTubeSkin(_p: Props) {
         <strong style={{fontSize:18,lineHeight:1.4}}>{current.title}</strong>
         <div style={{fontSize:12,color:"#777",marginTop:5}}>{current.views} · {current.age}</div>
         <div style={{display:"flex",alignItems:"center",gap:10,marginTop:16}}>
-          <div style={{height:35,width:35,borderRadius:"50%",background:current.color,display:"grid",placeItems:"center",color:"white"}}>{current.channel.slice(0,1)}</div>
+          <img src={current.avatar} alt={`${current.channel}头像`} style={{height:35,width:35,borderRadius:"50%",objectFit:"cover",flexShrink:0}} />
           <strong style={{flex:1,fontSize:14}}>{current.channel}</strong>
           <button onClick={()=>setSubscribed(x=>x.includes(current.channel)?x.filter(c=>c!==current.channel):[...x,current.channel])} style={{background:subscribed.includes(current.channel)?"#eee":"#111",color:subscribed.includes(current.channel)?"#111":"white",borderRadius:22,padding:"9px 13px",fontSize:12}}>{subscribed.includes(current.channel)?"已订阅":"订阅"}</button>
         </div>
