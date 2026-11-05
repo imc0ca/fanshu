@@ -288,7 +288,7 @@ const youtubeDemo = [
   { title:"全网星际争霸最全时间线梳理", channel:"我是社恐宇", views:"5万次观看", age:"10个月前", duration:"", color:"#484568" },
   { title:"Golden Lynel + 9 Silver Enemies | Testrun of BotW All-stars Challenge", channel:"Ordinary Champion", views:"236万次观看", age:"3年前", duration:"8:19", color:"#73856b" },
 ];
-export function YouTubeSkin(p: Props) {
+export function YouTubeSkin(_p: Props) {
   const [tab,setTab] = useState("首页");
   const [q,setQ] = useState("");
   const [selected,setSelected] = useState<number | null>(null);
@@ -299,7 +299,7 @@ export function YouTubeSkin(p: Props) {
   const items = youtubeDemo.filter(v=>(v.title+v.channel).toLowerCase().includes(q.toLowerCase()));
   const openVideo = (index:number) => {setSelected(index);setComments(false);setMenu(null);};
   const current = selected === null ? null : youtubeDemo[selected];
-  const thumb = (v:typeof youtubeDemo[number],index:number) => (
+  const thumb = (v:typeof youtubeDemo[number]) => (
     <div style={{aspectRatio:"16/9",background:`linear-gradient(145deg,${v.color},#1c2631)`,position:"relative",display:"flex",alignItems:"center",justifyContent:"center",color:"white",overflow:"hidden"}}>
       <span style={{fontSize:13,opacity:.75,letterSpacing:1}}>视频封面待上传</span>
       <span style={{position:"absolute",right:8,bottom:8,background:"#000c",padding:"3px 5px",borderRadius:4,fontSize:12,fontWeight:600}}>{v.duration||"视频"}</span>
