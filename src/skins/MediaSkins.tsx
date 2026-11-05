@@ -345,7 +345,7 @@ export function YouTubeSkin(p: Props) {
           <button onClick={()=>setSubscribed(x=>x.includes(current.channel)?x.filter(c=>c!==current.channel):[...x,current.channel])} style={{background:subscribed.includes(current.channel)?"#eee":"#111",color:subscribed.includes(current.channel)?"#111":"white",borderRadius:22,padding:"9px 13px",fontSize:12}}>{subscribed.includes(current.channel)?"已订阅":"订阅"}</button>
         </div>
         <div style={{display:"flex",gap:9,marginTop:17}}>
-          <button onClick={()=>setLiked(x=>x.includes(selected)?x.filter(n=>n!==selected):[...x,selected])} style={{background:"#f0f0f0",borderRadius:22,padding:"10px 15px",fontSize:13}}>{liked.includes(selected)?"♥ 已点赞":"♡ 点赞"}</button>
+          <button onClick={()=>setLiked(x=>x.includes(selected!)?x.filter(n=>n!==selected!):[...x,selected!])} style={{background:"#f0f0f0",borderRadius:22,padding:"10px 15px",fontSize:13}}>{liked.includes(selected!)?"♥ 已点赞":"♡ 点赞"}</button>
           <button onClick={()=>setComments(!comments)} style={{background:"#f0f0f0",borderRadius:22,padding:"10px 15px",fontSize:13}}>评论</button>
           <button onClick={()=>navigator.clipboard?.writeText(window.location.href)} style={{background:"#f0f0f0",borderRadius:22,padding:"10px 15px",fontSize:13}}>分享</button>
         </div>
