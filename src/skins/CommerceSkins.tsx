@@ -235,6 +235,9 @@ const taobaoProducts = [
 ];
 type CartSeed = {id:string;shop:string;title:string;spec:string;price:number;original:number;qty:number;tags:string[];image?:string;badge?:"天猫"|"淘宝"|"国际";notice?:string;extra?:string};
 const cartSeed:CartSeed[]=[
+{"id":"stussy-hoodie","image":"stussy-hoodie","shop":"STUSSY官方旗舰店","badge":"淘宝","title":"官方STUSSY经典LOGO连帽卫衣","spec":"BKX黑色;L","price":1299,"original":1299,"qty":1,"tags":[]},
+{"id":"lemaire-bag","image":"lemaire-bag","shop":"天猫国际全球探物","badge":"淘宝","title":"Lemaire Soft Game系列手提包单","spec":"均码;BR490","price":4975,"original":4975,"qty":1,"tags":[]},
+{"id":"mgd-hoodie","image":"mgd-hoodie","shop":"MGD官方旗舰店","badge":"淘宝","title":"韩国直邮mahagrid MGD","spec":"L;雾蓝色","price":299,"original":299,"qty":1,"tags":[]},
 {id:"gold-bowl",image:"gold-bowl",shop:"摩登主妇旗舰店",badge:"天猫",title:"摩登主妇韩式泡面碗304不锈钢",spec:"金色304不锈钢韩式泡面碗-17CM",price:18.72,original:22.8,qty:2,tags:["消费券","官方立减3.5元","限时折扣券","退货宝"],notice:"限时优惠9.7折，最高省10元，仅剩05:41",extra:"可享满150减18消费券"},
 {id:"bibigo-dumplings",shop:"韩膳宫 韩国进口食品超市",badge:"淘宝",title:"必品阁韩式王饺子bibigo",spec:"韩式泡菜490g*2袋",price:33.28,original:42.3,qty:1,tags:["官方立减6.4元","满68减3","淘金币抵0.42元"],image:"bibigo-dumplings"},
 {id:"binggrae-protein",shop:"小红豆在韩国",badge:"淘宝",title:"韩国宾格瑞蛋白质饮品代餐奶昔",spec:"六种口味各三瓶 共18瓶",price:317,original:320,qty:1,tags:["满4减3","破损包退","极速退款"],image:"binggrae-protein"},
@@ -258,7 +261,7 @@ export function TaobaoSkin(p: Props) {
   const [cartQty,setCartQty]=useState<Record<string,number>>(()=>Object.fromEntries(cartSeed.map(x=>[x.id,x.qty])));
   const [cartSelected,setCartSelected]=useState<Record<string,boolean>>({});
   const [cartManage,setCartManage]=useState(false);
-  const [history,setHistory]=useState<{id:string;date:string;count:number}[]>(()=>["bibigo-dumplings","swisse-sleep","stgivo","binggrae-protein"].map(id=>({id,date:"",count:1})));
+  const [history,setHistory]=useState<{id:string;date:string;count:number}[]>(()=>["stussy-hoodie","lemaire-bag","mgd-hoodie","bibigo-dumplings","swisse-sleep","stgivo","binggrae-protein"].map(id=>({id,date:"",count:1})));
   const [section,setSection]=useState("猜你喜欢");
   const scrollRef=useRef<HTMLDivElement>(null);
   useEffect(()=>{if(scrollRef.current)scrollRef.current.scrollTop=0;},[chosen,tab]);
@@ -336,7 +339,7 @@ export function TaobaoSkin(p: Props) {
             <div style={{display:"flex",alignItems:"center",gap:9}}>
               {dot(checked,check)}
               <div style={{width:88,height:88,flexShrink:0,borderRadius:9,overflow:"hidden",background:"#f3f3f3"}}>
-                {x.image?<img src={`${import.meta.env.BASE_URL}${["gold-bowl","ceramic-bowls","sanho-wok","bruno-pot","stone-vacuum","uwant-vacuum","stgivo"].includes(x.id)?"taobao-cart":"taobao-products"}/${x.image}.jpg`} alt={x.title} style={{width:"100%",height:"100%",objectFit:"contain"}}/>:<div style={{width:"100%",height:"100%",background:"#f5f5f5"}}/>}
+                {x.image?<img src={`${import.meta.env.BASE_URL}${["gold-bowl","ceramic-bowls","sanho-wok","bruno-pot","stone-vacuum","uwant-vacuum","stgivo","stussy-hoodie","lemaire-bag","mgd-hoodie"].includes(x.id)?"taobao-cart":"taobao-products"}/${x.image}.jpg`} alt={x.title} style={{width:"100%",height:"100%",objectFit:"contain"}}/>:<div style={{width:"100%",height:"100%",background:"#f5f5f5"}}/>}
               </div>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{display:"flex",gap:5,justifyContent:"space-between",alignItems:"start"}}>
@@ -355,7 +358,7 @@ export function TaobaoSkin(p: Props) {
       </> : <>
         <h3 style={{margin:"7px 0 13px"}}>我的订单</h3>
         <div style={{display:"flex",gap:7,overflowX:"auto",marginBottom:13}}>{["全部","待付款","待发货","待收货","已完成"].map(x=><button key={x} onClick={()=>setStatus(x)} style={{border:0,borderRadius:16,padding:"8px 10px",whiteSpace:"nowrap",background:status===x?"#ffe8dc":"white",color:status===x?orange:"#777"}}>{x}</button>)}</div>
-        {history.filter(()=>status==="全部"||status==="已完成").map((h,i)=>{const x=cartSeed.find(z=>z.id===h.id);return x?<div key={h.id+i} style={{background:"white",borderRadius:12,padding:12,marginBottom:9}}><strong style={{fontSize:13}}>{x.shop}</strong><span style={{float:"right",fontSize:11,color:orange}}>已完成</span><div style={{display:"flex",gap:12,marginTop:12}}><img src={`${import.meta.env.BASE_URL}${["gold-bowl","ceramic-bowls","sanho-wok","bruno-pot","stone-vacuum","uwant-vacuum","stgivo"].includes(x.id)?"taobao-cart":"taobao-products"}/${x.image||x.id}.jpg`} alt={x.title} style={{width:68,height:68,objectFit:"contain",borderRadius:8}}/><div style={{flex:1,fontSize:12}}>{x.title}<div style={{color:"#999",marginTop:3}}>{x.spec}</div><div style={{marginTop:8,color:"#999"}}>{h.date ? `${h.date} · ` : ""}×{h.count}</div><strong style={{color:orange}}>¥{(x.price*h.count).toFixed(2)}</strong></div></div></div>:null;})}
+        {history.filter(()=>status==="全部"||status==="已完成").map((h,i)=>{const x=cartSeed.find(z=>z.id===h.id);return x?<div key={h.id+i} style={{background:"white",borderRadius:12,padding:12,marginBottom:9}}><strong style={{fontSize:13}}>{x.shop}</strong><span style={{float:"right",fontSize:11,color:orange}}>已完成</span><div style={{display:"flex",gap:12,marginTop:12}}><img src={`${import.meta.env.BASE_URL}${["gold-bowl","ceramic-bowls","sanho-wok","bruno-pot","stone-vacuum","uwant-vacuum","stgivo","stussy-hoodie","lemaire-bag","mgd-hoodie"].includes(x.id)?"taobao-cart":"taobao-products"}/${x.image||x.id}.jpg`} alt={x.title} style={{width:68,height:68,objectFit:"contain",borderRadius:8}}/><div style={{flex:1,fontSize:12}}>{x.title}<div style={{color:"#999",marginTop:3}}>{x.spec}</div><div style={{marginTop:8,color:"#999"}}>{h.date ? `${h.date} · ` : ""}×{h.count}</div><strong style={{color:orange}}>¥{(x.price*h.count).toFixed(2)}</strong></div></div></div>:null;})}
         {items.filter(i=>i.folder==="订单"&&(status==="全部"||status===meta(i,"status"))).map(i=><button key={i.id} onClick={()=>p.onItem(i)} className="taobao-order"><strong>{i.title}</strong><p>{i.body}</p><small>{i.time}</small></button>)}
         {!history.length&&!items.some(i=>i.folder==="订单")&&<div style={{padding:40,textAlign:"center",color:"#aaa"}}>暂无订单记录</div>}
       </>}
