@@ -235,19 +235,19 @@ const taobaoProducts = [
 ];
 type CartSeed = {id:string;shop:string;title:string;spec:string;price:number;original:number;qty:number;tags:string[];image?:string;badge?:"天猫"|"淘宝"|"国际";notice?:string;extra?:string};
 const cartSeed:CartSeed[]=[
-{id:"gold-bowl",shop:"摩登主妇旗舰店",badge:"天猫",title:"摩登主妇韩式泡面碗304不锈钢",spec:"金色304不锈钢韩式泡面碗-17CM",price:18.72,original:22.8,qty:2,tags:["消费券","官方立减3.5元","限时折扣券","退货宝"],notice:"限时优惠9.7折，最高省10元，仅剩05:41",extra:"可享满150减18消费券"},
+{id:"gold-bowl",image:"gold-bowl",shop:"摩登主妇旗舰店",badge:"天猫",title:"摩登主妇韩式泡面碗304不锈钢",spec:"金色304不锈钢韩式泡面碗-17CM",price:18.72,original:22.8,qty:2,tags:["消费券","官方立减3.5元","限时折扣券","退货宝"],notice:"限时优惠9.7折，最高省10元，仅剩05:41",extra:"可享满150减18消费券"},
 {id:"bibigo-dumplings",shop:"韩膳宫 韩国进口食品超市",badge:"淘宝",title:"必品阁韩式王饺子bibigo",spec:"韩式泡菜490g*2袋",price:33.28,original:42.3,qty:1,tags:["官方立减6.4元","满68减3","淘金币抵0.42元"],image:"bibigo-dumplings"},
 {id:"binggrae-protein",shop:"小红豆在韩国",badge:"淘宝",title:"韩国宾格瑞蛋白质饮品代餐奶昔",spec:"六种口味各三瓶 共18瓶",price:317,original:320,qty:1,tags:["满4减3","破损包退","极速退款"],image:"binggrae-protein"},
 {id:"squidward-holder",shop:"七号时光小铺",badge:"淘宝",title:"章鱼哥我又开始干活了 牙刷架",spec:"【1个装】章鱼哥牙刷置物架",price:24.5,original:28.9,qty:1,tags:["官方立减4.4元","7天无理由退货","极速退款"],image:"squidward-holder"},
-{id:"ceramic-bowls",shop:"meelyhome旗舰店",badge:"天猫",title:"meelyhome陶瓷家用碗碟",spec:"4.5英寸黑+5.7英寸白圆钵碗4个装",price:72.24,original:86,qty:1,tags:["消费券","官方立减12.9元","淘金币抵0.86元","退货宝"],extra:"可享满150减18消费券"},
+{id:"ceramic-bowls",image:"ceramic-bowls",shop:"meelyhome旗舰店",badge:"天猫",title:"meelyhome陶瓷家用碗碟",spec:"4.5英寸黑+5.7英寸白圆钵碗4个装",price:72.24,original:86,qty:1,tags:["消费券","官方立减12.9元","淘金币抵0.86元","退货宝"],extra:"可享满150减18消费券"},
 {id:"wmf-pan",shop:"wmf旗舰店",badge:"天猫",title:"德国WMF专用牛排条纹不粘锅",spec:"星辰Pro牛排煎盘26cm",price:364,original:619,qty:1,tags:["消费券","官方立减200元","满500减10","退货宝"],image:"wmf-pan"},
-{id:"sanho-wok",shop:"sanho三禾旗舰店",badge:"天猫",title:"三禾0涂层100%纯钛炒锅",spec:"32cm送锅铲【真100%纯钛 0涂层】",price:506,original:649,qty:1,tags:["消费券","官方立减98元","退货宝"],extra:"领政府补贴后约¥430.10"},
-{id:"bruno-pot",shop:"bruno旗舰店",badge:"天猫",title:"BRUNO电压力锅小型家用3L",spec:"3L象牙白【0涂层316不锈钢内胆】",price:324.05,original:799,qty:1,tags:["消费券","官方立减120元","限时折扣券","退货宝"],notice:"限时优惠9.5折，最高省128元，已失效",extra:"限时补贴已失效"},
-{id:"stone-vacuum",shop:"石头电器旗舰店",badge:"天猫",title:"石头除螨级自集尘吸尘器一机8用",spec:"H50 Pro",price:1795.88,original:2799,qty:1,tags:["百亿补贴950元","退货宝","超级爆款"],extra:"领政府补贴等优惠后低至¥1399"},
-{id:"uwant-vacuum",shop:"uwant旗舰店",badge:"天猫",title:"Uwant友望双杯除螨仪床上家用",spec:"【小精灵】【双吸口 强拍打】",price:205.7,original:379,qty:1,tags:["百亿加补4.9元","退货宝","买贵必赔"],extra:"领政府补贴后约¥164.56"},
+{id:"sanho-wok",image:"sanho-wok",shop:"sanho三禾旗舰店",badge:"天猫",title:"三禾0涂层100%纯钛炒锅",spec:"32cm送锅铲【真100%纯钛 0涂层】",price:506,original:649,qty:1,tags:["消费券","官方立减98元","退货宝"],extra:"领政府补贴后约¥430.10"},
+{id:"bruno-pot",image:"bruno-pot",shop:"bruno旗舰店",badge:"天猫",title:"BRUNO电压力锅小型家用3L",spec:"3L象牙白【0涂层316不锈钢内胆】",price:324.05,original:799,qty:1,tags:["消费券","官方立减120元","限时折扣券","退货宝"],notice:"限时优惠9.5折，最高省128元，已失效",extra:"限时补贴已失效"},
+{id:"stone-vacuum",image:"stone-vacuum",shop:"石头电器旗舰店",badge:"天猫",title:"石头除螨级自集尘吸尘器一机8用",spec:"H50 Pro",price:1795.88,original:2799,qty:1,tags:["百亿补贴950元","退货宝","超级爆款"],extra:"领政府补贴等优惠后低至¥1399"},
+{id:"uwant-vacuum",image:"uwant-vacuum",shop:"uwant旗舰店",badge:"天猫",title:"Uwant友望双杯除螨仪床上家用",spec:"【小精灵】【双吸口 强拍打】",price:205.7,original:379,qty:1,tags:["百亿加补4.9元","退货宝","买贵必赔"],extra:"领政府补贴后约¥164.56"},
 {id:"bodydream-suit",shop:"bodydream旗舰店",badge:"天猫",title:"bodydream总裁灰西服套装",spec:"巴黎灰 上衣;L[150-160斤]",price:330.01,original:499,qty:1,tags:["消费券","官方立减75元","礼金直降","退货宝"],image:"bodydream-suit"},
 {id:"polowalk-knit",shop:"POLOWALK官方旗舰店",badge:"天猫",title:"【100%绵羊毛】POLOWALK男式羊毛衫",spec:"藏青;XL[180/100A]",price:260.48,original:352,qty:1,tags:["消费券","官方立减53元","满5.01减5","退货宝"],image:"polowalk-knit"},
-{id:"stgivo",shop:"STGIVO海外旗舰店",badge:"国际",title:"终身无鼻敏 一生好鼻子",spec:"2瓶基础装【效果起步】",price:336.12,original:468,qty:1,tags:["消费券","官方立减71元","限时折扣券","退货宝"],notice:"限时优惠9.6折，最高省50元，已失效",extra:"进口税:价格已含税 · 限时补贴已失效"},
+{id:"stgivo",image:"stgivo",shop:"STGIVO海外旗舰店",badge:"国际",title:"终身无鼻敏 一生好鼻子",spec:"2瓶基础装【效果起步】",price:336.12,original:468,qty:1,tags:["消费券","官方立减71元","限时折扣券","退货宝"],notice:"限时优惠9.6折，最高省50元，已失效",extra:"进口税:价格已含税 · 限时补贴已失效"},
 {id:"swisse-sleep",shop:"Naturetech海外旗舰店",badge:"国际",title:"褪黑素升级版swisse睡眠片安瓶助眠",spec:"【2瓶装 立省20更划算】调节入睡",price:239.53,original:347.5,qty:1,tags:["消费券","官方立减69.5元","淘金币抵3.47元","退货宝"],image:"swisse-sleep",extra:"进口税:价格已含税"}
 ];
 export function TaobaoSkin(p: Props) {
@@ -336,7 +336,7 @@ export function TaobaoSkin(p: Props) {
             <div style={{display:"flex",alignItems:"center",gap:9}}>
               {dot(checked,check)}
               <div style={{width:88,height:88,flexShrink:0,borderRadius:9,overflow:"hidden",background:"#f3f3f3"}}>
-                {x.image?<img src={`${import.meta.env.BASE_URL}taobao-products/${x.image}.jpg`} alt={x.title} style={{width:"100%",height:"100%",objectFit:"contain"}}/>:<div style={{width:"100%",height:"100%",background:"#f5f5f5"}}/>}
+                {x.image?<img src={`${import.meta.env.BASE_URL}${["gold-bowl","ceramic-bowls","sanho-wok","bruno-pot","stone-vacuum","uwant-vacuum","stgivo"].includes(x.id)?"taobao-cart":"taobao-products"}/${x.image}.jpg`} alt={x.title} style={{width:"100%",height:"100%",objectFit:"contain"}}/>:<div style={{width:"100%",height:"100%",background:"#f5f5f5"}}/>}
               </div>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{display:"flex",gap:5,justifyContent:"space-between",alignItems:"start"}}>
