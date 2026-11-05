@@ -517,7 +517,7 @@ export function NotesSkin(p: Props) {
         <div style={{padding:"0 18px",marginTop:22,overflowWrap:"anywhere"}}>
           {openedNote.title === "To do list" ? (
             <div style={{display:"flex",flexDirection:"column",gap:17}}>
-              {openedNote.body.split("\\n").map(line=>line.trim()).filter(Boolean).map((line,index)=>(
+              {openedNote.body.split("\n").map(line=>line.trim()).filter(Boolean).map((line,index)=>(
                 <button key={index} type="button" role="checkbox" aria-checked={todoChecked.includes(index)}
                   onClick={()=>setTodoChecked(prev=>prev.includes(index)?prev.filter(x=>x!==index):[...prev,index])}
                   style={{display:"flex",justifyContent:"flex-start",alignItems:"flex-start",gap:12,textAlign:"left",fontSize:18,lineHeight:1.65,padding:0}}>
