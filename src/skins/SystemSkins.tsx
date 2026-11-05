@@ -513,7 +513,7 @@ export function NotesSkin(p: Props) {
       <div className="catalog-scroll" style={{padding:"22px 20px",overflowY:"auto"}}>
         <h1 style={{fontSize:26,marginBottom:8}}>{openedNote.title}</h1>
         <small style={{color:"#888"}}>{openedNote.time.slice(0,10)}</small>
-        <div style={{whiteSpace:"pre-wrap",fontSize:15,lineHeight:1.75,marginTop:22,overflowWrap:"anywhere"}}>{openedNote.body}</div>
+        <div style={{whiteSpace:"pre-wrap",fontSize:18,lineHeight:1.85,marginTop:22,overflowWrap:"anywhere"}}>{openedNote.body}</div>
       </div>
     </div>
   );
