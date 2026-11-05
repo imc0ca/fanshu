@@ -93,12 +93,10 @@ const taobaoProducts = [
   {id:"microphone",name:"USB电容麦克风套装 防喷罩悬臂支架 直播播客",price:259,sold:"3千+",shop:"声学工作室",emoji:"🎤",color:"#E8E6F1",tags:["录音","播客","麦克风"]},
   {id:"headphone",name:"专业监听耳机 头戴式封闭降噪录音剪辑",price:399,sold:"900+",shop:"声学工作室",emoji:"🎧",color:"#E5EBED",tags:["耳机","录音","播客"]},
   {id:"sdcard",name:"高速存储卡 128GB 相机录音设备通用",price:89,sold:"5千+",shop:"数码配件仓",emoji:"💾",color:"#E9E9E9",tags:["录音","存储","相机"]},
-  {id:"printer",name:"A4简历打印纸 100张 加厚高白办公用纸",price:35,sold:"1万+",shop:"办公文具旗舰店",emoji:"📄",color:"#F3EEE5",tags:["简历","工作","打印"]},
   {id:"shirt",name:"男士白衬衫 免烫商务长袖衬衣",price:139,sold:"4千+",shop:"绅士西装定制店",emoji:"👔",color:"#E5ECF5",tags:["正装","衬衫","工作"]},
   {id:"tie",name:"男士纯色真丝领带 商务面试礼盒",price:69,sold:"2千+",shop:"绅士西装定制店",emoji:"👔",color:"#E9E1E4",tags:["正装","领带"]},
   {id:"umbrella",name:"自动折叠晴雨伞 加固防风便携黑色",price:58,sold:"6千+",shop:"日常杂货铺",emoji:"☂️",color:"#E2E8ED",tags:["雨伞","日用"]},
   {id:"charger",name:"USB-C快充充电器 30W 双口充电头",price:89,sold:"9千+",shop:"数码配件仓",emoji:"🔌",color:"#EBEDEA",tags:["充电器","数码"]},
-  {id:"camera",name:"迷你摄影补光灯 可调色温 摄影棚拍摄",price:128,sold:"2千+",shop:"影像器材专营店",emoji:"📷",color:"#E6E7E7",tags:["摄影","拍摄","补光"]},
 ];
 export function TaobaoSkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商品");
