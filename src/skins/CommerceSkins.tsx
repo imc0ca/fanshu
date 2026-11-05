@@ -7,7 +7,7 @@ import {
   Utensils,
   Wallet,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Empty,
   Header,
@@ -228,6 +228,8 @@ export function DeliverySkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商家");
   const [category,setCategory]=useState("全部");
   const [selected,setSelected]=useState<string|null>(null);
+  const deliveryScrollRef=useRef<HTMLDivElement>(null);
+  useEffect(()=>{if(deliveryScrollRef.current) deliveryScrollRef.current.scrollTop=0;},[selected,tab]);
   const [cart,setCart]=useState<Record<string,number>>({});
   const shop=seoulShops.find(x=>x.id===selected);
   const filtered=seoulShops.filter(x=>(category==="全部"||x.category===category)&&(x.name+" "+x.ko+" "+x.desc).toLowerCase().includes(q.toLowerCase()));
@@ -244,7 +246,7 @@ export function DeliverySkin(p: Props) {
   return (
     <div className="catalog-skin delivery-ui" style={{background:"#F7F8F7",color:"#24322F"}}>
       <Header p={p}/>
-      <div className="catalog-scroll" style={{padding:"13px 14px 95px",background:"#F7F8F7"}}>
+      <div ref={deliveryScrollRef} className="catalog-scroll" style={{padding:"13px 14px 95px",background:"#F7F8F7"}}>
         <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:13}}>
           <div><small style={{color:"#72837E",fontSize:11}}>配送地址 ▾</small><div style={{fontSize:15,fontWeight:800}}>选择配送地址</div></div>
           <span style={{fontSize:22}}>🔔</span>
