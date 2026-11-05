@@ -172,16 +172,16 @@ export function TaobaoSkin(p: Props) {
   );
 }
 const seoulShops = [
-  {id:"berry",name:"莓果云朵蛋糕",ko:"草莓鲜奶油蛋糕",area:"延南洞",category:"蛋糕",rating:"4.9",reviews:"1,284",minutes:"25–35",fee:"2,000",price:32000,emoji:"🍓",color:"#FBE4E8",desc:"草莓鲜奶油蛋糕"},
-  {id:"butter",name:"黄油与面包屑",ko:"盐面包与可颂",area:"圣水洞",category:"面包",rating:"4.8",reviews:"856",minutes:"20–30",fee:"1,500",price:4500,emoji:"🥐",color:"#F8E8C8",desc:"盐面包与可颂"},
-  {id:"matcha",name:"小小抹茶屋",ko:"抹茶奶油蛋糕",area:"合井洞",category:"甜品",rating:"4.9",reviews:"624",minutes:"30–40",fee:"2,500",price:8900,emoji:"🍵",color:"#E4EED8",desc:"抹茶奶油蛋糕"},
+  {id:"berry",name:"Berry Cloud Cake",ko:"草莓鲜奶油蛋糕",area:"延南洞",category:"蛋糕",rating:"4.9",reviews:"1,284",minutes:"25–35",fee:"2,000",price:32000,emoji:"🍓",color:"#FBE4E8",desc:"草莓鲜奶油蛋糕"},
+  {id:"butter",name:"Butter & Crumb",ko:"盐面包与可颂",area:"圣水洞",category:"面包",rating:"4.8",reviews:"856",minutes:"20–30",fee:"1,500",price:4500,emoji:"🥐",color:"#F8E8C8",desc:"盐面包与可颂"},
+  {id:"matcha",name:"Little Matcha House",ko:"抹茶奶油蛋糕",area:"合井洞",category:"甜品",rating:"4.9",reviews:"624",minutes:"30–40",fee:"2,500",price:8900,emoji:"🍵",color:"#E4EED8",desc:"抹茶奶油蛋糕"},
   {id:"mandu",name:"首尔手工饺子",ko:"手工蒸饺与泡菜饺",area:"紫阳洞",address:"서울특별시 광진구 자양동 1-2",category:"饺子",rating:"4.9",reviews:"932",minutes:"15–25",fee:"1,000",price:8500,emoji:"🥟",color:"#F4E9D8",desc:"手工蒸饺与泡菜饺"},
   {id:"jokbal",name:"圣水洞猪蹄",ko:"韩式酱卤猪蹄",area:"圣水洞",category:"猪蹄",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:39000,emoji:"🍖",color:"#F5E8DC",desc:"韩式酱卤猪蹄",address:"서울 성동구 성수일로8길 53 성수동복합시설"},
   {id:"soba",name:"新沙荞麦面",ko:"紫苏油荞麦面",area:"新沙洞",category:"荞麦面",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:12000,emoji:"🍜",color:"#F5E8DC",desc:"紫苏油荞麦面",address:"서울 강남구 신사동 576-10"},
-  {id:"cream",name:"奶油甜品屋",ko:"香草奶油蛋糕",area:"汉南洞",category:"蛋糕",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:29000,emoji:"🍰",color:"#F5E8DC",desc:"香草奶油蛋糕",address:""},
-  {id:"flour",name:"面粉工坊",ko:"法棍与火腿三明治",area:"西村",category:"面包",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:9500,emoji:"🥖",color:"#F5E8DC",desc:"法棍与火腿三明治",address:""},
-  {id:"peach",name:"蜜桃烘焙屋",ko:"桃子水果塔",area:"延禧洞",category:"蛋糕",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:11500,emoji:"🍑",color:"#F5E8DC",desc:"桃子水果塔",address:""},
-  {id:"cloud",name:"云朵九号面包房",ko:"牛奶吐司与费南雪",area:"望远洞",category:"面包",rating:"4.8",reviews:"478",minutes:"25–35",fee:"2,000",price:6500,emoji:"🍞",color:"#F5E6D5",desc:"牛奶吐司与费南雪"},
+  {id:"cream",name:"Maison Cream",ko:"香草奶油蛋糕",area:"汉南洞",category:"蛋糕",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:29000,emoji:"🍰",color:"#F5E8DC",desc:"香草奶油蛋糕",address:""},
+  {id:"flour",name:"Flour Atelier",ko:"法棍与火腿三明治",area:"西村",category:"面包",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:9500,emoji:"🥖",color:"#F5E8DC",desc:"法棍与火腿三明治",address:""},
+  {id:"peach",name:"Peach Oven",ko:"桃子水果塔",area:"延禧洞",category:"蛋糕",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:11500,emoji:"🍑",color:"#F5E8DC",desc:"桃子水果塔",address:""},
+  {id:"cloud",name:"Cloud Nine Bakery",ko:"牛奶吐司与费南雪",area:"望远洞",category:"面包",rating:"4.8",reviews:"478",minutes:"25–35",fee:"2,000",price:6500,emoji:"🍞",color:"#F5E6D5",desc:"牛奶吐司与费南雪"},
 ];
 const deliveryMenus: Record<string, [string,number,number,number][]> = {"berry":[["草莓鲜奶油整蛋糕",32000,4,1680],["草莓蛋糕切块",8500,1,420],["蓝莓奶油蛋糕",9500,1,460]],"butter":[["经典盐面包",4500,1,290],["黄油可颂",4800,1,330],["杏仁可颂",5900,1,410]],"matcha":[["抹茶奶油蛋糕",8900,1,430],["抹茶巴斯克",9800,1,480],["抹茶生巧塔",7900,1,390]],"mandu":[["猪肉蒸饺八只",8500,1,510],["泡菜饺八只",9000,1,480],["虾仁饺八只",10500,2,520]],"jokbal":[["招牌猪蹄小份",39000,2,1450],["招牌猪蹄中份",48000,3,1950],["蒜香猪蹄",44000,2,1680]],"soba":[["紫苏油荞麦面",12000,1,510],["冷荞麦面",11000,1,430],["辣拌荞麦面",12500,1,550]],"cream":[["香草奶油整蛋糕",29000,4,1550],["伯爵茶奶油蛋糕",8900,1,420],["巧克力奶油蛋糕",9200,1,490]],"flour":[["法棍面包",5500,2,640],["火腿黄油三明治",9500,1,580],["核桃乡村面包",7800,2,850]],"peach":[["桃子水果塔",11500,1,490],["桃子奶油蛋糕",9800,1,450],["迷你蜜桃整蛋糕",26000,3,1290]],"cloud":[["牛奶吐司",6500,3,1050],["原味费南雪",3200,1,220],["蜂蜜黄油司康",4500,1,360]]};
 export function DeliverySkin(p: Props) {
@@ -237,7 +237,7 @@ export function DeliverySkin(p: Props) {
             <div style={{background:"#D8F5ED",borderRadius:16,padding:"17px 15px",marginBottom:18}}>
               <small style={{fontSize:10,color:"#398978",fontWeight:800,letterSpacing:1}}>TODAY'S SWEET PICKS</small>
               <h2 style={{margin:"5px 0",fontSize:22,color:"#16483E"}}>今天来点甜的！ 🍰</h2>
-              <small style={{color:"#427F73"}}>首尔甜品与特色美食</small>
+              
             </div>
             <div style={{display:"grid",gridTemplateColumns:"repeat(4,minmax(0,1fr))",gap:5,marginBottom:20}}>
               {["全部","蛋糕","面包","甜品","饺子","猪蹄","荞麦面"].map((c,i)=><button key={c} onClick={()=>setCategory(c)} style={{border:0,background:category===c?"#D6F5ED":"white",borderRadius:12,padding:"9px 1px",display:"grid",gap:5,justifyItems:"center",fontSize:10,color:"#34554C",fontWeight:category===c?800:500}}><span style={{fontSize:22}}>{["🏠","🎂","🥐","🍓","🥟","🍖","🍜"][i]}</span>{c}</button>)}
