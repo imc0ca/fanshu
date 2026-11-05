@@ -527,7 +527,22 @@ export function NotesSkin(p: Props) {
               ))}
             </div>
           ) : (
+            openedNote.id === seongchanNote.id ? (
+            <div style={{fontSize:18,lineHeight:1.65}}>
+              {openedNote.body.split("\n\n").map((line,index,all)=>{
+                const isDate = /^\d{2}\.\d{2}(?:\s|$)/.test(line);
+                const nextIsDate = index + 1 < all.length && /^\d{2}\.\d{2}(?:\s|$)/.test(all[index+1]);
+                const isAddress = line.startsWith("서울 ");
+                return <div key={index} style={{
+                  marginTop:isDate ? (index===0 ? 0 : 26) : isAddress ? 8 : 5,
+                  marginBottom:nextIsDate ? 12 : 0,
+                  whiteSpace:"pre-wrap"
+                }}>{line}</div>;
+              })}
+            </div>
+          ) : (
             <div style={{whiteSpace:"pre-wrap",fontSize:18,lineHeight:1.65}}>{openedNote.body.replace(/\n\s*\n/g, "\n")}</div>
+          )
           )}
         </div>
       </div>
