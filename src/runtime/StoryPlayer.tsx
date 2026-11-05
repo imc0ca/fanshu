@@ -142,7 +142,7 @@ function May18VideoCall() {
     const locate = () => {
       const thread = document.querySelector(".mymy-kakao .kzname");
       const target = thread?.textContent?.trim() === "咚灿"
-        ? document.querySelector('.mymy-kakao .kkt-dated-message[data-message-id="kkt-dongchan-20240518-020"] .kzbub')
+        ? Array.from(document.querySelectorAll('.mymy-kakao .kkt-dated-message[data-chat-date="2024-05-18"] .kzbub')).find((el) => el.textContent?.trim() === "📞 Video Call") ?? null
         : null;
       if (watched !== target) {
         if (watched) observer.unobserve(watched);
