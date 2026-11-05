@@ -516,18 +516,18 @@ export function NotesSkin(p: Props) {
         <h1 style={{fontSize:28,fontWeight:750,margin:"0 0 12px",padding:"0 16px",textAlign:"left",textIndent:"2em",overflowWrap:"anywhere"}}>{openedNote.title.trim()}</h1>
         <div style={{padding:"0 18px 0 3em",marginTop:0,overflowWrap:"anywhere"}}>
           {openedNote.title === "To do list" ? (
-            <div style={{display:"flex",flexDirection:"column",gap:8}}>
+            <div style={{display:"flex",flexDirection:"column",gap:12}}>
               {openedNote.body.split("\n").map(line=>line.trim()).filter(Boolean).map((line,index)=>(
                 <button key={index} type="button" role="checkbox" aria-checked={todoChecked.includes(index)}
                   onClick={()=>setTodoChecked(prev=>prev.includes(index)?prev.filter(x=>x!==index):[...prev,index])}
-                  style={{display:"flex",justifyContent:"flex-start",alignItems:"flex-start",gap:12,textAlign:"left",fontSize:18,lineHeight:1.45,padding:0}}>
+                  style={{display:"flex",justifyContent:"flex-start",alignItems:"flex-start",gap:12,textAlign:"left",fontSize:18,lineHeight:1.6,padding:0}}>
                   <span aria-hidden="true" style={{width:22,height:22,border:"1.7px solid #c69a31",borderRadius:"50%",display:"inline-flex",alignItems:"center",justifyContent:"center",flexShrink:0,marginTop:3,color:"#c69a31",fontSize:16}}>{todoChecked.includes(index)?"✓":""}</span>
-                  <span style={{textDecoration:todoChecked.includes(index)?"line-through":"none",color:todoChecked.includes(index)?"#929292":"inherit"}}>{line}</span>
+                  <span style={{textDecoration:"none",color:todoChecked.includes(index)?"#929292":"inherit"}}>{line}</span>
                 </button>
               ))}
             </div>
           ) : (
-            <div style={{whiteSpace:"pre-wrap",fontSize:18,lineHeight:1.5}}>{openedNote.body.replace(/\n\s*\n/g, "\n")}</div>
+            <div style={{whiteSpace:"pre-wrap",fontSize:18,lineHeight:1.65}}>{openedNote.body.replace(/\n\s*\n/g, "\n")}</div>
           )}
         </div>
       </div>
