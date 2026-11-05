@@ -120,6 +120,63 @@ function VideoCallExperience() {
   );
 }
 
+function May18VideoCall() {
+  const [visible, setVisible] = useState(false);
+  const fired = React.useRef(false);
+  useEffect(() => {
+    let delay: ReturnType<typeof setTimeout> | undefined;
+    let finish: ReturnType<typeof setTimeout> | undefined;
+    let watched: Element | null = null;
+    const observer = new IntersectionObserver((entries) => {
+      if (fired.current) return;
+      for (const entry of entries) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.65) {
+          if (!delay) delay = setTimeout(() => {
+            fired.current = true;
+            setVisible(true);
+            finish = setTimeout(() => setVisible(false), 2000);
+          }, 2000);
+        } else if (delay) { clearTimeout(delay); delay = undefined; }
+      }
+    }, { threshold: [0, 0.65, 1] });
+    const locate = () => {
+      const thread = document.querySelector(".mymy-kakao .kzname");
+      const target = thread?.textContent?.trim() === "咚灿"
+        ? document.querySelector('.mymy-kakao .kkt-dated-message[data-message-id="kkt-dongchan-20240518-020"] .kzbub')
+        : null;
+      if (watched !== target) {
+        if (watched) observer.unobserve(watched);
+        if (delay) { clearTimeout(delay); delay = undefined; }
+        watched = target;
+        if (target && !fired.current) observer.observe(target);
+      }
+    };
+    const mutation = new MutationObserver(locate);
+    mutation.observe(document.body, { childList: true, subtree: true });
+    locate();
+    return () => { mutation.disconnect(); observer.disconnect(); clearTimeout(delay); clearTimeout(finish); };
+  }, []);
+  if (!visible) return null;
+  const screen = document.querySelector(".story-runtime .phone-shell");
+  if (!screen) return null;
+  return createPortal(
+    <div className="story-video-call may18-video-call" role="dialog" aria-label="咚灿视频通话">
+      <div className="story-video-connected">
+        <div className="story-video-photo-stage">
+          <img className="story-video-main is-active" src="./video-call-20240518/main.png" alt="咚灿视频画面" />
+        </div>
+        <div className="story-video-header"><strong>宋小鱼</strong><span>0:00</span></div>
+        <div className="story-video-self-wrap">
+          <img className="story-video-self" src="./video-call-20240518/self.png" alt="宋小鱼的视频小窗" />
+        </div>
+        <div className="story-video-controls">
+          <span><MicOff size={24}/></span><span className="story-video-hangup"><PhoneOff size={25}/></span><span><Volume2 size={24}/></span>
+        </div>
+      </div>
+    </div>, screen
+  );
+}
+
 function StoryPlayer() {
   const [work, setWork] = useState<Work | null>(null),
     [error, setError] = useState("");
@@ -162,7 +219,7 @@ function StoryPlayer() {
   return (
     <main className="story-runtime">
       {work ? (
-        <><PhoneApp work={work} /><VideoCallExperience /></>
+        <><PhoneApp work={work} /><VideoCallExperience /><May18VideoCall /></>
       ) : (
         <p role="status">{error || "正在打开手机…"}</p>
       )}
