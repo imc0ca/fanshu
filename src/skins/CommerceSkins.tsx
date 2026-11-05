@@ -187,16 +187,15 @@ const deliveryMenus: Record<string, [string,number,number,number][]> = {"berry":
 type DeliveryOrder = {id:string;date:string;shop:string;product:string;quantity:number;price:number;emoji:string;note?:string};
 const deliveryHistory: DeliveryOrder[] = [
   {id:"cake-1101",date:"2024-11-01",shop:"Maison Cream",product:"香草奶油整蛋糕",quantity:1,price:29000,emoji:"🎂",note:"根据聊天中的蛋糕照片编排"},
-  {id:"burger-3",date:"2024-10-25",shop:"LOTTERIA 乐天汉堡",product:"韩牛汉堡套餐",quantity:1,price:10900,emoji:"🍔"},
-  {id:"soba-3",date:"2024-09-18",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:2,price:24000,emoji:"🍜"},
-  {id:"mandu-2",date:"2024-08-12",shop:"首尔手工饺子",product:"猪肉蒸饺八只 · 泡菜饺八只",quantity:2,price:17500,emoji:"🥟"},
-  {id:"burger-2",date:"2024-07-21",shop:"LOTTERIA 乐天汉堡",product:"经典虾堡套餐",quantity:1,price:8500,emoji:"🍔"},
-  {id:"soba-2",date:"2024-06-05",shop:"新沙荞麦面",product:"冷荞麦面",quantity:2,price:22000,emoji:"🍜"},
-  {id:"mandu-1",date:"2024-05-18",shop:"首尔手工饺子",product:"虾仁饺八只 · 猪肉蒸饺八只",quantity:2,price:19000,emoji:"🥟"},
-  {id:"burger-1",date:"2024-04-14",shop:"LOTTERIA 乐天汉堡",product:"经典牛肉汉堡套餐",quantity:2,price:17800,emoji:"🍔"},
-  {id:"cake-0319",date:"2024-03-19",shop:"Berry Cloud Cake",product:"草莓鲜奶油整蛋糕",quantity:1,price:32000,emoji:"🎂",note:"生日当天有挑选、携带蛋糕的故事记录"},
+  {id:"burger-3",date:"2024-10-25",shop:"LOTTERIA 乐天汉堡",product:"韩牛汉堡双人套餐（韩牛汉堡×2、薯条×2、可乐×2）",quantity:2,price:28900,emoji:"🍔"},
+  {id:"soba-3",date:"2024-09-18",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:2,price:29000,emoji:"🍜"},
+  {id:"mandu-2",date:"2024-08-12",shop:"首尔手工饺子",product:"猪肉蒸饺八只 · 泡菜饺八只",quantity:2,price:23500,emoji:"🥟"},
+  {id:"burger-2",date:"2024-07-21",shop:"LOTTERIA 乐天汉堡",product:"虾堡双人套餐（虾堡×2、芝士条×2、雪碧×2）",quantity:2,price:23900,emoji:"🍔"},
+  {id:"soba-2",date:"2024-06-05",shop:"新沙荞麦面",product:"冷荞麦面",quantity:2,price:27000,emoji:"🍜"},
+  {id:"mandu-1",date:"2024-05-18",shop:"首尔手工饺子",product:"虾仁饺八只 · 猪肉蒸饺八只",quantity:2,price:25000,emoji:"🥟"},
+  {id:"burger-1",date:"2024-04-14",shop:"LOTTERIA 乐天汉堡",product:"经典牛肉汉堡双人套餐（牛肉汉堡×2、薯条×2、可乐×2）",quantity:2,price:25900,emoji:"🍔"},
   {id:"cake-0317",date:"2024-03-17",shop:"Berry Cloud Cake",product:"草莓鲜奶油整蛋糕",quantity:1,price:32000,emoji:"🍰",note:"聊天中提到已订草莓蛋糕"},
-  {id:"soba-1",date:"2024-02-24",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:1,price:12000,emoji:"🍜"}
+  {id:"soba-1",date:"2024-02-24",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:2,price:29000,emoji:"🍜"}
 ];
 export function DeliverySkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商家");
@@ -280,7 +279,7 @@ export function DeliverySkin(p: Props) {
                 <div style={{fontSize:12,color:"#8C9994",marginTop:5}}>{o.date}</div>
                 <div style={{display:"flex",gap:12,alignItems:"center",margin:"13px 0",padding:"10px 0",borderTop:"1px solid #F0F2F0",borderBottom:"1px solid #F0F2F0"}}>
                   <div style={{width:56,height:56,borderRadius:10,background:"#F4F5F0",display:"grid",placeItems:"center",fontSize:30,flexShrink:0}}>{o.emoji}</div>
-                  <div style={{flex:1,minWidth:0}}><strong style={{fontSize:13}}>{o.product}</strong><div style={{fontSize:12,color:"#88958F",marginTop:5}}>共 {o.quantity} 份</div></div>
+                  <div style={{flex:1,minWidth:0}}><strong style={{fontSize:13}}>{o.product}</strong><div style={{fontSize:12,color:"#88958F",marginTop:5}}>{o.quantity} 人份</div></div>
                 </div>
                 <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:13}}><span style={{color:"#8A9691"}}>实付款</span><strong>{money(o.price)}</strong></div>
               </div>
