@@ -455,6 +455,7 @@ export function SafariSkin(p: Props) {
 export function NotesSkin(p: Props) {
   const { q, setQ, items } = useContent(p, "备忘录");
   const [folder, setFolder] = useState<string | null>(null);
+  const [todoChecked, setTodoChecked] = useState<number[]>([0, 1, 2, 3, 4]);
   const seongchanNote: Item = {
     id: "note-jeong-seongchan-schedule-2024",
     title: "郑成灿",
@@ -499,7 +500,7 @@ export function NotesSkin(p: Props) {
   }));
   const customNotes = [seongchanNote, ...additionalNotes];
   const customIds = new Set(customNotes.map((i) => i.id));
-  const noteItems = [...customNotes, ...items.filter((i) => !customIds.has(i.id))].sort((a, b) => b.time.localeCompare(a.time));
+  const noteItems = [...customNotes, ...items.filter((i) => !customIds.has(i.id))].sort((a, b) => a.id === seongchanNote.id ? -1 : b.id === seongchanNote.id ? 1 : b.time.localeCompare(a.time));
   const [openedNote, setOpenedNote] = useState<Item | null>(null);
   const list = (folder
     ? noteItems.filter((i) => (i.folder || "备忘录") === folder)
@@ -513,7 +514,22 @@ export function NotesSkin(p: Props) {
       <div className="catalog-scroll" style={{padding:"22px 0",overflowY:"auto"}}>
         <h1 style={{fontSize:26,margin:"0 0 8px",padding:0,textAlign:"left",textIndent:0}}>{openedNote.title.trim()}</h1>
         <small style={{color:"#888"}}>{openedNote.time.slice(0,10)}</small>
-        <div style={{whiteSpace:"pre-wrap",fontSize:18,lineHeight:1.85,marginTop:22,overflowWrap:"anywhere"}}>{openedNote.body}</div>
+        <div style={{padding:"0 18px",marginTop:22,overflowWrap:"anywhere"}}>
+          {openedNote.title === "To do list" ? (
+            <div style={{display:"flex",flexDirection:"column",gap:17}}>
+              {openedNote.body.split("\\n").map(line=>line.trim()).filter(Boolean).map((line,index)=>(
+                <button key={index} type="button" role="checkbox" aria-checked={todoChecked.includes(index)}
+                  onClick={()=>setTodoChecked(prev=>prev.includes(index)?prev.filter(x=>x!==index):[...prev,index])}
+                  style={{display:"flex",justifyContent:"flex-start",alignItems:"flex-start",gap:12,textAlign:"left",fontSize:18,lineHeight:1.65,padding:0}}>
+                  <span aria-hidden="true" style={{width:22,height:22,border:"1.7px solid #c69a31",borderRadius:"50%",display:"inline-flex",alignItems:"center",justifyContent:"center",flexShrink:0,marginTop:3,color:"#c69a31",fontSize:16}}>{todoChecked.includes(index)?"✓":""}</span>
+                  <span style={{textDecoration:todoChecked.includes(index)?"line-through":"none",color:todoChecked.includes(index)?"#929292":"inherit"}}>{line}</span>
+                </button>
+              ))}
+            </div>
+          ) : (
+            <div style={{whiteSpace:"pre-wrap",fontSize:18,lineHeight:1.85}}>{openedNote.body}</div>
+          )}
+        </div>
       </div>
     </div>
   );
