@@ -220,7 +220,7 @@ export function PhotosSkin(p: Props) {
     hidden: false, unlock: "", password: "", folder: "普通照片", favorite: false,
     outgoing: false, read: true, likes: 0, comments: [],
   }));
-  const standaloneGalleryItems: Item[] = Array.from({ length: 17 }, (_, index) => ({
+  const standaloneGalleryItems: Item[] = Array.from({ length: 21 }, (_, index) => ({
     id: `gallery-extra-${index + 1}`, title: `照片 ${index + 1}`, body: "", richText: "",
     meta: { album: "首页照片" }, time: "", sender: "相册", avatar: "",
     kind: "image", media: `/fanshu/gallery-extra-${String(index + 1).padStart(2, "0")}.jpeg`,
@@ -279,7 +279,15 @@ export function PhotosSkin(p: Props) {
     .filter((item): item is Item => Boolean(item));
   const orderedShootIds = new Set(originalShoot.map((item) => item.id));
   const remainingRegular = regular.filter((item) => !orderedShootIds.has(item.id));
-  const flowingItems = [...originalShoot, ...remainingRegular.slice(0, insertAt), ...extras.slice(0, 9), ...remainingRegular.slice(insertAt), ...extras.slice(9)];
+  const newGalleryIds = new Set(["gallery-extra-18", "gallery-extra-19", "gallery-extra-20", "gallery-extra-21"]);
+  const newGalleryPhotos = extras.filter((item) => newGalleryIds.has(item.id));
+  const previousExtras = extras.filter((item) => !newGalleryIds.has(item.id));
+  const baseFlow = [...originalShoot, ...remainingRegular.slice(0, insertAt), ...previousExtras.slice(0, 9), ...remainingRegular.slice(insertAt), ...previousExtras.slice(9)];
+  // Scatter the four standalone photos through the library, including between Charlie photos.
+  const flowingItems = [...baseFlow];
+  for (const [photo, target] of newGalleryPhotos.map((item, index) => ({ photo: item, target: [6, 20, 46, 67][index] }))) {
+    flowingItems.splice(Math.min(target, flowingItems.length), 0, photo);
+  }
   const [album, setAlbum] = useState("");
   const list =
     tab === "收藏"
