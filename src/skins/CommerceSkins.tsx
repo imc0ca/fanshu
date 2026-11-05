@@ -114,16 +114,23 @@ export function TaobaoSkin(p: Props) {
   const cartCount=Object.values(basket).reduce((a,b)=>a+b,0);
   const total=taobaoProducts.reduce((a,x)=>a+x.price*(basket[x.id]||0),0);
   const orange="#ff5500";
-  const productArt=(x:typeof taobaoProducts[number],height=160)=><div style={{height,background:x.color,display:"grid",placeItems:"center",fontSize:height>200?104:68,position:"relative"}}><span>{x.emoji}</span><span style={{position:"absolute",bottom:8,left:8,fontSize:10,color:"#888",background:"#ffffffd9",padding:"3px 6px",borderRadius:5}}>商品示意图</span></div>;
+  const productArt=(x:typeof taobaoProducts[number],height=160)=><div style={{height,background:x.color,display:"grid",placeItems:"center",fontSize:height>200?90:58,position:"relative",overflow:"hidden"}}><img src={`/fanshu/taobao-products/${x.id}.jpg`} alt={x.name} style={{width:"100%",height:"100%",objectFit:"cover",position:"absolute",inset:0}} onError={e=>{e.currentTarget.style.display="none";}}/><span>{x.emoji}</span></div>;
   const buy=(id:string)=>setBasket(c=>({...c,[id]:(c[id]||0)+1}));
   const checkout=()=>{const date="2026-04-16";setHistory(h=>[...taobaoProducts.filter(x=>basket[x.id]).map(x=>({id:x.id,date,count:basket[x.id]})),...h]);setBasket({});setChosen(null);setTab("订单");};
   return <div className="catalog-skin taobao-ui" style={{background:"#f6f6f6",color:"#262626"}}>
     <Header p={p}/>
-    <div style={{background:"linear-gradient(110deg,#ff7600,#ff3c16)",padding:"11px 13px 13px",color:"white"}}>
-      <div style={{fontSize:19,fontWeight:900,letterSpacing:1,marginBottom:9}}>淘宝 <span style={{fontSize:11,fontWeight:500,opacity:.9}}>好物随心淘</span></div>
-      <div style={{background:"white",borderRadius:24,padding:"2px 10px",color:"#333"}}><SearchBox value={q} set={v=>{setQ(v);setChosen(null);setTab("商品");}} placeholder="搜索西装、录音笔、褪黑素"/></div>
+    <div style={{background:"white",padding:"9px 10px 11px",borderBottom:"1px solid #f3f3f3"}}>
+      <div style={{display:"flex",gap:16,alignItems:"center",overflowX:"auto",whiteSpace:"nowrap",padding:"3px 3px 12px",fontSize:17,fontWeight:750}}>
+        <span style={{background:"#ff5500",color:"white",borderRadius:8,padding:"3px 7px"}}>淘</span>
+        <span>关注</span><span style={{color:"#ff5500",borderBottom:"3px solid #ff5500",paddingBottom:4}}>推荐</span><span>闪购</span><span style={{color:"#e90043"}}>双11</span><span>国补</span><span>穿搭</span><span>数码</span>
+      </div>
+      <div style={{border:"2px solid #ff5500",borderRadius:22,padding:"1px 3px 1px 12px",display:"flex",alignItems:"center",gap:4}}>
+        <span style={{fontSize:17,color:"#ff5500"}}>⌕</span>
+        <div style={{flex:1,minWidth:0}}><SearchBox value={q} set={v=>{setQ(v);setChosen(null);setTab("商品");}} placeholder="西装 录音笔 褪黑素"/></div>
+        <button onClick={()=>{setChosen(null);setTab("商品");}} style={{border:0,borderRadius:17,background:"#ff5500",color:"white",fontWeight:800,padding:"9px 14px"}}>搜索</button>
+      </div>
     </div>
-    <div ref={scrollRef} className="catalog-scroll" style={{padding:"10px 11px 110px"}}>
+    <div ref={scrollRef} className="catalog-scroll" style={{padding:"8px 7px 110px"}}>
       {tab==="商品" ? chosenProduct ? <div>
         <button onClick={()=>setChosen(null)} style={{border:0,background:"none",padding:"7px 0 13px",color:orange,fontSize:13}}>‹ 返回商品列表</button>
         <div style={{borderRadius:14,overflow:"hidden",background:"white"}}>{productArt(chosenProduct,280)}</div>
@@ -141,10 +148,10 @@ export function TaobaoSkin(p: Props) {
         <div style={{display:"flex",gap:9,overflowX:"auto",padding:"6px 0 13px"}}>
           {["猜你喜欢","全部","正装","录音","播客","工作","数码"].map(x=><button key={x} onClick={()=>setSection(x)} style={{whiteSpace:"nowrap",border:0,borderRadius:18,padding:"8px 12px",background:section===x?orange:"white",color:section===x?"white":"#555",fontWeight:section===x?800:500}}>{x}</button>)}
         </div>
-        <div style={{display:"grid",gridTemplateColumns:"repeat(2,minmax(0,1fr))",gap:9}}>
-          {shown.map(x=><button key={x.id} onClick={()=>setChosen(x.id)} style={{border:0,background:"white",borderRadius:13,overflow:"hidden",padding:0,textAlign:"left",color:"inherit"}}>
-            {productArt(x)}
-            <div style={{padding:"9px 9px 11px"}}><div style={{fontSize:12,fontWeight:700,lineHeight:1.5,height:36,overflow:"hidden"}}>{x.name}</div>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(2,minmax(0,1fr))",gap:7,alignItems:"start"}}>
+          {shown.map(x=><button key={x.id} onClick={()=>setChosen(x.id)} style={{border:0,background:"white",borderRadius:10,overflow:"hidden",padding:0,textAlign:"left",color:"inherit",alignSelf:"start"}}>
+            {productArt(x, x.id==="suit"||x.id==="shirt"||x.id==="umbrella"||x.id==="camera"?226: x.id==="recorder"||x.id==="headphone"?185:150)}
+            <div style={{padding:"9px 8px 12px"}}><div style={{fontSize:12,fontWeight:700,lineHeight:1.5,minHeight:36,overflow:"hidden"}}>{x.name}</div>
             <div style={{color:orange,marginTop:6}}>¥ <strong style={{fontSize:21}}>{x.price}</strong></div>
             <div style={{fontSize:10,color:"#999",marginTop:4}}>{x.sold}人付款 · 包邮</div><div style={{fontSize:10,color:"#aaa",marginTop:3}}>{x.shop}</div></div>
           </button>)}
