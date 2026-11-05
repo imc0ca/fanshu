@@ -254,7 +254,7 @@ export function TaobaoSkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商品");
   const [status,setStatus]=useState("全部");
   const [chosen,setChosen]=useState<string|null>(null);
-  const [basket,setBasket]=useState<Record<string,number>>({});
+  const [,setBasket]=useState<Record<string,number>>({});
   const [cartQty,setCartQty]=useState<Record<string,number>>(()=>Object.fromEntries(cartSeed.map(x=>[x.id,x.qty])));
   const [cartSelected,setCartSelected]=useState<Record<string,boolean>>({});
   const [cartManage,setCartManage]=useState(false);
