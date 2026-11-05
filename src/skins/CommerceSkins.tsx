@@ -183,6 +183,7 @@ const seoulShops = [
   {id:"peach",name:"蜜桃烘焙屋",ko:"桃子水果塔",area:"延禧洞",category:"蛋糕",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:11500,emoji:"🍑",color:"#F5E8DC",desc:"桃子水果塔",address:""},
   {id:"cloud",name:"云朵九号面包房",ko:"牛奶吐司与费南雪",area:"望远洞",category:"面包",rating:"4.8",reviews:"478",minutes:"25–35",fee:"2,000",price:6500,emoji:"🍞",color:"#F5E6D5",desc:"牛奶吐司与费南雪"},
 ];
+const deliveryMenus: Record<string, [string,number,number,number][]> = {"berry":[["草莓鲜奶油整蛋糕",32000,4,1680],["草莓蛋糕切块",8500,1,420],["蓝莓奶油蛋糕",9500,1,460]],"butter":[["经典盐面包",4500,1,290],["黄油可颂",4800,1,330],["杏仁可颂",5900,1,410]],"matcha":[["抹茶奶油蛋糕",8900,1,430],["抹茶巴斯克",9800,1,480],["抹茶生巧塔",7900,1,390]],"mandu":[["猪肉蒸饺八只",8500,1,510],["泡菜饺八只",9000,1,480],["虾仁饺八只",10500,2,520]],"jokbal":[["招牌猪蹄小份",39000,2,1450],["招牌猪蹄中份",48000,3,1950],["蒜香猪蹄",44000,2,1680]],"soba":[["紫苏油荞麦面",12000,1,510],["冷荞麦面",11000,1,430],["辣拌荞麦面",12500,1,550]],"cream":[["香草奶油整蛋糕",29000,4,1550],["伯爵茶奶油蛋糕",8900,1,420],["巧克力奶油蛋糕",9200,1,490]],"flour":[["法棍面包",5500,2,640],["火腿黄油三明治",9500,1,580],["核桃乡村面包",7800,2,850]],"peach":[["桃子水果塔",11500,1,490],["桃子奶油蛋糕",9800,1,450],["迷你蜜桃整蛋糕",26000,3,1290]],"cloud":[["牛奶吐司",6500,3,1050],["原味费南雪",3200,1,220],["蜂蜜黄油司康",4500,1,360]]};
 export function DeliverySkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商家");
   const [category,setCategory]=useState("全部");
@@ -218,12 +219,17 @@ export function DeliverySkin(p: Props) {
             {"address" in shop && shop.address && <div style={{fontSize:12,color:"#667873",marginTop:8}}>📍 {shop.address}</div>}<div style={{fontSize:13,margin:"8px 0 16px"}}>配送 {shop.minutes}分钟 · 配送费 {money(Number(shop.fee.replace(",","")))}</div>
             <div style={{background:"white",borderRadius:14,padding:14}}>
               <strong>店铺菜单</strong>
-              <p style={{fontSize:14,margin:"9px 0 3px"}}>{shop.ko}</p>
-              <small style={{color:"#8A9692"}}>{shop.desc}</small>
-              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:14}}>
-                <strong>{money(shop.price)}</strong>
-                <button onClick={()=>setCart(c=>({...c,[shop.id]:(c[shop.id]||0)+1}))} style={{border:0,background:"#1BAF9A",color:"white",borderRadius:9,padding:"10px 14px",fontWeight:800}}>+ 加入购物车</button>
-              </div>
+              <p style={{fontSize:12,color:"#82908A"}}>热量为整份估算值，仅供参考</p>
+              {deliveryMenus[shop.id].map(([name,price,people,kcal],i)=>(
+                <div key={i} style={{padding:"13px 0",borderTop:"1px solid #EEE"}}>
+                  <strong>{name}</strong>
+                  <div style={{fontSize:12,color:"#82908A",marginTop:5}}>适合{people}人食用 · 约{kcal}千卡</div>
+                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:9}}>
+                    <strong>{money(price)}</strong>
+                    <button onClick={()=>setCart(c=>({...c,[shop.id]:(c[shop.id]||0)+1}))} style={{border:0,background:"#1BAF9A",color:"white",borderRadius:9,padding:"9px 12px",fontWeight:800}}>+ 加入购物车</button>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         ) : (
