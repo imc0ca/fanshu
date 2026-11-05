@@ -207,6 +207,24 @@ const deliveryHistory: DeliveryOrder[] = [
   {id:"cake-0317",date:"2024-03-17",shop:"Berry Cloud Cake",product:"草莓鲜奶油整蛋糕",quantity:1,price:32000,emoji:"🍰",note:"聊天中提到已订草莓蛋糕"},
   {id:"soba-1",date:"2024-02-24",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:2,price:29000,emoji:"🍜"}
 ];
+const orderFoodPhotos: Record<string,string> = {
+  "tteok":"Tteok-bokki.jpg",
+  "chicken":"Korean fried chicken.jpg",
+  "sundae":"Sundae-guk.jpg",
+  "jokbal":"Jokbal.jpg",
+  "naengmyeon":"Naengmyeon.jpg",
+  "bossam":"Bossam.jpg",
+  "bibimbap":"Bibimbap.jpg",
+  "gukbap":"Dwaeji-gukbap.jpg",
+  "burger":"Hamburger.jpg",
+  "soba":"Makguksu.jpg",
+  "mandu":"Mandu.jpg",
+  "cake":"Strawberry cake.jpg"
+};
+const orderPhoto = (o: DeliveryOrder) => {
+  const type = Object.keys(orderFoodPhotos).find(k=>o.id.includes(k)) || "cake";
+  return "https://commons.wikimedia.org/wiki/Special:FilePath/"+encodeURIComponent(orderFoodPhotos[type])+"?width=320";
+};
 export function DeliverySkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商家");
   const [category,setCategory]=useState("全部");
@@ -288,7 +306,7 @@ export function DeliverySkin(p: Props) {
                 </div>
                 <div style={{fontSize:12,color:"#8C9994",marginTop:5}}>{o.date}</div>
                 <div style={{display:"flex",gap:12,alignItems:"center",margin:"13px 0",padding:"10px 0",borderTop:"1px solid #F0F2F0",borderBottom:"1px solid #F0F2F0"}}>
-                  <div style={{width:56,height:56,borderRadius:10,background:"#F4F5F0",display:"grid",placeItems:"center",fontSize:30,flexShrink:0}}>{o.emoji}</div>
+                  <div style={{width:74,height:74,borderRadius:10,background:"#F4F5F0",overflow:"hidden",flexShrink:0}}><img src={orderPhoto(o)} alt={o.product} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.currentTarget.style.opacity="0";}} /></div>
                   <div style={{flex:1,minWidth:0}}><strong style={{fontSize:13}}>{o.product}</strong><div style={{fontSize:12,color:"#88958F",marginTop:5}}>{o.quantity} 人份</div></div>
                 </div>
                 <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:13}}><span style={{color:"#8A9691"}}>实付款</span><strong>{money(o.price)}</strong></div>
