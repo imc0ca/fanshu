@@ -204,7 +204,7 @@ export function MymyKakao(p: SkinProps) {
                   )}
                   <div className={m.meta?.callType && m.body.includes("未接通") ? "kkt-call-stack" : "kkt-bubble-holder"}>
                     <button
-                      className={"kzbub" + (m.media ? " kzimg" : "") + (m.meta?.pendingImagePath ? " kkt-photo-only" : "") + (m.meta?.callType ? " kkt-call-only" : "")}
+                      className={"kzbub" + (m.media ? " kzimg" : "") + (m.meta?.pendingImagePath ? " kkt-photo-only" : "") + (m.meta?.callType ? " kkt-call-only" : "")} data-call-type={m.meta?.callType || (/video\s*call/i.test(m.body) ? "video" : "")}
                       onClick={() => m.meta.local !== "true" && read(p, m)}
                     >
                       {m.meta?.pendingImagePath ? (
