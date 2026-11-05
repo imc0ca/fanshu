@@ -175,7 +175,12 @@ const seoulShops = [
   {id:"berry",name:"Berry Cloud Cake",ko:"딸기 생크림 케이크",area:"연남동",category:"케이크",rating:"4.9",reviews:"1,284",minutes:"25–35",fee:"2,000",price:32000,emoji:"🍓",color:"#FBE4E8",desc:"Fresh Strawberry Cream Cake"},
   {id:"butter",name:"Butter & Crumb",ko:"소금빵 · 크루아상",area:"성수동",category:"베이커리",rating:"4.8",reviews:"856",minutes:"20–30",fee:"1,500",price:4500,emoji:"🥐",color:"#F8E8C8",desc:"Signature Salt Bread"},
   {id:"matcha",name:"Little Matcha House",ko:"말차 케이크",area:"합정동",category:"디저트",rating:"4.9",reviews:"624",minutes:"30–40",fee:"2,500",price:8900,emoji:"🍵",color:"#E4EED8",desc:"Matcha Cream Slice"},
-  {id:"mandu",name:"Seoul Mandu Kitchen",ko:"수제 만두 · 찐만두",area:"자양동",category:"만두",rating:"4.9",reviews:"932",minutes:"15–25",fee:"1,000",price:8500,emoji:"🥟",color:"#F4E9D8",desc:"Handmade Pork & Kimchi Dumplings"},
+  {id:"mandu",name:"Seoul Mandu Kitchen",ko:"수제 만두 · 찐만두",area:"자양동",address:"서울특별시 광진구 자양동 1-2",category:"만두",rating:"4.9",reviews:"932",minutes:"15–25",fee:"1,000",price:8500,emoji:"🥟",color:"#F4E9D8",desc:"Handmade Pork & Kimchi Dumplings"},
+  {id:"jokbal",name:"Seongsu Jokbal House",ko:"성수동 족발",area:"성수동",category:"족발",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:39000,emoji:"🍖",color:"#F5E8DC",desc:"성수동 족발",address:"서울 성동구 성수일로8길 53 성수동복합시설"},
+  {id:"soba",name:"Sinsa Buckwheat Noodles",ko:"들기름 메밀국수",area:"신사동",category:"메밀국수",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:12000,emoji:"🍜",color:"#F5E8DC",desc:"들기름 메밀국수",address:"서울 강남구 신사동 576-10"},
+  {id:"cream",name:"Maison Cream",ko:"바닐라 생크림 케이크",area:"한남동",category:"케이크",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:29000,emoji:"🍰",color:"#F5E8DC",desc:"바닐라 생크림 케이크",address:""},
+  {id:"flour",name:"Flour Atelier",ko:"잠봉뵈르 · 바게트",area:"서촌",category:"베이커리",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:9500,emoji:"🥖",color:"#F5E8DC",desc:"잠봉뵈르 · 바게트",address:""},
+  {id:"peach",name:"Peach Oven",ko:"복숭아 타르트",area:"연희동",category:"케이크",rating:"4.8",reviews:"516",minutes:"25–40",fee:"2,000",price:11500,emoji:"🍑",color:"#F5E8DC",desc:"복숭아 타르트",address:""},
   {id:"cloud",name:"Cloud Nine Bakery",ko:"우유 식빵 · 휘낭시에",area:"망원동",category:"베이커리",rating:"4.8",reviews:"478",minutes:"25–35",fee:"2,000",price:6500,emoji:"🍞",color:"#F5E6D5",desc:"Milk Bread & Financier"},
 ];
 export function DeliverySkin(p: Props) {
@@ -189,7 +194,7 @@ export function DeliverySkin(p: Props) {
   const total=seoulShops.reduce((sum,x)=>sum+x.price*(cart[x.id]||0),0);
   const money=(n:number)=>"₩"+n.toLocaleString("ko-KR");
   const image=(x:typeof seoulShops[number],large=false)=>(
-    <div style={{height:large?194:166,background:x.color,position:"relative",display:"grid",placeItems:"center",overflow:"hidden",borderRadius:large?15:12}}>
+    <div style={{width:"100%",minWidth:0,flex:"none",height:large?194:166,background:x.color,position:"relative",display:"grid",placeItems:"center",overflow:"hidden",borderRadius:large?15:12}}>
       <img src={`/fanshu/delivery-food/${x.id}.jpg`} alt={x.ko} style={{width:"100%",height:"100%",objectFit:"cover",position:"absolute",inset:0}} onError={e=>{e.currentTarget.style.display="none";}} />
       <span style={{fontSize:large?80:66}}>{x.emoji}</span>
       {!large&&<span style={{position:"absolute",top:10,left:10,background:"#ffffffea",borderRadius:5,padding:"4px 8px",fontSize:10,fontWeight:800,color:"#158B7C"}}>BEST</span>}
@@ -200,7 +205,7 @@ export function DeliverySkin(p: Props) {
       <Header p={p}/>
       <div className="catalog-scroll" style={{padding:"13px 14px 95px",background:"#F7F8F7"}}>
         <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:13}}>
-          <div><small style={{color:"#72837E",fontSize:11}}>배달 받을 주소 ▾</small><div style={{fontSize:15,fontWeight:800}}>서울특별시 광진구 자양동 1-2</div></div>
+          <div><small style={{color:"#72837E",fontSize:11}}>배달 받을 주소 ▾</small><div style={{fontSize:15,fontWeight:800}}>배달 주소 설정</div></div>
           <span style={{fontSize:22}}>🔔</span>
         </div>
         <div style={{background:"white",borderRadius:13,padding:"3px 10px",marginBottom:13}}><SearchBox value={q} set={setQ} placeholder="케이크, 베이커리, 만두 검색"/></div>
@@ -210,7 +215,7 @@ export function DeliverySkin(p: Props) {
             {image(shop,true)}
             <h2 style={{fontSize:23,margin:"15px 0 4px"}}>{shop.name}</h2>
             <div style={{fontSize:13,color:"#73817D"}}>★ {shop.rating} · 리뷰 {shop.reviews} · {shop.area}</div>
-            <div style={{fontSize:13,margin:"8px 0 16px"}}>배달 {shop.minutes}분 · 배달팁 {money(Number(shop.fee.replace(",","")))}</div>
+            {"address" in shop && shop.address && <div style={{fontSize:12,color:"#667873",marginTop:8}}>📍 {shop.address}</div>}<div style={{fontSize:13,margin:"8px 0 16px"}}>배달 {shop.minutes}분 · 배달팁 {money(Number(shop.fee.replace(",","")))}</div>
             <div style={{background:"white",borderRadius:14,padding:14}}>
               <strong>대표 메뉴</strong>
               <p style={{fontSize:14,margin:"9px 0 3px"}}>{shop.ko}</p>
@@ -228,17 +233,17 @@ export function DeliverySkin(p: Props) {
               <h2 style={{margin:"5px 0",fontSize:22,color:"#16483E"}}>오늘은 달콤하게! 🍰</h2>
               <small style={{color:"#427F73"}}>서울 인기 디저트 & 수제 만두</small>
             </div>
-            <div style={{display:"grid",gridTemplateColumns:"repeat(5,minmax(0,1fr))",gap:5,marginBottom:20}}>
-              {["전체","케이크","베이커리","디저트","만두"].map((c,i)=><button key={c} onClick={()=>setCategory(c)} style={{border:0,background:category===c?"#D6F5ED":"white",borderRadius:12,padding:"9px 1px",display:"grid",gap:5,justifyItems:"center",fontSize:10,color:"#34554C",fontWeight:category===c?800:500}}><span style={{fontSize:22}}>{["🏠","🎂","🥐","🍓","🥟"][i]}</span>{c}</button>)}
+            <div style={{display:"grid",gridTemplateColumns:"repeat(4,minmax(0,1fr))",gap:5,marginBottom:20}}>
+              {["전체","케이크","베이커리","디저트","만두","족발","메밀국수"].map((c,i)=><button key={c} onClick={()=>setCategory(c)} style={{border:0,background:category===c?"#D6F5ED":"white",borderRadius:12,padding:"9px 1px",display:"grid",gap:5,justifyItems:"center",fontSize:10,color:"#34554C",fontWeight:category===c?800:500}}><span style={{fontSize:22}}>{["🏠","🎂","🥐","🍓","🥟","🍖","🍜"][i]}</span>{c}</button>)}
             </div>
             <h2 style={{fontSize:18,margin:"0 0 14px"}}>지금 인기 있는 맛집</h2>
-            {filtered.map(x=><button key={x.id} onClick={()=>setSelected(x.id)} style={{border:0,background:"white",textAlign:"left",padding:10,borderRadius:15,marginBottom:13,width:"100%",color:"inherit"}}>
+            {filtered.map(x=><button key={x.id} onClick={()=>setSelected(x.id)} style={{display:"block",boxSizing:"border-box",border:0,background:"white",textAlign:"left",padding:10,borderRadius:15,marginBottom:13,width:"100%",color:"inherit",minWidth:0}}>
               {image(x)}
               <div style={{display:"flex",justifyContent:"space-between",marginTop:10,gap:8}}>
                 <div><strong style={{fontSize:16}}>{x.name}</strong><div style={{fontSize:12,color:"#75837F",marginTop:3}}>{x.ko} · {x.area}</div></div>
                 <span style={{fontSize:12,color:"#188F7B",fontWeight:700}}>★ {x.rating}</span>
               </div>
-              <div style={{fontSize:12,color:"#75837F",marginTop:7}}>리뷰 {x.reviews} · 배달 {x.minutes}분 · 배달팁 ₩{x.fee}</div>
+              <div style={{fontSize:12,color:"#75837F",marginTop:7}}>리뷰 {x.reviews} · 배달 {x.minutes}분 · 배달팁 ₩{x.fee}</div>{"address" in x && x.address && <div style={{fontSize:11,color:"#8B9793",marginTop:4}}>📍 {x.address}</div>}
             </button>)}
             {filtered.length===0&&<div style={{textAlign:"center",padding:30,color:"#899"}}>검색 결과가 없어요</div>}
           </>
