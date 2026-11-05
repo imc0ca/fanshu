@@ -590,7 +590,7 @@
 }
 .notes-back {
   color: #b4942c;
-  font-size: 11px;
+  font-size: 14px;
   padding: 12px 15px 0;
 }
 .native-notes .catalog-scroll > h1 {
@@ -613,11 +613,11 @@
   display: flex;
   align-items: center;
   gap: 3px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
 }
 .notes-list p {
-  font-size: 10px;
+  font-size: 13px;
   color: #999;
   margin-top: 7px;
   white-space: nowrap;
@@ -630,7 +630,7 @@
 .notes-list small {
   display: block;
   color: #a3a3a0;
-  font-size: 9px;
+  font-size: 12px;
   margin-top: 5px;
 }
 .note-folders {
@@ -644,14 +644,14 @@
   border: 1px solid #e4dfcf;
   border-radius: 7px;
   padding: 8px;
-  font-size: 10px;
+  font-size: 13px;
   white-space: nowrap;
   color: #aa8e34;
   background: #fff9;
 }
 .note-folders small {
   color: #aaa;
-  font-size: 9px;
+  font-size: 12px;
 }
 .notes-footer,
 .mail-footer {
@@ -4310,3 +4310,9 @@
   border-radius: 50%;
   background: #e5a34c;
 }
+
+/* Larger typography throughout the Notes app, including its footer and search. */
+.native-notes .notes-footer { font-size: 12px; }
+.native-notes .catalog-scroll > h1 { font-size: 26px; }
+.native-notes .catalog-nav strong { font-size: 17px; }
+.native-notes input { font-size: 14px; }
