@@ -302,7 +302,7 @@ export function YouTubeSkin(_p: Props) {
   const thumb = (v:typeof youtubeDemo[number]) => (
     <div style={{aspectRatio:"16/9",background:`linear-gradient(145deg,${v.color},#1c2631)`,position:"relative",display:"flex",alignItems:"center",justifyContent:"center",color:"white",overflow:"hidden"}}>
       <img src={v.image} alt={v.title} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover",position:"absolute",inset:0}} onError={e=>{e.currentTarget.style.display="none";}} />
-      <span style={{position:"absolute",right:8,bottom:8,background:"#000c",padding:"3px 5px",borderRadius:4,fontSize:12,fontWeight:600}}>{v.duration||"视频"}</span>
+      
     </div>
   );
   return <div className="catalog-skin youtube-ui" style={{background:"#fff",color:"#111",display:"flex",flexDirection:"column",height:"100%"}}>
