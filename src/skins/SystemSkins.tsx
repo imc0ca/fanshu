@@ -232,7 +232,7 @@ export function PhotosSkin(p: Props) {
     meta: { album: "大大笨蛋" }, time: "", sender: "相册", avatar: "",
     kind: "image",
     media: `/fanshu/dadabendan-original/dadabendan-${String(index + 1).padStart(2, "0")}.${index >= 18 ? "png" : "jpeg"}`,
-    hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: false,
+    hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: [1, 4, 5, 6, 7, 8, 9, 10, 11, 12].includes(index + 1),
     outgoing: false, read: true, likes: 0, comments: [],
   }));
   const dadabendanExtensions = ["jpeg","jpeg","jpeg","png","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg","png"];
