@@ -176,7 +176,7 @@ export function MymyKakao(p: SkinProps) {
               const prev = messages[i - 1];
               const prevDate = prev ? (prev.meta?.chatDate || prev.time.slice(0, 10)) : "";
               return (
-                <div key={m.id} className="kkt-dated-message" data-chat-date={chatDate}>
+                <div key={m.id} className="kkt-dated-message" data-chat-date={chatDate} data-message-id={m.id}>
                   {chatDate !== prevDate && m.meta?.hideDateHeading !== "true" && (
                     <div className="kkt-date-heading">{kktDateLabel(chatDate)}</div>
                   )}
