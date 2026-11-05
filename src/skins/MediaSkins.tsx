@@ -280,65 +280,81 @@ export function NeteaseSkin(p: Props) {
     </div>
   );
 }
+const youtubeDemo = [
+  { title:"🌾🔥【星露谷物语】超详细沙漠节全攻略科普", channel:"星露谷小土豆", views:"2673次观看", age:"1年前", duration:"9:36", color:"#68a66c" },
+  { title:"女主开局被校霸同桌一见钟情！本以为是纯情小奶狗，不料校霸竟是真病娇…", channel:"小白爆肝队", views:"23万次观看", age:"2年前", duration:"1:05:03", color:"#bd9878" },
+  { title:"想知道爱犬品种，记者觉得检测不靠谱，寄出自己的DNA，结果她变成…", channel:"M2档案", views:"52万次观看", age:"2年前", duration:"29:44", color:"#536b83" },
+  { title:"【宫崎骏 | Miyazaki Hayao】久石让 in 武道馆 音乐会 与宫崎骏动画一起走过的25年", channel:"The S Videos", views:"27万次观看", age:"8年前", duration:"4:32", color:"#464554" },
+  { title:"全网星际争霸最全时间线梳理", channel:"我是社恐宇", views:"5万次观看", age:"10个月前", duration:"", color:"#484568" },
+  { title:"Golden Lynel + 9 Silver Enemies | Testrun of BotW All-stars Challenge", channel:"Ordinary Champion", views:"236万次观看", age:"3年前", duration:"8:19", color:"#73856b" },
+];
 export function YouTubeSkin(p: Props) {
-  const { tab, setTab, q, setQ, items } = useContent(p, "首页");
-  const [category, setCategory] = useState("全部");
-  const list = items.filter((i) =>
-    tab === "Shorts"
-      ? i.folder === "Shorts"
-      : tab === "订阅"
-        ? i.folder === "订阅"
-        : tab === "播放列表"
-          ? i.favorite || i.folder === "播放列表"
-          : category === "全部" || i.folder === category,
-  );
-  return (
-    <div className="catalog-skin youtube-ui">
-      <Header p={p} />
-      <SearchBox value={q} set={setQ} />
-      <div className="youtube-chips">
-        {["全部", ...groupItems(items).filter((g) => g !== "未分类")].map(
-          (g) => (
-            <button
-              className={category === g ? "selected" : ""}
-              key={g}
-              onClick={() => setCategory(g)}
-            >
-              {g}
-            </button>
-          ),
-        )}
-      </div>
-      <div className="catalog-scroll">
-        <div className={tab === "Shorts" ? "youtube-shorts" : "youtube-videos"}>
-          {list.map((i) => (
-            <article key={i.id}>
-              <button className="youtube-thumb" onClick={() => p.onItem(i)}>
-                <Media item={i} />
-                {meta(i, "duration") && <time>{meta(i, "duration")}</time>}
-              </button>
-              <button className="youtube-byline" onClick={() => p.onItem(i)}>
-                <Avatar name={i.sender} />
-                <div>
-                  <strong>{i.title}</strong>
-                  <small>
-                    {i.sender} · {meta(i, "views", "—")} 次播放
-                  </small>
-                </div>
-              </button>
-            </article>
-          ))}
-        </div>
-        <Empty items={list} />
-      </div>
-      <Tabs
-        tabs={["首页", "Shorts", "订阅", "播放列表"]}
-        value={tab}
-        set={setTab}
-        icons={[<Home />, <Video />, <Users />, <User />]}
-      />
+  const [tab,setTab] = useState("首页");
+  const [q,setQ] = useState("");
+  const [selected,setSelected] = useState<number | null>(null);
+  const [liked,setLiked] = useState<number[]>([]);
+  const [subscribed,setSubscribed] = useState<string[]>([]);
+  const [menu,setMenu] = useState<number | null>(null);
+  const [comments,setComments] = useState(false);
+  const items = youtubeDemo.filter(v=>(v.title+v.channel).toLowerCase().includes(q.toLowerCase()));
+  const openVideo = (index:number) => {setSelected(index);setComments(false);setMenu(null);};
+  const current = selected === null ? null : youtubeDemo[selected];
+  const thumb = (v:typeof youtubeDemo[number],index:number) => (
+    <div style={{aspectRatio:"16/9",background:`linear-gradient(145deg,${v.color},#1c2631)`,position:"relative",display:"flex",alignItems:"center",justifyContent:"center",color:"white",overflow:"hidden"}}>
+      <span style={{fontSize:13,opacity:.75,letterSpacing:1}}>视频封面待上传</span>
+      <span style={{position:"absolute",right:8,bottom:8,background:"#000c",padding:"3px 5px",borderRadius:4,fontSize:12,fontWeight:600}}>{v.duration||"视频"}</span>
     </div>
   );
+  return <div className="catalog-skin youtube-ui" style={{background:"#fff",color:"#111",display:"flex",flexDirection:"column",height:"100%"}}>
+    <div style={{display:"flex",alignItems:"center",gap:10,padding:"12px 15px 9px",flexShrink:0}}>
+      {selected !== null ? <button onClick={()=>setSelected(null)} aria-label="返回"><ChevronLeft size={24}/></button> : null}
+      <span style={{fontSize:21,fontWeight:800,letterSpacing:-1,flex:1}}><span style={{background:"#f03",color:"#fff",borderRadius:6,padding:"0 5px",fontSize:16,marginRight:5}}>▶</span>YouTube</span>
+      <button aria-label="搜索" onClick={()=>document.getElementById("fanshu-youtube-search")?.focus()}><Search size={22}/></button>
+      <button aria-label="个人中心" onClick={()=>{setSelected(null);setTab("我的");}}><User size={22}/></button>
+    </div>
+    {selected === null ? <>
+      <div style={{padding:"0 12px 8px"}}><input id="fanshu-youtube-search" placeholder="搜索 YouTube" value={q} onChange={e=>setQ(e.target.value)} style={{background:"#f2f2f2",borderRadius:9,padding:"8px 12px",width:"100%",fontSize:14}}/></div>
+      <div style={{display:"flex",gap:9,overflowX:"auto",padding:"2px 12px 10px",flexShrink:0}}>
+        {["全部","游戏","音乐","动画","纪录片"].map(x=><span key={x} style={{padding:"7px 11px",borderRadius:8,background:x==="全部"?"#181818":"#eee",color:x==="全部"?"white":"#222",fontSize:12,whiteSpace:"nowrap"}}>{x}</span>)}
+      </div>
+      <div style={{overflowY:"auto",flex:1}}>
+        {items.map(v=>{const index=youtubeDemo.indexOf(v);return <article key={index} style={{marginBottom:18}}>
+          <button onClick={()=>openVideo(index)} style={{display:"block",width:"100%",padding:0}}>{thumb(v,index)}</button>
+          <div style={{display:"flex",gap:10,padding:"11px 12px 0",alignItems:"flex-start"}}>
+            <div style={{height:35,width:35,borderRadius:"50%",background:v.color,flexShrink:0,display:"grid",placeItems:"center",color:"#fff",fontWeight:700}}>{v.channel.slice(0,1)}</div>
+            <button onClick={()=>openVideo(index)} style={{flex:1,textAlign:"left",padding:0}}>
+              <div style={{fontSize:14,fontWeight:650,lineHeight:1.4,display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",overflow:"hidden"}}>{v.title}</div>
+              <div style={{fontSize:11,color:"#737373",marginTop:5}}>{v.channel} · {v.views} · {v.age}</div>
+            </button>
+            <button onClick={()=>setMenu(menu===index?null:index)} aria-label="更多选项" style={{fontSize:22,lineHeight:1}}>⋮</button>
+          </div>
+          {menu===index&&<div style={{padding:"8px 16px",fontSize:12,color:"#666"}}>保存到稍后观看 · 分享</div>}
+        </article>})}
+      </div>
+      <div style={{display:"flex",justifyContent:"space-around",borderTop:"1px solid #eee",padding:"10px 0 8px",flexShrink:0}}>
+        {["首页","Shorts","订阅","我的"].map((x,i)=><button key={x} onClick={()=>setTab(x)} style={{display:"grid",justifyItems:"center",gap:3,color:tab===x?"#111":"#777",fontSize:10}}>{i===0?<Home size={21}/>:i===1?<Video size={21}/>:i===2?<Users size={21}/>:<User size={21}/>}<span>{x}</span></button>)}
+      </div>
+    </> : current&&<div style={{overflowY:"auto",flex:1}}>
+      {thumb(current,selected)}
+      <div style={{padding:"14px 14px 9px"}}>
+        <strong style={{fontSize:18,lineHeight:1.4}}>{current.title}</strong>
+        <div style={{fontSize:12,color:"#777",marginTop:5}}>{current.views} · {current.age}</div>
+        <div style={{display:"flex",alignItems:"center",gap:10,marginTop:16}}>
+          <div style={{height:35,width:35,borderRadius:"50%",background:current.color,display:"grid",placeItems:"center",color:"white"}}>{current.channel.slice(0,1)}</div>
+          <strong style={{flex:1,fontSize:14}}>{current.channel}</strong>
+          <button onClick={()=>setSubscribed(x=>x.includes(current.channel)?x.filter(c=>c!==current.channel):[...x,current.channel])} style={{background:subscribed.includes(current.channel)?"#eee":"#111",color:subscribed.includes(current.channel)?"#111":"white",borderRadius:22,padding:"9px 13px",fontSize:12}}>{subscribed.includes(current.channel)?"已订阅":"订阅"}</button>
+        </div>
+        <div style={{display:"flex",gap:9,marginTop:17}}>
+          <button onClick={()=>setLiked(x=>x.includes(selected)?x.filter(n=>n!==selected):[...x,selected])} style={{background:"#f0f0f0",borderRadius:22,padding:"10px 15px",fontSize:13}}>{liked.includes(selected)?"♥ 已点赞":"♡ 点赞"}</button>
+          <button onClick={()=>setComments(!comments)} style={{background:"#f0f0f0",borderRadius:22,padding:"10px 15px",fontSize:13}}>评论</button>
+          <button onClick={()=>navigator.clipboard?.writeText(window.location.href)} style={{background:"#f0f0f0",borderRadius:22,padding:"10px 15px",fontSize:13}}>分享</button>
+        </div>
+        {comments&&<div style={{padding:"18px 0",fontSize:13,color:"#777"}}>评论区 · 暂无评论</div>}
+        <div style={{fontWeight:700,marginTop:25,marginBottom:12}}>接下来播放</div>
+        {youtubeDemo.map((v,i)=>i===selected?null:<button key={i} onClick={()=>openVideo(i)} style={{display:"flex",gap:10,marginBottom:13,textAlign:"left",width:"100%"}}><div style={{width:"42%",flexShrink:0}}>{thumb(v,i)}</div><div style={{fontSize:12,fontWeight:600}}>{v.title}<div style={{color:"#888",fontSize:10,marginTop:6}}>{v.channel}</div></div></button>)}
+      </div>
+    </div>}
+  </div>;
 }
 export function BilibiliSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "首页");
