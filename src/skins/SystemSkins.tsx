@@ -512,9 +512,9 @@ export function NotesSkin(p: Props) {
         <strong>备忘录</strong><div/>
       </header>
       <div className="catalog-scroll" style={{padding:"22px 0",overflowY:"auto"}}>
-        <h1 style={{fontSize:26,margin:"0 0 8px",padding:0,textAlign:"left",textIndent:0}}>{openedNote.title.trim()}</h1>
-        <small style={{color:"#888"}}>{openedNote.time.slice(0,10)}</small>
-        <div style={{padding:"0 18px",marginTop:22,overflowWrap:"anywhere"}}>
+        <div style={{textAlign:"center",color:"#888",fontSize:14,margin:"0 0 22px"}}>{openedNote.time.slice(0,10)}</div>
+        <h1 style={{fontSize:28,fontWeight:750,margin:"0 0 24px",padding:"0 16px",textAlign:"left",textIndent:"2em",overflowWrap:"anywhere"}}>{openedNote.title.trim()}</h1>
+        <div style={{padding:"0 18px 0 5em",marginTop:0,overflowWrap:"anywhere"}}>
           {openedNote.title === "To do list" ? (
             <div style={{display:"flex",flexDirection:"column",gap:17}}>
               {openedNote.body.split("\n").map(line=>line.trim()).filter(Boolean).map((line,index)=>(
