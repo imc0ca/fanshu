@@ -141,8 +141,8 @@ function May18VideoCall() {
     }, { threshold: [0, 0.65, 1] });
     const locate = () => {
       const thread = document.querySelector(".mymy-kakao .kzname");
-      const target = thread && thread.textContent?.trim() !== "妈"
-        ? Array.from(document.querySelectorAll(".mymy-kakao .kkt-dated-message")).filter((row) => /^2024[-/.]0?5[-/.]18$/.test(row.getAttribute("data-chat-date") || "")).flatMap((row) => Array.from(row.querySelectorAll('.kzbub[data-call-type="video"]')))[0] ?? null
+      const target = thread?.textContent?.trim() === "咚灿"
+        ? document.querySelector('.mymy-kakao .kkt-dated-message[data-message-id="kkt-dongchan-20240518-020"] .kzbub')
         : null;
       if (watched !== target) {
         if (watched) observer.unobserve(watched);
