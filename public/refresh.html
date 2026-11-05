@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>正在更新 fanshu</title><style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;display:grid;place-items:center;min-height:85vh;background:#f7f7f3;color:#333;text-align:center}main{padding:24px}a{color:#3469ba}</style></head><body><main><h2>正在修复旧版缓存…</h2><p id="status">请稍候，完成后会自动打开最新网站。</p><p><a href="./?updated=20261105">手动打开最新网站</a></p></main><script>
+(async function(){
+ const status=document.getElementById('status');
+ try {
+  if ('serviceWorker' in navigator) {
+   const registrations=await navigator.serviceWorker.getRegistrations();
+   await Promise.all(registrations.filter(r=>r.scope.includes('/fanshu/')).map(r=>r.unregister()));
+  }
+  if ('caches' in window) {
+   const keys=await caches.keys();
+   await Promise.all(keys.map(key=>caches.delete(key)));
+  }
+  status.textContent='旧版缓存已清除，正在打开新版本…';
+ } catch(e) {status.textContent='正在重新打开网站…';}
+ window.location.replace('./?updated=20261105&refresh='+Date.now());
+})();
+</script></body></html>
