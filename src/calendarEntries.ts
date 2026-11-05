@@ -1,6 +1,7 @@
 export type CalendarEntry = { date: string; title: string; start?: string; end?: string; location?: string; category?: "class"|"work"|"personal"; };
 const fixed: CalendarEntry[] = [
 ["2022-08-19","结业"],
+["2022-08-20","送郑成灿"],
 ["2022-08-17","郑成灿休假"],
 ["2023-05-01","交申请"],
 ["2023-05-10","休假"],
