@@ -142,7 +142,7 @@ function May18VideoCall() {
     const locate = () => {
       const thread = document.querySelector(".mymy-kakao .kzname");
       const target = thread?.textContent?.trim() === "咚灿"
-        ? Array.from(document.querySelectorAll('.mymy-kakao .kkt-dated-message[data-chat-date="2024-05-18"] .kzbub')).find((el) => el.textContent?.trim() === "📞 Video Call") ?? null
+        ? Array.from(document.querySelectorAll(".mymy-kakao .kkt-dated-message")).filter((row) => /^2024[-/.]0?5[-/.]18$/.test(row.getAttribute("data-chat-date") || "")).flatMap((row) => Array.from(row.querySelectorAll('.kzbub[data-call-type="video"]')))[0] ?? null
         : null;
       if (watched !== target) {
         if (watched) observer.unobserve(watched);
