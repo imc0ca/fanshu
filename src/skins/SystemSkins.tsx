@@ -464,10 +464,47 @@ export function NotesSkin(p: Props) {
     likes: 0,
     comments: [],
   };
-  const noteItems = [seongchanNote, ...items.filter((i) => i.id !== seongchanNote.id)];
+  const additionalNotes = [{"date":"2026-02-17","title":"To do list","body":"还炤熙充电器\n\n买洗衣液\n\n给爸妈回电话\n\n预约剪头发\n\n石话石说下一期选题\n\n扔垃圾"},{"date":"2025-02-25","title":"工作清单","body":"- 更新 Campaign Timeline\n\n- 整理上周ig数据\n\n- 联系印刷供应商\n\n- 确认周五会议室\n\n- 修改 PPT 第8页\n\n- 把报销单交给财务"},{"date":"2025-03-13","title":"会议记录","body":"14:30 Weekly Marketing Meeting\n\n- Q4 Campaign 重点放在品牌认知\n\n- Instagram Reels 要增加\n\n- 参考上季度表现好的内容\n\n- 下周提交初版企划"}].map((note, index): Item => ({
+    id: "custom-note-" + note.date + "-" + index,
+    title: note.title,
+    body: note.body,
+    richText: "",
+    time: note.date + " 12:00",
+    sender: "备忘录",
+    avatar: "",
+    kind: "text",
+    media: "",
+    meta: {},
+    hidden: false,
+    unlock: "",
+    password: "",
+    folder: "备忘录",
+    favorite: false,
+    outgoing: false,
+    read: true,
+    likes: 0,
+    comments: [],
+  }));
+  const customNotes = [seongchanNote, ...additionalNotes];
+  const customIds = new Set(customNotes.map((i) => i.id));
+  const noteItems = [...customNotes, ...items.filter((i) => !customIds.has(i.id))];
+  const [openedNote, setOpenedNote] = useState<Item | null>(null);
   const list = (folder
     ? noteItems.filter((i) => (i.folder || "备忘录") === folder)
     : noteItems).filter((i) => (i.title + i.body).toLowerCase().includes(q.toLowerCase()));
+  if (openedNote) return (
+    <div className="catalog-skin native-notes">
+      <header className="app-nav catalog-nav">
+        <button onClick={() => setOpenedNote(null)} aria-label="返回备忘录"><ChevronLeft size={22}/></button>
+        <strong>备忘录</strong><div/>
+      </header>
+      <div className="catalog-scroll" style={{padding:"22px 20px",overflowY:"auto"}}>
+        <h1 style={{fontSize:26,marginBottom:8}}>{openedNote.title}</h1>
+        <small style={{color:"#888"}}>{openedNote.time.slice(0,10)}</small>
+        <div style={{whiteSpace:"pre-wrap",fontSize:15,lineHeight:1.75,marginTop:22,overflowWrap:"anywhere"}}>{openedNote.body}</div>
+      </div>
+    </div>
+  );
   return (
     <div className="catalog-skin native-notes">
       <Header p={p} />
@@ -493,7 +530,7 @@ export function NotesSkin(p: Props) {
         )}
         <div className="notes-list">
           {list.map((i) => (
-            <button key={i.id} onClick={() => p.onItem(i)}>
+            <button key={i.id} onClick={() => customIds.has(i.id) ? setOpenedNote(i) : p.onItem(i)}>
               <strong>
                 {i.password && <LockKeyhole size={12} />} {i.title}
               </strong>
