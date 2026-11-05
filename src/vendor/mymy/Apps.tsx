@@ -117,6 +117,8 @@ function kktDateLabel(value: string) {
   return new Intl.DateTimeFormat("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(date);
 }
 const kktContacts = [
+  { title: "大植", nickname: "Daechi", avatar: "daechi.png" },
+  { title: "鹅卵石", nickname: "CUl8r", avatar: "cul8r.png" },
   { title: "妈", nickname: "찰리 댕댕이맘", avatar: "mom.jpg" },
   { title: "正平哥", nickname: "siioiiei", avatar: "zhengping.jpg" },
   { title: "Osaki Shotaro", nickname: "Shoちゃん", avatar: "shotaro.jpg" },
