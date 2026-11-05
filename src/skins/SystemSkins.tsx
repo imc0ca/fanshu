@@ -541,7 +541,7 @@ export function NotesSkin(p: Props) {
               })}
             </div>
           ) : (
-            <div style={{whiteSpace:"pre-wrap",fontSize:18,lineHeight:1.65}}>{openedNote.body.replace(/\n\s*\n/g, "\n")}</div>
+            <div style={{whiteSpace:"pre-wrap",fontSize:18,lineHeight:1.65}}>{(openedNote.title === "石话石说素材" ? openedNote.body.split(/\n\s*\n/).map((line,index)=>index < 6 ? `${index + 1}. ${line.trim()}` : line.trim()).join("\n") : openedNote.body.replace(/\n\s*\n/g, "\n"))}</div>
           )
           )}
         </div>
