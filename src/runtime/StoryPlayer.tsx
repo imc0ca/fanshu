@@ -37,8 +37,14 @@ function VideoCallExperience() {
     }, { threshold: 0.65 });
     const search = () => {
       const nodes = Array.from(document.querySelectorAll("button, div, span"));
-      const bubble = nodes.find((el) => el.textContent?.trim() === "📞 Video Call" && el.children.length === 0);
-      if (bubble) observer.observe(bubble);
+      // Only the March 21, 2024 Dongchan call is interactive.
+      // Other call cards (including Mom) must never start this experience.
+      const header = document.querySelector(".mymy-kakao .kzname");
+      if (header?.textContent?.trim() !== "咚灿") return;
+      const bubble = nodes.find((el) => el.textContent?.trim() === "📞 Video Call" && el.children.length === 0 && el.closest(".kkt-dated-message")?.querySelector(".kkt-date-heading")?.textContent?.includes("March 21, 2024"));
+      // The call card itself may not have a date heading; check its preceding message date via the thread data instead.
+      const target = bubble ?? Array.from(document.querySelectorAll(".mymy-kakao .kkt-dated-message")).find((el) => el.textContent?.includes("📞 Video Call") && el.previousElementSibling?.textContent?.includes("你看着就好"))?.querySelector(".kzbub");
+      if (target) observer.observe(target);
     };
     const mutations = new MutationObserver(search);
     mutations.observe(document.body, { childList: true, subtree: true });
