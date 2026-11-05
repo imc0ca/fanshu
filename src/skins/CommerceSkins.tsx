@@ -208,15 +208,18 @@ const deliveryHistory: DeliveryOrder[] = [
   {id:"soba-1",date:"2024-02-24",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:2,price:29000,emoji:"🍜"}
 ];
 const orderPhoto = (o: DeliveryOrder) => {
-  if (o.id.includes("soba")) return "/fanshu/delivery-food/soba.jpg";
-  if (o.id.includes("jokbal")) return "/fanshu/delivery-food/jokbal.jpg";
+  const local: Record<string,string> = {
+    soba:"soba.jpg",jokbal:"jokbal.jpg",chicken:"chicken.jpg",
+    bossam:"bossam.jpg",mandu:"mandu.jpg"
+  };
+  const match = Object.keys(local).find(k=>o.id.includes(k));
+  if (match) return "/fanshu/delivery-food/"+local[match];
   if (o.id==="cake-0317") return "/fanshu/delivery-food/berry.jpg";
   if (o.id==="cake-1101") return "/fanshu/delivery-food/cream.jpg";
   const photos: Record<string,string> = {
-    tteok:"Tteok-bokki.jpg", chicken:"Korean fried chicken.jpg",
-    sundae:"Sundae-guk.jpg", naengmyeon:"Naengmyeon.jpg",
-    bossam:"Bossam.jpg", bibimbap:"Bibimbap.jpg",
-    gukbap:"Dwaeji-gukbap.jpg", burger:"Hamburger.jpg", mandu:"Mandu.jpg"
+    tteok:"Tteok-bokki.jpg",sundae:"Sundae-guk.jpg",
+    naengmyeon:"Naengmyeon.jpg",bibimbap:"Bibimbap.jpg",
+    gukbap:"Dwaeji-gukbap.jpg",burger:"Hamburger.jpg"
   };
   const type = Object.keys(photos).find(k=>o.id.includes(k));
   return type ? "https://commons.wikimedia.org/wiki/Special:FilePath/"+encodeURIComponent(photos[type])+"?width=320" : "";
