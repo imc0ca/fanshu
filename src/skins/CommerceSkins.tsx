@@ -186,6 +186,16 @@ const seoulShops = [
 const deliveryMenus: Record<string, [string,number,number,number][]> = {"berry":[["草莓鲜奶油整蛋糕",32000,4,1680],["草莓蛋糕切块",8500,1,420],["蓝莓奶油蛋糕",9500,1,460]],"butter":[["经典盐面包",4500,1,290],["黄油可颂",4800,1,330],["杏仁可颂",5900,1,410]],"matcha":[["抹茶奶油蛋糕",8900,1,430],["抹茶巴斯克",9800,1,480],["抹茶生巧塔",7900,1,390]],"mandu":[["猪肉蒸饺八只",8500,1,510],["泡菜饺八只",9000,1,480],["虾仁饺八只",10500,2,520]],"jokbal":[["招牌猪蹄小份",39000,2,1450],["招牌猪蹄中份",48000,3,1950],["蒜香猪蹄",44000,2,1680]],"soba":[["紫苏油荞麦面",12000,1,510],["冷荞麦面",11000,1,430],["辣拌荞麦面",12500,1,550]],"cream":[["香草奶油整蛋糕",29000,4,1550],["伯爵茶奶油蛋糕",8900,1,420],["巧克力奶油蛋糕",9200,1,490]],"flour":[["法棍面包",5500,2,640],["火腿黄油三明治",9500,1,580],["核桃乡村面包",7800,2,850]],"peach":[["桃子水果塔",11500,1,490],["桃子奶油蛋糕",9800,1,450],["迷你蜜桃整蛋糕",26000,3,1290]],"cloud":[["牛奶吐司",6500,3,1050],["原味费南雪",3200,1,220],["蜂蜜黄油司康",4500,1,360]]};
 type DeliveryOrder = {id:string;date:string;shop:string;product:string;quantity:number;price:number;emoji:string;note?:string};
 const deliveryHistory: DeliveryOrder[] = [
+  {id:"2026-03-tteok",date:"2026-03-08",shop:"新堂洞辣炒年糕",product:"双人即食辣炒年糕锅（年糕、鱼饼、拉面、鸡蛋）",quantity:2,price:29500,emoji:"🌶️"},
+  {id:"2026-02-chicken",date:"2026-02-22",shop:"弘大韩式炸鸡",product:"半半炸鸡（原味＋甜辣）· 腌萝卜 · 可乐×2",quantity:2,price:32500,emoji:"🍗"},
+  {id:"2026-01-sundae",date:"2026-01-16",shop:"钟路米肠汤饭",product:"米肠汤饭×2 · 泡菜 · 萝卜块",quantity:2,price:25500,emoji:"🍲"},
+  {id:"2025-12-jokbal",date:"2025-12-19",shop:"圣水洞猪蹄",product:"酱卤猪蹄双人份 · 生菜包饭 · 辣拌荞麦面",quantity:2,price:47500,emoji:"🍖"},
+  {id:"2025-10-tteok",date:"2025-10-11",shop:"新堂洞辣炒年糕",product:"辣炒年糕双人套餐 · 炸紫菜卷×4 · 炸鱿鱼×2",quantity:2,price:26500,emoji:"🌶️"},
+  {id:"2025-08-naengmyeon",date:"2025-08-23",shop:"乙支路冷面",product:"平壤冷面×2 · 绿豆煎饼",quantity:2,price:35500,emoji:"🍜"},
+  {id:"2025-06-bossam",date:"2025-06-14",shop:"麻浦菜包肉",product:"菜包肉双人套餐 · 白菜包菜 · 萝卜泡菜",quantity:2,price:41500,emoji:"🥬"},
+  {id:"2025-04-bibimbap",date:"2025-04-26",shop:"全州石锅拌饭",product:"石锅拌饭×2 · 韩式煎饼",quantity:2,price:29500,emoji:"🍚"},
+  {id:"2025-02-gukbap",date:"2025-02-15",shop:"釜山猪肉汤饭",product:"猪肉汤饭×2 · 饭团 · 泡菜",quantity:2,price:28500,emoji:"🍲"},
+  {id:"2025-01-tteok",date:"2025-01-25",shop:"新堂洞辣炒年糕",product:"芝士辣炒年糕双人份 · 鱼饼汤 · 炸饺子",quantity:2,price:28500,emoji:"🌶️"},
   {id:"cake-1101",date:"2024-11-01",shop:"Maison Cream",product:"香草奶油整蛋糕",quantity:1,price:29000,emoji:"🎂",note:"根据聊天中的蛋糕照片编排"},
   {id:"burger-3",date:"2024-10-25",shop:"LOTTERIA 乐天汉堡",product:"韩牛汉堡双人套餐（韩牛汉堡×2、薯条×2、可乐×2）",quantity:2,price:28900,emoji:"🍔"},
   {id:"soba-3",date:"2024-09-18",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:2,price:29000,emoji:"🍜"},
