@@ -207,23 +207,19 @@ const deliveryHistory: DeliveryOrder[] = [
   {id:"cake-0317",date:"2024-03-17",shop:"Berry Cloud Cake",product:"草莓鲜奶油整蛋糕",quantity:1,price:32000,emoji:"🍰",note:"聊天中提到已订草莓蛋糕"},
   {id:"soba-1",date:"2024-02-24",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:2,price:29000,emoji:"🍜"}
 ];
-const orderFoodPhotos: Record<string,string> = {
-  "tteok":"Tteok-bokki.jpg",
-  "chicken":"Korean fried chicken.jpg",
-  "sundae":"Sundae-guk.jpg",
-  "jokbal":"Jokbal.jpg",
-  "naengmyeon":"Naengmyeon.jpg",
-  "bossam":"Bossam.jpg",
-  "bibimbap":"Bibimbap.jpg",
-  "gukbap":"Dwaeji-gukbap.jpg",
-  "burger":"Hamburger.jpg",
-  "soba":"Makguksu.jpg",
-  "mandu":"Mandu.jpg",
-  "cake":"Strawberry cake.jpg"
-};
 const orderPhoto = (o: DeliveryOrder) => {
-  const type = Object.keys(orderFoodPhotos).find(k=>o.id.includes(k)) || "cake";
-  return "https://commons.wikimedia.org/wiki/Special:FilePath/"+encodeURIComponent(orderFoodPhotos[type])+"?width=320";
+  if (o.id.includes("soba")) return "/fanshu/delivery-food/soba.jpg";
+  if (o.id.includes("jokbal")) return "/fanshu/delivery-food/jokbal.jpg";
+  if (o.id==="cake-0317") return "/fanshu/delivery-food/berry.jpg";
+  if (o.id==="cake-1101") return "/fanshu/delivery-food/cream.jpg";
+  const photos: Record<string,string> = {
+    tteok:"Tteok-bokki.jpg", chicken:"Korean fried chicken.jpg",
+    sundae:"Sundae-guk.jpg", naengmyeon:"Naengmyeon.jpg",
+    bossam:"Bossam.jpg", bibimbap:"Bibimbap.jpg",
+    gukbap:"Dwaeji-gukbap.jpg", burger:"Hamburger.jpg", mandu:"Mandu.jpg"
+  };
+  const type = Object.keys(photos).find(k=>o.id.includes(k));
+  return type ? "https://commons.wikimedia.org/wiki/Special:FilePath/"+encodeURIComponent(photos[type])+"?width=320" : "";
 };
 export function DeliverySkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商家");
