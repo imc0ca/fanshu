@@ -115,10 +115,10 @@ export function TaobaoSkin(p: Props) {
   const total=taobaoProducts.reduce((a,x)=>a+x.price*(basket[x.id]||0),0);
   const orange="#ff5500";
   const productArt=(x:typeof taobaoProducts[number],height=160)=>(
-    <div style={{height,overflow:"hidden",backgroundColor:x.color}}>
+    <div style={{height,width:"100%",overflow:"hidden",backgroundColor:x.color,display:"flex",alignItems:"center",justifyContent:"center"}}>
       <img src={`/fanshu/taobao-products/${x.id}.jpg`} alt={x.name}
         loading="lazy"
-        style={{width:"100%",height:"100%",objectFit:"cover",display:"block"}}
+        style={{width:"100%",height:"100%",objectFit:"contain",display:"block"}}
         onError={e=>{const img=e.currentTarget;img.onerror=null;img.src="/fanshu/taobao-products/catalog.webp";}} />
     </div>
   );
@@ -155,12 +155,15 @@ export function TaobaoSkin(p: Props) {
         <div style={{display:"flex",gap:9,overflowX:"auto",padding:"6px 0 13px"}}>
           {["猜你喜欢","全部","正装","录音","播客","工作","数码"].map(x=><button key={x} onClick={()=>setSection(x)} style={{whiteSpace:"nowrap",border:0,borderRadius:18,padding:"8px 12px",background:section===x?orange:"white",color:section===x?"white":"#555",fontWeight:section===x?800:500}}>{x}</button>)}
         </div>
-        <div style={{display:"grid",gridTemplateColumns:"repeat(2,minmax(0,1fr))",gap:7,alignItems:"start"}}>
-          {shown.map(x=><button key={x.id} onClick={()=>setChosen(x.id)} style={{border:0,background:"white",borderRadius:10,overflow:"hidden",padding:0,textAlign:"left",color:"inherit",alignSelf:"start"}}>
-            {productArt(x, x.id==="suit"||x.id==="shirt"||x.id==="umbrella"||x.id==="camera"?226: x.id==="recorder"||x.id==="headphone"?185:150)}
-            <div style={{padding:"9px 8px 12px"}}><div style={{fontSize:12,fontWeight:700,lineHeight:1.5,minHeight:36,overflow:"hidden"}}>{x.name}</div>
-            <div style={{color:orange,marginTop:6}}>¥ <strong style={{fontSize:21}}>{x.price}</strong></div>
-            <div style={{fontSize:10,color:"#999",marginTop:4}}>{x.sold}人付款 · 包邮</div><div style={{fontSize:10,color:"#aaa",marginTop:3}}>{x.shop}</div></div>
+        <div style={{columnCount:2,columnGap:7}}>
+          {shown.map(x=><button key={x.id} onClick={()=>setChosen(x.id)} style={{display:"block",width:"100%",boxSizing:"border-box",border:0,background:"white",borderRadius:11,overflow:"hidden",padding:0,textAlign:"left",color:"inherit",margin:"0 0 8px",breakInside:"avoid",WebkitColumnBreakInside:"avoid",verticalAlign:"top"}}>
+            {productArt(x, x.id==="suit"||x.id==="shirt"||x.id==="umbrella"?205:x.id==="melatonin"||x.id==="mic"||x.id==="camera"?145:175)}
+            <div style={{display:"block",padding:"8px 9px 10px",width:"100%",boxSizing:"border-box"}}>
+              <div style={{fontSize:11,fontWeight:650,lineHeight:1.35,display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",overflow:"hidden",overflowWrap:"anywhere"}}>{x.name}</div>
+              <div style={{color:orange,marginTop:5,fontSize:12}}>¥ <strong style={{fontSize:19,fontWeight:800}}>{x.price}</strong></div>
+              <div style={{fontSize:10,color:"#999",marginTop:3}}>{x.sold}人付款 · 包邮</div>
+              <div style={{fontSize:10,color:"#aaa",marginTop:2,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{x.shop}</div>
+            </div>
           </button>)}
         </div>
         {!shown.length&&<div style={{padding:40,textAlign:"center",color:"#999"}}>没有找到相关商品</div>}
