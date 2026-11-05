@@ -233,11 +233,31 @@ const taobaoProducts = [
     "detail": "100%绵羊毛｜花纱灰／花纱咖／花纱驼"
   }
 ];
+type CartSeed = {id:string;shop:string;title:string;spec:string;price:number;original:number;qty:number;tags:string[];image?:string;badge?:"天猫"|"淘宝"|"国际";notice?:string;extra?:string};
+const cartSeed:CartSeed[]=[
+{id:"gold-bowl",shop:"摩登主妇旗舰店",badge:"天猫",title:"摩登主妇韩式泡面碗304不锈钢",spec:"金色304不锈钢韩式泡面碗-17CM",price:18.72,original:22.8,qty:2,tags:["消费券","官方立减3.5元","限时折扣券","退货宝"],notice:"限时优惠9.7折，最高省10元，仅剩05:41",extra:"可享满150减18消费券"},
+{id:"bibigo-dumplings",shop:"韩膳宫 韩国进口食品超市",badge:"淘宝",title:"必品阁韩式王饺子bibigo",spec:"韩式泡菜490g*2袋",price:33.28,original:42.3,qty:1,tags:["官方立减6.4元","满68减3","淘金币抵0.42元"],image:"bibigo-dumplings"},
+{id:"binggrae-protein",shop:"小红豆在韩国",badge:"淘宝",title:"韩国宾格瑞蛋白质饮品代餐奶昔",spec:"六种口味各三瓶 共18瓶",price:317,original:320,qty:1,tags:["满4减3","破损包退","极速退款"],image:"binggrae-protein"},
+{id:"squidward-holder",shop:"七号时光小铺",badge:"淘宝",title:"章鱼哥我又开始干活了 牙刷架",spec:"【1个装】章鱼哥牙刷置物架",price:24.5,original:28.9,qty:1,tags:["官方立减4.4元","7天无理由退货","极速退款"],image:"squidward-holder"},
+{id:"ceramic-bowls",shop:"meelyhome旗舰店",badge:"天猫",title:"meelyhome陶瓷家用碗碟",spec:"4.5英寸黑+5.7英寸白圆钵碗4个装",price:72.24,original:86,qty:1,tags:["消费券","官方立减12.9元","淘金币抵0.86元","退货宝"],extra:"可享满150减18消费券"},
+{id:"wmf-pan",shop:"wmf旗舰店",badge:"天猫",title:"德国WMF专用牛排条纹不粘锅",spec:"星辰Pro牛排煎盘26cm",price:364,original:619,qty:1,tags:["消费券","官方立减200元","满500减10","退货宝"],image:"wmf-pan"},
+{id:"sanho-wok",shop:"sanho三禾旗舰店",badge:"天猫",title:"三禾0涂层100%纯钛炒锅",spec:"32cm送锅铲【真100%纯钛 0涂层】",price:506,original:649,qty:1,tags:["消费券","官方立减98元","退货宝"],extra:"领政府补贴后约¥430.10"},
+{id:"bruno-pot",shop:"bruno旗舰店",badge:"天猫",title:"BRUNO电压力锅小型家用3L",spec:"3L象牙白【0涂层316不锈钢内胆】",price:324.05,original:799,qty:1,tags:["消费券","官方立减120元","限时折扣券","退货宝"],notice:"限时优惠9.5折，最高省128元，已失效",extra:"限时补贴已失效"},
+{id:"stone-vacuum",shop:"石头电器旗舰店",badge:"天猫",title:"石头除螨级自集尘吸尘器一机8用",spec:"H50 Pro",price:1795.88,original:2799,qty:1,tags:["百亿补贴950元","退货宝","超级爆款"],extra:"领政府补贴等优惠后低至¥1399"},
+{id:"uwant-vacuum",shop:"uwant旗舰店",badge:"天猫",title:"Uwant友望双杯除螨仪床上家用",spec:"【小精灵】【双吸口 强拍打】",price:205.7,original:379,qty:1,tags:["百亿加补4.9元","退货宝","买贵必赔"],extra:"领政府补贴后约¥164.56"},
+{id:"bodydream-suit",shop:"bodydream旗舰店",badge:"天猫",title:"bodydream总裁灰西服套装",spec:"巴黎灰 上衣;L[150-160斤]",price:330.01,original:499,qty:1,tags:["消费券","官方立减75元","礼金直降","退货宝"],image:"bodydream-suit"},
+{id:"polowalk-knit",shop:"POLOWALK官方旗舰店",badge:"天猫",title:"【100%绵羊毛】POLOWALK男式羊毛衫",spec:"藏青;XL[180/100A]",price:260.48,original:352,qty:1,tags:["消费券","官方立减53元","满5.01减5","退货宝"],image:"polowalk-knit"},
+{id:"stgivo",shop:"STGIVO海外旗舰店",badge:"国际",title:"终身无鼻敏 一生好鼻子",spec:"2瓶基础装【效果起步】",price:336.12,original:468,qty:1,tags:["消费券","官方立减71元","限时折扣券","退货宝"],notice:"限时优惠9.6折，最高省50元，已失效",extra:"进口税:价格已含税 · 限时补贴已失效"},
+{id:"swisse-sleep",shop:"Naturetech海外旗舰店",badge:"国际",title:"褪黑素升级版swisse睡眠片安瓶助眠",spec:"【2瓶装 立省20更划算】调节入睡",price:239.53,original:347.5,qty:1,tags:["消费券","官方立减69.5元","淘金币抵3.47元","退货宝"],image:"swisse-sleep",extra:"进口税:价格已含税"}
+];
 export function TaobaoSkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商品");
   const [status,setStatus]=useState("全部");
   const [chosen,setChosen]=useState<string|null>(null);
   const [basket,setBasket]=useState<Record<string,number>>({});
+  const [cartQty,setCartQty]=useState<Record<string,number>>(()=>Object.fromEntries(cartSeed.map(x=>[x.id,x.qty])));
+  const [cartSelected,setCartSelected]=useState<Record<string,boolean>>({});
+  const [cartManage,setCartManage]=useState(false);
   const [history,setHistory]=useState<{id:string;date:string;count:number}[]>([]);
   const [section,setSection]=useState("猜你喜欢");
   const scrollRef=useRef<HTMLDivElement>(null);
@@ -258,8 +278,8 @@ export function TaobaoSkin(p: Props) {
   const buy=(id:string)=>setBasket(c=>({...c,[id]:(c[id]||0)+1}));
   const checkout=()=>{const date="2026-04-16";setHistory(h=>[...taobaoProducts.filter(x=>basket[x.id]).map(x=>({id:x.id,date,count:basket[x.id]})),...h]);setBasket({});setChosen(null);setTab("订单");};
   return <div className="catalog-skin taobao-ui" style={{background:"#f6f6f6",color:"#262626"}}>
-    <Header p={p}/>
-    <div style={{background:"white",padding:"9px 10px 11px",borderBottom:"1px solid #f3f3f3"}}>
+    {tab!=="购物车"&&<Header p={p}/>}
+    {tab!=="购物车"&&<div style={{background:"white",padding:"9px 10px 11px",borderBottom:"1px solid #f3f3f3"}}>
       <div style={{display:"flex",gap:16,alignItems:"center",overflowX:"auto",whiteSpace:"nowrap",padding:"3px 3px 12px",fontSize:17,fontWeight:750}}>
         <span style={{background:"#ff5500",color:"white",borderRadius:8,padding:"3px 7px"}}>淘</span>
         <span>关注</span><span style={{color:"#ff5500",borderBottom:"3px solid #ff5500",paddingBottom:4}}>推荐</span><span>闪购</span><span style={{color:"#e90043"}}>双11</span><span>国补</span><span>穿搭</span><span>数码</span>
@@ -269,7 +289,7 @@ export function TaobaoSkin(p: Props) {
         <div style={{flex:1,minWidth:0}}><SearchBox value={q} set={v=>{setQ(v);setChosen(null);setTab("商品");}} placeholder="搜索宝贝"/></div>
         <button onClick={()=>{setChosen(null);setTab("商品");}} style={{border:0,borderRadius:17,background:"#ff5500",color:"white",fontWeight:800,padding:"9px 14px"}}>搜索</button>
       </div>
-    </div>
+    </div>}
     <div ref={scrollRef} className="catalog-scroll" style={{padding:"8px 7px 110px"}}>
       {tab==="商品" ? chosenProduct ? <div>
         <button onClick={()=>setChosen(null)} style={{border:0,background:"none",padding:"7px 0 13px",color:orange,fontSize:13}}>‹ 返回商品列表</button>
@@ -301,14 +321,40 @@ export function TaobaoSkin(p: Props) {
         </div>
         {!shown.length&&<div style={{padding:40,textAlign:"center",color:"#999"}}>没有找到相关商品</div>}
       </> : tab==="购物车" ? <>
-        <h3 style={{margin:"7px 0 14px"}}>购物车（{cartCount}）</h3>
-        {taobaoProducts.filter(x=>basket[x.id]).map(x=><div key={x.id} style={{background:"white",borderRadius:13,padding:12,display:"flex",gap:12,marginBottom:9}}>
-          <div style={{width:74,overflow:"hidden",borderRadius:8}}>{productArt(x,74)}</div>
-          <div style={{flex:1}}><strong style={{fontSize:12}}>{x.name}</strong><div style={{color:orange,marginTop:8,fontWeight:800}}>¥{x.price} <span style={{float:"right",color:"#777",fontSize:12}}>×{basket[x.id]}</span></div>
-          <button onClick={()=>setBasket(c=>{const n={...c};delete n[x.id];return n;})} style={{border:0,background:"none",color:"#aaa",fontSize:11,padding:0}}>删除</button></div>
-        </div>)}
-        {!cartCount&&<div style={{padding:50,textAlign:"center",color:"#aaa"}}>购物车还是空的，去逛逛吧</div>}
-        {cartCount>0&&<button onClick={checkout} style={{border:0,background:orange,color:"white",borderRadius:24,padding:14,width:"100%",fontWeight:800}}>模拟结算 · ¥{total}</button>}
+        <div style={{background:"white",padding:"13px 13px 16px",margin:"-8px -7px 10px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+          <strong style={{fontSize:22,color:"#14203a"}}>购物车 <span style={{fontSize:15,fontWeight:500}}>(124)</span></strong>
+          <button onClick={()=>setCartManage(x=>!x)} style={{border:0,background:"transparent",fontSize:15,color:"#14203a"}}>{cartManage?"完成":"管理"}</button>
+        </div>
+        {cartSeed.map((x,i)=>{
+          const checked=!!cartSelected[x.id], qty=cartQty[x.id]||0;
+          const check=()=>setCartSelected(v=>({...v,[x.id]:!v[x.id]}));
+          const dot=(on:boolean,click:()=>void)=><button onClick={click} aria-label="选择商品" style={{width:21,height:21,borderRadius:"50%",border:on?"none":"2px solid #cbd0d8",background:on?"#ff6500":"white",color:"white",padding:0,flexShrink:0,fontSize:14}}>{on?"✓":""}</button>;
+          return <div key={x.id} style={{background:"white",borderRadius:12,padding:"14px 12px",marginBottom:9,boxShadow:"0 1px 3px #eee"}}>
+            <div style={{display:"flex",alignItems:"center",gap:11,marginBottom:12}}>
+              {dot(checked,check)}
+              <strong style={{fontSize:15,color:"#14203a",flex:1}}><span style={{color:x.badge==="淘宝"?"#ff6b00":x.badge==="国际"?"#9138e0":"#ff003b",marginRight:5}}>{x.badge}</span>{x.shop} ›</strong>
+              <span style={{color:"#8892a3",fontSize:12}}>领券 ›</span>
+            </div>
+            {x.notice&&<div style={{margin:"0 0 12px 32px",background:"#fff0f3",color:"#fa1946",padding:"9px",borderRadius:7,fontSize:12}}>{x.notice}</div>}
+            <div style={{display:"flex",alignItems:"center",gap:9}}>
+              {dot(checked,check)}
+              <div style={{width:88,height:88,flexShrink:0,borderRadius:9,overflow:"hidden",background:"#f3f3f3"}}>
+                {x.image?<img src={`${import.meta.env.BASE_URL}taobao-products/${x.image}.jpg`} alt={x.title} style={{width:"100%",height:"100%",objectFit:"contain"}}/>:<div style={{width:"100%",height:"100%",background:"#f5f5f5"}}/>}
+              </div>
+              <div style={{flex:1,minWidth:0}}>
+                <div style={{display:"flex",gap:5,justifyContent:"space-between",alignItems:"start"}}>
+                  <strong style={{fontSize:13,lineHeight:1.5,overflow:"hidden",display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",color:"#19223b"}}>{x.title}</strong>
+                  <span style={{background:"#f4f5f7",borderRadius:3,fontSize:11,padding:"2px 4px",whiteSpace:"nowrap"}}>×{qty}</span>
+                </div>
+                <div style={{fontSize:12,color:"#8892a3",margin:"5px 0 6px",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{x.spec} ›</div>
+                <div style={{display:"flex",gap:4,flexWrap:"wrap",marginBottom:6}}>{x.tags.map(t=><span key={t} style={{fontSize:10,color:t==="退货宝"?"#19ae6c":"#f56a18",border:"1px solid #ffe1cd",padding:"1px 3px",borderRadius:3}}>{t}</span>)}</div>
+                <div style={{color:"#ff1748",fontSize:12}}> {x.price===x.original?"店铺优惠后":"店铺入会后"} ¥<strong style={{fontSize:21}}>{x.price}</strong> <s style={{color:"#8b94a4",fontSize:12}}>¥{x.original}</s></div>
+                {cartManage&&<div style={{display:"flex",alignItems:"center",gap:9,justifyContent:"flex-end",marginTop:5}}><button onClick={()=>setCartQty(v=>({...v,[x.id]:Math.max(0,qty-1)}))}>−</button>{qty}<button onClick={()=>setCartQty(v=>({...v,[x.id]:qty+1}))}>＋</button></div>}
+              </div>
+            </div>
+            {x.extra&&<div style={{margin:"10px 0 0 32px",background:x.extra.startsWith("领政府")?"#ebfbf1":"#fff0f2",color:x.extra.startsWith("领政府")?"#12ae63":"#fb2350",borderRadius:7,padding:"8px 10px",fontSize:12,fontWeight:650}}>{x.extra}</div>}
+          </div>;
+        })}
       </> : <>
         <h3 style={{margin:"7px 0 13px"}}>我的订单</h3>
         <div style={{display:"flex",gap:7,overflowX:"auto",marginBottom:13}}>{["全部","待付款","待发货","待收货","已完成"].map(x=><button key={x} onClick={()=>setStatus(x)} style={{border:0,borderRadius:16,padding:"8px 10px",whiteSpace:"nowrap",background:status===x?"#ffe8dc":"white",color:status===x?orange:"#777"}}>{x}</button>)}</div>
@@ -317,6 +363,11 @@ export function TaobaoSkin(p: Props) {
         {!history.length&&!items.some(i=>i.folder==="订单")&&<div style={{padding:40,textAlign:"center",color:"#aaa"}}>暂无订单记录</div>}
       </>}
     </div>
+    {tab==="购物车"&&<div style={{background:"white",padding:"9px 11px",display:"flex",gap:10,alignItems:"center",fontSize:13}}>
+      <button onClick={()=>{const all=cartSeed.every(x=>cartSelected[x.id]);setCartSelected(Object.fromEntries(cartSeed.map(x=>[x.id,!all])));}} style={{border:"2px solid #ccd1d9",borderRadius:"50%",width:21,height:21,background:cartSeed.every(x=>cartSelected[x.id])?"#ff6500":"white",color:"white",flexShrink:0}}>{cartSeed.every(x=>cartSelected[x.id])?"✓":""}</button>
+      <span style={{color:"#8791a3"}}>全选</span><span style={{flex:1,textAlign:"right"}}>合计: <strong style={{color:"#ff6500",fontSize:18}}>¥{cartSeed.reduce((sum,x)=>sum+(cartSelected[x.id]?x.price*(cartQty[x.id]||0):0),0).toFixed(2)}</strong></span>
+      <button onClick={()=>{const chosen=cartSeed.filter(x=>cartSelected[x.id]);if(chosen.length){setHistory(h=>[...chosen.map(x=>({id:x.id,date:"2026-11-05",count:cartQty[x.id]||0})),...h]);setCartSelected({});setTab("订单");}}} style={{background:"linear-gradient(90deg,#ff9d00,#ff5500)",color:"white",border:0,borderRadius:10,padding:"13px 27px",fontWeight:800,fontSize:16}}>结算</button>
+    </div>}
     <Tabs tabs={["商品","购物车","订单"]} value={tab} set={v=>{setTab(v);setChosen(null);}} icons={[<Home/>,<ShoppingBag/>,<Receipt/>]}/>
   </div>;
 }
