@@ -87,16 +87,151 @@ export function AlipaySkin(p: Props) {
   );
 }
 const taobaoProducts = [
-  {id:"suit",name:"男士商务正装西服套装 修身西装外套＋西裤 面试通勤",price:468,sold:"2千+",shop:"绅士西装定制店",emoji:"🤵",color:"#E4E8EC",tags:["西装","正装","面试","工作"]},
-  {id:"melatonin",name:"褪黑素片 睡前营养补充装 60片",price:79,sold:"8千+",shop:"健康生活馆",emoji:"💊",color:"#E8E9F5",tags:["褪黑素","睡眠","保健"]},
-  {id:"recorder",name:"便携式专业录音笔 高清降噪 长续航 采访播客",price:329,sold:"1千+",shop:"声音设备专营店",emoji:"🎙️",color:"#E6E9ED",tags:["录音","播客","录音设备","麦克风"]},
-  {id:"microphone",name:"USB电容麦克风套装 防喷罩悬臂支架 直播播客",price:259,sold:"3千+",shop:"声学工作室",emoji:"🎤",color:"#E8E6F1",tags:["录音","播客","麦克风"]},
-  {id:"headphone",name:"专业监听耳机 头戴式封闭降噪录音剪辑",price:399,sold:"900+",shop:"声学工作室",emoji:"🎧",color:"#E5EBED",tags:["耳机","录音","播客"]},
-  {id:"sdcard",name:"高速存储卡 128GB 相机录音设备通用",price:89,sold:"5千+",shop:"数码配件仓",emoji:"💾",color:"#E9E9E9",tags:["录音","存储","相机"]},
-  {id:"shirt",name:"男士白衬衫 免烫商务长袖衬衣",price:139,sold:"4千+",shop:"绅士西装定制店",emoji:"👔",color:"#E5ECF5",tags:["正装","衬衫","工作"]},
-  {id:"tie",name:"男士纯色真丝领带 商务面试礼盒",price:69,sold:"2千+",shop:"绅士西装定制店",emoji:"👔",color:"#E9E1E4",tags:["正装","领带"]},
-  {id:"umbrella",name:"自动折叠晴雨伞 加固防风便携黑色",price:58,sold:"6千+",shop:"日常杂货铺",emoji:"☂️",color:"#E2E8ED",tags:["雨伞","日用"]},
-  {id:"charger",name:"USB-C快充充电器 30W 双口充电头",price:89,sold:"9千+",shop:"数码配件仓",emoji:"🔌",color:"#EBEDEA",tags:["充电器","数码"]},
+  {
+    "id": "swisse-sleep",
+    "name": "褪黑素升级版 swisse 睡眠片 安瓶助眠 闪失快入睡 退黑色素 官方正品",
+    "price": 239.53,
+    "sold": "100万+",
+    "shop": "Naturetech海外旗舰店",
+    "emoji": "💜",
+    "color": "#eee7f7",
+    "tags": [
+      "保健",
+      "睡眠",
+      "褪黑素"
+    ],
+    "originalPrice": null,
+    "priceSuffix": "起",
+    "offer": "官方立减69.5元；满250减30",
+    "detail": "澳大利亚品牌｜跨境电商｜进口税价格已含税｜店铺入会价"
+  },
+  {
+    "id": "squidward-holder",
+    "name": "章鱼哥牙刷置物架 卫生间免打孔手动牙刷收纳架 创意桌面装饰小摆件",
+    "price": 24.5,
+    "sold": "46",
+    "shop": "",
+    "emoji": "🪥",
+    "color": "#e4f2ed",
+    "tags": [
+      "日用",
+      "收纳",
+      "牙刷"
+    ],
+    "originalPrice": 28.9,
+    "priceSuffix": "起",
+    "offer": "官方立减15%，省4.4元",
+    "detail": "1个装／2个装可选"
+  },
+  {
+    "id": "wmf-pan",
+    "name": "德国WMF福腾宝星辰牛排煎锅 条纹平底不粘锅 家用燃气电磁炉专用",
+    "price": 364,
+    "sold": "2000+",
+    "shop": "WMF福腾宝",
+    "emoji": "🍳",
+    "color": "#f1f1f1",
+    "tags": [
+      "厨房",
+      "煎锅",
+      "厨具"
+    ],
+    "originalPrice": 619,
+    "priceSuffix": "起",
+    "offer": "官方立减200元；满380减45",
+    "detail": "星辰Pro牛排煎盘｜燃气、电磁炉适用"
+  },
+  {
+    "id": "binggrae-protein",
+    "name": "韩国直邮宾格瑞BINGGRAE蛋白质饮料低卡代餐奶昔 健身蛋白饮250ml",
+    "price": 317,
+    "sold": "2000+",
+    "shop": "",
+    "emoji": "🥛",
+    "color": "#f2e9f5",
+    "tags": [
+      "食品",
+      "饮料",
+      "蛋白质"
+    ],
+    "originalPrice": 320,
+    "priceSuffix": "",
+    "offer": "券满4减3",
+    "detail": "250ml｜六种口味企划装｜韩国直邮"
+  },
+  {
+    "id": "bibigo-dumplings",
+    "name": "必品阁bibigo王饺子韩式泡菜蒸饺速冻水饺 韩国希杰煎饺速食早餐",
+    "price": 33.28,
+    "sold": "10万+",
+    "shop": "必品阁",
+    "emoji": "🥟",
+    "color": "#e7f0dc",
+    "tags": [
+      "食品",
+      "速冻",
+      "饺子"
+    ],
+    "originalPrice": null,
+    "priceSuffix": "起",
+    "offer": "官方立减15%，省6.4元；券满68减3",
+    "detail": "韩式泡菜味490g｜其他口味可选"
+  },
+  {
+    "id": "shinchan-pot",
+    "name": "【摩登主妇&蜡笔小新】左卫门砂锅煲汤炖锅 新婚乔迁搬家生日礼物",
+    "price": 121.25,
+    "sold": "7000+",
+    "shop": "摩登主妇",
+    "emoji": "🍲",
+    "color": "#f7e8dc",
+    "tags": [
+      "厨房",
+      "砂锅",
+      "蜡笔小新"
+    ],
+    "originalPrice": null,
+    "priceSuffix": "起",
+    "offer": "凑单后106.7元起；官方立减15%，省23元",
+    "detail": "蜡笔小新联名｜1.2L／1.8L可选"
+  },
+  {
+    "id": "bodydream-suit",
+    "name": "BODYDREAM总裁灰西服外套男 松弛感穿搭 宽松休闲毛呢西装／羊毛套装",
+    "price": 330.01,
+    "sold": "1000+",
+    "shop": "BODYDREAM",
+    "emoji": "🧥",
+    "color": "#e5e5e5",
+    "tags": [
+      "穿搭",
+      "正装",
+      "西装",
+      "工作"
+    ],
+    "originalPrice": 499,
+    "priceSuffix": "起",
+    "offer": "官方立减15%，省75元；满380减45",
+    "detail": "灰色男士西服外套｜羊毛套装"
+  },
+  {
+    "id": "polowalk-knit",
+    "name": "【100%绵羊毛】POLOWALK男式羊毛衫 2026冬季新品经典翻领时尚上衣",
+    "price": 260.48,
+    "sold": "300+",
+    "shop": "POLOWALK",
+    "emoji": "👕",
+    "color": "#e9e4e0",
+    "tags": [
+      "穿搭",
+      "羊毛衫",
+      "工作"
+    ],
+    "originalPrice": 352,
+    "priceSuffix": "",
+    "offer": "官方立减15%，省53元；满250减30",
+    "detail": "100%绵羊毛｜花纱灰／花纱咖／花纱驼"
+  }
 ];
 export function TaobaoSkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商品");
@@ -114,10 +249,10 @@ export function TaobaoSkin(p: Props) {
   const orange="#ff5500";
   const productArt=(x:typeof taobaoProducts[number],height=160)=>(
     <div style={{height,width:"100%",overflow:"hidden",backgroundColor:x.color,display:"flex",alignItems:"center",justifyContent:"center"}}>
-      <img src={`/fanshu/taobao-products/${x.id}.jpg`} alt={x.name}
+      <img src={`${import.meta.env.BASE_URL}taobao-products/${x.id}.jpg`} alt={x.name}
         loading="lazy"
         style={{width:"100%",height:"100%",objectFit:"contain",display:"block"}}
-        onError={e=>{const img=e.currentTarget;img.onerror=null;img.src="/fanshu/taobao-products/catalog.webp";}} />
+        onError={e=>{const img=e.currentTarget;img.onerror=null;img.style.display="none";}} />
     </div>
   );
   const buy=(id:string)=>setBasket(c=>({...c,[id]:(c[id]||0)+1}));
@@ -131,7 +266,7 @@ export function TaobaoSkin(p: Props) {
       </div>
       <div style={{border:"2px solid #ff5500",borderRadius:22,padding:"1px 3px 1px 12px",display:"flex",alignItems:"center",gap:4}}>
         <span style={{fontSize:17,color:"#ff5500"}}>⌕</span>
-        <div style={{flex:1,minWidth:0}}><SearchBox value={q} set={v=>{setQ(v);setChosen(null);setTab("商品");}} placeholder="西装 录音笔 褪黑素"/></div>
+        <div style={{flex:1,minWidth:0}}><SearchBox value={q} set={v=>{setQ(v);setChosen(null);setTab("商品");}} placeholder="搜索宝贝"/></div>
         <button onClick={()=>{setChosen(null);setTab("商品");}} style={{border:0,borderRadius:17,background:"#ff5500",color:"white",fontWeight:800,padding:"9px 14px"}}>搜索</button>
       </div>
     </div>
@@ -140,9 +275,9 @@ export function TaobaoSkin(p: Props) {
         <button onClick={()=>setChosen(null)} style={{border:0,background:"none",padding:"7px 0 13px",color:orange,fontSize:13}}>‹ 返回商品列表</button>
         <div style={{borderRadius:14,overflow:"hidden",background:"white"}}>{productArt(chosenProduct,280)}</div>
         <div style={{background:"white",borderRadius:13,padding:14,marginTop:10}}>
-          <div style={{color:orange,fontSize:13}}>¥ <strong style={{fontSize:30}}>{chosenProduct.price}</strong><span style={{fontSize:11,marginLeft:8,color:"#999"}}>包邮</span></div>
+          <div style={{color:orange,fontSize:13}}>¥ <strong style={{fontSize:30}}>{chosenProduct.price}</strong><span style={{fontSize:12}}>{chosenProduct.priceSuffix}</span><span style={{fontSize:11,marginLeft:8,color:"#999"}}>包邮</span></div>
           <strong style={{fontSize:17,lineHeight:1.5}}>{chosenProduct.name}</strong>
-          <div style={{fontSize:12,color:"#999",marginTop:9}}>已售 {chosenProduct.sold} · 7天无理由退货</div>
+          <div style={{fontSize:12,color:"#999",marginTop:9}}>已售 {chosenProduct.sold}{chosenProduct.originalPrice ? ` · 优惠前 ¥${chosenProduct.originalPrice}` : ""}</div><div style={{fontSize:12,color:"#ff5500",marginTop:7}}>{chosenProduct.offer}</div><div style={{fontSize:12,color:"#777",marginTop:7}}>{chosenProduct.detail}</div>
         </div>
         <div style={{background:"white",borderRadius:13,padding:14,marginTop:10}}><strong>{chosenProduct.shop}</strong><div style={{fontSize:12,color:"#888",marginTop:8}}>店铺商品 · 规格及详情请以实际商品为准</div></div>
         <div style={{display:"flex",gap:9,marginTop:13}}>
@@ -151,15 +286,15 @@ export function TaobaoSkin(p: Props) {
         </div>
       </div> : <>
         <div style={{display:"flex",gap:9,overflowX:"auto",padding:"6px 0 13px"}}>
-          {["猜你喜欢","全部","正装","录音","播客","工作","数码"].map(x=><button key={x} onClick={()=>setSection(x)} style={{whiteSpace:"nowrap",border:0,borderRadius:18,padding:"8px 12px",background:section===x?orange:"white",color:section===x?"white":"#555",fontWeight:section===x?800:500}}>{x}</button>)}
+          {["猜你喜欢","全部","穿搭","食品","厨房","日用","保健"].map(x=><button key={x} onClick={()=>setSection(x)} style={{whiteSpace:"nowrap",border:0,borderRadius:18,padding:"8px 12px",background:section===x?orange:"white",color:section===x?"white":"#555",fontWeight:section===x?800:500}}>{x}</button>)}
         </div>
         <div style={{columnCount:2,columnGap:7}}>
           {shown.map(x=><button key={x.id} onClick={()=>setChosen(x.id)} style={{display:"block",width:"100%",boxSizing:"border-box",border:0,background:"white",borderRadius:11,overflow:"hidden",padding:0,textAlign:"left",color:"inherit",margin:"0 0 8px",breakInside:"avoid",verticalAlign:"top"}}>
             {productArt(x, x.id==="suit"||x.id==="shirt"||x.id==="umbrella"?205:x.id==="melatonin"||x.id==="mic"||x.id==="camera"?145:175)}
             <div style={{display:"block",padding:"8px 9px 10px",width:"100%",boxSizing:"border-box"}}>
               <div style={{fontSize:11,fontWeight:650,lineHeight:1.35,display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",overflow:"hidden",overflowWrap:"anywhere"}}>{x.name}</div>
-              <div style={{color:orange,marginTop:5,fontSize:12}}>¥ <strong style={{fontSize:19,fontWeight:800}}>{x.price}</strong></div>
-              <div style={{fontSize:10,color:"#999",marginTop:3}}>{x.sold}人付款 · 包邮</div>
+              <div style={{color:orange,marginTop:5,fontSize:12}}>¥ <strong style={{fontSize:19,fontWeight:800}}>{x.price}</strong>{x.priceSuffix}</div>
+              <div style={{fontSize:10,color:"#999",marginTop:3}}>已售 {x.sold}</div>
               <div style={{fontSize:10,color:"#aaa",marginTop:2,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{x.shop}</div>
             </div>
           </button>)}
