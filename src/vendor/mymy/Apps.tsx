@@ -106,6 +106,16 @@ function KktCallCard({ type, missed, status, duration }: { type: string; missed:
     </span>
   );
 }
+function kktDateLabel(value: string) {
+  const match = /^(\\d{4})[-/.](\\d{1,2})[-/.](\\d{1,2})$/.exec(value.trim());
+  if (!match) return value;
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const date = new Date(Date.UTC(year, month - 1, day));
+  if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return value;
+  return new Intl.DateTimeFormat("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(date);
+}
 export function MymyKakao(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "聊天"),
     [sent, setSent] = useSkinState<string[]>(p, "mymyKktSent", []),
@@ -166,9 +176,9 @@ export function MymyKakao(p: SkinProps) {
               const prev = messages[i - 1];
               const prevDate = prev ? (prev.meta?.chatDate || prev.time.slice(0, 10)) : "";
               return (
-                <div key={m.id} className="kkt-dated-message">
+                <div key={m.id} className="kkt-dated-message" data-chat-date={chatDate}>
                   {chatDate !== prevDate && m.meta?.hideDateHeading !== "true" && (
-                    <div className="kkt-date-heading">{m.meta?.dateLabel || chatDate}</div>
+                    <div className="kkt-date-heading">{kktDateLabel(chatDate)}</div>
                   )}
                 <div
                   className={
