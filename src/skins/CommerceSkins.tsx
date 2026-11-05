@@ -114,12 +114,14 @@ export function TaobaoSkin(p: Props) {
   const cartCount=Object.values(basket).reduce((a,b)=>a+b,0);
   const total=taobaoProducts.reduce((a,x)=>a+x.price*(basket[x.id]||0),0);
   const orange="#ff5500";
-  const productArt=(x:typeof taobaoProducts[number],height=160)=>{
-    const order=["suit","shirt","tie","melatonin","recorder","microphone","headphone","sdcard","camera","umbrella","charger","printer"];
-    const i=order.indexOf(x.id);
-    const col=i%4,row=Math.floor(i/4);
-    return <div style={{height,backgroundImage:"url('/fanshu/taobao-products/catalog.webp')",backgroundSize:"400% 300%",backgroundPosition:`${col*100/3}% ${row*50}%`,backgroundRepeat:"no-repeat",backgroundColor:x.color}} aria-label={x.name}/>;
-  };
+  const productArt=(x:typeof taobaoProducts[number],height=160)=>(
+    <div style={{height,overflow:"hidden",backgroundColor:x.color}}>
+      <img src={`/fanshu/taobao-products/${x.id}.jpg`} alt={x.name}
+        loading="lazy"
+        style={{width:"100%",height:"100%",objectFit:"cover",display:"block"}}
+        onError={e=>{const img=e.currentTarget;img.onerror=null;img.src="/fanshu/taobao-products/catalog.webp";}} />
+    </div>
+  );
   const buy=(id:string)=>setBasket(c=>({...c,[id]:(c[id]||0)+1}));
   const checkout=()=>{const date="2026-04-16";setHistory(h=>[...taobaoProducts.filter(x=>basket[x.id]).map(x=>({id:x.id,date,count:basket[x.id]})),...h]);setBasket({});setChosen(null);setTab("订单");};
   return <div className="catalog-skin taobao-ui" style={{background:"#f6f6f6",color:"#262626"}}>
