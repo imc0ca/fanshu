@@ -285,7 +285,7 @@ export function PhotosSkin(p: Props) {
   const baseFlow = [...originalShoot, ...remainingRegular.slice(0, insertAt), ...previousExtras.slice(0, 9), ...remainingRegular.slice(insertAt), ...previousExtras.slice(9)];
   // Scatter the eleven standalone photos through the library, including between Charlie photos.
   const flowingItems = [...baseFlow];
-  for (const [photo, target] of newGalleryPhotos.map((item, index) => ({ photo: item, target: [6, 15, 24, 35, 43, 52, 61, 72, 83, 94, 105][index] }))) {
+  for (const { photo, target } of newGalleryPhotos.map((item, index) => ({ photo: item, target: [6, 15, 24, 35, 43, 52, 61, 72, 83, 94, 105][index] }))) {
     flowingItems.splice(Math.min(target, flowingItems.length), 0, photo);
   }
   const [album, setAlbum] = useState("");
