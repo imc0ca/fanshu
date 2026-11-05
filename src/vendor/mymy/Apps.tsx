@@ -116,6 +116,17 @@ function kktDateLabel(value: string) {
   if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return value;
   return new Intl.DateTimeFormat("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(date);
 }
+const kktContacts = [
+  { title: "妈", nickname: "찰리 댕댕이맘", avatar: "mom.jpg" },
+  { title: "正平哥", nickname: "siioiiei", avatar: "zhengping.jpg" },
+  { title: "Osaki Shotaro", nickname: "Shoちゃん", avatar: "shotaro.jpg" },
+  { title: "时宇哥", nickname: "Siwoo", avatar: "siwoo.jpg" },
+];
+function kktContact(title: string) { return kktContacts.find((c) => c.title === title); }
+function kktAvatar(title: string, fallback?: string) {
+  const c = kktContact(title);
+  return c ? `${import.meta.env.BASE_URL}kkt-avatars/${c.avatar}` : fallback;
+}
 export function MymyKakao(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "聊天"),
     [sent, setSent] = useSkinState<string[]>(p, "mymyKktSent", []),
@@ -190,9 +201,9 @@ export function MymyKakao(p: SkinProps) {
                   {!m.outgoing && run.first && (
                     <>
                       <div className="kzmav">
-                        <Avatar name={m.sender} src={m.avatar} />
+                        <Avatar name={m.sender} src={kktAvatar(p.thread, m.avatar)} />
                       </div>
-                      <div className="kzmn">{m.meta?.displaySender || m.sender}</div>
+                      <div className="kzmn">{kktContact(p.thread)?.nickname || m.meta?.displaySender || m.sender}</div>
                     </>
                   )}
                   {m.outgoing && run.last && (
@@ -233,7 +244,7 @@ export function MymyKakao(p: SkinProps) {
                 </div>
               );
             })}
-            {!messages.length && <Blank />}
+            {!messages.length && <div className="kkt-empty-thread" aria-label="暂无聊天记录" />}
           </div>
           <form
             className="kzinp"
@@ -337,26 +348,26 @@ export function MymyKakao(p: SkinProps) {
           </div>
           <div className="kzkb">
             <div className="kzksec">
-              {tab === "好友" ? "好友" : "全部聊天"} {list.length}
+              {tab === "好友" ? "好友" : "全部聊天"} {[...new Set([...list.map((g) => g.title), ...kktContacts.map((c) => c.title)])].length}
             </div>
-            {list
+            {[...list, ...kktContacts.filter((contact) => !list.some((g) => g.title === contact.title)).map((contact) => ({ title: contact.title, items: [] as typeof p.items }))]
               .filter((g) => g.title.includes(query.trim()))
               .map((g) => {
-                const last = g.items.at(-1)!;
+                const last = g.items.at(-1);
                 return (
                   <button
                     className="kzkr kzkcr"
                     key={g.title}
                     onClick={() => p.onThread(g.title)}
                   >
-                    <Avatar name={g.title} src={g.items.find((m) => !m.outgoing)?.avatar || last.avatar} />
+                    <Avatar name={g.title} src={kktAvatar(g.title, g.items.find((m) => !m.outgoing)?.avatar || last?.avatar)} />
                     <span className="kzkn">
                       <b>{g.title}</b>
-                      <small>{tab === "好友" ? last.sender : last.body}</small>
+                      <small>{tab === "好友" ? (kktContact(g.title)?.nickname || last?.sender || "") : (last?.body || "")}</small>
                     </span>
                     <span className="kzkmt">
-                      {last.time.slice(-5)}
-                      {last.meta.unread && (
+                      {last?.time.slice(-5) || ""}
+                      {last?.meta.unread && (
                         <i className="kzkbd">{last.meta.unread}</i>
                       )}
                     </span>
