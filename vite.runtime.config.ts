@@ -20,6 +20,9 @@ export default defineConfig(({ command }) => ({
       },
       workbox: {
         clientsClaim: true,
+        skipWaiting: true,
+        cleanupOutdatedCaches: true,
+        runtimeCaching: [{ urlPattern: ({ request }) => request.mode === "navigate", handler: "NetworkFirst", options: { cacheName: "pages-navigation", networkTimeoutSeconds: 3 } }],
         globPatterns: ["**/*.{js,css,html,svg,json,txt,png,jpg}"],
         globIgnores: ["**/work.json"],
         maximumFileSizeToCacheInBytes: 8000000,
