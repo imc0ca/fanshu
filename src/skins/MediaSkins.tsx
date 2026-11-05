@@ -319,7 +319,7 @@ export function YouTubeSkin(_p: Props) {
       </div>
       <div style={{overflowY:"auto",flex:1}}>
         {items.map(v=>{const index=youtubeDemo.indexOf(v);return <article key={index} style={{marginBottom:18}}>
-          <button onClick={()=>openVideo(index)} style={{display:"block",width:"100%",padding:0}}>{thumb(v,index)}</button>
+          <button onClick={()=>openVideo(index)} style={{display:"block",width:"100%",padding:0}}>{thumb(v)}</button>
           <div style={{display:"flex",gap:10,padding:"11px 12px 0",alignItems:"flex-start"}}>
             <div style={{height:35,width:35,borderRadius:"50%",background:v.color,flexShrink:0,display:"grid",placeItems:"center",color:"#fff",fontWeight:700}}>{v.channel.slice(0,1)}</div>
             <button onClick={()=>openVideo(index)} style={{flex:1,textAlign:"left",padding:0}}>
@@ -335,7 +335,7 @@ export function YouTubeSkin(_p: Props) {
         {["首页","Shorts","订阅","我的"].map((x,i)=><button key={x} onClick={()=>setTab(x)} style={{display:"grid",justifyItems:"center",gap:3,color:tab===x?"#111":"#777",fontSize:10}}>{i===0?<Home size={21}/>:i===1?<Video size={21}/>:i===2?<Users size={21}/>:<User size={21}/>}<span>{x}</span></button>)}
       </div>
     </> : current&&<div style={{overflowY:"auto",flex:1}}>
-      {thumb(current,selected)}
+      {thumb(current)}
       <div style={{padding:"14px 14px 9px"}}>
         <strong style={{fontSize:18,lineHeight:1.4}}>{current.title}</strong>
         <div style={{fontSize:12,color:"#777",marginTop:5}}>{current.views} · {current.age}</div>
@@ -351,7 +351,7 @@ export function YouTubeSkin(_p: Props) {
         </div>
         {comments&&<div style={{padding:"18px 0",fontSize:13,color:"#777"}}>评论区 · 暂无评论</div>}
         <div style={{fontWeight:700,marginTop:25,marginBottom:12}}>接下来播放</div>
-        {youtubeDemo.map((v,i)=>i===selected?null:<button key={i} onClick={()=>openVideo(i)} style={{display:"flex",gap:10,marginBottom:13,textAlign:"left",width:"100%"}}><div style={{width:"42%",flexShrink:0}}>{thumb(v,i)}</div><div style={{fontSize:12,fontWeight:600}}>{v.title}<div style={{color:"#888",fontSize:10,marginTop:6}}>{v.channel}</div></div></button>)}
+        {youtubeDemo.map((v,i)=>i===selected?null:<button key={i} onClick={()=>openVideo(i)} style={{display:"flex",gap:10,marginBottom:13,textAlign:"left",width:"100%"}}><div style={{width:"42%",flexShrink:0}}>{thumb(v)}</div><div style={{fontSize:12,fontWeight:600}}>{v.title}<div style={{color:"#888",fontSize:10,marginTop:6}}>{v.channel}</div></div></button>)}
       </div>
     </div>}
   </div>;
