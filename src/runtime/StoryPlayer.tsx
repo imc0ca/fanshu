@@ -122,6 +122,13 @@ function VideoCallExperience() {
 
 function May18VideoCall() {
   const [visible, setVisible] = useState(false);
+  const [elapsed, setElapsed] = useState(0);
+  useEffect(() => {
+    if (!visible) return;
+    setElapsed(0);
+    const ticker = setInterval(() => setElapsed((seconds) => seconds + 1), 1000);
+    return () => clearInterval(ticker);
+  }, [visible]);
   const fired = React.useRef(false);
   useEffect(() => {
     let delay: ReturnType<typeof setTimeout> | undefined;
@@ -165,7 +172,7 @@ function May18VideoCall() {
         <div className="story-video-photo-stage">
           <img className="story-video-main is-active" src="./video-call-20240518/main.png" alt="咚灿视频画面" />
         </div>
-        <div className="story-video-header"><strong>宋小鱼</strong><span>0:00</span></div>
+        <div className="story-video-header"><strong>宋小鱼</strong><span>0:{String(elapsed).padStart(2, "0")}</span></div>
         <div className="story-video-self-wrap">
           <img className="story-video-self" src="./video-call-20240518/self.png" alt="宋小鱼的视频小窗" />
         </div>
