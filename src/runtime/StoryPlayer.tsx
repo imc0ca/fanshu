@@ -134,7 +134,7 @@ function May18VideoCall() {
           if (!delay) delay = setTimeout(() => {
             fired.current = true;
             setVisible(true);
-            finish = setTimeout(() => setVisible(false), 2000);
+            finish = setTimeout(() => setVisible(false), 4000);
           }, 2000);
         } else if (delay) { clearTimeout(delay); delay = undefined; }
       }
