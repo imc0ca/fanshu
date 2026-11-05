@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 59,
+  "revision": 60,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -47387,6 +47387,685 @@
           "contact": "驾校教练",
           "displaySender": "송아지",
           "dateLabel": "Sunday, May 26, 2024"
+        }
+      },
+      {
+        "id": "kkt-broadcast-2022-03-09-01",
+        "title": "广播站 (39)",
+        "sender": "朴智友(副社长)",
+        "body": "大家这周的值班表已经发到共享文件夹了",
+        "time": "2022-03-09 12:16",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-09",
+          "dateLabel": "Wednesday, 2022-03-09",
+          "contact": "广播站 (39)",
+          "displaySender": "朴智友(副社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-park-jiyu.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-09-02",
+        "title": "广播站 (39)",
+        "sender": "朴智友(副社长)",
+        "body": "有时间冲突的话今天之内告诉我",
+        "time": "2022-03-09 12:16",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-09",
+          "dateLabel": "Wednesday, 2022-03-09",
+          "contact": "广播站 (39)",
+          "displaySender": "朴智友(副社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-park-jiyu.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-09-03",
+        "title": "广播站 (39)",
+        "sender": "崔珉载",
+        "body": "周四下午能和我换一下吗",
+        "time": "2022-03-09 12:19",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-09",
+          "dateLabel": "Wednesday, 2022-03-09",
+          "contact": "广播站 (39)",
+          "displaySender": "崔珉载",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-choi-minjae.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-09-04",
+        "title": "广播站 (39)",
+        "sender": "郑夏恩",
+        "body": "我周四可以！",
+        "time": "2022-03-09 12:20",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-09",
+          "dateLabel": "Wednesday, 2022-03-09",
+          "contact": "广播站 (39)",
+          "displaySender": "郑夏恩",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-jung-haeun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-09-05",
+        "title": "广播站 (39)",
+        "sender": "崔珉载",
+        "body": "谢谢ㅠㅠ",
+        "time": "2022-03-09 12:20",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-09",
+          "dateLabel": "Wednesday, 2022-03-09",
+          "contact": "广播站 (39)",
+          "displaySender": "崔珉载",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-choi-minjae.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-09-06",
+        "title": "广播站 (39)",
+        "sender": "金道贤(社长)",
+        "body": "换完记得在表格里改一下",
+        "time": "2022-03-09 12:22",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-09",
+          "dateLabel": "Wednesday, 2022-03-09",
+          "contact": "广播站 (39)",
+          "displaySender": "金道贤(社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-kim-dohyun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-09-07",
+        "title": "广播站 (39)",
+        "sender": "崔珉载",
+        "body": "嗯嗯",
+        "time": "2022-03-09 12:23",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-09",
+          "dateLabel": "Wednesday, 2022-03-09",
+          "contact": "广播站 (39)",
+          "displaySender": "崔珉载",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-choi-minjae.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-14-01",
+        "title": "广播站 (39)",
+        "sender": "金道贤(社长)",
+        "body": "明天广播室轮到谁",
+        "time": "2022-03-14 18:42",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-14",
+          "dateLabel": "Monday, 2022-03-14",
+          "contact": "广播站 (39)",
+          "displaySender": "金道贤(社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-kim-dohyun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-14-02",
+        "title": "广播站 (39)",
+        "sender": "李书妍",
+        "body": "银硕",
+        "time": "2022-03-14 18:43",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-14",
+          "dateLabel": "Monday, 2022-03-14",
+          "contact": "广播站 (39)",
+          "displaySender": "李书妍",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-lee-seoyeon.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-14-03",
+        "title": "广播站 (39)",
+        "sender": "송아지",
+        "body": "是我",
+        "time": "2022-03-14 18:43",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2022-03-14",
+          "dateLabel": "Monday, 2022-03-14",
+          "contact": "广播站 (39)",
+          "displaySender": "송아지",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        }
+      },
+      {
+        "id": "kkt-broadcast-2022-03-14-04",
+        "title": "广播站 (39)",
+        "sender": "金道贤",
+        "body": "开场的时候提一下社团招新",
+        "time": "2022-03-14 18:44",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-14",
+          "dateLabel": "Monday, 2022-03-14",
+          "contact": "广播站 (39)",
+          "displaySender": "金道贤",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-kim-dohyun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-14-05",
+        "title": "广播站 (39)",
+        "sender": "송아지",
+        "body": "好",
+        "time": "2022-03-14 18:45",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2022-03-14",
+          "dateLabel": "Monday, 2022-03-14",
+          "contact": "广播站 (39)",
+          "displaySender": "송아지",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        }
+      },
+      {
+        "id": "kkt-broadcast-2022-03-17-01",
+        "title": "广播站 (39)",
+        "sender": "李书妍",
+        "body": "广播室的第二个麦克风是不是坏了",
+        "time": "2022-03-17 16:08",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-17",
+          "dateLabel": "Thursday, 2022-03-17",
+          "contact": "广播站 (39)",
+          "displaySender": "李书妍",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-lee-seoyeon.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-17-02",
+        "title": "广播站 (39)",
+        "sender": "李书妍",
+        "body": "刚刚一直有杂音",
+        "time": "2022-03-17 16:08",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-17",
+          "dateLabel": "Thursday, 2022-03-17",
+          "contact": "广播站 (39)",
+          "displaySender": "李书妍",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-lee-seoyeon.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-17-03",
+        "title": "广播站 (39)",
+        "sender": "崔珉载",
+        "body": "昨天还好好的啊",
+        "time": "2022-03-17 16:09",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-17",
+          "dateLabel": "Thursday, 2022-03-17",
+          "contact": "广播站 (39)",
+          "displaySender": "崔珉载",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-choi-minjae.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-17-04",
+        "title": "广播站 (39)",
+        "sender": "朴智友(副社长)",
+        "body": "是不是线没插好",
+        "time": "2022-03-17 16:10",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-17",
+          "dateLabel": "Thursday, 2022-03-17",
+          "contact": "广播站 (39)",
+          "displaySender": "朴智友(副社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-park-jiyu.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-17-05",
+        "title": "广播站 (39)",
+        "sender": "李书妍",
+        "body": "拔了重新插还是这样",
+        "time": "2022-03-17 16:11",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-17",
+          "dateLabel": "Thursday, 2022-03-17",
+          "contact": "广播站 (39)",
+          "displaySender": "李书妍",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-lee-seoyeon.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-03-17-06",
+        "title": "广播站 (39)",
+        "sender": "金道贤(社长)",
+        "body": "先用第一个吧，我明天去看看",
+        "time": "2022-03-17 16:13",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-03-17",
+          "dateLabel": "Thursday, 2022-03-17",
+          "contact": "广播站 (39)",
+          "displaySender": "金道贤(社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-kim-dohyun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-01",
+        "title": "广播站 (39)",
+        "sender": "朴智友(副社长)",
+        "body": "下周广播的选曲有人整理了吗",
+        "time": "2022-04-05 20:31",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "朴智友(副社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-park-jiyu.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-02",
+        "title": "广播站 (39)",
+        "sender": "韩有真",
+        "body": "我整理了一部分！",
+        "time": "2022-04-05 20:32",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "韩有真",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-han-yujin.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-03",
+        "title": "广播站 (39)",
+        "sender": "韩有真",
+        "body": "但是感觉都太安静了ㅋㅋㅋ",
+        "time": "2022-04-05 20:32",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "韩有真",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-han-yujin.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-04",
+        "title": "广播站 (39)",
+        "sender": "崔珉载",
+        "body": "期中考试快到了，安静一点不是挺好的吗",
+        "time": "2022-04-05 20:33",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "崔珉载",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-choi-minjae.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-05",
+        "title": "广播站 (39)",
+        "sender": "李书妍",
+        "body": "上次有人说听广播听睡着了",
+        "time": "2022-04-05 20:34",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "李书妍",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-lee-seoyeon.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-06",
+        "title": "广播站 (39)",
+        "sender": "郑夏恩",
+        "body": "ㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "time": "2022-04-05 20:34",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "郑夏恩",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-jung-haeun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-07",
+        "title": "广播站 (39)",
+        "sender": "송아지",
+        "body": "可以加两首节奏快一点的",
+        "time": "2022-04-05 20:36",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "송아지",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        }
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-08",
+        "title": "广播站 (39)",
+        "sender": "韩有真",
+        "body": "银硕哥推荐一下！",
+        "time": "2022-04-05 20:36",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "韩有真",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-han-yujin.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-09",
+        "title": "广播站 (39)",
+        "sender": "송아지",
+        "body": "I Feel It Coming应该可以",
+        "time": "2022-04-05 20:37",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "송아지",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        }
+      },
+      {
+        "id": "kkt-broadcast-2022-04-05-10",
+        "title": "广播站 (39)",
+        "sender": "韩有真",
+        "body": "我来加上",
+        "time": "2022-04-05 20:38",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-04-05",
+          "dateLabel": "Tuesday, 2022-04-05",
+          "contact": "广播站 (39)",
+          "displaySender": "韩有真",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-han-yujin.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-01",
+        "title": "广播站 (39)",
+        "sender": "金道贤(社长)",
+        "body": "大家辛苦了",
+        "time": "2022-05-11 19:24",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "金道贤(社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-kim-dohyun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-02",
+        "title": "广播站 (39)",
+        "sender": "金道贤(社长)",
+        "body": "这学期最后一次社团会议定在下周三下午五点",
+        "time": "2022-05-11 19:24",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "金道贤(社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-kim-dohyun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-03",
+        "title": "广播站 (39)",
+        "sender": "金道贤(社长)",
+        "body": "会简单讨论一下下学期的节目安排",
+        "time": "2022-05-11 19:25",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "金道贤(社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-kim-dohyun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-04",
+        "title": "广播站 (39)",
+        "sender": "郑夏恩",
+        "body": "社长会有聚餐吗",
+        "time": "2022-05-11 19:26",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "郑夏恩",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-jung-haeun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-05",
+        "title": "广播站 (39)",
+        "sender": "崔珉载",
+        "body": "重点来了ㅋㅋㅋㅋ",
+        "time": "2022-05-11 19:26",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "崔珉载",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-choi-minjae.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-06",
+        "title": "广播站 (39)",
+        "sender": "金道贤(社长)",
+        "body": "会议结束以后可以一起吃饭",
+        "time": "2022-05-11 19:27",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "金道贤(社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-kim-dohyun.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-07",
+        "title": "广播站 (39)",
+        "sender": "韩有真",
+        "body": "好耶",
+        "time": "2022-05-11 19:27",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "韩有真",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-han-yujin.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-08",
+        "title": "广播站 (39)",
+        "sender": "朴智友(副社长)",
+        "body": "不能只来吃饭啊各位",
+        "time": "2022-05-11 19:28",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "朴智友(副社长)",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-park-jiyu.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-09",
+        "title": "广播站 (39)",
+        "sender": "李书妍",
+        "body": "ㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "time": "2022-05-11 19:28",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "李书妍",
+          "groupChat": "true",
+          "groupMemberCount": "39"
+        },
+        "avatar": "/fanshu/kkt-avatars/broadcast-lee-seoyeon.jpg"
+      },
+      {
+        "id": "kkt-broadcast-2022-05-11-10",
+        "title": "广播站 (39)",
+        "sender": "송아지",
+        "body": "收到",
+        "time": "2022-05-11 19:29",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2022-05-11",
+          "dateLabel": "Wednesday, 2022-05-11",
+          "contact": "广播站 (39)",
+          "displaySender": "송아지",
+          "groupChat": "true",
+          "groupMemberCount": "39"
         }
       }
     ]
