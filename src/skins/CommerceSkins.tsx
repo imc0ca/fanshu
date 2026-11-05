@@ -3,7 +3,6 @@ import {
   Receipt,
   ShoppingBag,
   Ticket,
-  Truck,
   Utensils,
   Wallet,
 } from "lucide-react";
@@ -11,7 +10,6 @@ import { useEffect, useRef, useState } from "react";
 import {
   Empty,
   Header,
-  Media,
   meta,
   SearchBox,
   Tabs,
