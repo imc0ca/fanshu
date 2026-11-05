@@ -198,7 +198,7 @@ function StoryPlayer() {
         const w = validateWork(x);
         // Correct the original X post metadata without altering other posts.
         for (const post of w.data.twitter ?? []) {
-          if (post.id === "x-mar19-2024-1") post.meta.commentCount = "492";
+          if (post.id === "x-mar19-2024-1") { post.meta.commentCount = "492"; post.meta.postImages = "x-posts/x-mar19-2024-19.png|x-posts/x-mar19-2024-21.png|x-posts/x-mar19-2024-22.png"; }
           if (post.id === "x-mar15-2024-05") post.meta.postImages = "x-posts/x-mar15-2024-03.png|x-posts/x-mar15-2024-04.png|x-posts/x-mar15-2024-05.png";
           if (post.id === "x-mar15-2024-07") post.meta.postImages = "x-posts/x-mar15-2024-10.png|x-posts/x-mar15-2024-11.png";
         }
