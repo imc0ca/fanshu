@@ -243,12 +243,22 @@ export function PhotosSkin(p: Props) {
     hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: false,
     outgoing: false, read: true, likes: 0, comments: [],
   }));
+  const newDadabendanItems: Item[] = Array.from({ length: 10 }, (_, index) => ({
+    id: `dadabendan-new-2026-${index + 1}`,
+    title: `大大笨蛋 新增 ${index + 1}`,
+    body: "", richText: "", meta: { album: "大大笨蛋" },
+    time: "", sender: "相册", avatar: "", kind: "image",
+    media: `/fanshu/dadabendan-new-2026-${String(index + 1).padStart(2, "0")}.jpeg`,
+    hidden: false, unlock: "", password: "", folder: "大大笨蛋",
+    favorite: false, outgoing: false, read: true, likes: 0, comments: [],
+  }));
   const items = [
     ...originalItems,
     ...standaloneGalleryItems.filter((i) => (i.title + i.body).toLowerCase().includes(q.toLowerCase())),
     ...galleryItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
     ...originalDadabendanItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
     ...dadabendanItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
+    ...newDadabendanItems.filter((i) => (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase())),
     ...charlieItems.filter((i) =>
       (i.title + i.body + i.folder).toLowerCase().includes(q.toLowerCase()),
     ),
