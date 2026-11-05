@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 58,
+  "revision": 59,
   "phone": {
     "owner": "Eunseok",
     "date": "2026-04-16",
@@ -47001,6 +47001,392 @@
         "meta": {
           "chatDate": "2025-10-15",
           "contact": "咚灿"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-21-01",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "教练您好，科目一我通过了，请问您最近什么时间有空？",
+        "time": "2024-05-21 11:38",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-21",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-21"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-21-02",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "明天可以开始场内练习",
+        "time": "2024-05-21 11:41",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-21",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-21"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-21-03",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "好的谢谢教练",
+        "time": "2024-05-21 11:42",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-21",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-21"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-21-04",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "上午7点，直接到驾校门口就可以",
+        "time": "2024-05-21 11:43",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-21",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-21"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-21-05",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "好",
+        "time": "2024-05-21 11:44",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-21",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-21"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-22-06",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "到了告诉我",
+        "time": "2024-05-22 09:32",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-22",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-22"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-22-07",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "好的教练",
+        "time": "2024-05-22 09:34",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-22",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-22"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-22-08",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "我已经在路上了",
+        "time": "2024-05-22 09:34",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-22",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-22"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-22-09",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "练得差不多就先回家吧",
+        "time": "2024-05-22 12:16",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-22",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-22"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-22-10",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "明天考的时候别忘记点位就可以",
+        "time": "2024-05-22 12:17",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-22",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-22"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-22-11",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "好的谢谢教练",
+        "time": "2024-05-22 12:18",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-22",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-22"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-23-12",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "老师科目二通过了",
+        "time": "2024-05-23 13:06",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-23",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-23"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-23-13",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "好，明天来练科目三",
+        "time": "2024-05-23 13:09",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-23",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-23"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-23-14",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "ok",
+        "time": "2024-05-23 13:10",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-23",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-23"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-23-15",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "记得预约科目三考试",
+        "time": "2024-05-23 13:11",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-23",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-23"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-23-16",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "好的教练",
+        "time": "2024-05-23 13:12",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-23",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-23"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-23-17",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "我约了26考",
+        "time": "2024-05-23 13:12",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-23",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-23"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-23-18",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "好，来得及",
+        "time": "2024-05-23 13:13",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-23",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-23"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-26-19",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "教练我拿到驾照了",
+        "time": "2024-05-26 09:19",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-26",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-26"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-26-20",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "谢谢您",
+        "time": "2024-05-26 09:19",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-26",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-26"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-26-21",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "才看到消息",
+        "time": "2024-05-26 10:42",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-26",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-26"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-26-22",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "恭喜你",
+        "time": "2024-05-26 12:43",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-26",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-26"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-26-23",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "谢谢",
+        "time": "2024-05-26 12:44",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-26",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-26"
+        }
+      },
+      {
+        "id": "kkt-henry-2024-05-26-24",
+        "title": "驾校教练",
+        "sender": "Henry",
+        "body": "上路小心点",
+        "time": "2024-05-26 12:45",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "chatDate": "2024-05-26",
+          "contact": "驾校教练",
+          "displaySender": "Henry",
+          "dateLabel": "2024-05-26"
+        },
+        "avatar": "/fanshu/kkt-avatars/henry.png"
+      },
+      {
+        "id": "kkt-henry-2024-05-26-25",
+        "title": "驾校教练",
+        "sender": "송아지",
+        "body": "会的",
+        "time": "2024-05-26 12:46",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "chatDate": "2024-05-26",
+          "contact": "驾校教练",
+          "displaySender": "송아지",
+          "dateLabel": "2024-05-26"
         }
       }
     ]
