@@ -1,9 +1,7 @@
 import {
   Home,
-  MapPin,
   Receipt,
   ShoppingBag,
-  Star,
   Ticket,
   Truck,
   Utensils,
