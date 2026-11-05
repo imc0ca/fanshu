@@ -236,7 +236,7 @@ export function DeliverySkin(p: Props) {
   const money=(n:number)=>"₩"+n.toLocaleString("ko-KR");
   const image=(x:typeof seoulShops[number],large=false)=>(
     <div style={{width:"100%",minWidth:0,flex:"none",height:large?194:166,background:x.color,position:"relative",display:"grid",placeItems:"center",overflow:"hidden",borderRadius:large?15:12}}>
-      <img src={`/fanshu/delivery-food/${x.id}.jpg`} alt={x.ko} style={{width:"100%",height:"100%",objectFit:"cover",position:"absolute",inset:0}} onError={e=>{e.currentTarget.style.display="none";}} />
+      <img src={`/fanshu/delivery-food/${x.id}.jpg`} alt={x.ko} style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:x.id==="berry"?"center top":"center",position:"absolute",inset:0}} onError={e=>{e.currentTarget.style.display="none";}} />
       <span style={{fontSize:large?80:66}}>{x.emoji}</span>
       {!large&&<span style={{position:"absolute",top:10,left:10,background:"#ffffffea",borderRadius:5,padding:"4px 8px",fontSize:10,fontWeight:800,color:"#158B7C"}}>BEST</span>}
     </div>
