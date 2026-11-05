@@ -476,7 +476,7 @@ export function NotesSkin(p: Props) {
     likes: 0,
     comments: [],
   };
-  const additionalNotes = [{"date":"2026-02-17","title":"To do list","body":"还炤熙充电器\n\n买洗衣液\n\n给爸妈回电话\n\n预约剪头发\n\n石话石说下一期选题\n\n扔垃圾"},{"date":"2025-02-25","title":"工作清单","body":"- 更新 Campaign Timeline\n\n- 整理上周ig数据\n\n- 联系印刷供应商\n\n- 确认周五会议室\n\n- 修改 PPT 第8页\n\n- 把报销单交给财务"},{"date":"2025-03-13","title":"会议记录","body":"14:30 Weekly Marketing Meeting\n\n- Q4 Campaign 重点放在品牌认知\n\n- Instagram Reels 要增加\n\n- 参考上季度表现好的内容\n\n- 下周提交初版企划"}].map((note, index): Item => ({
+  const additionalNotes = [{"date":"2026-02-17","title":"To do list","body":"还炤熙充电器\n\n买洗衣液\n\n给爸妈回电话\n\n预约剪头发\n\n石话石说下一期选题\n\n扔垃圾"},{"date":"2025-02-25","title":"工作清单","body":"- 更新 Campaign Timeline\n\n- 整理上周ig数据\n\n- 联系印刷供应商\n\n- 确认周五会议室\n\n- 修改 PPT 第8页\n\n- 把报销单交给财务"},{"date":"2025-03-13","title":"会议记录","body":"14:30 Weekly Marketing Meeting\n\n- Q4 Campaign 重点放在品牌认知\n\n- Instagram Reels 要增加\n\n- 参考上季度表现好的内容\n\n- 下周提交初版企划"},{"date":"2026-03-12","title":"石话石说素材","body":"为什么小时候觉得二十五岁已经很大了\n\n不联系的人还算朋友吗\n\n有没有什么东西是长大以后才开始喜欢的\n\n人为什么总在洗澡的时候想起丢脸的事\n\n如果可以回到某一天，会想回到哪天\n\n两个人一起沉默的时候一定要说话吗\n\n郑成灿说最后一个可以聊三个小时"},{"date":"2026-01-11","title":"最讨厌的五件事","body":"1. 打游戏碰到猪队友\n\n2. 手机只剩1%的电\n\n3. 下班电梯在每一层停下\n\n4. 别人说有件事要说然后消失\n\n5. 郑成灿说五分钟就到\n\n第五条应该排第一"},{"date":"2026-02-21","title":"随便","body":"郑成灿不吃蘑菇\n\n睡觉之前一定要给手机插电\n\n饿了就挂脸\n\n左边肩膀容易酸\n\n借走的灰色卫衣还没还\n\n算了，不用还"}].map((note, index): Item => ({
     id: "custom-note-" + note.date + "-" + index,
     title: note.title,
     body: note.body,
