@@ -510,8 +510,8 @@ export function NotesSkin(p: Props) {
         <button onClick={() => setOpenedNote(null)} aria-label="返回备忘录"><ChevronLeft size={22}/></button>
         <strong>备忘录</strong><div/>
       </header>
-      <div className="catalog-scroll" style={{padding:"22px 20px",overflowY:"auto"}}>
-        <h1 style={{fontSize:26,marginBottom:8}}>{openedNote.title}</h1>
+      <div className="catalog-scroll" style={{padding:"22px 0",overflowY:"auto"}}>
+        <h1 style={{fontSize:26,margin:"0 0 8px",padding:0,textAlign:"left",textIndent:0}}>{openedNote.title.trim()}</h1>
         <small style={{color:"#888"}}>{openedNote.time.slice(0,10)}</small>
         <div style={{whiteSpace:"pre-wrap",fontSize:18,lineHeight:1.85,marginTop:22,overflowWrap:"anywhere"}}>{openedNote.body}</div>
       </div>
