@@ -248,7 +248,7 @@ export function DeliverySkin(p: Props) {
       <Header p={p}/>
       <div ref={deliveryScrollRef} className="catalog-scroll" style={{padding:"13px 14px 95px",background:"#F7F8F7"}}>
         <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:13}}>
-          <div><small style={{color:"#72837E",fontSize:11}}>配送地址 ▾</small><div style={{fontSize:15,fontWeight:800}}>选择配送地址</div></div>
+          <div><small style={{color:"#72837E",fontSize:11}}>配送地址 ▾</small><div style={{fontSize:13,fontWeight:800,overflowWrap:"anywhere"}}>서울특별시 강남구 논현동 123-45</div></div>
           <span style={{fontSize:22}}>🔔</span>
         </div>
         <div style={{background:"white",borderRadius:13,padding:"3px 10px",marginBottom:13}}><SearchBox value={q} set={setQ} placeholder="搜索蛋糕、面包、饺子"/></div>
