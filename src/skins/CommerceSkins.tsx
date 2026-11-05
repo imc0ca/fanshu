@@ -235,8 +235,8 @@ const taobaoProducts = [
 ];
 type CartSeed = {id:string;shop:string;title:string;spec:string;price:number;original:number;qty:number;tags:string[];image?:string;badge?:"天猫"|"淘宝"|"国际";notice?:string;extra?:string};
 const cartSeed:CartSeed[]=[
-{"id":"stussy-hoodie","image":"stussy-hoodie","shop":"STUSSY官方旗舰店","badge":"淘宝","title":"官方STUSSY经典LOGO连帽卫衣","spec":"BKX黑色;L","price":1299,"original":1299,"qty":1,"tags":[]},
-{"id":"lemaire-bag","image":"lemaire-bag","shop":"天猫国际全球探物","badge":"淘宝","title":"Lemaire Soft Game系列手提包单","spec":"均码;BR490","price":4975,"original":4975,"qty":1,"tags":[]},
+{"id":"stussy-hoodie","image":"stussy-hoodie","shop":"STUSSY官方旗舰店","badge":"天猫","title":"官方STUSSY经典LOGO连帽卫衣","spec":"BKX黑色;L","price":1299,"original":1299,"qty":1,"tags":[]},
+{"id":"lemaire-bag","image":"lemaire-bag","shop":"天猫国际全球探物","badge":"国际","title":"Lemaire Soft Game系列手提包单","spec":"均码;BR490","price":4975,"original":6776,"qty":1,"tags":[]},
 {"id":"mgd-hoodie","image":"mgd-hoodie","shop":"MGD官方旗舰店","badge":"淘宝","title":"韩国直邮mahagrid MGD","spec":"L;雾蓝色","price":299,"original":299,"qty":1,"tags":[]},
 {id:"gold-bowl",image:"gold-bowl",shop:"摩登主妇旗舰店",badge:"天猫",title:"摩登主妇韩式泡面碗304不锈钢",spec:"金色304不锈钢韩式泡面碗-17CM",price:18.72,original:22.8,qty:2,tags:["消费券","官方立减3.5元","限时折扣券","退货宝"],notice:"限时优惠9.7折，最高省10元，仅剩05:41",extra:"可享满150减18消费券"},
 {id:"bibigo-dumplings",shop:"韩膳宫 韩国进口食品超市",badge:"淘宝",title:"必品阁韩式王饺子bibigo",spec:"韩式泡菜490g*2袋",price:33.28,original:42.3,qty:1,tags:["官方立减6.4元","满68减3","淘金币抵0.42元"],image:"bibigo-dumplings"},
