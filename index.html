@@ -11,6 +11,28 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Older installed service workers can keep serving an outdated phone UI.
+      // Clear their cached assets once per release, then load the latest build.
+      (function () {
+        var version = "2026-11-05-notes-gallery-v2";
+        var key = "fanshu-release-cache-version";
+        if (!("serviceWorker" in navigator) || sessionStorage.getItem(key) === version) return;
+        sessionStorage.setItem(key, version);
+        navigator.serviceWorker.getRegistrations().then(function (registrations) {
+          return Promise.all(registrations.map(function (registration) { return registration.unregister(); }));
+        }).then(function () {
+          if (!("caches" in window)) return;
+          return caches.keys().then(function (keys) {
+            return Promise.all(keys.filter(function (name) {
+              return /workbox|precache|pages-navigation/i.test(name);
+            }).map(function (name) { return caches.delete(name); }));
+          });
+        }).then(function () {
+          if (navigator.serviceWorker.controller) location.reload();
+        }).catch(function () {});
+      })();
+    </script>
     <script type="module" src="/src/runtime/StoryPlayer.tsx"></script>
   </body>
 </html>
