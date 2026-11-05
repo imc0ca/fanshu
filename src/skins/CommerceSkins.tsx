@@ -264,8 +264,6 @@ export function TaobaoSkin(p: Props) {
   useEffect(()=>{if(scrollRef.current)scrollRef.current.scrollTop=0;},[chosen,tab]);
   const chosenProduct=taobaoProducts.find(x=>x.id===chosen);
   const shown=taobaoProducts.filter(x=>(x.name+" "+x.shop+" "+x.tags.join(" ")).toLowerCase().includes(q.trim().toLowerCase())&&(section==="猜你喜欢"||section==="全部"||x.tags.includes(section)));
-  const cartCount=Object.values(basket).reduce((a,b)=>a+b,0);
-  const total=taobaoProducts.reduce((a,x)=>a+x.price*(basket[x.id]||0),0);
   const orange="#ff5500";
   const productArt=(x:typeof taobaoProducts[number],height=160)=>(
     <div style={{height,width:"100%",overflow:"hidden",backgroundColor:x.color,display:"flex",alignItems:"center",justifyContent:"center"}}>
@@ -276,7 +274,6 @@ export function TaobaoSkin(p: Props) {
     </div>
   );
   const buy=(id:string)=>setBasket(c=>({...c,[id]:(c[id]||0)+1}));
-  const checkout=()=>{const date="2026-04-16";setHistory(h=>[...taobaoProducts.filter(x=>basket[x.id]).map(x=>({id:x.id,date,count:basket[x.id]})),...h]);setBasket({});setChosen(null);setTab("订单");};
   return <div className="catalog-skin taobao-ui" style={{background:"#f6f6f6",color:"#262626"}}>
     {tab!=="购物车"&&<Header p={p}/>}
     {tab!=="购物车"&&<div style={{background:"white",padding:"9px 10px 11px",borderBottom:"1px solid #f3f3f3"}}>
@@ -325,7 +322,7 @@ export function TaobaoSkin(p: Props) {
           <strong style={{fontSize:22,color:"#14203a"}}>购物车 <span style={{fontSize:15,fontWeight:500}}>(124)</span></strong>
           <button onClick={()=>setCartManage(x=>!x)} style={{border:0,background:"transparent",fontSize:15,color:"#14203a"}}>{cartManage?"完成":"管理"}</button>
         </div>
-        {cartSeed.map((x,i)=>{
+        {cartSeed.map((x)=>{
           const checked=!!cartSelected[x.id], qty=cartQty[x.id]||0;
           const check=()=>setCartSelected(v=>({...v,[x.id]:!v[x.id]}));
           const dot=(on:boolean,click:()=>void)=><button onClick={click} aria-label="选择商品" style={{width:21,height:21,borderRadius:"50%",border:on?"none":"2px solid #cbd0d8",background:on?"#ff6500":"white",color:"white",padding:0,flexShrink:0,fontSize:14}}>{on?"✓":""}</button>;
