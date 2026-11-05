@@ -107,7 +107,7 @@ function KktCallCard({ type, missed, status, duration }: { type: string; missed:
   );
 }
 function kktDateLabel(value: string) {
-  const match = /^(\\d{4})[-/.](\\d{1,2})[-/.](\\d{1,2})$/.exec(value.trim());
+  const match = /^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/.exec(value.trim());
   if (!match) return value;
   const year = Number(match[1]);
   const month = Number(match[2]);
