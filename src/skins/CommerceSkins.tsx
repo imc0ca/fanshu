@@ -325,7 +325,7 @@ export function TaobaoSkin(p: Props) {
           <strong style={{fontSize:22,color:"#14203a"}}>购物车 <span style={{fontSize:15,fontWeight:500}}>(124)</span></strong>
           <button onClick={()=>setCartManage(x=>!x)} style={{border:0,background:"transparent",fontSize:15,color:"#14203a"}}>{cartManage?"完成":"管理"}</button>
         </div>
-        {cartSeed.map((x)=>{
+        {cartSeed.filter(x=>!["stussy-hoodie","lemaire-bag","mgd-hoodie"].includes(x.id)).map((x)=>{
           const checked=!!cartSelected[x.id], qty=cartQty[x.id]||0;
           const check=()=>setCartSelected(v=>({...v,[x.id]:!v[x.id]}));
           const dot=(on:boolean,click:()=>void)=><button onClick={click} aria-label="选择商品" style={{width:21,height:21,borderRadius:"50%",border:on?"none":"2px solid #cbd0d8",background:on?"#ff6500":"white",color:"white",padding:0,flexShrink:0,fontSize:14}}>{on?"✓":""}</button>;
