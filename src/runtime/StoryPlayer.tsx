@@ -196,6 +196,12 @@ function StoryPlayer() {
       })
       .then(async (x) => {
         const w = validateWork(x);
+        // Correct the original X post metadata without altering other posts.
+        for (const post of w.data.twitter ?? []) {
+          if (post.id === "x-mar19-2024-1") post.meta.commentCount = "492";
+          if (post.id === "x-mar15-2024-05") post.meta.postImages = "x-posts/x-mar15-2024-03.png|x-posts/x-mar15-2024-04.png|x-posts/x-mar15-2024-05.png";
+          if (post.id === "x-mar15-2024-07") post.meta.postImages = "x-posts/x-mar15-2024-10.png|x-posts/x-mar15-2024-11.png";
+        }
         if (new URLSearchParams(location.search).get("template") !== "blank") {
           try {
             const response = await fetch("./mom-kkt.json", { signal: abort.signal });
