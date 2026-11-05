@@ -203,6 +203,19 @@ function StoryPlayer() {
       })
       .then(async (x) => {
         const w = validateWork(x);
+        // Attach the two May 11, 2023 confession reply photos to their exact replies.
+        for (const post of w.data.twitter ?? []) {
+          if (post.id !== "x-confessions-001") continue;
+          try {
+            const replies = JSON.parse(String(post.meta?.repliesData || "[]"));
+            if (!Array.isArray(replies)) continue;
+            for (const reply of replies) {
+              if (reply.id === "x-reply-005") { reply.image = "x-posts/x-20230511-reply-005.jpg"; reply.imagePending = false; }
+              if (reply.id === "x-reply-016") { reply.image = "x-posts/x-20230511-reply-016.jpg"; reply.imagePending = false; }
+            }
+            post.meta.repliesData = JSON.stringify(replies);
+          } catch (error) { console.warn("Could not parse X replies", error); }
+        }
         // Correct the original X post metadata without altering other posts.
         for (const post of w.data.twitter ?? []) {
           if (post.id === "x-mar19-2024-1") { post.meta.commentCount = "492"; post.meta.postImages = "x-posts/x-mar19-2024-19.png|x-posts/x-mar19-2024-21.png|x-posts/x-mar19-2024-22.png"; }
