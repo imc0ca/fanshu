@@ -233,6 +233,17 @@ function StoryPlayer() {
             }
           } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
         }
+        if (new URLSearchParams(location.search).get("template") !== "blank") {
+          try {
+            const response = await fetch("./osaki-kkt.json", { signal: abort.signal });
+            if (response.ok) {
+              const osaki = await response.json();
+              const current = w.data.kakao ?? [];
+              const ids = new Set(current.map((item) => item.id));
+              w.data.kakao = [...current, ...osaki.filter((item: { id: string }) => !ids.has(item.id))];
+            }
+          } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
+        }
         document.title =
           w.title === "捡手机" ? "捡手机" : w.title + " · 捡手机";
         setWork(w);
