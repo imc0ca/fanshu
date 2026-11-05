@@ -184,6 +184,20 @@ const seoulShops = [
   {id:"cloud",name:"Cloud Nine Bakery",ko:"牛奶吐司与费南雪",area:"望远洞",category:"面包",rating:"4.8",reviews:"478",minutes:"25–35",fee:"2,000",price:6500,emoji:"🍞",color:"#F5E6D5",desc:"牛奶吐司与费南雪"},
 ];
 const deliveryMenus: Record<string, [string,number,number,number][]> = {"berry":[["草莓鲜奶油整蛋糕",32000,4,1680],["草莓蛋糕切块",8500,1,420],["蓝莓奶油蛋糕",9500,1,460]],"butter":[["经典盐面包",4500,1,290],["黄油可颂",4800,1,330],["杏仁可颂",5900,1,410]],"matcha":[["抹茶奶油蛋糕",8900,1,430],["抹茶巴斯克",9800,1,480],["抹茶生巧塔",7900,1,390]],"mandu":[["猪肉蒸饺八只",8500,1,510],["泡菜饺八只",9000,1,480],["虾仁饺八只",10500,2,520]],"jokbal":[["招牌猪蹄小份",39000,2,1450],["招牌猪蹄中份",48000,3,1950],["蒜香猪蹄",44000,2,1680]],"soba":[["紫苏油荞麦面",12000,1,510],["冷荞麦面",11000,1,430],["辣拌荞麦面",12500,1,550]],"cream":[["香草奶油整蛋糕",29000,4,1550],["伯爵茶奶油蛋糕",8900,1,420],["巧克力奶油蛋糕",9200,1,490]],"flour":[["法棍面包",5500,2,640],["火腿黄油三明治",9500,1,580],["核桃乡村面包",7800,2,850]],"peach":[["桃子水果塔",11500,1,490],["桃子奶油蛋糕",9800,1,450],["迷你蜜桃整蛋糕",26000,3,1290]],"cloud":[["牛奶吐司",6500,3,1050],["原味费南雪",3200,1,220],["蜂蜜黄油司康",4500,1,360]]};
+type DeliveryOrder = {id:string;date:string;shop:string;product:string;quantity:number;price:number;emoji:string;note?:string};
+const deliveryHistory: DeliveryOrder[] = [
+  {id:"cake-1101",date:"2024-11-01",shop:"Maison Cream",product:"香草奶油整蛋糕",quantity:1,price:29000,emoji:"🎂",note:"根据聊天中的蛋糕照片编排"},
+  {id:"burger-3",date:"2024-10-25",shop:"LOTTERIA 乐天汉堡",product:"韩牛汉堡套餐",quantity:1,price:10900,emoji:"🍔"},
+  {id:"soba-3",date:"2024-09-18",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:2,price:24000,emoji:"🍜"},
+  {id:"mandu-2",date:"2024-08-12",shop:"首尔手工饺子",product:"猪肉蒸饺八只 · 泡菜饺八只",quantity:2,price:17500,emoji:"🥟"},
+  {id:"burger-2",date:"2024-07-21",shop:"LOTTERIA 乐天汉堡",product:"经典虾堡套餐",quantity:1,price:8500,emoji:"🍔"},
+  {id:"soba-2",date:"2024-06-05",shop:"新沙荞麦面",product:"冷荞麦面",quantity:2,price:22000,emoji:"🍜"},
+  {id:"mandu-1",date:"2024-05-18",shop:"首尔手工饺子",product:"虾仁饺八只 · 猪肉蒸饺八只",quantity:2,price:19000,emoji:"🥟"},
+  {id:"burger-1",date:"2024-04-14",shop:"LOTTERIA 乐天汉堡",product:"经典牛肉汉堡套餐",quantity:2,price:17800,emoji:"🍔"},
+  {id:"cake-0319",date:"2024-03-19",shop:"Berry Cloud Cake",product:"草莓鲜奶油整蛋糕",quantity:1,price:32000,emoji:"🎂",note:"生日当天有挑选、携带蛋糕的故事记录"},
+  {id:"cake-0317",date:"2024-03-17",shop:"Berry Cloud Cake",product:"草莓鲜奶油整蛋糕",quantity:1,price:32000,emoji:"🍰",note:"聊天中提到已订草莓蛋糕"},
+  {id:"soba-1",date:"2024-02-24",shop:"新沙荞麦面",product:"紫苏油荞麦面",quantity:1,price:12000,emoji:"🍜"}
+];
 export function DeliverySkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商家");
   const [category,setCategory]=useState("全部");
@@ -254,7 +268,25 @@ export function DeliverySkin(p: Props) {
             {filtered.length===0&&<div style={{textAlign:"center",padding:30,color:"#899"}}>没有找到相关店铺</div>}
           </>
         ) : (
-          <div><h2 style={{fontSize:20}}>订单记录</h2>{items.filter(i=>i.folder==="订单").map(i=><button key={i.id} onClick={()=>p.onItem(i)} className="delivery-order"><strong>{i.title}</strong><p>{i.body}</p><small>{i.time}</small></button>)}<Empty items={items.filter(i=>i.folder==="订单")}/></div>
+          <div>
+            <h2 style={{fontSize:21,margin:"5px 0 5px"}}>我的订单</h2>
+            <p style={{fontSize:12,color:"#83918B",margin:"0 0 16px"}}>历史订单 · 已送达</p>
+            {deliveryHistory.map(o=>(
+              <div key={o.id} style={{background:"white",borderRadius:15,padding:"14px 13px",marginBottom:12}}>
+                <div style={{display:"flex",justifyContent:"space-between",gap:8,alignItems:"center"}}>
+                  <strong style={{fontSize:15}}>{o.shop}</strong>
+                  <span style={{color:"#179C82",fontSize:12,fontWeight:700}}>已送达</span>
+                </div>
+                <div style={{fontSize:12,color:"#8C9994",marginTop:5}}>{o.date}</div>
+                <div style={{display:"flex",gap:12,alignItems:"center",margin:"13px 0",padding:"10px 0",borderTop:"1px solid #F0F2F0",borderBottom:"1px solid #F0F2F0"}}>
+                  <div style={{width:56,height:56,borderRadius:10,background:"#F4F5F0",display:"grid",placeItems:"center",fontSize:30,flexShrink:0}}>{o.emoji}</div>
+                  <div style={{flex:1,minWidth:0}}><strong style={{fontSize:13}}>{o.product}</strong><div style={{fontSize:12,color:"#88958F",marginTop:5}}>共 {o.quantity} 份</div></div>
+                </div>
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:13}}><span style={{color:"#8A9691"}}>实付款</span><strong>{money(o.price)}</strong></div>
+              </div>
+            ))}
+            {items.filter(i=>i.folder==="订单").map(i=><button key={i.id} onClick={()=>p.onItem(i)} className="delivery-order"><strong>{i.title}</strong><p>{i.body}</p><small>{i.time}</small></button>)}
+          </div>
         )}
       </div>
       {count>0&&<div style={{position:"absolute",bottom:67,left:16,right:16,background:"#1BAF9A",borderRadius:12,padding:"11px 14px",color:"white",fontSize:13,fontWeight:800,display:"flex",justifyContent:"space-between",zIndex:4}}><span>购物车 {count}件</span><span>{money(total)}</span></div>}
