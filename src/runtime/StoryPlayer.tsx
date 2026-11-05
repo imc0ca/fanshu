@@ -136,8 +136,19 @@ function StoryPlayer() {
         if (!r.ok) throw Error("缺少作品文件，请运行 npm run story:build");
         return r.json();
       })
-      .then((x) => {
+      .then(async (x) => {
         const w = validateWork(x);
+        if (new URLSearchParams(location.search).get("template") !== "blank") {
+          try {
+            const response = await fetch("./mom-kkt.json", { signal: abort.signal });
+            if (response.ok) {
+              const mom = await response.json();
+              const current = w.data.kakao ?? [];
+              const ids = new Set(current.map((item) => item.id));
+              w.data.kakao = [...current, ...mom.filter((item: { id: string }) => !ids.has(item.id))];
+            }
+          } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
+        }
         document.title =
           w.title === "捡手机" ? "捡手机" : w.title + " · 捡手机";
         setWork(w);
