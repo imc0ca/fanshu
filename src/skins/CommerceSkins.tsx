@@ -268,7 +268,7 @@ const completedDogFoodOrder:CartSeed = {
 };
 const completedMicrophoneOrder:CartSeed = {
   id:"maono-pm461",
-  image:"maono-pm461",
+  image:"maono-pm461-product",
   shop:"闪克旗舰店",
   badge:"天猫",
   title:"maono闪克麦克风录音配音",
