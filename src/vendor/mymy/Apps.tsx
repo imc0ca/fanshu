@@ -130,20 +130,21 @@ function kktAvatar(title: string, fallback?: string) {
   return c ? `${import.meta.env.BASE_URL}kkt-avatars/${c.avatar}` : fallback;
 }
 // Sort KakaoTalk conversations by the latest message, while pinning 咚灿 first.
-function kktMessageStamp(item: Item): string {
+function kktMessageStamp(item?: Item): string {
+  if (!item) return "";
   const raw = String(item.time || "");
-  const match = raw.match(/(\\d{4})[-/.](\\d{1,2})[-/.](\\d{1,2})(?:[ T]+(\\d{1,2}):(\\d{2}))?/);
+  const match = raw.match(/(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})(?:[ T]+(\d{1,2}):(\d{2}))?/);
   if (!match) return "";
   return [match[1], match[2].padStart(2, "0"), match[3].padStart(2, "0")].join("-")
     + " " + (match[4] || "00").padStart(2, "0") + ":" + (match[5] || "00");
 }
 function kktLatest(items: Item[]): Item | undefined {
   return items.reduce<Item | undefined>((latest, item) =>
-    !latest || kktMessageStamp(item) > kktMessageStamp(latest) ? item : latest, undefined);
+    !latest || kktMessageStamp(item) >= kktMessageStamp(latest) ? item : latest, undefined);
 }
 function kktListTime(item?: Item): string {
-  const stamp = item && kktMessageStamp(item);
-  return stamp ? stamp.slice(0, 10).replace(/-/g, ".") + " " + stamp.slice(11) : "";
+  const stamp = kktMessageStamp(item);
+  return stamp ? stamp.slice(0, 10).replace(/-/g, ".") : "";
 }
 export function MymyKakao(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "聊天"),
