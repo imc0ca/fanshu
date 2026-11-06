@@ -266,6 +266,20 @@ const completedDogFoodOrder:CartSeed = {
   tags:["直降72元","消费券","退货宝","15天价保"],
   extra:"秒杀价"
 };
+const completedMicrophoneOrder:CartSeed = {
+  id:"maono-pm461",
+  image:"maono-pm461",
+  shop:"闪克旗舰店",
+  badge:"天猫",
+  title:"maono闪克麦克风录音配音",
+  spec:"PM461桌面支架套装;官方标配",
+  price:165,
+  original:396,
+  qty:1,
+  tags:["百亿补贴198元","退货宝","7天无理由退换"],
+  notice:"15.00元店铺限时红包，仅剩05:23",
+  extra:"限时补贴后"
+};
 export function TaobaoSkin(p: Props) {
   const {tab,setTab,q,setQ,items}=useContent(p,"商品");
   const [status,setStatus]=useState("全部");
@@ -274,7 +288,7 @@ export function TaobaoSkin(p: Props) {
   const [cartQty,setCartQty]=useState<Record<string,number>>(()=>Object.fromEntries(cartSeed.map(x=>[x.id,x.qty])));
   const [cartSelected,setCartSelected]=useState<Record<string,boolean>>({});
   const [cartManage,setCartManage]=useState(false);
-  const [history,setHistory]=useState<{id:string;date:string;count:number}[]>(()=>["douchai-dog-food","stussy-hoodie","lemaire-bag","mgd-hoodie","bibigo-dumplings","swisse-sleep","stgivo","binggrae-protein"].map(id=>({id,date:"",count:1})));
+  const [history,setHistory]=useState<{id:string;date:string;count:number}[]>(()=>["maono-pm461","douchai-dog-food","stussy-hoodie","lemaire-bag","mgd-hoodie","bibigo-dumplings","swisse-sleep","stgivo","binggrae-protein"].map(id=>({id,date:"",count:1})));
   const [section,setSection]=useState("猜你喜欢");
   const scrollRef=useRef<HTMLDivElement>(null);
   useEffect(()=>{if(scrollRef.current)scrollRef.current.scrollTop=0;},[chosen,tab]);
@@ -371,7 +385,7 @@ export function TaobaoSkin(p: Props) {
       </> : <>
         <h3 style={{margin:"7px 0 13px"}}>我的订单</h3>
         <div style={{display:"flex",gap:7,overflowX:"auto",marginBottom:13}}>{["全部","待付款","待发货","待收货","已完成"].map(x=><button key={x} onClick={()=>setStatus(x)} style={{border:0,borderRadius:16,padding:"8px 10px",whiteSpace:"nowrap",background:status===x?"#ffe8dc":"white",color:status===x?orange:"#777"}}>{x}</button>)}</div>
-        {history.filter(()=>status==="全部"||status==="已完成").map((h,i)=>{const x=h.id===completedDogFoodOrder.id?completedDogFoodOrder:cartSeed.find(z=>z.id===h.id);return x?<div key={h.id+i} style={{background:"white",borderRadius:12,padding:12,marginBottom:9}}><strong style={{fontSize:13}}>{x.shop}</strong><span style={{float:"right",fontSize:11,color:orange}}>已完成</span><div style={{display:"flex",gap:12,marginTop:12}}><img src={`${import.meta.env.BASE_URL}${["gold-bowl","ceramic-bowls","sanho-wok","bruno-pot","stone-vacuum","uwant-vacuum","stgivo","stussy-hoodie","lemaire-bag","mgd-hoodie","douchai-dog-food"].includes(x.id)?"taobao-cart":"taobao-products"}/${x.image||x.id}.jpg`} alt={x.title} style={{width:68,height:68,objectFit:"contain",borderRadius:8}}/><div style={{flex:1,fontSize:12}}>{x.title}<div style={{color:"#999",marginTop:3}}>{x.spec}</div><div style={{marginTop:8,color:"#999"}}>{h.date ? `${h.date} · ` : ""}×{h.count}</div><strong style={{color:orange}}>¥{(x.price*h.count).toFixed(2)}</strong></div></div></div>:null;})}
+        {history.filter(()=>status==="全部"||status==="已完成").map((h,i)=>{const x=h.id===completedMicrophoneOrder.id?completedMicrophoneOrder:h.id===completedDogFoodOrder.id?completedDogFoodOrder:cartSeed.find(z=>z.id===h.id);return x?<div key={h.id+i} style={{background:"white",borderRadius:12,padding:12,marginBottom:9}}><strong style={{fontSize:13}}>{x.shop}</strong><span style={{float:"right",fontSize:11,color:orange}}>已完成</span><div style={{display:"flex",gap:12,marginTop:12}}><img src={`${import.meta.env.BASE_URL}${["gold-bowl","ceramic-bowls","sanho-wok","bruno-pot","stone-vacuum","uwant-vacuum","stgivo","stussy-hoodie","lemaire-bag","mgd-hoodie","douchai-dog-food","maono-pm461"].includes(x.id)?"taobao-cart":"taobao-products"}/${x.image||x.id}.jpg`} alt={x.title} style={{width:68,height:68,objectFit:"contain",borderRadius:8}}/><div style={{flex:1,fontSize:12}}>{x.title}<div style={{color:"#999",marginTop:3}}>{x.spec}</div><div style={{marginTop:8,color:"#999"}}>{h.date ? `${h.date} · ` : ""}×{h.count}</div><strong style={{color:orange}}>¥{(x.price*h.count).toFixed(2)}</strong></div></div></div>:null;})}
         {items.filter(i=>i.folder==="订单"&&(status==="全部"||status===meta(i,"status"))).map(i=><button key={i.id} onClick={()=>p.onItem(i)} className="taobao-order"><strong>{i.title}</strong><p>{i.body}</p><small>{i.time}</small></button>)}
         {!history.length&&!items.some(i=>i.folder==="订单")&&<div style={{padding:40,textAlign:"center",color:"#aaa"}}>暂无订单记录</div>}
       </>}
