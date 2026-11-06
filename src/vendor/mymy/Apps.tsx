@@ -129,13 +129,33 @@ function kktAvatar(title: string, fallback?: string) {
   const c = kktContact(title);
   return c ? `${import.meta.env.BASE_URL}kkt-avatars/${c.avatar}` : fallback;
 }
+// Sort KakaoTalk conversations by the latest message, while pinning 咚灿 first.
+function kktMessageStamp(item: Item): string {
+  const raw = String(item.time || "");
+  const match = raw.match(/(\\d{4})[-/.](\\d{1,2})[-/.](\\d{1,2})(?:[ T]+(\\d{1,2}):(\\d{2}))?/);
+  if (!match) return "";
+  return [match[1], match[2].padStart(2, "0"), match[3].padStart(2, "0")].join("-")
+    + " " + (match[4] || "00").padStart(2, "0") + ":" + (match[5] || "00");
+}
+function kktLatest(items: Item[]): Item | undefined {
+  return items.reduce<Item | undefined>((latest, item) =>
+    !latest || kktMessageStamp(item) > kktMessageStamp(latest) ? item : latest, undefined);
+}
+function kktListTime(item?: Item): string {
+  const stamp = item && kktMessageStamp(item);
+  return stamp ? stamp.slice(0, 10).replace(/-/g, ".") + " " + stamp.slice(11) : "";
+}
 export function MymyKakao(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "聊天"),
     [sent, setSent] = useSkinState<string[]>(p, "mymyKktSent", []),
     [draft, setDraft] = useState(""),
     [query, setQuery] = useState(""),
     [menu, setMenu] = useState(false);
-  const list = grouped(p.items),
+  const list = grouped(p.items).sort((a, b) => {
+    if (a.title === "咚灿") return -1;
+    if (b.title === "咚灿") return 1;
+    return kktMessageStamp(kktLatest(b.items)!).localeCompare(kktMessageStamp(kktLatest(a.items)!));
+  }),
     messages = [
       ...p.items.filter((i) => i.title === p.thread),
       ...sent.flatMap((raw, index) => {
@@ -355,7 +375,7 @@ export function MymyKakao(p: SkinProps) {
             {[...list, ...kktContacts.filter((contact) => !list.some((g) => g.title === contact.title)).map((contact) => ({ title: contact.title, items: [] as typeof p.items }))]
               .filter((g) => g.title.includes(query.trim()))
               .map((g) => {
-                const last = g.items.at(-1);
+                const last = kktLatest(g.items);
                 return (
                   <button
                     className="kzkr kzkcr"
@@ -368,7 +388,7 @@ export function MymyKakao(p: SkinProps) {
                       <small>{tab === "好友" ? (kktContact(g.title)?.nickname || last?.sender || "") : (last?.body || "")}</small>
                     </span>
                     <span className="kzkmt">
-                      {last?.time.slice(-5) || ""}
+                      {kktListTime(last)}
                       {last?.meta.unread && (
                         <i className="kzkbd">{last.meta.unread}</i>
                       )}
