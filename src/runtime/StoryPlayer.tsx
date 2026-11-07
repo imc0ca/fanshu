@@ -326,6 +326,19 @@ function StoryPlayer() {
             }
           } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
         }
+        // Continue the existing Dongchan chat through April 5, 2026.
+        if (new URLSearchParams(location.search).get("template") !== "blank") {
+          try {
+            const response = await fetch("./dongchan-kkt-20260316-20260405.json", { signal: abort.signal });
+            if (response.ok) {
+              const messages = await response.json();
+              const current = w.data.kakao ?? [];
+              const ids = new Set(current.map((item) => item.id));
+              w.data.kakao = [...current, ...messages.filter((item: { id: string }) => !ids.has(item.id))];
+              w.data.kakao.sort((a, b) => String(a.time || "").localeCompare(String(b.time || "")));
+            }
+          } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
+        }
         // Load the February 16 graduation confession as one X post with authored replies.
         if (new URLSearchParams(location.search).get("template") !== "blank") {
           try {
