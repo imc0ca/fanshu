@@ -269,7 +269,7 @@ export function MymyKakao(p: SkinProps) {
                       <div className="kzmn">{p.thread === "咚灿" && chatDate >= "2026-02-16" ? "성찬" : (kktContact(p.thread)?.nickname || m.meta?.displaySender || m.sender)}</div>
                     </>
                   )}
-                  {m.outgoing && run.last && (
+                  {m.outgoing && (run.last || m.meta?.interactive === "true") && (
                     <span className="kzt">
                       {m.meta.unread || ""}
                       <br />
@@ -300,7 +300,7 @@ export function MymyKakao(p: SkinProps) {
                       </button>
                     )}
                   </div>
-                  {!m.outgoing && run.last && (
+                  {!m.outgoing && (run.last || m.meta?.interactive === "true") && (
                     <span className="kzt">{m.time.slice(-5)}</span>
                   )}
                 </div>
