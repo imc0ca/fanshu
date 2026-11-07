@@ -211,6 +211,7 @@ function StoryPlayer() {
             ["busan-2024-mail.json", "mail"],
             ["everyday-2024-2025-mail.json", "mail"],
             ["busan-2024-sms.json", "messages"],
+            ["everyday-2024-2025-sms.json", "messages"],
           ] as const) {
             try {
               const response = await fetch("./" + file, { signal: abort.signal });
