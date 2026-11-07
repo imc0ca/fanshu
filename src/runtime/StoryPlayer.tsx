@@ -210,6 +210,7 @@ function StoryPlayer() {
           for (const [file, app] of [
             ["busan-2024-mail.json", "mail"],
             ["everyday-2024-2025-mail.json", "mail"],
+            ["haru-media-offer-mail.json", "mail"],
             ["busan-2024-sms.json", "messages"],
             ["everyday-2024-2025-sms.json", "messages"],
           ] as const) {
