@@ -386,6 +386,17 @@ function StoryPlayer() {
             }
           } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
         }
+        // Append the April 12 Seoktalk episode 54 post at the very bottom of X.
+        if (new URLSearchParams(location.search).get("template") !== "blank") {
+          try {
+            const response = await fetch("./x-20260412-seoktalk-ep54.json", { signal: abort.signal });
+            if (response.ok) {
+              const post = await response.json();
+              const posts = w.data.twitter ?? [];
+              w.data.twitter = [...posts.filter((item) => item.id !== post.id), post];
+            }
+          } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
+        }
         // Restore the missing incoming photo in the August 26, 2025 Dongchan chat.
         // Attach it to the 16:26 photo placeholder, not the adjacent outgoing message.
         for (const msg of w.data.kakao ?? []) {
