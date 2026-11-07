@@ -48,7 +48,12 @@ function Actions({ p, item }: { p: Props; item: Item }) {
           const explicit = meta(item, "commentCount");
           if (explicit !== "") return explicit;
           const original = meta(item, "originalCounts").split("/")[0]?.trim();
-          return original || String(item.comments.length);
+          if (original) return original;
+          if (item.comments.length) return String(item.comments.length);
+          try {
+            const replies = JSON.parse(meta(item, "repliesData", "[]"));
+            return Array.isArray(replies) ? String(replies.length) : "0";
+          } catch { return "0"; }
         })()}
       </button>
       <button aria-label={`详情${item.title}`} onClick={() => p.onItem(item)}>
