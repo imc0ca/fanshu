@@ -137,31 +137,33 @@
   {
     "id": "kkt-songxiaoyu-20260114-010",
     "title": "咚灿",
-    "sender": "송아지",
+    "sender": "덩떵찬",
     "body": "[图片]",
     "time": "2026-01-14 09:06",
     "kind": "message",
-    "outgoing": true,
+    "outgoing": false,
     "meta": {
       "chatDate": "2026-01-14",
       "contact": "咚灿",
-      "displaySender": "송아지",
-      "dateLabel": "Wednesday, January 14, 2026"
+      "displaySender": "덩떵찬",
+      "dateLabel": "Wednesday, January 14, 2026",
+      "pendingImagePath": "dongchan-20260114/photo-1.png"
     }
   },
   {
     "id": "kkt-songxiaoyu-20260114-011",
     "title": "咚灿",
-    "sender": "송아지",
+    "sender": "덩떵찬",
     "body": "[图片]",
     "time": "2026-01-14 09:06",
     "kind": "message",
-    "outgoing": true,
+    "outgoing": false,
     "meta": {
       "chatDate": "2026-01-14",
       "contact": "咚灿",
-      "displaySender": "송아지",
-      "dateLabel": "Wednesday, January 14, 2026"
+      "displaySender": "덩떵찬",
+      "dateLabel": "Wednesday, January 14, 2026",
+      "pendingImagePath": "dongchan-20260114/photo-2.png"
     }
   },
   {
