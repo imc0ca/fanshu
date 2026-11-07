@@ -325,6 +325,14 @@ function StoryPlayer() {
             }
           } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
         }
+        // Restore the missing incoming photo in the August 26, 2025 Dongchan chat.
+        // Attach it to the 16:26 photo placeholder, not the adjacent outgoing message.
+        for (const msg of w.data.kakao ?? []) {
+          if (msg.title !== "咚灿" || msg.outgoing || !String(msg.time || "").startsWith("2025-08-26 16:26")) continue;
+          if (String(msg.body || "").includes("图片待上传") || msg.meta?.pendingImagePath) {
+            msg.meta = { ...msg.meta, pendingImagePath: "kkt-images/dongchan-20250826-1626.png" };
+          }
+        }
         document.title =
           w.title === "捡手机" ? "捡手机" : w.title + " · 捡手机";
         setWork(w);
