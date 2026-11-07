@@ -188,38 +188,31 @@ export function MymyKakao(p: SkinProps) {
 
   useEffect(() => {
     if (p.thread !== "咚灿" || scriptStarted || !scripted.length) return;
-    const root = scroll.current;
-    if (!root) return;
-    const targetId = "kkt-dongchan-20260408-008";
+    let visibleSince: number | null = null;
+    // Poll the actual chat viewport: the thread and its scroll position can
+    // settle after the first animation frame, especially on mobile Safari.
     const check = () => {
-      const target = root.querySelector<HTMLElement>('[data-message-id="' + targetId + '"]');
-      if (!target) return;
+      const root = scroll.current;
+      if (!root) { visibleSince = null; return; }
+      const target = root.querySelector<HTMLElement>('[data-message-id="kkt-dongchan-20260408-008"]');
+      if (!target) { visibleSince = null; return; }
       const rootBox = root.getBoundingClientRect();
       const bubbleBox = target.getBoundingClientRect();
-      // The final pre-script message must be visible and the reader must have
-      // reached the end of the authored chat. Avoid IntersectionObserver's
-      // unreliable clipping inside the nested phone/scroll viewport.
-      const visible = bubbleBox.top < rootBox.bottom - 12 && bubbleBox.bottom > rootBox.top + 12;
-      if (visible) {
-        if (!scriptTimer.current) scriptTimer.current = setTimeout(() => {
+      const inView = bubbleBox.top < rootBox.bottom - 8 && bubbleBox.bottom > rootBox.top + 8;
+      const atEnd = root.scrollHeight - root.scrollTop - root.clientHeight < 100;
+      if (inView && atEnd) {
+        if (visibleSince === null) visibleSince = Date.now();
+        if (Date.now() - visibleSince >= 1000) {
           setScriptStarted(true);
           setScriptCount(1);
-          scriptTimer.current = null;
-        }, 1000);
-      } else if (scriptTimer.current) {
-        clearTimeout(scriptTimer.current);
-        scriptTimer.current = null;
+        }
+      } else {
+        visibleSince = null;
       }
     };
-    root.addEventListener("scroll", check, { passive: true });
-    // Also check after layout settles on mobile Safari.
-    const frame = requestAnimationFrame(check);
-    return () => {
-      root.removeEventListener("scroll", check);
-      cancelAnimationFrame(frame);
-      if (scriptTimer.current) clearTimeout(scriptTimer.current);
-      scriptTimer.current = null;
-    };
+    check();
+    const poll = setInterval(check, 150);
+    return () => clearInterval(poll);
   }, [p.thread, scriptStarted, scripted.length]);
   useEffect(() => {
     if (!scriptStarted || !nextScript || nextScript.outgoing || p.thread !== "咚灿") return;
