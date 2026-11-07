@@ -2219,5 +2219,309 @@
       "displaySender": "송아지",
       "dateLabel": "Wednesday, April 8, 2026"
     }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-001",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "什么呀",
+    "time": "2026-04-08 21:36",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-002",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "我没说要去你家",
+    "time": "2026-04-08 21:36",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-003",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "宋银硕",
+    "time": "2026-04-08 21:38",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-004",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "你前两天都没来是吗?",
+    "time": "2026-04-08 21:38",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-005",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "消息也是故意不回的?",
+    "time": "2026-04-08 21:38",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-006",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "我为什么要去",
+    "time": "2026-04-08 21:38",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-007",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "我做了什么惹你生气了吗",
+    "time": "2026-04-08 21:38",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-008",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "没有",
+    "time": "2026-04-08 21:38",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-009",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "那你怎么回事",
+    "time": "2026-04-08 21:39",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-010",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "为什么觉得我会去",
+    "time": "2026-04-08 21:39",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-011",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "好像默认一样",
+    "time": "2026-04-08 21:39",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-012",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "我们很久没见了",
+    "time": "2026-04-08 21:40",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-013",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "周日的时候你也住在这里了",
+    "time": "2026-04-08 21:40",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-014",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "所以说啊",
+    "time": "2026-04-08 21:41",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-015",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "什么呀",
+    "time": "2026-04-08 21:41",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-016",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "郑成灿",
+    "time": "2026-04-08 21:41",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-017",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "干嘛这么严肃",
+    "time": "2026-04-08 21:41",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-018",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "到底怎么了啊",
+    "time": "2026-04-08 21:41",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260408-interactive-019",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "你在和我搞暧昧吗?",
+    "time": "2026-04-08 21:42",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-08",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Wednesday, April 8, 2026",
+      "interactive": "true"
+    }
   }
 ]
