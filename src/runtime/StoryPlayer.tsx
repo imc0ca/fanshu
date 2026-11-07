@@ -397,6 +397,22 @@ function StoryPlayer() {
             }
           } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
         }
+        // Restore the specific graduation-thread image reply without changing its text.
+        for (const post of w.data.twitter ?? []) {
+          try {
+            const replies = JSON.parse(String(post.meta?.repliesData || "[]"));
+            if (!Array.isArray(replies)) continue;
+            let changed = false;
+            for (const reply of replies) {
+              if (String(reply.body || "").trim() === "帮大家问过了 明年1月") {
+                reply.image = "x-posts/x-reply-2026-brother-january.png";
+                reply.imagePending = false;
+                changed = true;
+              }
+            }
+            if (changed) post.meta.repliesData = JSON.stringify(replies);
+          } catch { /* skip posts without reply arrays */ }
+        }
         // Restore the missing incoming photo in the August 26, 2025 Dongchan chat.
         // Attach it to the 16:26 photo placeholder, not the adjacent outgoing message.
         for (const msg of w.data.kakao ?? []) {
