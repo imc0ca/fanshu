@@ -1,0 +1,67 @@
+[
+  {
+    "id": "driving-test-20240525",
+    "title": "驾驶考试中心",
+    "sender": "驾驶考试中心",
+    "time": "2024-05-25 09:00",
+    "body": "【考试提醒】您预约的道路驾驶考试将于2024年5月26日10:00进行。请提前30分钟到达考场，并携带有效身份证件。祝您考试顺利！",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true",
+      "senderId": "驾驶考试中心"
+    }
+  },
+  {
+    "id": "haircut-20240613",
+    "title": "美容室",
+    "sender": "美容室",
+    "time": "2024-06-13 18:05",
+    "body": "【预约确认】您好，您已成功预约6月14日15:00的剪发服务。请提前5分钟到店，如需更改时间请提前联系。",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true",
+      "senderId": "美容室"
+    }
+  },
+  {
+    "id": "taxi-payment-20241006",
+    "title": "出租车支付通知",
+    "sender": "出租车支付通知",
+    "time": "2024-10-06 21:42",
+    "body": "【支付成功】您本次乘车费用为18,400韩元，已完成支付。感谢您的乘坐。",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true",
+      "senderId": "出租车支付通知"
+    }
+  },
+  {
+    "id": "card-payment-20250117",
+    "title": "信用卡交易通知",
+    "sender": "信用卡交易通知",
+    "time": "2025-01-17 18:26",
+    "body": "【消费提醒】您的信用卡于2025年1月17日18:26成功支付32,800韩元。交易类型：线下消费。",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true",
+      "senderId": "信用卡交易通知"
+    }
+  },
+  {
+    "id": "oliveyoung-coupon-20250519",
+    "title": "Olive Young",
+    "sender": "Olive Young",
+    "time": "2025-05-19 10:15",
+    "body": "【会员提醒】您账户中的会员优惠券将在3天后到期，请于5月22日前使用，逾期自动失效。",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true",
+      "senderId": "Olive Young"
+    }
+  }
+]
