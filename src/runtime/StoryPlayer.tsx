@@ -235,6 +235,17 @@ function StoryPlayer() {
         }
         if (new URLSearchParams(location.search).get("template") !== "blank") {
           try {
+            const response = await fetch("./siwoo-kkt.json", { signal: abort.signal });
+            if (response.ok) {
+              const messages = await response.json();
+              const current = w.data.kakao ?? [];
+              const ids = new Set(current.map((item) => item.id));
+              w.data.kakao = [...current, ...messages.filter((item: { id: string }) => !ids.has(item.id))];
+            }
+          } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
+        }
+        if (new URLSearchParams(location.search).get("template") !== "blank") {
+          try {
             const response = await fetch("./osaki-kkt.json", { signal: abort.signal });
             if (response.ok) {
               const osaki = await response.json();
