@@ -301,7 +301,7 @@ export function MymyKakao(p: SkinProps) {
                         <KktCallCard type={m.meta.callType} status={m.meta.callStatus} duration={m.meta.callDuration} missed={false} />
                       ) : /^\[语音消息\s+\d+:\d+\]$/.test(m.body) ? (
                         <span className="kkt-voice-card"><span className="kkt-voice-play" aria-hidden="true">▶</span><span className="kkt-voice-duration">{m.body.match(/\d+:\d+/)?.[0] || "0:05"}</span></span>
-                      ) : m.media ? <Media item={m} /> : m.body}
+                      ) : m.media ? <Media item={m} /> : m.body.replace(/，{2,}/g, (commas) => ",".repeat(commas.length))}
                     </button>
                     {m.meta?.callType && (m.body.includes("未接通") || m.meta.callStatus === "missed") && (
                       <button className="kzbub kkt-call-only" onClick={() => read(p, m)}>
