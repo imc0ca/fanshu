@@ -163,6 +163,11 @@ export function MymyKakao(p: SkinProps) {
     ? p.items.filter((m) => m.title === "咚灿" && m.meta?.interactive === "true")
     : [];
   const nextScript = scripted[scriptCount];
+  const april11 = scripted.filter((m) => m.meta?.interactivePhase === "april11");
+  const lastSentApril11 = scripted.slice(0, scriptCount).filter((m) => m.meta?.interactivePhase === "april11").at(-1);
+  const lastSentApril11Index = lastSentApril11 ? Number(lastSentApril11.meta?.interactiveIndex) : -1;
+  const april11Unread = (m: (typeof scripted)[number]) =>
+    m.meta?.interactivePhase === "april11" && Number(m.meta?.interactiveIndex) === lastSentApril11Index;
   const april910 = scripted.filter((m) => m.meta?.interactivePhase === "april9-10");
   const lastApril910 = april910[april910.length - 1];
   const lastSentApril910 = scripted.slice(0, scriptCount).filter((m) => m.meta?.interactivePhase === "april9-10").at(-1);
@@ -310,7 +315,7 @@ export function MymyKakao(p: SkinProps) {
                   )}
                   {m.outgoing && (run.last || m.meta?.interactive === "true") && (
                     <span className="kzt">
-                      {april910Unread(m) ? <span className="kkt-script-unread">1</span> : (m.meta?.interactivePhase === "april9-10" ? "" : (m.meta.unread || ""))}
+                      {april910Unread(m) || april11Unread(m) ? <span className="kkt-script-unread">1</span> : (m.meta?.interactivePhase === "april9-10" || m.meta?.interactivePhase === "april11" ? "" : (m.meta.unread || ""))}
                       <br />
                       {m.time.slice(-5)}
                     </span>
