@@ -739,3 +739,17 @@
 }
 .mymy-kakao .kkt-voice-play { font-size: 18px !important; }
 .mymy-kakao .kkt-voice-duration { font-size: 16px !important; }
+
+/* Keep the unread '1' immediately beside the outgoing bubble, not above its timestamp. */
+.mymy-kakao .kzm.kzmy .kzt { position: relative; }
+.mymy-kakao .kzm.kzmy .kkt-script-unread {
+  position: absolute;
+  right: 0;
+  bottom: 18px;
+  font-size: 9px;
+  line-height: 1;
+  color: #f2c900;
+  font-weight: 700;
+}
+/* iOS Safari zooms the whole embedded phone when focusing inputs below 16px. */
+.mymy-kakao .kzinp input { font-size: 16px !important; }
