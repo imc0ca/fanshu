@@ -1,0 +1,41 @@
+[
+  {
+    "id": "busan-stay-confirm-20240412",
+    "title": "[예약 확정] Busan Harbor House｜4月13日–14日住宿确认",
+    "sender": "Busan Harbor House <booking@harborhouse.example>",
+    "time": "2024-04-12 15:24",
+    "body": "宋银硕 您好：\n\n感谢预订 Busan Harbor House（釜山港湾之家）！您的多人独栋民宿预订已确认。\n\n预订编号：BHH-240413-062（虚构）\n入住：2024年4月13日（周六）15:00 后\n退房：2024年4月14日（周日）11:00 前\n房型：整栋多人民宿｜3间卧室｜最多6位入住\n入住人数：4人\n位置：釜山广安里海边附近（具体门牌将在入住当天发送）\n总费用：₩320,000（含清洁费）\n付款状态：已付款\n\n入住方式：自助入住。入住当天14:00前将发送门锁密码及入住指南。\n房屋设施：厨房、Wi-Fi、洗衣机、公共客厅及餐桌。\n温馨提醒：22:00后请降低音量；室内禁止吸烟。\n\n期待您和朋友在釜山度过愉快的周末！\nBusan Harbor House 预订团队\n（故事虚构邮件，非真实订单）",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": false,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "ktx-confirm-20240413",
+    "title": "[KORAIL] KTX 2024/04/13 首尔 → 釜山 车票预订成功",
+    "sender": "KORAIL 预订通知 <tickets@korail-notice.example>",
+    "time": "2024-04-12 16:08",
+    "body": "尊敬的宋银硕：\n\n您预订的 KTX 车票已出票。\n\n出行日期：2024年4月13日（周六）\n出发：首尔站 Seoul 08:00\n抵达：釜山站 Busan 10:45\n列车：KTX 111（故事虚构班次）\n席别：普通室｜成人 1名\n座位：8号车厢 12A\n预订编号：KTX-240413-0412（虚构）\n状态：付款完成／出票成功\n\n请于发车前至少15分钟抵达车站，并携带有效身份证件。\n本邮件为故事中的虚构车票确认，并非有效乘车凭证。",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": false,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "ktx-confirm-20240414",
+    "title": "[KORAIL] KTX 2024/04/14 釜山 → 首尔 车票预订成功",
+    "sender": "KORAIL 预订通知 <tickets@korail-notice.example>",
+    "time": "2024-04-12 16:12",
+    "body": "尊敬的宋银硕：\n\n您预订的返程 KTX 车票已出票。\n\n出行日期：2024年4月14日（周日）\n出发：釜山站 Busan 18:30\n抵达：首尔站 Seoul 21:15\n列车：KTX 164（故事虚构班次）\n席别：普通室｜成人 1名\n座位：7号车厢 9C\n预订编号：KTX-240414-0412（虚构）\n状态：付款完成／出票成功\n\n请提前到站候车，祝您旅途愉快。\n本邮件为故事中的虚构车票确认，并非有效乘车凭证。",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": false,
+    "meta": {
+      "fictional": "true"
+    }
+  }
+]
