@@ -157,12 +157,35 @@ export function MymyKakao(p: SkinProps) {
   // Scripted April 8 conversation: earlier messages stay visible without interaction.
   const [scriptCount, setScriptCount] = useState(0);
   const [scriptStarted, setScriptStarted] = useState(false);
+  const [lastUnreadCleared, setLastUnreadCleared] = useState(false);
   const scriptTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scroll = useRef<HTMLDivElement>(null);
   const scripted = p.thread === "咚灿"
     ? p.items.filter((m) => m.title === "咚灿" && m.meta?.interactive === "true")
     : [];
   const nextScript = scripted[scriptCount];
+  const april910 = scripted.filter((m) => m.meta?.interactivePhase === "april9-10");
+  const lastApril910 = april910[april910.length - 1];
+  const lastSentApril910 = scripted.slice(0, scriptCount).filter((m) => m.meta?.interactivePhase === "april9-10").at(-1);
+  const lastSentApril910Index = lastSentApril910 ? Number(lastSentApril910.meta?.interactiveIndex) : -1;
+  const april910Unread = (m: (typeof scripted)[number]) => {
+    if (m.meta?.interactivePhase !== "april9-10") return false;
+    const index = Number(m.meta?.interactiveIndex);
+    if (index > lastSentApril910Index || lastSentApril910Index < 0) return false;
+    if (lastSentApril910Index === 38 && lastUnreadCleared) return false;
+    // The unanswered slipper question and following messages remain unread
+    // together until the first 21:41 ellipsis is sent.
+    if (lastSentApril910Index >= 30 && lastSentApril910Index <= 34) {
+      return index >= 30 && index <= lastSentApril910Index;
+    }
+    return index === lastSentApril910Index;
+  };
+  useEffect(() => {
+    if (!scriptStarted || !lastApril910 || lastSentApril910?.id !== lastApril910.id) return;
+    const timer = setTimeout(() => setLastUnreadCleared(true), 1000);
+    return () => clearTimeout(timer);
+  }, [scriptStarted, lastSentApril910?.id, lastApril910?.id]);
+
   useEffect(() => {
     if (p.thread !== "咚灿" || scriptStarted || !scripted.length) return;
     const root = scroll.current;
@@ -292,7 +315,7 @@ export function MymyKakao(p: SkinProps) {
                   )}
                   {m.outgoing && (run.last || m.meta?.interactive === "true") && (
                     <span className="kzt">
-                      {m.meta.unread || ""}
+                      {april910Unread(m) ? <span className="kkt-script-unread">1</span> : (m.meta?.interactivePhase === "april9-10" ? "" : (m.meta.unread || ""))}
                       <br />
                       {m.time.slice(-5)}
                     </span>
