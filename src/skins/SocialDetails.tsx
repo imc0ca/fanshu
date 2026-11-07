@@ -232,7 +232,7 @@ export function SocialDetail(p: {
                   <div className="x-reply-author"><strong role="button" tabIndex={0} onClick={() => openProfile(reply.name,reply.handle)} onKeyDown={(e)=>{if(e.key==="Enter")openProfile(reply.name,reply.handle);}}>{reply.name}</strong><small>{reply.handle} · {reply.date}</small></div>
                   <div className="x-reply-to">回复 <span>{reply.replyTo}</span></div>
                   <p>{reply.body}</p>
-                  {reply.image && <img className="x-reply-photo" src={`${import.meta.env.BASE_URL}${reply.image}`} alt={`${reply.name}的评论图片`} loading="lazy" />}
+                  {reply.image && <div className={reply.image.includes("|") ? "x-reply-gallery x-reply-gallery-pair" : "x-reply-gallery"}>{reply.image.split("|").map((src, index) => <img key={src} className="x-reply-photo" src={`${import.meta.env.BASE_URL}${src}`} alt={`${reply.name}的评论图片 ${index + 1}`} loading="lazy" />)}</div>}
                   {reply.imagePending && !reply.image && <div className="x-pending-media">图片待上传</div>}
                   <div className="post-comment-actions x-reply-metrics">
                     <span><MessageCircle size={15} />{reply.comments}</span>
