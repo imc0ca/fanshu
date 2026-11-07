@@ -193,11 +193,13 @@ export function MymyKakao(p: SkinProps) {
     const check = () => {
       const root = scroll.current;
       if (!root) { visibleSince = null; return; }
-      const target = root.querySelector<HTMLElement>('[data-message-id="kkt-dongchan-20260408-008"]');
+      // .kkt-dated-message uses display: contents and has NO layout box.
+      // Measure its visible message row instead of the zero-sized wrapper.
+      const target = root.querySelector<HTMLElement>('[data-message-id="kkt-dongchan-20260408-008"] .kzm');
       if (!target) { visibleSince = null; return; }
       const rootBox = root.getBoundingClientRect();
       const bubbleBox = target.getBoundingClientRect();
-      const inView = bubbleBox.top >= rootBox.top - 8 && bubbleBox.bottom <= rootBox.bottom + 16;
+      const inView = bubbleBox.bottom > rootBox.top + 4 && bubbleBox.top < rootBox.bottom - 4;
       // The last existing bubble being visible is sufficient; Safari can report
       // a stale scrollHeight until the input receives focus.
       if (inView) {
