@@ -163,24 +163,38 @@ export function MymyKakao(p: SkinProps) {
   const nextScript = scripted[scriptCount];
   useEffect(() => {
     if (p.thread !== "咚灿" || scriptStarted || !scripted.length) return;
-    const root = document.querySelector(".mymy-kakao .msgs.kk");
+    const root = document.querySelector<HTMLElement>(".mymy-kakao .msgs.kk");
     if (!root) return;
-    const target = root.querySelector('[data-message-id="kkt-dongchan-20260408-008"]');
-    if (!target) return;
-    const observer = new IntersectionObserver((entries) => {
-      if (entries.some((e) => e.isIntersecting && e.intersectionRatio >= 0.6)) {
+    const targetId = "kkt-dongchan-20260408-008";
+    const check = () => {
+      const target = root.querySelector<HTMLElement>('[data-message-id="' + targetId + '"]');
+      if (!target) return;
+      const rootBox = root.getBoundingClientRect();
+      const bubbleBox = target.getBoundingClientRect();
+      // The final pre-script message must be visible and the reader must have
+      // reached the end of the authored chat. Avoid IntersectionObserver's
+      // unreliable clipping inside the nested phone/scroll viewport.
+      const visible = bubbleBox.top < rootBox.bottom - 12 && bubbleBox.bottom > rootBox.top + 12;
+      const atEnd = root.scrollHeight - root.scrollTop - root.clientHeight < 90;
+      if (visible && atEnd) {
         if (!scriptTimer.current) scriptTimer.current = setTimeout(() => {
           setScriptStarted(true);
-          setScriptCount(1); // 成灿：什么呀
+          setScriptCount(1);
           scriptTimer.current = null;
         }, 3000);
       } else if (scriptTimer.current) {
         clearTimeout(scriptTimer.current);
         scriptTimer.current = null;
       }
-    }, { root, threshold: [0, 0.6, 1] });
-    observer.observe(target);
-    return () => { observer.disconnect(); if (scriptTimer.current) clearTimeout(scriptTimer.current); scriptTimer.current = null; };
+    };
+    root.addEventListener("scroll", check, { passive: true });
+    const frame = requestAnimationFrame(check);
+    return () => {
+      root.removeEventListener("scroll", check);
+      cancelAnimationFrame(frame);
+      if (scriptTimer.current) clearTimeout(scriptTimer.current);
+      scriptTimer.current = null;
+    };
   }, [p.thread, scriptStarted, scripted.length]);
   useEffect(() => {
     if (!scriptStarted || !nextScript || nextScript.outgoing || p.thread !== "咚灿") return;
