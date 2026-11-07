@@ -157,13 +157,14 @@ export function MymyKakao(p: SkinProps) {
   const [scriptCount, setScriptCount] = useState(0);
   const [scriptStarted, setScriptStarted] = useState(false);
   const scriptTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const scroll = useRef<HTMLDivElement>(null);
   const scripted = p.thread === "咚灿"
     ? p.items.filter((m) => m.title === "咚灿" && m.meta?.interactive === "true")
     : [];
   const nextScript = scripted[scriptCount];
   useEffect(() => {
     if (p.thread !== "咚灿" || scriptStarted || !scripted.length) return;
-    const root = document.querySelector<HTMLElement>(".mymy-kakao .msgs.kk");
+    const root = scroll.current;
     if (!root) return;
     const targetId = "kkt-dongchan-20260408-008";
     const check = () => {
@@ -175,8 +176,7 @@ export function MymyKakao(p: SkinProps) {
       // reached the end of the authored chat. Avoid IntersectionObserver's
       // unreliable clipping inside the nested phone/scroll viewport.
       const visible = bubbleBox.top < rootBox.bottom - 12 && bubbleBox.bottom > rootBox.top + 12;
-      const atEnd = root.scrollHeight - root.scrollTop - root.clientHeight < 90;
-      if (visible && atEnd) {
+      if (visible) {
         if (!scriptTimer.current) scriptTimer.current = setTimeout(() => {
           setScriptStarted(true);
           setScriptCount(1);
@@ -188,6 +188,7 @@ export function MymyKakao(p: SkinProps) {
       }
     };
     root.addEventListener("scroll", check, { passive: true });
+    // Also check after layout settles on mobile Safari.
     const frame = requestAnimationFrame(check);
     return () => {
       root.removeEventListener("scroll", check);
@@ -238,8 +239,7 @@ export function MymyKakao(p: SkinProps) {
           return [];
         }
       }),
-    ],
-    scroll = useRef<HTMLDivElement>(null);
+    ];
   useEffect(() => {
     const node = scroll.current;
     if (node) node.scrollTop = 0;
