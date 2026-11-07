@@ -203,6 +203,29 @@ function StoryPlayer() {
       })
       .then(async (x) => {
         const w = validateWork(x);
+        // Add fictional Busan trip booking emails and verification SMS without
+        // changing any existing story messages or their order.
+        if (new URLSearchParams(location.search).get("template") !== "blank" &&
+            new URLSearchParams(location.search).get("preview") !== "test") {
+          for (const [file, app] of [
+            ["busan-2024-mail.json", "mail"],
+            ["busan-2024-sms.json", "messages"],
+          ] as const) {
+            try {
+              const response = await fetch("./" + file, { signal: abort.signal });
+              if (!response.ok) throw new Error("Unable to load " + file);
+              const added = await response.json();
+              if (!Array.isArray(added)) throw new Error("Invalid story items in " + file);
+              const current = w.data[app] ?? [];
+              const ids = new Set(current.map((item) => item.id));
+              w.data[app] = [...current, ...added.filter((item: { id: string }) => !ids.has(item.id))]
+                .sort((a, b) => b.time.localeCompare(a.time));
+            } catch (error) {
+              if (abort.signal.aborted) return;
+              console.warn("Busan story details could not be loaded", error);
+            }
+          }
+        }
         // Attach the two May 11, 2023 confession reply photos to their exact replies.
         for (const post of w.data.twitter ?? []) {
           if (post.id !== "x-confessions-001") continue;
