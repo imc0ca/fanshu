@@ -918,3 +918,13 @@
 .mymy-ui .kkt-call-stack .kkt-missed-card .kkt-call-copy strong {
   color: #171717;
 }
+
+/* Gentle scripted KKT message arrival, without moving the phone frame. */
+.mymy-kakao .kkt-script-appear { animation: kktScriptArrive 280ms ease-out both; }
+@keyframes kktScriptArrive {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mymy-kakao .kkt-script-appear { animation: none; }
+}
