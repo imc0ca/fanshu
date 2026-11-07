@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createPortal } from "react-dom";
 import { Phone as CallIcon, VideoOff, MicOff, Volume2, PhoneOff } from "lucide-react";
 import { Phone as PhoneApp } from "../Phone";
-import { validateWork, type Work } from "../schema";
+import { makeItem, validateWork, type Work } from "../schema";
 import "../styles.css";
 import "./player.css";
 
@@ -339,7 +339,7 @@ function StoryPlayer() {
           ];
           const current = w.data.calendar ?? [];
           const ids = new Set(current.map((item) => item.id));
-          w.data.calendar = [...current, ...dates.filter(([date]) => !ids.has("calendar-work-" + date)).map(([date, title]) => ({
+          w.data.calendar = [...current, ...dates.filter(([date]) => !ids.has("calendar-work-" + date)).map(([date, title]) => makeItem({
             id: "calendar-work-" + date,
             title,
             body: title,
