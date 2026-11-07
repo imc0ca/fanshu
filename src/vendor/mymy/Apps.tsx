@@ -169,7 +169,6 @@ export function MymyKakao(p: SkinProps) {
     m.meta?.interactivePhase === "april12" &&
     lastRevealedApril12?.id === m.id &&
     lastRevealedApril12.outgoing === true;
-  const april11 = scripted.filter((m) => m.meta?.interactivePhase === "april11");
   const lastSentApril11 = scripted.slice(0, scriptCount).filter((m) => m.meta?.interactivePhase === "april11").at(-1);
   const lastSentApril11Index = lastSentApril11 ? Number(lastSentApril11.meta?.interactiveIndex) : -1;
   const april11Unread = (m: (typeof scripted)[number]) =>
