@@ -1709,5 +1709,395 @@
       "displaySender": "성찬",
       "dateLabel": "Sunday, April 5, 2026"
     }
+  },
+  {
+    "id": "kkt-dongchan-20260406-001",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "晚上一起吃吗",
+    "time": "2026-04-06 16:12",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-06",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Monday, April 6, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260406-002",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "要加班",
+    "time": "2026-04-06 17:12",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-06",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Monday, April 6, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260406-003",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "晚上去接你?",
+    "time": "2026-04-06 17:12",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-06",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Monday, April 6, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260406-004",
+    "title": "咚灿",
+    "sender": "송아지",
+    "body": "不用",
+    "time": "2026-04-06 17:12",
+    "kind": "message",
+    "outgoing": true,
+    "meta": {
+      "chatDate": "2026-04-06",
+      "contact": "咚灿",
+      "displaySender": "송아지",
+      "dateLabel": "Monday, April 6, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260406-005",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "好吧",
+    "time": "2026-04-06 17:12",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-06",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Monday, April 6, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260406-006",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "还没下班吗",
+    "time": "2026-04-06 22:16",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-06",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Monday, April 6, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260406-007",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "最近太累了",
+    "time": "2026-04-06 22:16",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-06",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Monday, April 6, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260406-008",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "我先睡了",
+    "time": "2026-04-06 22:16",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-06",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Monday, April 6, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260406-009",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "给你留了灯",
+    "time": "2026-04-06 22:16",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-06",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Monday, April 6, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-001",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "昨晚灯没关吗",
+    "time": "2026-04-07 09:47",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-002",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "不过你过来我居然一点都不知道",
+    "time": "2026-04-07 09:49",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-003",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "看来是真累了",
+    "time": "2026-04-07 09:49",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-004",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "完全睡过去了",
+    "time": "2026-04-07 09:49",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-005",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "下午去了趟公司",
+    "time": "2026-04-07 18:28",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-006",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "发声课的老师送了我几个甜点",
+    "time": "2026-04-07 18:29",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-007",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "放冰箱里了",
+    "time": "2026-04-07 18:29",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-008",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "我妈叫我回家一趟",
+    "time": "2026-04-07 18:29",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-009",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "今晚就不回来了",
+    "time": "2026-04-07 18:29",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-010",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "你晚上记得拿出来吃",
+    "time": "2026-04-07 18:29",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-011",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "不过今天很忙吗",
+    "time": "2026-04-07 18:30",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-012",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "为什么一直不回我消息啊",
+    "time": "2026-04-07 18:30",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-013",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "还没下班吗",
+    "time": "2026-04-07 22:40",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-014",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "好不好吃啊",
+    "time": "2026-04-07 22:40",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-015",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "算了",
+    "time": "2026-04-07 22:45",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-016",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "你累了的话明天再说吧",
+    "time": "2026-04-07 22:45",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260407-017",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "我也睡了",
+    "time": "2026-04-07 22:45",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-04-07",
+      "contact": "咚灿",
+      "displaySender": "성찬",
+      "dateLabel": "Tuesday, April 7, 2026"
+    }
   }
 ]
