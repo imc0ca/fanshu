@@ -93,7 +93,7 @@ export function xAvatarSrc(handle: string): string {
   const key = handle.trim().replace(/^@+/, "").toLowerCase();
   if (key === "donotdisturb" || key.startsWith("donotdisturb")) return `${import.meta.env.BASE_URL}x-avatars/donotdisturb.jpg`;
   if (key === "breadluv") return `${import.meta.env.BASE_URL}x-avatars/breadluv.jpeg`;
-  if (key === "seoktalk") return `${import.meta.env.BASE_URL}x-avatars/seoktalk.jpg`;
+  if (key === "seoktalk") return `${import.meta.env.BASE_URL}x-avatars/seoktalk.png`;
   const avatarKey = key === "ynu_confessions" ? "ynu_confession" : key === "ksh_0703" ? "signal_lost_" : key;
   return xAvatarImages[avatarKey] ?? "";
 }
