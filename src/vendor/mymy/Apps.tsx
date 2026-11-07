@@ -153,6 +153,7 @@ export function MymyKakao(p: SkinProps) {
     [draft, setDraft] = useState(""),
     [query, setQuery] = useState(""),
     [menu, setMenu] = useState(false);
+  const [april8Complete, setApril8Complete] = useSkinState<boolean>(p, "dongchanApril8Complete", false);
   // Scripted April 8 conversation: earlier messages stay visible without interaction.
   const [scriptCount, setScriptCount] = useState(0);
   const [scriptStarted, setScriptStarted] = useState(false);
@@ -181,7 +182,7 @@ export function MymyKakao(p: SkinProps) {
           setScriptStarted(true);
           setScriptCount(1);
           scriptTimer.current = null;
-        }, 3000);
+        }, 1000);
       } else if (scriptTimer.current) {
         clearTimeout(scriptTimer.current);
         scriptTimer.current = null;
@@ -199,15 +200,18 @@ export function MymyKakao(p: SkinProps) {
   }, [p.thread, scriptStarted, scripted.length]);
   useEffect(() => {
     if (!scriptStarted || !nextScript || nextScript.outgoing || p.thread !== "咚灿") return;
-    const timer = setTimeout(() => setScriptCount((count) => count + 1), 850);
+    const timer = setTimeout(() => setScriptCount((count) => count + 1), 1050);
     return () => clearTimeout(timer);
   }, [scriptStarted, scriptCount, p.thread, nextScript?.id]);
   useEffect(() => {
     if (!scriptStarted || p.thread !== "咚灿") return;
-    const node = document.querySelector(".mymy-kakao .msgs.kk");
-    if (node) node.scrollTop = node.scrollHeight;
+    const node = scroll.current;
+    if (node) {
+      const remaining = node.scrollHeight - node.scrollTop - node.clientHeight;
+      if (remaining < 240) node.scrollTo({ top: node.scrollHeight, behavior: "smooth" });
+    }
   }, [scriptCount, scriptStarted, p.thread]);
-  const list = grouped(p.items).sort((a, b) => {
+  const list = grouped(p.items.filter((m) => m.meta?.interactive !== "true" || april8Complete)).sort((a, b) => {
     if (a.title === "咚灿") return -1;
     if (b.title === "咚灿") return 1;
     return kktMessageStamp(kktLatest(b.items)!).localeCompare(kktMessageStamp(kktLatest(a.items)!));
@@ -249,7 +253,10 @@ export function MymyKakao(p: SkinProps) {
       {p.thread ? (
         <>
           <header className="kzth">
-            <Back onClick={() => p.onThread("")} />
+            <Back onClick={() => {
+              if (p.thread === "咚灿" && scriptStarted && scriptCount >= scripted.length) setApril8Complete(true);
+              p.onThread("");
+            }} />
             <span className="kzname">{p.thread}</span>
             <span className="kzpill">
               <button aria-label="聊天菜单" onClick={() => setMenu(!menu)}>
@@ -264,7 +271,7 @@ export function MymyKakao(p: SkinProps) {
               const prev = messages[i - 1];
               const prevDate = prev ? (prev.meta?.chatDate || prev.time.slice(0, 10)) : "";
               return (
-                <div key={m.id} className="kkt-dated-message" data-chat-date={chatDate} data-message-id={m.id}>
+                <div key={m.id} className={"kkt-dated-message" + (m.meta?.interactive === "true" ? " kkt-script-appear" : "")} data-chat-date={chatDate} data-message-id={m.id}>
                   {chatDate !== prevDate && m.meta?.hideDateHeading !== "true" && (
                     <div className="kkt-date-heading">{kktDateLabel(chatDate)}</div>
                   )}
@@ -328,6 +335,7 @@ export function MymyKakao(p: SkinProps) {
             onSubmit={(e) => {
               e.preventDefault();
               if (scriptStarted && nextScript?.outgoing && p.thread === "咚灿") {
+                if (scriptCount + 1 >= scripted.length) setApril8Complete(true);
                 setScriptCount((count) => count + 1);
                 setDraft("");
                 return;
