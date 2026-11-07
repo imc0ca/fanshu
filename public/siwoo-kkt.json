@@ -1,0 +1,436 @@
+[
+  {
+    "id": "kkt-siwoo-2024-11-12-01",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "成灿今天可能要晚一点结束",
+    "time": "2024-11-12 18:36",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-12",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-12-02",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "好的没事",
+    "time": "2024-11-12 18:38",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-12",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-12-03",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "谢谢您告诉我",
+    "time": "2024-11-12 18:38",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-12",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-12-04",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "大概还要半小时",
+    "time": "2024-11-12 18:39",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-12",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-12-05",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "好 我在附近等他",
+    "time": "2024-11-12 18:39",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-12",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-12-06",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "ㅋㅋ好",
+    "time": "2024-11-12 18:40",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-12",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-23-01",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "哥 今天结束了吗",
+    "time": "2024-11-23 21:16",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-23",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-23-02",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "快了",
+    "time": "2024-11-23 21:19",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-23",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-23-03",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "还有最后一组",
+    "time": "2024-11-23 21:19",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-23",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-23-04",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "好 那我晚点过去",
+    "time": "2024-11-23 21:20",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-23",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-23-05",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "你直接去停车场等吧",
+    "time": "2024-11-23 21:21",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-23",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-11-23-06",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "好",
+    "time": "2024-11-23 21:21",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-11-23",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-12-11-01",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "哥 你今天会去公司吗",
+    "time": "2024-12-11 14:12",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-12-11",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-12-11-02",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "嗯 怎么了",
+    "time": "2024-12-11 14:16",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-12-11",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-12-11-03",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "我有东西想给成灿",
+    "time": "2024-12-11 14:17",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-12-11",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-12-11-04",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "但他电话没接",
+    "time": "2024-12-11 14:17",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-12-11",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-12-11-05",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "他在拍摄",
+    "time": "2024-12-11 14:19",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-12-11",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-12-11-06",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "你放前台吧 我等下拿给他",
+    "time": "2024-12-11 14:19",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-12-11",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2024-12-11-07",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "好 谢谢哥",
+    "time": "2024-12-11 14:20",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2024-12-11",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-01-16-01",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "银硕",
+    "time": "2025-01-16 17:06",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-01-16",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-01-16-02",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "成灿跟你在一起吗",
+    "time": "2025-01-16 17:06",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-01-16",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-01-16-03",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "没有啊",
+    "time": "2025-01-16 17:08",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-01-16",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-01-16-04",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "怎么了",
+    "time": "2025-01-16 17:08",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-01-16",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-01-16-05",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "他手机没电了",
+    "time": "2025-01-16 17:09",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-01-16",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-01-16-06",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "没事 我找到他了",
+    "time": "2025-01-16 17:09",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-01-16",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-01-16-07",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "ㅋㅋㅋㅋㅋ",
+    "time": "2025-01-16 17:10",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-01-16",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-04-14-01",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "到家了吗",
+    "time": "2025-04-14 22:08",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-04-14",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-04-14-02",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "到了哥",
+    "time": "2025-04-14 22:11",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-04-14",
+      "displaySender": "송아지"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-04-14-03",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "好",
+    "time": "2025-04-14 22:12",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-04-14",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-04-14-04",
+    "title": "时宇哥",
+    "sender": "Siwoo",
+    "body": "今天辛苦了",
+    "time": "2025-04-14 22:12",
+    "kind": "text",
+    "outgoing": false,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-04-14",
+      "displaySender": "Siwoo"
+    }
+  },
+  {
+    "id": "kkt-siwoo-2025-04-14-05",
+    "title": "时宇哥",
+    "sender": "송아지",
+    "body": "哥也是 早点休息",
+    "time": "2025-04-14 22:13",
+    "kind": "text",
+    "outgoing": true,
+    "meta": {
+      "contact": "时宇哥",
+      "chatDate": "2025-04-14",
+      "displaySender": "송아지"
+    }
+  }
+]
