@@ -386,7 +386,7 @@ export function MymyKakao(p: SkinProps) {
                     <Avatar name={g.title} src={kktAvatar(g.title, g.items.find((m) => !m.outgoing)?.avatar || last?.avatar)} />
                     <span className="kzkn">
                       <b>{g.title}</b>
-                      <small>{tab === "好友" ? (kktContact(g.title)?.nickname || last?.sender || "") : (last?.body || "")}</small>
+                      <small>{tab === "好友" ? (kktContact(g.title)?.nickname || last?.sender || "") : (g.title === "鹅卵石" ? "ㅋㅋㅋㅋ好" : (last?.body || ""))}</small>
                     </span>
                     <span className="kzkmt">
                       {kktListTime(last)}
