@@ -320,8 +320,8 @@ function StoryPlayer() {
             if (response.ok) {
               const post = await response.json();
               const posts = w.data.twitter ?? [];
-              w.data.twitter = [...posts.filter((item) => item.id !== post.id), post]
-                .sort((a, b) => String(b.time || "").localeCompare(String(a.time || "")));
+              // Preserve the original authored feed order; the new 2026 post belongs at the very bottom.
+              w.data.twitter = [...posts.filter((item) => item.id !== post.id), post];
             }
           } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
         }
