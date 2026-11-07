@@ -313,6 +313,18 @@ function StoryPlayer() {
             }
           } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
         }
+        // Load the February 16 graduation confession as one X post with authored replies.
+        if (new URLSearchParams(location.search).get("template") !== "blank") {
+          try {
+            const response = await fetch("./x-20260216-9736.json", { signal: abort.signal });
+            if (response.ok) {
+              const post = await response.json();
+              const posts = w.data.twitter ?? [];
+              w.data.twitter = [...posts.filter((item) => item.id !== post.id), post]
+                .sort((a, b) => String(b.time || "").localeCompare(String(a.time || "")));
+            }
+          } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
+        }
         document.title =
           w.title === "捡手机" ? "捡手机" : w.title + " · 捡手机";
         setWork(w);
