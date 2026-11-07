@@ -5,13 +5,14 @@
     "sender": "송아지",
     "body": "[图片]",
     "time": "2026-03-16 19:14",
-    "kind": "message",
+    "kind": "image",
     "outgoing": true,
     "meta": {
       "chatDate": "2026-03-16",
       "contact": "咚灿",
       "displaySender": "송아지",
-      "dateLabel": "Monday, March 16, 2026"
+      "dateLabel": "Monday, March 16, 2026",
+      "pendingImagePath": "kkt-images/dongchan-20260316-1914.png"
     }
   },
   {
