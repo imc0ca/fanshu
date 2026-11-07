@@ -376,6 +376,19 @@ function StoryPlayer() {
             }
           } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
         }
+        // Append April 11 to the existing Dongchan interactive script; retain all earlier entries.
+        if (new URLSearchParams(location.search).get("template") !== "blank") {
+          try {
+            const response = await fetch("./dongchan-kkt-20260411.json", { signal: abort.signal });
+            if (response.ok) {
+              const incoming = await response.json();
+              const current = w.data.kakao ?? [];
+              const ids = new Set(current.map((item) => item.id));
+              w.data.kakao = [...current, ...incoming.filter((item: { id: string }) => !ids.has(item.id))];
+              w.data.kakao.sort((a, b) => String(a.time || "").localeCompare(String(b.time || "")));
+            }
+          } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
+        }
         // Load the February 16 graduation confession as one X post with authored replies.
         if (new URLSearchParams(location.search).get("template") !== "blank") {
           try {
