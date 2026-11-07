@@ -326,6 +326,30 @@ function StoryPlayer() {
             }
           } catch (e) { if (abort.signal.aborted) return; console.warn(e); }
         }
+        // Add the seven authored calendar entries without replacing existing events.
+        if (new URLSearchParams(location.search).get("template") !== "blank") {
+          const dates: Array<[string, string]> = [
+            ["2026-02-25", "入职"],
+            ["2026-03-02", "交材料"],
+            ["2026-03-09", "组会"],
+            ["2026-03-13", "交会议记录"],
+            ["2026-03-31", "会议记录"],
+            ["2026-04-07", "组会"],
+            ["2026-04-23", "组会"],
+          ];
+          const current = w.data.calendar ?? [];
+          const ids = new Set(current.map((item) => item.id));
+          w.data.calendar = [...current, ...dates.filter(([date]) => !ids.has("calendar-work-" + date)).map(([date, title]) => ({
+            id: "calendar-work-" + date,
+            title,
+            body: title,
+            time: date + " 09:00",
+            kind: "event",
+            sender: "",
+            outgoing: false,
+            meta: {},
+          }))].sort((a, b) => String(a.time || "").localeCompare(String(b.time || "")));
+        }
         // Continue the existing Dongchan chat through April 5, 2026.
         if (new URLSearchParams(location.search).get("template") !== "blank") {
           try {
