@@ -153,7 +153,7 @@ export function MymyKakao(p: SkinProps) {
     [draft, setDraft] = useState(""),
     [query, setQuery] = useState(""),
     [menu, setMenu] = useState(false);
-  const [april8Complete, setApril8Complete] = useSkinState<boolean>(p, "dongchanApril8Complete", false);
+  const [april12LastRead, setApril12LastRead] = useState(false);
   // Scripted April 8 conversation: earlier messages stay visible without interaction.
   const [scriptCount, setScriptCount] = useState(0);
   const [scriptStarted, setScriptStarted] = useState(false);
@@ -168,7 +168,13 @@ export function MymyKakao(p: SkinProps) {
   const april12Unread = (m: (typeof scripted)[number]) =>
     m.meta?.interactivePhase === "april12" &&
     lastRevealedApril12?.id === m.id &&
-    lastRevealedApril12.outgoing === true;
+    lastRevealedApril12.outgoing === true &&
+    !(april12LastRead && scriptCount === scripted.length);
+  useEffect(() => {
+    if (p.thread !== "咚灿" || !scriptStarted || !scripted.length || scriptCount !== scripted.length || lastRevealedApril12?.outgoing !== true) return;
+    const timer = setTimeout(() => setApril12LastRead(true), 1000);
+    return () => clearTimeout(timer);
+  }, [p.thread, scriptStarted, scriptCount, scripted.length, lastRevealedApril12?.id, lastRevealedApril12?.outgoing]);
   const lastSentApril11 = scripted.slice(0, scriptCount).filter((m) => m.meta?.interactivePhase === "april11").at(-1);
   const lastSentApril11Index = lastSentApril11 ? Number(lastSentApril11.meta?.interactiveIndex) : -1;
   const april11Unread = (m: (typeof scripted)[number]) =>
@@ -239,7 +245,7 @@ export function MymyKakao(p: SkinProps) {
       if (remaining < 240) node.scrollTo({ top: node.scrollHeight, behavior: "smooth" });
     }
   }, [scriptCount, scriptStarted, p.thread]);
-  const list = grouped(p.items.filter((m) => m.meta?.interactive !== "true" || april8Complete)).sort((a, b) => {
+  const list = grouped(p.items.filter((m) => m.meta?.interactive !== "true")).sort((a, b) => {
     if (a.title === "咚灿") return -1;
     if (b.title === "咚灿") return 1;
     return kktMessageStamp(kktLatest(b.items)!).localeCompare(kktMessageStamp(kktLatest(a.items)!));
@@ -282,7 +288,6 @@ export function MymyKakao(p: SkinProps) {
         <>
           <header className="kzth">
             <Back onClick={() => {
-              if (p.thread === "咚灿" && scriptStarted && scriptCount >= scripted.length) setApril8Complete(true);
               p.onThread("");
             }} />
             <span className="kzname">{p.thread}</span>
@@ -363,7 +368,6 @@ export function MymyKakao(p: SkinProps) {
             onSubmit={(e) => {
               e.preventDefault();
               if (scriptStarted && nextScript?.outgoing && p.thread === "咚灿") {
-                if (scriptCount + 1 >= scripted.length) setApril8Complete(true);
                 setScriptCount((count) => count + 1);
                 setDraft("");
                 return;
