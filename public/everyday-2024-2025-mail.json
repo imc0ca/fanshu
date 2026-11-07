@@ -1,0 +1,132 @@
+[
+  {
+    "id": "steam-stardew-202404",
+    "title": "感谢购买！《Stardew Valley》",
+    "sender": "Steam <noreply@steampowered.com>",
+    "time": "2024-04-19 20:14",
+    "body": "Steam 购买收据\n\n账户：宋银硕\n商品：Stardew Valley（星露谷物语）\n平台：PC / Steam\n金额：₩16,000（故事设定）\n付款方式：银行卡尾号 **** 0913\n订单编号：ST-240419-2041\n状态：付款成功，游戏已加入游戏库。\n\n感谢您使用 Steam！",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "steam-wishlist-202406",
+    "title": "您的愿望单游戏正在特价！",
+    "sender": "Steam <noreply@steampowered.com>",
+    "time": "2024-06-28 10:22",
+    "body": "Steam 夏季特卖开始了！\n\n您愿望单中的游戏《Unpacking》现正限时优惠。\n折扣：-50%（故事设定）\n活动结束：2024年7月11日\n\n打开 Steam 查看愿望单，别错过喜欢的游戏。",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": false,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "steam-guard-202408",
+    "title": "Steam Guard：新设备登录验证码",
+    "sender": "Steam Support <noreply@steampowered.com>",
+    "time": "2024-08-16 23:07",
+    "body": "您好，\n\n检测到您的 Steam 账户尝试从一台新设备登录。\n一次性验证码：R8K2Q\n设备：Windows PC\n位置：韩国（大致位置）\n时间：2024年8月16日 23:07\n\n如果是您本人，请在 Steam 登录界面输入验证码。如果不是，请立即修改密码。\n（虚构验证码，已失效）",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "steam-overcooked-202412",
+    "title": "感谢购买！《Overcooked! 2》",
+    "sender": "Steam <noreply@steampowered.com>",
+    "time": "2024-12-07 18:46",
+    "body": "Steam 购买收据\n\n商品：Overcooked! 2\n数量：1\n金额：₩26,000（故事设定）\n订单编号：ST-241207-1846\n付款状态：成功\n\n《Overcooked! 2》已加入您的 Steam 游戏库。祝您和朋友玩得开心！",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "netflix-payment-202501",
+    "title": "您的 Netflix 会员费用已支付",
+    "sender": "Netflix <info@account.netflix.com>",
+    "time": "2025-01-23 08:12",
+    "body": "Netflix 付款确认\n\n账单日期：2025年1月23日\n订阅：标准方案\n本期费用：₩13,500（故事设定）\n付款方式：银行卡尾号 **** 0913\n付款状态：已成功\n下次账单日期：2025年2月23日\n\n感谢您继续使用 Netflix。",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "coupang-shipping-202502",
+    "title": "[쿠팡] 您的生活用品订单已发货",
+    "sender": "Coupang <order@coupang.example>",
+    "time": "2025-02-11 14:36",
+    "body": "订单发货通知\n\n订单编号：CP-250209-1187\n商品：洗衣液、厨房纸巾、垃圾袋、牙膏\n收件人：宋银硕\n配送方式：Rocket Delivery\n预计送达：2025年2月12日\n订单状态：运输中\n\n可在 Coupang App 中查看物流进度。",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "google-drive-202503",
+    "title": "您的 Google 账户存储空间即将用尽",
+    "sender": "Google One <googleone-noreply@google.com>",
+    "time": "2025-03-18 09:05",
+    "body": "Google 账户存储空间提醒\n\n您已使用约 14.8 GB / 15 GB 免费存储空间。\nGoogle Drive、Gmail 和 Google Photos 共用此存储空间。\n\n建议删除不需要的大文件、清空垃圾箱，或升级存储空间。\n存储空间用尽后，可能无法继续上传新文件。",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "oliveyoung-coupon-202505",
+    "title": "[OLIVE YOUNG] 会员优惠券即将到期",
+    "sender": "Olive Young <membership@oliveyoung.example>",
+    "time": "2025-05-27 11:20",
+    "body": "OLIVE YOUNG 会员专属优惠提醒\n\n您有一张 ₩5,000 优惠券即将到期。\n使用期限：2025年5月31日 23:59\n适用范围：指定美妆与生活用品\n\n打开 Olive Young App 查看使用条件。\n（故事虚构优惠信息）",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": false,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "musinsa-shipping-202509",
+    "title": "[MUSINSA] 您购买的衣服已发货",
+    "sender": "MUSINSA <orders@musinsa.example>",
+    "time": "2025-09-13 17:42",
+    "body": "订单配送通知\n\n订单编号：MS-250911-0319\n商品：黑色连帽卫衣 ×1、宽松牛仔裤 ×1\n收件人：宋银硕\n配送状态：已发货\n预计送达：2025年9月15日\n\n感谢您在 MUSINSA 购物。",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true"
+    }
+  },
+  {
+    "id": "studio-booking-202511",
+    "title": "摄影预约确认｜11月22日 14:00",
+    "sender": "Morrow Photo Studio <booking@morrowstudio.example>",
+    "time": "2025-11-17 16:18",
+    "body": "宋银硕 您好：\n\n您的摄影工作室预约已确认。\n\n预约编号：MP-251122-008\n日期：2025年11月22日（周六）\n时间：14:00–15:30\n项目：个人形象照拍摄（含基础修图）\n地点：首尔麻浦区 Morrow Photo Studio（虚构工作室）\n预约人：宋银硕\n状态：已确认\n\n请提前10分钟到达，如需调整时间请至少提前一天联系我们。",
+    "folder": "收件箱",
+    "kind": "text",
+    "read": true,
+    "meta": {
+      "fictional": "true"
+    }
+  }
+]
