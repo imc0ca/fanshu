@@ -511,17 +511,32 @@
     }
   },
   {
-    "id": "kkt-dongchan-20260316-035",
+    "id": "kkt-dongchan-20260316-034b",
     "title": "咚灿",
     "sender": "송아지",
-    "body": "☹️",
-    "time": "2026-03-16 19:21",
+    "body": "干活去了",
+    "time": "2026-03-16 19:20",
     "kind": "message",
     "outgoing": true,
     "meta": {
       "chatDate": "2026-03-16",
       "contact": "咚灿",
       "displaySender": "송아지",
+      "dateLabel": "Monday, March 16, 2026"
+    }
+  },
+  {
+    "id": "kkt-dongchan-20260316-035",
+    "title": "咚灿",
+    "sender": "성찬",
+    "body": "☹️",
+    "time": "2026-03-16 19:21",
+    "kind": "message",
+    "outgoing": false,
+    "meta": {
+      "chatDate": "2026-03-16",
+      "contact": "咚灿",
+      "displaySender": "성찬",
       "dateLabel": "Monday, March 16, 2026"
     }
   },
