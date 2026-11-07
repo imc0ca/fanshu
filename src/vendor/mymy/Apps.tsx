@@ -158,7 +158,6 @@ export function MymyKakao(p: SkinProps) {
   const [scriptCount, setScriptCount] = useState(0);
   const [scriptStarted, setScriptStarted] = useState(false);
   const [lastUnreadCleared, setLastUnreadCleared] = useState(false);
-  const scriptTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scroll = useRef<HTMLDivElement>(null);
   const scripted = p.thread === "咚灿"
     ? p.items.filter((m) => m.title === "咚灿" && m.meta?.interactive === "true")
