@@ -197,9 +197,10 @@ export function MymyKakao(p: SkinProps) {
       if (!target) { visibleSince = null; return; }
       const rootBox = root.getBoundingClientRect();
       const bubbleBox = target.getBoundingClientRect();
-      const inView = bubbleBox.top < rootBox.bottom - 8 && bubbleBox.bottom > rootBox.top + 8;
-      const atEnd = root.scrollHeight - root.scrollTop - root.clientHeight < 100;
-      if (inView && atEnd) {
+      const inView = bubbleBox.top >= rootBox.top - 8 && bubbleBox.bottom <= rootBox.bottom + 16;
+      // The last existing bubble being visible is sufficient; Safari can report
+      // a stale scrollHeight until the input receives focus.
+      if (inView) {
         if (visibleSince === null) visibleSince = Date.now();
         if (Date.now() - visibleSince >= 1000) {
           setScriptStarted(true);
