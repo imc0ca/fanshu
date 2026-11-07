@@ -140,7 +140,7 @@
     "sender": "송아지",
     "body": "[图片]",
     "time": "2026-01-14 09:06",
-    "kind": "image",
+    "kind": "message",
     "outgoing": false,
     "meta": {
       "chatDate": "2026-01-14",
@@ -155,7 +155,7 @@
     "sender": "송아지",
     "body": "[图片]",
     "time": "2026-01-14 09:06",
-    "kind": "image",
+    "kind": "message",
     "outgoing": false,
     "meta": {
       "chatDate": "2026-01-14",
