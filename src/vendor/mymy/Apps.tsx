@@ -225,9 +225,9 @@ export function MymyKakao(p: SkinProps) {
                   {!m.outgoing && run.first && (
                     <>
                       <div className="kzmav">
-                        <Avatar name={m.sender} src={kktAvatar(p.thread, m.avatar)} />
+                        <Avatar name={m.sender} src={p.thread === "咚灿" && chatDate >= "2026-02-16" ? `${import.meta.env.BASE_URL}kkt-avatars/seongchan-2026.png` : kktAvatar(p.thread, m.avatar)} />
                       </div>
-                      <div className="kzmn">{kktContact(p.thread)?.nickname || m.meta?.displaySender || m.sender}</div>
+                      <div className="kzmn">{p.thread === "咚灿" && chatDate >= "2026-02-16" ? "성찬" : (kktContact(p.thread)?.nickname || m.meta?.displaySender || m.sender)}</div>
                     </>
                   )}
                   {m.outgoing && run.last && (
