@@ -659,15 +659,17 @@ export function MailSkin(p: Props) {
   const list = items.filter(
     (i) =>
       tab === "全部邮件" ||
+      (tab === "重要邮件" && i.meta?.important === "true") ||
+      (tab === "已收藏" && (i.favorite || i.meta?.starred === "true")) ||
       i.folder === tab ||
       (tab === "收件箱" &&
-        (!i.folder || !["草稿", "已发送"].includes(i.folder))),
+        (!i.folder || !["草稿", "已发送", "已存档"].includes(i.folder))),
   );
   return (
     <div className="catalog-skin native-mail">
       <Header p={p} />
       <div className="mail-folders">
-        {["收件箱", "草稿", "已发送", "全部邮件"].map((t) => (
+        {["收件箱", "重要邮件", "已收藏", "已存档", "草稿", "已发送", "全部邮件"].map((t) => (
           <button
             key={t}
             className={tab === t ? "selected" : ""}
@@ -689,6 +691,9 @@ export function MailSkin(p: Props) {
             <i className={!i.read ? "unread" : ""} />
             <div>
               <strong>{i.sender}</strong>
+              {i.meta?.important === "true" && <span style={{color:"#c78c10",fontSize:11,marginLeft:6}}>重要</span>}
+              {(i.favorite || i.meta?.starred === "true") && <span style={{color:"#c78c10",fontSize:13,marginLeft:6}} aria-label="已收藏">★</span>}
+              {i.folder === "已存档" && <span style={{color:"#888",fontSize:11,marginLeft:6}}>已存档</span>}
               <h3>{i.title}</h3>
               <p>{i.body}</p>
             </div>
