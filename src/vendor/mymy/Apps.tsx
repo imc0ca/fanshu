@@ -153,13 +153,52 @@ export function MymyKakao(p: SkinProps) {
     [draft, setDraft] = useState(""),
     [query, setQuery] = useState(""),
     [menu, setMenu] = useState(false);
+  // Scripted April 8 conversation: earlier messages stay visible without interaction.
+  const [scriptCount, setScriptCount] = useState(0);
+  const [scriptStarted, setScriptStarted] = useState(false);
+  const scriptTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const scripted = p.thread === "咚灿"
+    ? p.items.filter((m) => m.title === "咚灿" && m.meta?.interactive === "true")
+    : [];
+  const nextScript = scripted[scriptCount];
+  useEffect(() => {
+    if (p.thread !== "咚灿" || scriptStarted || !scripted.length) return;
+    const root = document.querySelector(".mymy-kakao .msgs.kk");
+    if (!root) return;
+    const target = root.querySelector('[data-message-id="kkt-dongchan-20260408-008"]');
+    if (!target) return;
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting && e.intersectionRatio >= 0.6)) {
+        if (!scriptTimer.current) scriptTimer.current = setTimeout(() => {
+          setScriptStarted(true);
+          setScriptCount(1); // 成灿：什么呀
+          scriptTimer.current = null;
+        }, 3000);
+      } else if (scriptTimer.current) {
+        clearTimeout(scriptTimer.current);
+        scriptTimer.current = null;
+      }
+    }, { root, threshold: [0, 0.6, 1] });
+    observer.observe(target);
+    return () => { observer.disconnect(); if (scriptTimer.current) clearTimeout(scriptTimer.current); scriptTimer.current = null; };
+  }, [p.thread, scriptStarted, scripted.length]);
+  useEffect(() => {
+    if (!scriptStarted || !nextScript || nextScript.outgoing || p.thread !== "咚灿") return;
+    const timer = setTimeout(() => setScriptCount((count) => count + 1), 850);
+    return () => clearTimeout(timer);
+  }, [scriptStarted, scriptCount, p.thread, nextScript?.id]);
+  useEffect(() => {
+    if (!scriptStarted || p.thread !== "咚灿") return;
+    const node = document.querySelector(".mymy-kakao .msgs.kk");
+    if (node) node.scrollTop = node.scrollHeight;
+  }, [scriptCount, scriptStarted, p.thread]);
   const list = grouped(p.items).sort((a, b) => {
     if (a.title === "咚灿") return -1;
     if (b.title === "咚灿") return 1;
     return kktMessageStamp(kktLatest(b.items)!).localeCompare(kktMessageStamp(kktLatest(a.items)!));
   }),
     messages = [
-      ...p.items.filter((i) => i.title === p.thread),
+      ...p.items.filter((i) => i.title === p.thread && (i.meta?.interactive !== "true" || (scriptStarted && scripted.findIndex((m) => m.id === i.id) < scriptCount))),
       ...sent.flatMap((raw, index) => {
         try {
           const entry: unknown = JSON.parse(raw);
@@ -274,6 +313,11 @@ export function MymyKakao(p: SkinProps) {
             className="kzinp"
             onSubmit={(e) => {
               e.preventDefault();
+              if (scriptStarted && nextScript?.outgoing && p.thread === "咚灿") {
+                setScriptCount((count) => count + 1);
+                setDraft("");
+                return;
+              }
               if (draft.trim()) {
                 setSent([
                   ...sent,
@@ -297,15 +341,16 @@ export function MymyKakao(p: SkinProps) {
             <input
               aria-label="KKT消息"
               placeholder="输入消息"
-              value={draft}
+              value={scriptStarted && nextScript?.outgoing && p.thread === "咚灿" ? nextScript.body : draft}
+              readOnly={scriptStarted && !!nextScript?.outgoing && p.thread === "咚灿"}
               maxLength={2000}
               onChange={(e) => setDraft(e.target.value)}
             />
             <Smile size={22} />
             <button
-              className={draft.trim() ? "go" : ""}
+              className={(scriptStarted && nextScript?.outgoing && p.thread === "咚灿") || draft.trim() ? "go" : ""}
               aria-label="发送KKT消息"
-              disabled={!draft.trim()}
+              disabled={!(scriptStarted && nextScript?.outgoing && p.thread === "咚灿") && !draft.trim()}
             >
               ↑
             </button>
