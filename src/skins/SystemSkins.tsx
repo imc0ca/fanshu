@@ -419,6 +419,19 @@ export function CameraSkin(p: Props) {
 export function SafariSkin(p: Props) {
   const [q, setQ] = useState(""),
     [tab, setTab] = useState("书签");
+  const history = [
+    "麻婆豆腐做法",
+    "姜岛核桃攻略",
+    "沙漠矿洞邪修大全",
+    "朋友家有自己的拖鞋说明什么",
+    "抱小狗姿势合集",
+    "朋友之间会做什么",
+    "朋友说我家就是你家意味着什么",
+    "和朋友怎样算暧昧",
+    "和最好的朋友当不了朋友了怎么办",
+    "土象冷处理",
+    "土象已读不回",
+  ];
   const items = p.items
     .filter((i) =>
       (i.title + i.body + meta(i, "url"))
@@ -430,23 +443,45 @@ export function SafariSkin(p: Props) {
         ? i.favorite || i.folder !== "历史记录"
         : i.folder === "历史记录",
     );
+  const matchingHistory = history.filter((title) => title.toLowerCase().includes(q.toLowerCase()));
   return (
     <div className="catalog-skin native-safari">
       <Header p={p} />
       <div className="catalog-scroll">
         <h1>{tab}</h1>
-        <div className="safari-favorites">
-          {items.map((i) => (
-            <button key={i.id} onClick={() => p.onItem(i)}>
-              <span>
-                <Globe size={28} />
-              </span>
-              <strong>{i.title}</strong>
-              <small>{meta(i, "url")}</small>
-            </button>
-          ))}
-        </div>
-        <Empty items={items} label="没有匹配的虚构网页" />
+        {tab === "历史记录" && (
+          <div aria-label="Safari 搜索历史" style={{ margin: "14px 0 18px", background: "#fff", borderRadius: 12, overflow: "hidden" }}>
+            {matchingHistory.map((title, index) => (
+              <div key={title} style={{ display: "flex", alignItems: "center", minHeight: 56, gap: 12, padding: "12px 15px", borderBottom: index < matchingHistory.length - 1 ? "1px solid #e5e5ea" : "none", boxSizing: "border-box" }}>
+                <Clock size={19} color="#8e8e93" style={{ flexShrink: 0 }} />
+                <span style={{ fontSize: 15, lineHeight: 1.45, color: "#1c1c1e", whiteSpace: "normal", overflowWrap: "anywhere", flex: 1 }}>{title}</span>
+              </div>
+            ))}
+          </div>
+        )}
+        {tab === "书签" && (
+          <div className="safari-favorites">
+            {items.map((i) => (
+              <button key={i.id} onClick={() => p.onItem(i)}>
+                <span><Globe size={28} /></span>
+                <strong>{i.title}</strong>
+                <small>{meta(i, "url")}</small>
+              </button>
+            ))}
+          </div>
+        )}
+        {tab === "历史记录" && items.length > 0 && (
+          <div className="safari-favorites">
+            {items.map((i) => (
+              <button key={i.id} onClick={() => p.onItem(i)}>
+                <span><Globe size={28} /></span>
+                <strong>{i.title}</strong>
+                <small>{meta(i, "url")}</small>
+              </button>
+            ))}
+          </div>
+        )}
+        {items.length === 0 && (tab === "书签" || matchingHistory.length === 0) && <Empty items={items} label="没有匹配的虚构网页" />}
       </div>
       <label className="safari-address">
         <LockKeyhole size={13} />
