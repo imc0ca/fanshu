@@ -448,7 +448,7 @@ export function SafariSkin(p: Props) {
     <div className="catalog-skin native-safari">
       <Header p={p} />
       <div className="catalog-scroll">
-        <h1>{tab}</h1>
+        <h1 style={tab === "历史记录" ? { fontSize: 25, lineHeight: 1.25, marginBottom: 12 } : undefined}>{tab}</h1>
         {tab === "历史记录" && (
           <div aria-label="Safari 搜索历史" style={{ margin: "14px 0 18px", background: "#fff", borderRadius: 12, overflow: "hidden" }}>
             {matchingHistory.map((title, index) => (
