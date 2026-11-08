@@ -872,7 +872,29 @@ export function FilesSkin(p: Props) {
           </div>
         ) : (
           <div className="file-grid">
-            {!folder && <div><button type="button" aria-label="简历（内容待添加）" style={{cursor:"default"}}><FileText size={49} /><strong>简历</strong><small>内容待添加</small></button></div>}
+            {!folder && [
+              { title: "test", type: "audio", date: "昨天", location: "iCloud 云盘" },
+              { title: "song", type: "audio", date: "昨天", location: "iCloud 云盘" },
+              { title: "ep.27", type: "audio", date: "11月5日", location: "iCloud 云盘" },
+              { title: "ep.42", type: "audio", date: "10月28日", location: "iCloud 云盘" },
+              { title: "ep.33", type: "audio", date: "10月16日", location: "iCloud 云盘" },
+              { title: "简历", type: "document", date: "11月2日", location: "iCloud 云盘" },
+              { title: "文字稿27", type: "document", date: "10月30日", location: "iCloud 云盘" },
+              { title: "文字稿42", type: "document", date: "10月21日", location: "iCloud 云盘" },
+              { title: "最终版33", type: "document", date: "10月12日", location: "iCloud 云盘" },
+            ].filter((file) => file.title.toLowerCase().includes(q.toLowerCase())).map((file) => (
+              <div key={file.title} className="fictional-icloud-file" style={{ minWidth: 0, textAlign: "center" }}>
+                <button type="button" aria-label={file.title + "，仅展示，无法打开"} title="仅供展示" style={{ cursor: "default", width: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: 4, padding: "10px 2px", background: "transparent", border: 0 }}>
+                  <span style={{ position: "relative", width: 82, height: 103, border: "1.5px solid #d8d8dc", borderRadius: 9, background: "#fafafa", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+                    <span style={{ position: "absolute", top: -1, right: -1, width: 26, height: 26, background: "linear-gradient(45deg,#f5f5f5 49%,#d8d8dc 50%,#fafafa 55%)", borderLeft: "1px solid #d8d8dc", borderBottom: "1px solid #d8d8dc", borderBottomLeftRadius: 7 }} />
+                    {file.type === "audio" ? <span style={{ color: "#1687ff", fontSize: 33, fontWeight: 700, letterSpacing: -5, transform: "scaleX(.85)" }}>▏▎┃▎▏</span> : <FileText size={36} color="#8e8e93" strokeWidth={1.5} />}
+                  </span>
+                  <strong style={{ fontSize: 14, color: "#161616", fontWeight: 600, lineHeight: 1.3, overflowWrap: "anywhere" }}>{file.title}</strong>
+                  <small style={{ fontSize: 12, color: "#8e8e93", lineHeight: 1.4 }}>{file.date}</small>
+                  <small style={{ fontSize: 12, color: "#8e8e93", lineHeight: 1.4 }}>{file.location}</small>
+                </button>
+              </div>
+            ))}
             {list.map((i) => (
               <div key={i.id}>
                 <button onClick={() => p.onItem(i)}>
