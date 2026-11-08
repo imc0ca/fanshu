@@ -412,7 +412,6 @@ export function CameraSkin(p: Props) {
           <Camera size={24} />
         </button>
       </div>
-      <small className="camera-caption">作者设置的虚构取景内容</small>
     </div>
   );
 }
