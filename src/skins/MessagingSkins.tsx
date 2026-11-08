@@ -11,6 +11,7 @@ import {
   Send,
   Smile,
   Users,
+  UserRound,
 } from "lucide-react";
 import { useState } from "react";
 import type { Item } from "../schema";
@@ -75,10 +76,12 @@ function ChatRows({
   p,
   items,
   round = true,
+  anonymous = false,
 }: {
   p: Props;
   items: Item[];
   round?: boolean;
+  anonymous?: boolean;
 }) {
   const names = [...new Set(items.map((i) => i.title))];
   return (
@@ -94,7 +97,7 @@ function ChatRows({
               p.onRead(name);
             }}
           >
-            <Avatar name={name} src={last.avatar} round={round} />
+            {anonymous ? <span className="sms-anonymous-avatar" aria-hidden="true"><UserRound size={25} strokeWidth={2.3} /></span> : <Avatar name={name} src={last.avatar} round={round} />}
             <span>
               <strong>{name}</strong>
               <p>{last.body}</p>
@@ -138,6 +141,7 @@ export function MessagesSkin(p: Props) {
           <ChatRows
             p={p}
             items={unread ? items.filter((i) => !i.read) : items}
+            anonymous
           />
         </div>
       )}
