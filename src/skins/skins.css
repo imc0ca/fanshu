@@ -4316,3 +4316,29 @@
 .native-notes .catalog-scroll > h1 { font-size: 26px; }
 .native-notes .catalog-nav strong { font-size: 17px; }
 .native-notes input { font-size: 14px; }
+
+/* Keep mail preview to a complete single line, never half-clipped. */
+.native-mail .mail-preview p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  line-height: 1.45;
+  max-height: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
+}
+.native-mail .mail-preview > time { flex-shrink: 0; }
+/* iOS Messages anonymous contact glyph shared by every SMS sender. */
+.native-messages .sms-anonymous-avatar {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #d5d8dc;
+  color: #fff;
+  overflow: hidden;
+}
