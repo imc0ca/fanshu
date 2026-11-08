@@ -4369,3 +4369,15 @@
   width: 22px;
   height: 22px;
 }
+
+/* Full email reading screen, contained within the phone viewport. */
+.native-mail-detail .mail-detail-nav { display:flex;align-items:center;justify-content:space-between;flex:0 0 auto;padding:14px 17px;border-bottom:1px solid #e5e5ea;background:#fff;font-size:14px; }
+.native-mail-detail .mail-detail-nav button { color:#1685ed;font-size:14px; }
+.native-mail-detail .mail-detail-nav span { position:absolute;left:50%;transform:translateX(-50%);font-weight:600; }
+.native-mail-detail .mail-detail-scroll { overflow-y:auto;min-height:0;padding:20px 17px 38px;background:#fff; }
+.native-mail-detail .mail-detail-scroll h2 { font-size:20px;line-height:1.4;overflow-wrap:anywhere;margin:0 0 22px; }
+.native-mail-detail .mail-detail-sender { display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;font-size:12px;overflow-wrap:anywhere; }
+.native-mail-detail .mail-detail-sender strong { font-size:13px;min-width:0;overflow-wrap:anywhere; }
+.native-mail-detail .mail-detail-sender time,.native-mail-detail .mail-detail-recipient { color:#8e8e93;font-size:11px; }
+.native-mail-detail .mail-detail-recipient { margin:8px 0 20px;padding-bottom:15px;border-bottom:1px solid #eee; }
+.native-mail-detail .mail-detail-body { white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:1.8;color:#222; }
