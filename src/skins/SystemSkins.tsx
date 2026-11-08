@@ -707,8 +707,14 @@ export function MailSkin(p: Props) {
       <div className="catalog-scroll mail-detail-scroll">
         <h2>{selectedMail.title}</h2>
         <div className="mail-detail-sender"><strong>{selectedMail.sender}</strong><time>{selectedMail.time.replace("T", " ")}</time></div>
-        <div className="mail-detail-recipient">收件人：Eunseok</div>
-        <div className="mail-detail-body">{selectedMail.body}</div>
+        <div className="mail-detail-recipient">收件人：{selectedMail.folder === "已发送" ? (selectedMail.meta?.recipient || "招聘团队") : "Eunseok"}</div>
+        <div className="mail-detail-body" style={{ whiteSpace: "pre-wrap" }}>{selectedMail.body}</div>
+        {selectedMail.meta?.attachment && (
+          <div aria-label="邮件附件" style={{ margin: "18px 16px 24px", padding: "12px 14px", display: "flex", alignItems: "center", gap: 12, background: "#f5f5f7", border: "1px solid #e5e5ea", borderRadius: 12 }}>
+            <span style={{ display: "flex", alignItems: "center", justifyContent: "center", width: 43, height: 48, borderRadius: 7, background: "#fff", border: "1px solid #dedee2" }}><FileText size={28} color="#d74c4c" /></span>
+            <span style={{ flex: 1, minWidth: 0 }}><strong style={{ display: "block", fontSize: 14, overflowWrap: "anywhere" }}>{selectedMail.meta.attachment}</strong><small style={{ display: "block", marginTop: 3, color: "#8e8e93" }}>PDF 文稿 · {selectedMail.meta?.attachmentSize || "148 KB"} · 附件预览不可用</small></span>
+          </div>
+        )}
       </div>
     </div>
   );
