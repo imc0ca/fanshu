@@ -656,6 +656,8 @@ export function CalendarSkin(p: Props) {
 }
 export function MailSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "收件箱");
+  const [openedMail, setOpenedMail] = useState<string | null>(null);
+  const selectedMail = items.find((i) => i.id === openedMail);
   const list = items.filter(
     (i) =>
       tab === "全部邮件" ||
@@ -664,6 +666,17 @@ export function MailSkin(p: Props) {
       i.folder === tab ||
       (tab === "收件箱" &&
         (!i.folder || !["草稿", "已发送", "已存档"].includes(i.folder))),
+  );
+  if (selectedMail) return (
+    <div className="catalog-skin native-mail native-mail-detail">
+      <div className="mail-detail-nav"><button onClick={() => setOpenedMail(null)}>‹ 收件箱</button><span>邮件</span></div>
+      <div className="catalog-scroll mail-detail-scroll">
+        <h2>{selectedMail.title}</h2>
+        <div className="mail-detail-sender"><strong>{selectedMail.sender}</strong><time>{selectedMail.time.replace("T", " ")}</time></div>
+        <div className="mail-detail-recipient">收件人：宋小鱼</div>
+        <div className="mail-detail-body">{selectedMail.body}</div>
+      </div>
+    </div>
   );
   return (
     <div className="catalog-skin native-mail">
@@ -686,7 +699,7 @@ export function MailSkin(p: Props) {
           <button
             className="mail-preview"
             key={i.id}
-            onClick={() => p.onItem(i)}
+            onClick={() => setOpenedMail(i.id)}
           >
             <i className={!i.read ? "unread" : ""} />
             <div>
