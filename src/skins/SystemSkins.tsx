@@ -673,7 +673,7 @@ export function MailSkin(p: Props) {
       <div className="catalog-scroll mail-detail-scroll">
         <h2>{selectedMail.title}</h2>
         <div className="mail-detail-sender"><strong>{selectedMail.sender}</strong><time>{selectedMail.time.replace("T", " ")}</time></div>
-        <div className="mail-detail-recipient">收件人：宋小鱼</div>
+        <div className="mail-detail-recipient">收件人：Eunseok</div>
         <div className="mail-detail-body">{selectedMail.body}</div>
       </div>
     </div>
