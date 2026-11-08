@@ -922,7 +922,7 @@ export function FilesSkin(p: Props) {
                 <button type="button" aria-label={file.title + "，仅展示，无法打开"} title="仅供展示" style={{ cursor: "default", width: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: 4, padding: "10px 2px", background: "transparent", border: 0 }}>
                   <span style={{ position: "relative", width: 82, height: 103, border: "1.5px solid #d8d8dc", borderRadius: 9, background: "#fafafa", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
                     <span style={{ position: "absolute", top: -1, right: -1, width: 26, height: 26, background: "linear-gradient(45deg,#f5f5f5 49%,#d8d8dc 50%,#fafafa 55%)", borderLeft: "1px solid #d8d8dc", borderBottom: "1px solid #d8d8dc", borderBottomLeftRadius: 7 }} />
-                    {file.type === "audio" ? <span style={{ color: "#1687ff", fontSize: 33, fontWeight: 700, letterSpacing: -5, transform: "scaleX(.85)" }}>▏▎┃▎▏</span> : <FileText size={36} color="#8e8e93" strokeWidth={1.5} />}
+                    {file.type === "audio" ? <svg width="40" height="48" viewBox="0 0 40 48" fill="none" aria-hidden="true" style={{ flexShrink: 0, display: "block" }}><g stroke="#1687ff" strokeWidth="3.5" strokeLinecap="round"><path d="M4 20V28" /><path d="M12 12V36" /><path d="M20 5V43" /><path d="M28 14V34" /><path d="M36 20V28" /></g></svg> : <FileText size={36} color="#8e8e93" strokeWidth={1.5} />}
                   </span>
                   <strong style={{ fontSize: 14, color: "#161616", fontWeight: 600, lineHeight: 1.3, overflowWrap: "anywhere" }}>{file.title}</strong>
                   <small style={{ fontSize: 12, color: "#8e8e93", lineHeight: 1.4 }}>{file.date}</small>
