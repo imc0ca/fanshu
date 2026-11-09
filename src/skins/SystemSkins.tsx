@@ -417,7 +417,7 @@ export function CameraSkin(p: Props) {
 }
 export function SafariSkin(p: Props) {
   const [q, setQ] = useState(""),
-    [tab, setTab] = useState("书签");
+    [tab, setTab] = useState("历史记录");
   const history = [
     "麻婆豆腐做法",
     "姜岛核桃攻略",
