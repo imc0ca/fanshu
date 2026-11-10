@@ -527,13 +527,30 @@ export function MymyKakao(p: SkinProps) {
     </div>
   );
 }
+const igFriends = ["s2taro","burgerSc_0913","Wonb1n32","ddori.zip","tonny4321","siw00_","d4echi","sh0hei_"];
+const igData: Record<string, [number,number,string]> = {
+  "seok.wav":[28,591,"somewhere, somehow."],
+  "s2taro":[49,427,"dancing somewhere 🪩"],
+  "burgerSc_0913":[52,7619,"just here 🍔"],
+  "Wonb1n32":[33,718,"404 not found"],
+  "ddori.zip":[47,477,"just for fun :p"],
+  "tonny4321":[63,821,"🏊‍♂️🎧 0321"],
+  "siw00_":[26,322,"out of office"],
+  "d4echi":[12,197,"Tiny joys everywhere"],
+  "sh0hei_":[36,816,"☁️"]
+};
+function IGPortrait({id,size=54}:{id:string;size?:number}) {
+  return <img src={`${import.meta.env.BASE_URL}ig-avatars/${id}.jpg`} alt={id} style={{width:size,height:size,borderRadius:"50%",objectFit:"cover",flexShrink:0,background:"#eee"}} />;
+}
 export function MymyInstagram(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "主页"),
     [liked, setLiked] = useSkinState<string[]>(p, "mymyLiked", []),
     [saved, setSaved] = useSkinState<string[]>(p, "mymySaved", []),
     [replies, setReplies] = useSkinState<string[]>(p, "mymyReplies", []),
     [seen, setSeen] = useSkinState<string[]>(p, "mymySeen", []);
-  const [sheet, setSheet] = useState<Item | null>(null),
+  const [igViewed, setIgViewed] = useState<string | null>(null),
+    [igList, setIgList] = useState<string | null>(null),
+    [sheet, setSheet] = useState<Item | null>(null),
     [selected, setSelected] = useState<Item | null>(null),
     [story, setStory] = useState(0),
     [draft, setDraft] = useState(""),
@@ -652,22 +669,25 @@ export function MymyInstagram(p: SkinProps) {
         <header className="igh">
           <button
             aria-label={selected ? "返回Instagram动态" : "关闭当前App"}
-            onClick={() => (selected ? setSelected(null) : p.onBack())}
+            onClick={() => (igList ? setIgList(null) : igViewed ? setIgViewed(null) : selected ? setSelected(null) : p.onBack())}
           >
             <ArrowLeft />
           </button>
           <span className="igl2">
-            {selected ? "帖子" : tab === "主页" ? "Instagram" : tab}
+            {igList || igViewed || (selected ? "帖子" : tab === "主页" ? "Instagram" : tab)}
           </span>
           <button aria-label="打开私信" onClick={() => setTab("私信")}>
             <Send />
           </button>
         </header>
         <div className="igb">
-          {selected && post(selected)}
-          {!selected && tab === "主页" && (
+          {selected && !igViewed && !igList && post(selected)}
+          {igList && <div style={{padding:16}}>{igFriends.map(id=><button key={id} onClick={()=>{setIgViewed(id);setIgList(null)}} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:"10px 0",border:0,borderBottom:"1px solid #eee",background:"white",textAlign:"left"}}><IGPortrait id={id} size={44}/><b>{id}</b></button>)}</div>}
+          {igViewed && !igList && <div style={{padding:18}}><div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}><IGPortrait id={igViewed} size={78}/><div style={{textAlign:"center"}}><b>{igData[igViewed][0]}</b><div>帖子</div></div><div style={{textAlign:"center"}}><b>{igData[igViewed][1]}</b><div>粉丝</div></div><div style={{textAlign:"center"}}><b>—</b><div>关注</div></div></div><b style={{display:"block",marginTop:14}}>{igViewed}</b><p>{igData[igViewed][2]}</p></div>}
+          {!selected && !igViewed && !igList && tab === "主页" && (
             <>
               <div className="sts">
+                {["seok.wav",...igFriends].map(id=><button className="st" key={id} onClick={()=>{setIgViewed(id);setIgList(null);setTab("个人主页")}}><span className="sr on"><IGPortrait id={id} size={46}/></span><small>{id}</small></button>)}
                 {stories.map((s, n) => (
                   <button
                     className="st"
@@ -687,41 +707,23 @@ export function MymyInstagram(p: SkinProps) {
               {!posts.length && <Blank />}
             </>
           )}
-          {!selected && tab === "个人主页" && (
+          {!selected && !igViewed && !igList && tab === "个人主页" && (
             <>
               <div className="pf">
-                <Avatar name={p.owner || "机主"} />
+                <IGPortrait id="seok.wav" size={82}/>
                 <div className="ps">
-                  <div>
-                    <b>{posts.length}</b>
-                    <small>帖子</small>
-                  </div>
-                  <div>
-                    <b>—</b>
-                    <small>粉丝</small>
-                  </div>
-                  <div>
-                    <b>—</b>
-                    <small>关注</small>
-                  </div>
+                  <div><b>28</b><small>帖子</small></div>
+                  <button onClick={()=>setIgList("粉丝")} style={{border:0,background:"transparent",display:"flex",flexDirection:"column",alignItems:"center"}}><b>591</b><small>粉丝</small></button>
+                  <button onClick={()=>setIgList("关注")} style={{border:0,background:"transparent",display:"flex",flexDirection:"column",alignItems:"center"}}><b>8</b><small>关注</small></button>
                 </div>
               </div>
-              <p className="pn">{p.owner}</p>
-              <div className="ptab">
-                <div className="on">
-                  <Grid />
-                </div>
-              </div>
-              <div className="pg2">
-                {posts.map((i) => (
-                  <button key={i.id} onClick={() => openPost(i)}>
-                    <Media item={i} />
-                  </button>
-                ))}
-              </div>
+              <p className="pn"><b>seok.wav</b><br/>somewhere, somehow.</p>
+              <div style={{padding:"12px 16px"}}><b>互相关注的朋友</b><div style={{display:"flex",gap:12,overflowX:"auto",marginTop:12}}>{igFriends.map(id=><button key={id} onClick={()=>setIgViewed(id)} style={{border:0,background:"transparent",display:"flex",flexDirection:"column",alignItems:"center",gap:5,flexShrink:0,width:65}}><IGPortrait id={id} size={54}/><small style={{fontSize:10,maxWidth:65,overflow:"hidden",textOverflow:"ellipsis"}}>{id}</small></button>)}</div></div>
+              <div className="ptab"><div className="on"><Grid/></div></div>
+              <div className="pg2">{posts.map(i=><button key={i.id} onClick={()=>openPost(i)}><Media item={i}/></button>)}</div>
             </>
           )}
-          {!selected && tab === "私信" && (
+          {!selected && !igViewed && !igList && tab === "私信" && (
             <>
               {dms.map((i) => (
                 <button className="kzkr" key={i.id} onClick={() => openPost(i)}>
@@ -735,7 +737,7 @@ export function MymyInstagram(p: SkinProps) {
               {!dms.length && <Blank />}
             </>
           )}
-          {!selected && tab === "搜索" && (
+          {!selected && !igViewed && !igList && tab === "搜索" && (
             <>
               <input
                 className="mymy-search"
@@ -744,6 +746,7 @@ export function MymyInstagram(p: SkinProps) {
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
               />
+              {["seok.wav",...igFriends].filter(id=>id.toLowerCase().includes(draft.toLowerCase())).map(id=><button key={id} onClick={()=>{setIgViewed(id);setIgList(null)}} style={{display:"flex",alignItems:"center",gap:12,padding:10,width:"100%",border:0,background:"white"}}><IGPortrait id={id} size={40}/><b>{id}</b></button>)}
               {posts
                 .filter((i) => (i.title + i.body + i.sender).includes(draft))
                 .map(post)}
@@ -756,10 +759,12 @@ export function MymyInstagram(p: SkinProps) {
               key={n}
               aria-label={["主页", "搜索", "私信", "个人主页"][n]}
               aria-pressed={
-                !selected && tab === ["主页", "搜索", "私信", "个人主页"][n]
+                !selected && !igViewed && !igList && tab === ["主页", "搜索", "私信", "个人主页"][n]
               }
               onClick={() => {
                 setSelected(null);
+                setIgViewed(null);
+                setIgList(null);
                 setTab(["主页", "搜索", "私信", "个人主页"][n]);
               }}
             >
