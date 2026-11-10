@@ -716,13 +716,15 @@ export function WhatsAppSkin(p: SkinProps) {
     </div>
   );
 }
+const igAccounts = ["s2taro", "seok.wav", "burgerSc_0913", "Wonb1n32", "ddori.zip", "tonny4321", "siw00_", "d4echi", "sh0hei_"];
 export function InstagramSkin(p: SkinProps) {
   const [tab, setTab] = useState("首页"),
     [dm, setDm] = useState(false),
     [query, setQuery] = useState(""),
     [likes, setLikes] = useSkinState<string[]>(p, "likes", []),
     [saved, setSaved] = useSkinState<string[]>(p, "saved", []),
-    [showSaved, setShowSaved] = useState(false);
+    [showSaved, setShowSaved] = useState(false),
+    [viewedProfile, setViewedProfile] = useState<string | null>(null);
   const posts = p.items.filter(
       (i) =>
         i.kind === "post" ||
@@ -745,11 +747,11 @@ export function InstagramSkin(p: SkinProps) {
       <div className="app-nav ig-nav">
         <button
           aria-label="返回"
-          onClick={() => (dm ? setDm(false) : p.onBack())}
+          onClick={() => viewedProfile ? setViewedProfile(null) : (dm ? setDm(false) : p.onBack())}
         >
           <ChevronLeft size={22} />
         </button>
-        <strong>{dm ? "私信" : p.name}</strong>
+        <strong>{viewedProfile ?? (dm ? "私信" : p.name)}</strong>
         <div>
           {p.creator && (
             <button aria-label="新增内容" onClick={p.onAdd}>
@@ -762,7 +764,21 @@ export function InstagramSkin(p: SkinProps) {
         </div>
       </div>
       <div className="skin-scroll ig-scroll">
-        {dm ? (
+        {viewedProfile ? (
+          <div style={{ padding: "22px 16px", color: "#262626" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+              <Avatar name={viewedProfile} round />
+              <div style={{ display: "flex", flex: 1, justifyContent: "space-around", textAlign: "center", fontSize: 13 }}>
+                <div><strong>0</strong><div>帖子</div></div>
+                <div><strong>—</strong><div>粉丝</div></div>
+                <div><strong>—</strong><div>关注</div></div>
+              </div>
+            </div>
+            <strong style={{ display: "block", marginTop: 14, fontSize: 15 }}>{viewedProfile}</strong>
+            <div style={{ marginTop: 10, fontSize: 13, color: "#8e8e93" }}>个人简介待添加</div>
+            <div style={{ borderTop: "1px solid #dbdbdb", marginTop: 24, paddingTop: 35, textAlign: "center", color: "#8e8e93", fontSize: 13 }}>暂无帖子 · 等待添加照片</div>
+          </div>
+        ) : dm ? (
           <>
             {messages.map((i) => (
               <button
@@ -902,6 +918,14 @@ export function InstagramSkin(p: SkinProps) {
                 onChange={(e) => setQuery(e.target.value)}
               />
             </label>
+            <div style={{ background: "#fff", padding: "4px 12px 12px" }}>
+              {igAccounts.filter((id) => id.toLowerCase().includes(query.toLowerCase())).map((id) => (
+                <button key={id} type="button" onClick={() => setViewedProfile(id)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "11px 4px", border: 0, borderBottom: "1px solid #f1f1f1", background: "transparent", textAlign: "left", color: "#262626" }}>
+                  <Avatar name={id} round />
+                  <strong style={{ fontSize: 14 }}>{id}</strong>
+                </button>
+              ))}
+            </div>
             <div className="ig-explore">
               {shown.map((i) => (
                 <button key={i.id} onClick={() => p.onItem(i)}>
@@ -980,6 +1004,7 @@ export function InstagramSkin(p: SkinProps) {
             onClick={() => {
               setTab(t.label);
               setDm(false);
+              setViewedProfile(null);
             }}
           >
             <t.icon size={23} />
