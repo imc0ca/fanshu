@@ -148,10 +148,11 @@ function PhoneRuntime({
   const gesture = useRef({ x: 0, y: 0, time: 0, zone: "" });
   const [launchOrigin, setLaunchOrigin] = useState(screenOrigin);
 
+  const readerPasscode = creator ? work.phone.passcode : "011232";
   const beginUnlock = () => {
     setPinError("");
     setQuickCamera(false);
-    if (work.phone.passcode) setPinOpen(true);
+    if (readerPasscode) setPinOpen(true);
     else unlock();
   };
   const pressTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
@@ -278,7 +279,7 @@ function PhoneRuntime({
   const installedApps = work.apps.filter((a) => a.installed);
   const apps = installedApps.filter((a) => a.visible);
   const unlock = (pin = "") => {
-    if (!work.phone.passcode || pin === work.phone.passcode) {
+    if (!readerPasscode || pin === readerPasscode) {
       setLocked(false);
       setPinOpen(false);
       event("password", pin);
@@ -418,8 +419,8 @@ function PhoneRuntime({
               <DeviceLock
                 work={
                   s.date
-                    ? { ...work, phone: { ...work.phone, date: s.date } }
-                    : work
+                    ? { ...work, phone: { ...work.phone, passcode: readerPasscode, date: s.date } }
+                    : { ...work, phone: { ...work.phone, passcode: readerPasscode } }
                 }
                 time={displayTime}
                 notices={s.notifications}
