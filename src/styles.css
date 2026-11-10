@@ -4918,3 +4918,17 @@ label {
   background: #e34f58;
   transform: rotate(135deg);
 }
+
+/* Instagram: fill the media viewport without white letterboxing across all posts. */
+.skin-instagram .ig-post-media,
+.instagram-ui .ig-post-media {
+  background: #111 !important;
+  overflow: hidden;
+}
+.skin-instagram .ig-post-media img,
+.instagram-ui .ig-post-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
