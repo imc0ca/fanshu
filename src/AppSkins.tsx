@@ -716,7 +716,54 @@ export function WhatsAppSkin(p: SkinProps) {
     </div>
   );
 }
-const igAccounts = ["s2taro", "seok.wav", "burgerSc_0913", "Wonb1n32", "ddori.zip", "tonny4321", "siw00_", "d4echi", "sh0hei_"];
+const igAccounts = ["s2taro","seok.wav","burgerSc_0913","Wonb1n32","ddori.zip","tonny4321","siw00_","d4echi","sh0hei_"];
+const igProfiles: Record<string, { posts: number; followers: number; bio: string }> = {
+  "s2taro": {
+    "posts": 49,
+    "followers": 427,
+    "bio": "dancing somewhere 🪩"
+  },
+  "seok.wav": {
+    "posts": 28,
+    "followers": 591,
+    "bio": "somewhere, somehow."
+  },
+  "burgerSc_0913": {
+    "posts": 52,
+    "followers": 7619,
+    "bio": "just here 🍔"
+  },
+  "Wonb1n32": {
+    "posts": 33,
+    "followers": 718,
+    "bio": "404 not found"
+  },
+  "ddori.zip": {
+    "posts": 47,
+    "followers": 477,
+    "bio": "just for fun :p"
+  },
+  "tonny4321": {
+    "posts": 63,
+    "followers": 821,
+    "bio": "🏊‍♂️🎧 0321"
+  },
+  "siw00_": {
+    "posts": 26,
+    "followers": 322,
+    "bio": "out of office"
+  },
+  "d4echi": {
+    "posts": 12,
+    "followers": 197,
+    "bio": "Tiny joys everywhere"
+  },
+  "sh0hei_": {
+    "posts": 36,
+    "followers": 816,
+    "bio": "☁️"
+  }
+};
 export function InstagramSkin(p: SkinProps) {
   const [tab, setTab] = useState("首页"),
     [dm, setDm] = useState(false),
@@ -769,14 +816,14 @@ export function InstagramSkin(p: SkinProps) {
             <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
               <Avatar name={viewedProfile} round />
               <div style={{ display: "flex", flex: 1, justifyContent: "space-around", textAlign: "center", fontSize: 13 }}>
-                <div><strong>0</strong><div>帖子</div></div>
-                <div><strong>—</strong><div>粉丝</div></div>
+                <div><strong>{igProfiles[viewedProfile]?.posts ?? 0}</strong><div>帖子</div></div>
+                <div><strong>{(igProfiles[viewedProfile]?.followers ?? 0).toLocaleString("en-US")}</strong><div>粉丝</div></div>
                 <div><strong>—</strong><div>关注</div></div>
               </div>
             </div>
             <strong style={{ display: "block", marginTop: 14, fontSize: 15 }}>{viewedProfile}</strong>
-            <div style={{ marginTop: 10, fontSize: 13, color: "#8e8e93" }}>个人简介待添加</div>
-            <div style={{ borderTop: "1px solid #dbdbdb", marginTop: 24, paddingTop: 35, textAlign: "center", color: "#8e8e93", fontSize: 13 }}>暂无帖子 · 等待添加照片</div>
+            <div style={{ marginTop: 10, fontSize: 13, whiteSpace: "pre-wrap" }}>{igProfiles[viewedProfile]?.bio ?? ""}</div>
+            <div style={{ borderTop: "1px solid #dbdbdb", marginTop: 24, paddingTop: 35, textAlign: "center", color: "#8e8e93", fontSize: 13 }}>帖子照片待添加</div>
           </div>
         ) : dm ? (
           <>
