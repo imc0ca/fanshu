@@ -156,6 +156,7 @@ export function DeviceLock({
         <div className="device-passcode">
           <LockKeyhole size={22} />
           <h2>输入密码</h2>
+          <p style={{ fontSize: 12, opacity: 0.68, textAlign: "center", margin: "8px 0 12px", letterSpacing: "0.04em" }}>319+913=？</p>
           <div
             className={"passcode-dots " + (error ? "pin-shake" : "")}
             aria-label={"已输入" + code.length + "位密码"}
