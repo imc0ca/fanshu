@@ -771,6 +771,9 @@ const igAvatarFiles: Record<string, string> = {
   "s2taro": "s2taro.jpg",
   "seok.wav": "seok.wav.jpg",
   "burgerSc_0913": "burgerSc_0913.jpg",
+  "Wonb1n32": "Wonb1n32.jpg",
+  "ddori.zip": "ddori.zip.jpg",
+  "tonny4321": "tonny4321.jpg",
 };
 function IgAvatar({ name }: { name: string }) {
   const filename = igAvatarFiles[name];
