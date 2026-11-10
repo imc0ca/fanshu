@@ -553,6 +553,7 @@ const newIgPosts = [
   { id:"seok-20260314", user:"seok.wav", date:"2026.3.14", caption:"🖤🎧", images:["01.jpeg","02.jpeg","03.jpeg"] },
   { id:"ddori-20260303", user:"ddori.zip", date:"2026.3.3", caption:"summer moments 🌿", images:["1.jpeg","2.jpeg","3.jpeg"] },
   { id:"tonny-20260227", user:"tonny4321", date:"2026.2.27", caption:"L👀k!", images:["1.jpeg","2.jpeg","3.jpeg"] },
+  { id:"tonny-20251026", user:"tonny4321", date:"2025.10.26", caption:"taking it slow 🚶", images:["1.jpeg","2.jpeg","3.jpeg"] },
   { id:"s2taro-20250917", user:"s2taro", date:"2025.9.17", caption:"💐", images:["01.jpeg","02.jpeg","03.jpeg"] }
 ];
 export function MymyInstagram(p: SkinProps) {
