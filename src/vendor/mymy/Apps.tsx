@@ -552,6 +552,7 @@ const burgerOctoberPhoto = `${import.meta.env.BASE_URL}ig-posts/burgerSc_0913-20
 const newIgPosts = [
   { id:"seok-20260314", user:"seok.wav", date:"2026.3.14", caption:"🖤🎧", images:["01.jpeg","02.jpeg","03.jpeg"] },
   { id:"seok-20260125", user:"seok.wav", date:"2026.1.25", caption:"☔️🫴🏻📚🫖", images:["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg"] },
+  { id:"seok-20250927", user:"seok.wav", date:"2025.9.27", caption:"🌊🌊🌊\n@s2taro @burgerSc_0913 @ddori.zip", images:["1.jpeg","2.jpeg","3.jpeg","4.jpeg"] },
   { id:"ddori-20260303", user:"ddori.zip", date:"2026.3.3", caption:"summer moments 🌿", images:["1.jpeg","2.jpeg","3.jpeg"] },
   { id:"tonny-20260227", user:"tonny4321", date:"2026.2.27", caption:"L👀k!", images:["1.jpeg","2.jpeg","3.jpeg"] },
   { id:"tonny-20251026", user:"tonny4321", date:"2025.10.26", caption:"taking it slow 🚶", images:["1.jpeg","2.jpeg","3.jpeg"] },
@@ -641,7 +642,7 @@ export function MymyInstagram(p: SkinProps) {
         <div style={{display:"flex",justifyContent:"center",gap:5,padding:"9px 0"}}>
           {photos.map((_,i)=><button key={i} onClick={()=>moveSlide(i)} aria-label={`查看第${i+1}张`} style={{width:6,height:6,borderRadius:"50%",padding:0,border:0,background:i===slide?"#3897f0":"#ccc"}}/>)}
         </div>
-        <div style={{padding:"4px 14px 14px",fontSize:14}}><b>{entry.user}</b> {entry.caption}<div style={{color:"#999",fontSize:12,marginTop:6}}>{entry.date}</div></div>
+        <div style={{padding:"4px 14px 14px",fontSize:14}}><b>{entry.user}</b> {entry.caption.split(/(@(?:s2taro|burgerSc_0913|ddori\.zip))/g).map((part,i)=>part.startsWith("@")&&["@s2taro","@burgerSc_0913","@ddori.zip"].includes(part)?<button key={i} onClick={()=>{setIgViewed(part.slice(1));setIgPhotoOpen(null)}} style={{color:"#3897f0",background:"none",border:0,padding:0,font:"inherit",cursor:"pointer"}}>{part}</button>:<span key={i} style={{whiteSpace:"pre-wrap"}}>{part}</span>)}<div style={{color:"#999",fontSize:12,marginTop:6}}>{entry.date}</div></div>
       </article>
     );
   };
