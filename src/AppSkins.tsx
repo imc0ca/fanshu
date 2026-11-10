@@ -798,7 +798,7 @@ export function InstagramSkin(p: SkinProps) {
         >
           <ChevronLeft size={22} />
         </button>
-        <strong>{viewedProfile ?? (dm ? "私信" : p.name)}</strong>
+        <strong>{viewedProfile ?? (dm ? "私信" : tab === "个人主页" ? "seok.wav" : p.name)}</strong>
         <div>
           {p.creator && (
             <button aria-label="新增内容" onClick={p.onAdd}>
@@ -996,21 +996,22 @@ export function InstagramSkin(p: SkinProps) {
         ) : (
           <>
             <div className="ig-profile">
-              <Avatar name={posts[0]?.sender ?? "我"} round />
+              <Avatar name="seok.wav" round />
               <div>
-                <strong>{posts.length}</strong>
+                <strong>{igProfiles["seok.wav"].posts}</strong>
                 <small>帖子</small>
               </div>
               <div>
-                <strong>0</strong>
-                <small>关注者</small>
+                <strong>{igProfiles["seok.wav"].followers.toLocaleString("en-US")}</strong>
+                <small>粉丝</small>
               </div>
               <div>
-                <strong>0</strong>
-                <small>正在关注</small>
+                <strong>—</strong>
+                <small>关注</small>
               </div>
             </div>
-            <h3 className="ig-profile-name">{posts[0]?.sender ?? "我"}</h3>
+            <h3 className="ig-profile-name">seok.wav</h3>
+            <p style={{ padding: "0 16px 12px", margin: 0, fontSize: 14, whiteSpace: "pre-wrap" }}>{igProfiles["seok.wav"].bio}</p>
             <div className="ig-profile-tabs">
               <button aria-label="帖子网格" onClick={() => setShowSaved(false)}>
                 <Grid size={21} />
