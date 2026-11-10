@@ -1058,6 +1058,20 @@ export function InstagramSkin(p: SkinProps) {
             </div>
             <h3 className="ig-profile-name">seok.wav</h3>
             <p style={{ padding: "0 16px 12px", margin: 0, fontSize: 14, whiteSpace: "pre-wrap" }}>{igProfiles["seok.wav"].bio}</p>
+            <div style={{ padding: "12px 14px 16px", borderTop: "1px solid #efefef" }}>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12 }}>
+                <strong style={{ fontSize: 14 }}>互相关注的朋友</strong>
+                <button type="button" onClick={() => setPeopleList("关注")} style={{ border: 0, background: "transparent", color: "#3897f0", fontSize: 12 }}>查看全部</button>
+              </div>
+              <div style={{ display: "flex", overflowX: "auto", gap: 12, paddingBottom: 6 }}>
+                {igAccounts.filter((id) => id !== "seok.wav").map((id) => (
+                  <button key={id} type="button" onClick={() => setViewedProfile(id)} style={{ flex: "0 0 65px", width: 65, padding: 0, border: 0, background: "transparent", color: "#262626", display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+                    <IgAvatar name={id} />
+                    <span style={{ fontSize: 10, width: "100%", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{id}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
             <div className="ig-profile-tabs">
               <button aria-label="帖子网格" onClick={() => setShowSaved(false)}>
                 <Grid size={21} />
