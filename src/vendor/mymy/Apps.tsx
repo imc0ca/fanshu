@@ -831,7 +831,7 @@ export function MymyInstagram(p: SkinProps) {
                 {date:"2025.9.27",key:"burger-20250927",render:applePost},
                 {date:"2025.8.30",key:"burger-20250830",render:pokerPost},
                 {date:"2025.4.16",key:"burger-20250416",render:bloomPost},
-                {date:"2025.10.9",key:"burger-20251009",render:()=> <article className="igp"><header className="igph"><IGPortrait id="burgerSc_0913" size={38}/><div className="igpn"><button onClick={()=>setIgViewed("burgerSc_0913")}><b>burgerSc_0913</b></button><small>2025.10.9</small></div></header><img src={burgerOctoberPhoto} alt="burgerSc_0913 2025.10.9" style={{width:"100%",height:"auto",display:"block"}}/></article>}
+                {date:"2025.10.9",key:"burger-20251009",render:()=> <article className="igp"><header className="igph"><IGPortrait id="burgerSc_0913" size={38}/><div className="igpn"><button onClick={()=>setIgViewed("burgerSc_0913")}><b>burgerSc_0913</b></button><small>2025.10.9</small></div></header><img src={burgerOctoberPhoto} alt="burgerSc_0913 2025.10.9" style={{width:"100%",height:"auto",display:"block"}}/></article>},
                 ...posts.map(item=>({date:item.time || item.meta.location || "",key:item.id,render:()=>post(item)})),
               ].sort((a,b)=>igDateValue(b.date)-igDateValue(a.date)).map(entry=><div key={entry.key}>{entry.render()}</div>)}
               {!posts.length && <Blank />}
