@@ -764,6 +764,31 @@ const igProfiles: Record<string, { posts: number; followers: number; bio: string
     "bio": "☁️"
   }
 };
+const igAvatarFiles: Record<string, string> = {
+  "sh0hei_": "sh0hei_.jpg",
+  "d4echi": "d4echi.jpg",
+  "siw00_": "siw00_.jpg",
+  "s2taro": "s2taro.jpg",
+  "seok.wav": "seok.wav.jpg",
+  "burgerSc_0913": "burgerSc_0913.jpg",
+};
+function IgAvatar({ name }: { name: string }) {
+  const filename = igAvatarFiles[name];
+  return (
+    <span className="skin-avatar round" style={{ position: "relative", overflow: "hidden", flexShrink: 0 }}>
+      {name.slice(0, 1)}
+      {filename && (
+        <img
+          src={`${import.meta.env.BASE_URL}ig-avatars/${filename}`}
+          alt={name}
+          loading="lazy"
+          onError={(e) => { e.currentTarget.style.display = "none"; }}
+          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      )}
+    </span>
+  );
+}
 export function InstagramSkin(p: SkinProps) {
   const [tab, setTab] = useState("首页"),
     [dm, setDm] = useState(false),
@@ -817,7 +842,7 @@ export function InstagramSkin(p: SkinProps) {
             <div style={{ color: "#8e8e93", fontSize: 12, padding: "8px 0 12px" }}>已添加的共同关注账号</div>
             {igAccounts.filter((id) => id !== "seok.wav").map((id) => (
               <button key={id} type="button" onClick={() => { setViewedProfile(id); setPeopleList(null); }} style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "11px 0", background: "transparent", border: 0, borderBottom: "1px solid #f1f1f1", textAlign: "left", color: "#262626" }}>
-                <Avatar name={id} round />
+                <IgAvatar name={id} />
                 <span style={{ flex: 1, fontSize: 14, fontWeight: 600 }}>{id}</span>
                 <span style={{ fontSize: 12, color: "#8e8e93" }}>查看主页</span>
               </button>
@@ -826,7 +851,7 @@ export function InstagramSkin(p: SkinProps) {
         ) : viewedProfile ? (
           <div style={{ padding: "22px 16px", color: "#262626" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-              <Avatar name={viewedProfile} round />
+              <IgAvatar name={viewedProfile} />
               <div style={{ display: "flex", flex: 1, justifyContent: "space-around", textAlign: "center", fontSize: 13 }}>
                 <div><strong>{igProfiles[viewedProfile]?.posts ?? 0}</strong><div>帖子</div></div>
                 <div><strong>{(igProfiles[viewedProfile]?.followers ?? 0).toLocaleString("en-US")}</strong><div>粉丝</div></div>
@@ -845,7 +870,7 @@ export function InstagramSkin(p: SkinProps) {
                 className="ig-dm-row"
                 onClick={() => p.onItem(i)}
               >
-                <Avatar name={i.sender} round />
+                <IgAvatar name={i.sender} />
                 <div>
                   <strong>{i.sender}</strong>
                   <p>{i.body}</p>
@@ -874,13 +899,13 @@ export function InstagramSkin(p: SkinProps) {
                 disabled={!p.creator && !stories.length}
               >
                 <span>
-                  <Avatar name="我" round />
+                  <IgAvatar name="我" />
                 </span>
                 <small>你的快拍</small>
               </button>
               {igAccounts.filter((id) => id !== "seok.wav").map((id) => (
                 <button key={id} className="ig-story" type="button" onClick={() => setViewedProfile(id)}>
-                  <span><Avatar name={id} round /></span>
+                  <span><IgAvatar name={id} /></span>
                   <small>{id}</small>
                 </button>
               ))}
@@ -891,7 +916,7 @@ export function InstagramSkin(p: SkinProps) {
                   onClick={() => p.onItem(i)}
                 >
                   <span>
-                    <Avatar name={i.sender} round />
+                    <IgAvatar name={i.sender} />
                   </span>
                   <small>{i.sender}</small>
                 </button>
@@ -900,7 +925,7 @@ export function InstagramSkin(p: SkinProps) {
             {posts.map((i) => (
               <article className="ig-post" key={i.id}>
                 <div className="ig-post-author">
-                  <Avatar name={i.sender} round />
+                  <IgAvatar name={i.sender} />
                   <strong>{i.sender}</strong>
                   <button
                     aria-label={`帖子详情${i.title}`}
@@ -986,7 +1011,7 @@ export function InstagramSkin(p: SkinProps) {
             <div style={{ background: "#fff", padding: "4px 12px 12px" }}>
               {igAccounts.filter((id) => id.toLowerCase().includes(query.toLowerCase())).map((id) => (
                 <button key={id} type="button" onClick={() => setViewedProfile(id)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "11px 4px", border: 0, borderBottom: "1px solid #f1f1f1", background: "transparent", textAlign: "left", color: "#262626" }}>
-                  <Avatar name={id} round />
+                  <IgAvatar name={id} />
                   <strong style={{ fontSize: 14 }}>{id}</strong>
                 </button>
               ))}
@@ -1014,7 +1039,7 @@ export function InstagramSkin(p: SkinProps) {
         ) : (
           <>
             <div className="ig-profile">
-              <Avatar name="seok.wav" round />
+              <IgAvatar name="seok.wav" />
               <div>
                 <strong>{igProfiles["seok.wav"].posts}</strong>
                 <small>帖子</small>
