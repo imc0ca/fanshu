@@ -550,6 +550,7 @@ export function MymyInstagram(p: SkinProps) {
     [seen, setSeen] = useSkinState<string[]>(p, "mymySeen", []);
   const [igViewed, setIgViewed] = useState<string | null>(null),
     [igList, setIgList] = useState<string | null>(null),
+    [igChat, setIgChat] = useState<string | null>(null),
     [sheet, setSheet] = useState<Item | null>(null),
     [selected, setSelected] = useState<Item | null>(null),
     [story, setStory] = useState(0),
@@ -669,12 +670,12 @@ export function MymyInstagram(p: SkinProps) {
         <header className="igh">
           <button
             aria-label={selected ? "返回Instagram动态" : "关闭当前App"}
-            onClick={() => (igList ? setIgList(null) : igViewed ? setIgViewed(null) : selected ? setSelected(null) : p.onBack())}
+            onClick={() => (igChat ? setIgChat(null) : igList ? setIgList(null) : igViewed ? setIgViewed(null) : selected ? setSelected(null) : p.onBack())}
           >
             <ArrowLeft />
           </button>
           <span className="igl2">
-            {igList || igViewed || (selected ? "帖子" : tab === "主页" ? "Instagram" : tab)}
+            {igChat || igList || igViewed || (selected ? "帖子" : tab === "主页" ? "Instagram" : tab)}
           </span>
           <button aria-label="打开私信" onClick={() => setTab("私信")}>
             <Send />
@@ -682,12 +683,13 @@ export function MymyInstagram(p: SkinProps) {
         </header>
         <div className="igb">
           {selected && !igViewed && !igList && post(selected)}
-          {igList && <div style={{padding:16}}>{igFriends.map(id=><button key={id} onClick={()=>{setIgViewed(id);setIgList(null)}} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:"10px 0",border:0,borderBottom:"1px solid #eee",background:"white",textAlign:"left"}}><IGPortrait id={id} size={44}/><b>{id}</b></button>)}</div>}
-          {igViewed && !igList && <div style={{padding:18}}><div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}><IGPortrait id={igViewed} size={78}/><div style={{textAlign:"center"}}><b>{igData[igViewed][0]}</b><div>帖子</div></div><div style={{textAlign:"center"}}><b>{igData[igViewed][1]}</b><div>粉丝</div></div><div style={{textAlign:"center"}}><b>—</b><div>关注</div></div></div><b style={{display:"block",marginTop:14}}>{igViewed}</b><p>{igData[igViewed][2]}</p></div>}
+          {igList && !igChat && <div style={{padding:"8px 16px"}}>{igFriends.map(id=><button key={id} onClick={()=>{setIgViewed(id);setIgList(null)}} style={{display:"flex",alignItems:"center",justifyContent:"flex-start",gap:14,width:"100%",padding:"12px 0",border:0,borderBottom:"1px solid #eee",background:"white",textAlign:"left"}}><IGPortrait id={id} size={48}/><b>{id}</b></button>)}</div>}
+          {igChat && <div style={{display:"flex",flexDirection:"column",minHeight:"100%",background:"#fff"}}><div style={{display:"flex",alignItems:"center",gap:12,padding:16,borderBottom:"1px solid #eee"}}><IGPortrait id={igChat} size={48}/><b>{igChat}</b></div><div style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",color:"#999",fontSize:13}}>暂无聊天记录</div></div>}
+          {igViewed && !igList && !igChat && <div style={{padding:18}}><div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}><IGPortrait id={igViewed} size={78}/><div style={{textAlign:"center"}}><b>{igData[igViewed][0]}</b><div>帖子</div></div><div style={{textAlign:"center"}}><b>{igData[igViewed][1]}</b><div>粉丝</div></div><div style={{textAlign:"center"}}><b>—</b><div>关注</div></div></div><b style={{display:"block",marginTop:14}}>{igViewed}</b><p>{igData[igViewed][2]}</p><button onClick={()=>setIgChat(igViewed)} style={{width:"100%",padding:10,borderRadius:8,border:0,background:"#eee",fontWeight:600}}>发消息</button><div className="ptab" style={{marginTop:18}}><div className="on"><Grid/></div></div><div className="pg2">{posts.filter(i=>i.sender===igViewed).map(i=><button key={i.id} onClick={()=>openPost(i)}><Media item={i}/></button>)}</div></div>}
           {!selected && !igViewed && !igList && tab === "主页" && (
             <>
               <div className="sts">
-                {["seok.wav",...igFriends].map(id=><button className="st" key={id} onClick={()=>{setIgViewed(id);setIgList(null);setTab("个人主页")}}><span className="sr on"><IGPortrait id={id} size={46}/></span><small>{id}</small></button>)}
+                {["seok.wav",...igFriends].map(id=><button className="st" key={id} onClick={()=>{setIgViewed(id);setIgList(null);setTab("个人主页")}}><span className="sr on"><IGPortrait id={id} size={60}/></span><small>{id}</small></button>)}
                 {stories.map((s, n) => (
                   <button
                     className="st"
@@ -723,8 +725,9 @@ export function MymyInstagram(p: SkinProps) {
               <div className="pg2">{posts.map(i=><button key={i.id} onClick={()=>openPost(i)}><Media item={i}/></button>)}</div>
             </>
           )}
-          {!selected && !igViewed && !igList && tab === "私信" && (
+          {!selected && !igViewed && !igList && !igChat && tab === "私信" && (
             <>
+              {igFriends.map(id=><button key={id} onClick={()=>setIgChat(id)} style={{display:"flex",alignItems:"center",justifyContent:"flex-start",gap:14,width:"100%",padding:"12px 18px",border:0,borderBottom:"1px solid #eee",background:"white",textAlign:"left"}}><IGPortrait id={id} size={48}/><span><b>{id}</b><small style={{display:"block",color:"#999"}}>发送消息</small></span></button>)}
               {dms.map((i) => (
                 <button className="kzkr" key={i.id} onClick={() => openPost(i)}>
                   <Avatar name={i.sender} src={i.avatar} />
@@ -734,7 +737,7 @@ export function MymyInstagram(p: SkinProps) {
                   </span>
                 </button>
               ))}
-              {!dms.length && <Blank />}
+
             </>
           )}
           {!selected && !igViewed && !igList && tab === "搜索" && (
@@ -765,6 +768,7 @@ export function MymyInstagram(p: SkinProps) {
                 setSelected(null);
                 setIgViewed(null);
                 setIgList(null);
+                setIgChat(null);
                 setTab(["主页", "搜索", "私信", "个人主页"][n]);
               }}
             >
