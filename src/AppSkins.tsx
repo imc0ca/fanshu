@@ -902,7 +902,7 @@ export function InstagramSkin(p: SkinProps) {
                 disabled={!p.creator && !stories.length}
               >
                 <span>
-                  <IgAvatar name="我" />
+                  <IgAvatar name="seok.wav" />
                 </span>
                 <small>你的快拍</small>
               </button>
