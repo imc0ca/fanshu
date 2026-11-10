@@ -591,7 +591,7 @@ export function MymyInstagram(p: SkinProps) {
       setSelected(i);
     }
   };
-  const burgerPost = (compact=false) => (
+  const burgerPost = () => (
     <article className="igp" style={{background:"#fff"}}>
       <header className="igph"><IGPortrait id="burgerSc_0913" size={38}/><div className="igpn"><button onClick={()=>{setIgViewed("burgerSc_0913");setBurgerOpen(false)}}><b>burgerSc_0913</b></button><small>2026.1.19</small></div></header>
       <div style={{position:"relative",width:"100%",aspectRatio:"1 / 1",background:"#f5f5f5"}}>
