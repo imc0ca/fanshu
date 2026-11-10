@@ -610,8 +610,8 @@ export function MymyInstagram(p: SkinProps) {
       <div style={{position:"relative",width:"100%",aspectRatio:"1 / 1",background:"#f5f5f5"}}>
         <img src={burgerBloomPhotos[bloomSlide]} alt={`burgerSc_0913 的第 ${bloomSlide+1} 张照片`} style={{width:"100%",height:"100%",objectFit:"contain"}}/>
         {bloomSlide>0&&<button onClick={()=>setBloomSlide(n=>n-1)} aria-label="上一张" style={{position:"absolute",left:8,top:"46%",border:0,borderRadius:30,background:"#ffffffc9",padding:8}}>‹</button>}
-        {bloomSlide<4&&<button onClick={()=>setBloomSlide(n=>n+1)} aria-label="下一张" style={{position:"absolute",right:8,top:"46%",border:0,borderRadius:30,background:"#ffffffc9",padding:8}}>›</button>}
-        <span style={{position:"absolute",right:10,top:10,background:"#0009",color:"white",borderRadius:20,padding:"4px 9px",fontSize:12}}>{bloomSlide+1}/5</span>
+        {bloomSlide<2&&<button onClick={()=>setBloomSlide(n=>n+1)} aria-label="下一张" style={{position:"absolute",right:8,top:"46%",border:0,borderRadius:30,background:"#ffffffc9",padding:8}}>›</button>}
+        <span style={{position:"absolute",right:10,top:10,background:"#0009",color:"white",borderRadius:20,padding:"4px 9px",fontSize:12}}>{bloomSlide+1}/3</span>
       </div>
       <div style={{display:"flex",justifyContent:"center",gap:5,padding:"9px 0"}}>{burgerBloomPhotos.map((_,i)=><button key={i} onClick={()=>setBloomSlide(i)} aria-label={`查看第${i+1}张`} style={{width:6,height:6,borderRadius:"50%",padding:0,border:0,background:i===bloomSlide?"#3897f0":"#ccc"}}/>)}</div>
       <div style={{padding:"4px 14px 14px",fontSize:14}}><b>burgerSc_0913</b> Blooming🌸<div style={{color:"#999",fontSize:12,marginTop:6}}>2025年4月16日</div></div>
