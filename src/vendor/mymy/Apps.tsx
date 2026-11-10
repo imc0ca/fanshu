@@ -549,7 +549,8 @@ const burgerApplePhotos = ["01.jpg","02.jpg","03.jpg","04.jpg"].map(name => `${i
 const burgerBloomPhotos = ["01.jpg","02.jpg","03.jpg"].map(name => `${import.meta.env.BASE_URL}ig-posts/burgerSc_0913-20250416/${name}`);
 const burgerOctoberPhoto = `${import.meta.env.BASE_URL}ig-posts/burgerSc_0913-20251009/burger_2025-10-09.jpg`;
 
-const igDateValue = (value: string) => { const match = value.match(/(20\d{2})\D+(\d{1,2})\D+(\d{1,2})/); return match ? Number(match[1])*10000+Number(match[2])*100+Number(match[3]) : 0; };\nconst newIgPosts = [
+const igDateValue = (value: string) => { const match = value.match(/(20\d{2})\D+(\d{1,2})\D+(\d{1,2})/); return match ? Number(match[1])*10000+Number(match[2])*100+Number(match[3]) : 0; };
+const newIgPosts = [
   { id:"seok-20260314", user:"seok.wav", date:"2026.3.14", caption:"🖤🎧", images:["01.jpeg","02.jpeg","03.jpeg"] },
   { id:"seok-20260125", user:"seok.wav", date:"2026.1.25", caption:"☔️🫴🏻📚🫖", images:["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg"] },
   { id:"seok-20250927", user:"seok.wav", date:"2025.9.27", caption:"🌊🌊🌊\n@s2taro @burgerSc_0913 @ddori.zip", images:["1.jpeg","2.jpeg","3.jpeg","4.jpeg"] },
@@ -831,7 +832,7 @@ export function MymyInstagram(p: SkinProps) {
                 {date:"2025.8.30",key:"burger-20250830",render:pokerPost},
                 {date:"2025.4.16",key:"burger-20250416",render:bloomPost},
                 {date:"2025.10.9",key:"burger-20251009",render:()=> <article className="igp"><header className="igph"><IGPortrait id="burgerSc_0913" size={38}/><div className="igpn"><button onClick={()=>setIgViewed("burgerSc_0913")}><b>burgerSc_0913</b></button><small>2025.10.9</small></div></header><img src={burgerOctoberPhoto} alt="burgerSc_0913 2025.10.9" style={{width:"100%",height:"auto",display:"block"}}/></article>}
-                ...posts.map(item=>({date:item.time || item.meta.location || "",key:item.id,render:()=>post(item)}))
+                ...posts.map(item=>({date:item.time || item.meta.location || "",key:item.id,render:()=>post(item)})),
               ].sort((a,b)=>igDateValue(b.date)-igDateValue(a.date)).map(entry=><div key={entry.key}>{entry.render()}</div>)}
               {!posts.length && <Blank />}
             </>
