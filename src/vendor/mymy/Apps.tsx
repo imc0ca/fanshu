@@ -547,6 +547,12 @@ const burgerPostPhotos = ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg"].map(name
 const burgerPokerPhotos = ["01.jpg","02.jpg","03.jpg"].map(name => `${import.meta.env.BASE_URL}ig-posts/burgerSc_0913-20250830/${name}`);
 const burgerApplePhotos = ["01.jpg","02.jpg","03.jpg","04.jpg"].map(name => `${import.meta.env.BASE_URL}ig-posts/burgerSc_0913-20250927/${name}`);
 const burgerBloomPhotos = ["01.jpg","02.jpg","03.jpg"].map(name => `${import.meta.env.BASE_URL}ig-posts/burgerSc_0913-20250416/${name}`);
+
+const newIgPosts = [
+  { id:"seok-20260314", user:"seok.wav", date:"2026.3.14", caption:"🖤🎧", images:["01.jpeg","02.jpeg","03.jpeg"] },
+  { id:"ddori-20260303", user:"ddori.zip", date:"2026.3.3", caption:"summer moments 🌿", images:["1.jpeg","2.jpeg","3.jpeg"] },
+  { id:"tonny-20260227", user:"tonny4321", date:"2026.2.27", caption:"taking it slow 🚶", images:["1.jpeg","2.jpeg","3.jpeg"] }
+];
 export function MymyInstagram(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "主页"),
     [liked, setLiked] = useSkinState<string[]>(p, "mymyLiked", []),
@@ -565,6 +571,9 @@ export function MymyInstagram(p: SkinProps) {
     [pokerOpen, setPokerOpen] = useState(false),
     [bloomSlide, setBloomSlide] = useState(0),
     [bloomOpen, setBloomOpen] = useState(false),
+    [igPhotoOpen, setIgPhotoOpen] = useState<string | null>(null),
+    [igPhotoSlides, setIgPhotoSlides] = useState<Record<string, number>>({}),
+    [igPhotoTouchX, setIgPhotoTouchX] = useState<number | null>(null),
     [sheet, setSheet] = useState<Item | null>(null),
     [selected, setSelected] = useState<Item | null>(null),
     [story, setStory] = useState(0),
@@ -598,6 +607,37 @@ export function MymyInstagram(p: SkinProps) {
       read(p, i);
       setSelected(i);
     }
+  };
+
+  const renderNewIgPost = (entry: (typeof newIgPosts)[number]) => {
+    const photos = entry.images.map(name => `${import.meta.env.BASE_URL}ig-posts/${entry.id}/${name}`);
+    const slide = Math.max(0, Math.min(photos.length - 1, igPhotoSlides[entry.id] ?? 0));
+    const moveSlide = (n: number) => setIgPhotoSlides(previous => ({...previous, [entry.id]: Math.max(0, Math.min(photos.length - 1, n))}));
+    return (
+      <article className="igp" key={entry.id} style={{background:"#fff"}}>
+        <header className="igph">
+          <IGPortrait id={entry.user} size={38}/>
+          <div className="igpn">
+            <button onClick={() => {setIgViewed(entry.user);setIgPhotoOpen(null)}}><b>{entry.user}</b></button>
+            <small>{entry.date}</small>
+          </div>
+        </header>
+        <div
+          onTouchStart={e => setIgPhotoTouchX(e.touches[0]?.clientX ?? null)}
+          onTouchEnd={e => {if(igPhotoTouchX===null)return;const diff=e.changedTouches[0].clientX-igPhotoTouchX;if(Math.abs(diff)>35)moveSlide(slide+(diff<0?1:-1));setIgPhotoTouchX(null)}}
+          style={{position:"relative",width:"100%",aspectRatio:"1 / 1",background:"#f5f5f5",touchAction:"pan-y"}}
+        >
+          <img src={photos[slide]} alt={`${entry.user} 第 ${slide+1} 张照片`} style={{width:"100%",height:"100%",objectFit:"contain"}}/>
+          {slide>0&&<button onClick={()=>moveSlide(slide-1)} aria-label="上一张" style={{position:"absolute",left:8,top:"46%",border:0,borderRadius:30,background:"#ffffffc9",padding:8}}>‹</button>}
+          {slide<photos.length-1&&<button onClick={()=>moveSlide(slide+1)} aria-label="下一张" style={{position:"absolute",right:8,top:"46%",border:0,borderRadius:30,background:"#ffffffc9",padding:8}}>›</button>}
+          <span style={{position:"absolute",right:10,top:10,background:"#0009",color:"#fff",borderRadius:20,padding:"4px 9px",fontSize:12}}>{slide+1}/{photos.length}</span>
+        </div>
+        <div style={{display:"flex",justifyContent:"center",gap:5,padding:"9px 0"}}>
+          {photos.map((_,i)=><button key={i} onClick={()=>moveSlide(i)} aria-label={`查看第${i+1}张`} style={{width:6,height:6,borderRadius:"50%",padding:0,border:0,background:i===slide?"#3897f0":"#ccc"}}/>)}
+        </div>
+        <div style={{padding:"4px 14px 14px",fontSize:14}}><b>{entry.user}</b> {entry.caption}<div style={{color:"#999",fontSize:12,marginTop:6}}>{entry.date}</div></div>
+      </article>
+    );
   };
   const burgerPost = () => (
     <article className="igp" style={{background:"#fff"}}>
@@ -736,7 +776,7 @@ export function MymyInstagram(p: SkinProps) {
         <header className="igh">
           <button
             aria-label={selected ? "返回Instagram动态" : "关闭当前App"}
-            onClick={() => (bloomOpen ? setBloomOpen(false) : appleOpen ? setAppleOpen(false) : burgerOpen ? setBurgerOpen(false) : igChat ? setIgChat(null) : igList ? setIgList(null) : igViewed ? setIgViewed(null) : selected ? setSelected(null) : p.onBack())}
+            onClick={() => (igPhotoOpen ? setIgPhotoOpen(null) : bloomOpen ? setBloomOpen(false) : appleOpen ? setAppleOpen(false) : burgerOpen ? setBurgerOpen(false) : igChat ? setIgChat(null) : igList ? setIgList(null) : igViewed ? setIgViewed(null) : selected ? setSelected(null) : p.onBack())}
           >
             <ArrowLeft />
           </button>
@@ -751,7 +791,8 @@ export function MymyInstagram(p: SkinProps) {
           {selected && !igViewed && !igList && post(selected)}
           {igList && !igChat && <div style={{padding:"8px 16px"}}>{igFriends.map(id=><button key={id} onClick={()=>{setIgViewed(id);setIgList(null)}} style={{display:"flex",alignItems:"center",justifyContent:"flex-start",gap:14,width:"100%",padding:"12px 0",border:0,borderBottom:"1px solid #eee",background:"white",textAlign:"left"}}><IGPortrait id={id} size={48}/><b>{id}</b></button>)}</div>}
           {igChat && <div style={{display:"flex",flexDirection:"column",minHeight:"100%",background:"#fff"}}><div style={{display:"flex",alignItems:"center",gap:12,padding:16,borderBottom:"1px solid #eee"}}><IGPortrait id={igChat} size={48}/><b>{igChat}</b></div><div style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",color:"#999",fontSize:13}}>暂无聊天记录</div></div>}
-          {igViewed && !igList && !igChat && !burgerOpen && !pokerOpen && !bloomOpen && <div style={{padding:18}}><div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}><IGPortrait id={igViewed} size={78}/><div style={{textAlign:"center"}}><b>{igData[igViewed][0]}</b><div>帖子</div></div><div style={{textAlign:"center"}}><b>{igData[igViewed][1]}</b><div>粉丝</div></div><div style={{textAlign:"center"}}><b>{igFollowing[igViewed] ?? 176}</b><div>关注</div></div></div><b style={{display:"block",marginTop:14}}>{igViewed}</b><p>{igData[igViewed][2]}</p><button onClick={()=>setIgChat(igViewed)} style={{width:"100%",padding:10,borderRadius:8,border:0,background:"#eee",fontWeight:600}}>发消息</button><div className="ptab" style={{marginTop:18}}><div className="on"><Grid/></div></div><div className="pg2" style={{display:"grid",gridTemplateColumns:"repeat(2, minmax(0, 1fr))",gap:3,width:"100%"}}>{igViewed==="burgerSc_0913"&&<button onClick={()=>{setBurgerSlide(0);setBurgerOpen(true)}} style={{border:0,padding:0,background:"white",aspectRatio:"1"}}><img src={burgerPostPhotos[0]} alt="😎🕶️" style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>}{igViewed==="burgerSc_0913"&&<button onClick={()=>{setAppleSlide(0);setAppleOpen(true)}} style={{border:0,padding:0,background:"white",aspectRatio:"1"}}><img src={burgerApplePhotos[0]} alt="It\u0027s like biting an apple🍎🍏" style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>}{igViewed==="burgerSc_0913"&&<button onClick={()=>{setPokerSlide(0);setPokerOpen(true)}} style={{border:0,padding:0,background:"white",aspectRatio:"1"}}><img src={burgerPokerPhotos[0]} alt="Poker Face？" style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>}{igViewed==="burgerSc_0913"&&<button onClick={()=>{setBloomSlide(0);setBloomOpen(true)}} style={{border:0,padding:0,background:"white",aspectRatio:"1"}}><img src={burgerBloomPhotos[0]} alt="Blooming🌸" style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>}{posts.filter(i=>i.sender===igViewed).map(i=><button key={i.id} onClick={()=>openPost(i)}><Media item={i}/></button>)}</div></div>}
+          {igViewed && !igList && !igChat && !burgerOpen && !pokerOpen && !bloomOpen && !igPhotoOpen && <div style={{padding:18}}><div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}><IGPortrait id={igViewed} size={78}/><div style={{textAlign:"center"}}><b>{igData[igViewed][0]}</b><div>帖子</div></div><div style={{textAlign:"center"}}><b>{igData[igViewed][1]}</b><div>粉丝</div></div><div style={{textAlign:"center"}}><b>{igFollowing[igViewed] ?? 176}</b><div>关注</div></div></div><b style={{display:"block",marginTop:14}}>{igViewed}</b><p>{igData[igViewed][2]}</p><button onClick={()=>setIgChat(igViewed)} style={{width:"100%",padding:10,borderRadius:8,border:0,background:"#eee",fontWeight:600}}>发消息</button><div className="ptab" style={{marginTop:18}}><div className="on"><Grid/></div></div><div className="pg2" style={{display:"grid",gridTemplateColumns:"repeat(2, minmax(0, 1fr))",gap:3,width:"100%"}}>{newIgPosts.filter(entry=>entry.user===igViewed).map(entry=><button key={entry.id} onClick={()=>{setIgPhotoSlides(previous=>({...previous,[entry.id]:0}));setIgPhotoOpen(entry.id)}} style={{border:0,padding:0,background:"white",aspectRatio:"1"}}><img src={`${import.meta.env.BASE_URL}ig-posts/${entry.id}/${entry.images[0]}`} alt={entry.caption} style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>)}{igViewed==="burgerSc_0913"&&<button onClick={()=>{setBurgerSlide(0);setBurgerOpen(true)}} style={{border:0,padding:0,background:"white",aspectRatio:"1"}}><img src={burgerPostPhotos[0]} alt="😎🕶️" style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>}{igViewed==="burgerSc_0913"&&<button onClick={()=>{setAppleSlide(0);setAppleOpen(true)}} style={{border:0,padding:0,background:"white",aspectRatio:"1"}}><img src={burgerApplePhotos[0]} alt="It\u0027s like biting an apple🍎🍏" style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>}{igViewed==="burgerSc_0913"&&<button onClick={()=>{setPokerSlide(0);setPokerOpen(true)}} style={{border:0,padding:0,background:"white",aspectRatio:"1"}}><img src={burgerPokerPhotos[0]} alt="Poker Face？" style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>}{igViewed==="burgerSc_0913"&&<button onClick={()=>{setBloomSlide(0);setBloomOpen(true)}} style={{border:0,padding:0,background:"white",aspectRatio:"1"}}><img src={burgerBloomPhotos[0]} alt="Blooming🌸" style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>}{posts.filter(i=>i.sender===igViewed).map(i=><button key={i.id} onClick={()=>openPost(i)}><Media item={i}/></button>)}</div></div>}
+          {igPhotoOpen && igViewed && newIgPosts.filter(entry=>entry.id===igPhotoOpen && entry.user===igViewed).map(renderNewIgPost)}
           {burgerOpen && igViewed==="burgerSc_0913" && <div>{burgerPost()}</div>}
           {appleOpen && igViewed==="burgerSc_0913" && <div>{applePost()}</div>}
           {pokerOpen && igViewed==="burgerSc_0913" && <div>{pokerPost()}</div>}
@@ -775,6 +816,7 @@ export function MymyInstagram(p: SkinProps) {
                   </button>
                 ))}
               </div>
+              {newIgPosts.map(renderNewIgPost)}
               {burgerPost()}
               {applePost()}
               {pokerPost()}
@@ -796,7 +838,7 @@ export function MymyInstagram(p: SkinProps) {
               <p className="pn"><b>seok.wav</b><br/>somewhere, somehow.</p>
               <div style={{padding:"12px 16px"}}><b>互相关注的朋友</b><div style={{display:"flex",gap:12,overflowX:"auto",marginTop:12}}>{igFriends.map(id=><button key={id} onClick={()=>setIgViewed(id)} style={{border:0,background:"transparent",display:"flex",flexDirection:"column",alignItems:"center",gap:5,flexShrink:0,width:65}}><IGPortrait id={id} size={54}/><small style={{fontSize:10,maxWidth:65,overflow:"hidden",textOverflow:"ellipsis"}}>{id}</small></button>)}</div></div>
               <div className="ptab"><div className="on"><Grid/></div></div>
-              <div className="pg2">{posts.map(i=><button key={i.id} onClick={()=>openPost(i)}><Media item={i}/></button>)}</div>
+              <div className="pg2">{newIgPosts.filter(entry=>entry.user==="seok.wav").map(entry=><button key={entry.id} onClick={()=>{setIgViewed(entry.user);setIgPhotoOpen(entry.id);setIgPhotoSlides(previous=>({...previous,[entry.id]:0}))}}><img src={`${import.meta.env.BASE_URL}ig-posts/${entry.id}/${entry.images[0]}`} alt={entry.caption} style={{width:"100%",height:"100%",objectFit:"cover"}}/></button>)}{posts.map(i=><button key={i.id} onClick={()=>openPost(i)}><Media item={i}/></button>)}</div>
             </>
           )}
           {!selected && !igViewed && !igList && !igChat && tab === "私信" && (
@@ -846,6 +888,7 @@ export function MymyInstagram(p: SkinProps) {
                 setIgChat(null);
                 setBurgerOpen(false);
                 setBloomOpen(false);
+                setIgPhotoOpen(null);
                 setTab(["主页", "搜索", "私信", "个人主页"][n]);
               }}
             >
