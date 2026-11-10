@@ -551,6 +551,7 @@ const burgerOctoberPhoto = `${import.meta.env.BASE_URL}ig-posts/burgerSc_0913-20
 
 const igDateValue = (value: string) => { const match = value.match(/(20\d{2})\D+(\d{1,2})\D+(\d{1,2})/); return match ? Number(match[1])*10000+Number(match[2])*100+Number(match[3]) : 0; };
 const newIgPosts = [
+  { id:"ddori-20251222", user:"ddori.zip", date:"2025.12.22", caption:"😲☝️", images:["1.jpeg","2.jpeg","3.jpeg"] },
   { id:"wonb1n-20251217", user:"Wonb1n32", date:"2025.12.17", caption:"🤓", images:["1.jpeg","2.jpeg","3.jpeg"] },
   { id:"s2taro-20250528", user:"s2taro", date:"2025.5.28", caption:"💤", images:["1.jpeg","2.jpeg","3.jpeg"] },
   { id:"ddori-20250815", user:"ddori.zip", date:"2025.8.15", caption:"☎️", images:["1.jpeg","2.jpeg","3.jpeg"] },
