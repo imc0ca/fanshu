@@ -569,7 +569,7 @@ const newIgPosts = [
   { id:"sh0hei-20251228", user:"sh0hei_", date:"2025.12.28", caption:"🦌🦅🤎", images:["1.jpeg","2.jpeg","3.jpeg","4.jpeg"] }
 ];
 export function MymyInstagram(p: SkinProps) {
-  const [tab, setTab] = useSkinState<string>(p, "mymyTab", "主页"),
+  const [tab, setTab] = useState<string>("主页"),
     [liked, setLiked] = useSkinState<string[]>(p, "mymyLiked", []),
     [saved, setSaved] = useSkinState<string[]>(p, "mymySaved", []),
     [replies, setReplies] = useSkinState<string[]>(p, "mymyReplies", []),
