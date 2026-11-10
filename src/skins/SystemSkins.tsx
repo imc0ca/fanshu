@@ -217,7 +217,7 @@ export function PhotosSkin(p: Props) {
     id: `gallery-photo-${index + 1}`, title: `照片 ${index + 1}`, body: "", richText: "",
     meta: { album: "普通照片" }, time: "", sender: "相册", avatar: "",
     kind: "image", media: `/fanshu/gallery-${String(index + 1).padStart(2, "0")}.jpg`,
-    hidden: false, unlock: "", password: "", folder: "普通照片", favorite: false,
+    hidden: false, unlock: "", password: "", folder: "普通照片", favorite: [7, 11, 19].includes(index + 1),
     outgoing: false, read: true, likes: 0, comments: [],
   }));
   const standaloneGalleryItems: Item[] = Array.from({ length: 28 }, (_, index) => ({
@@ -240,7 +240,7 @@ export function PhotosSkin(p: Props) {
     id: `dadabendan-photo-${index + 1}`, title: `大大笨蛋 ${index + 21}`, body: "", richText: "",
     meta: { album: "大大笨蛋" }, time: "", sender: "相册", avatar: "",
     kind: "image", media: `/fanshu/dadabendan-${String(index + 1).padStart(2, "0")}.${ext}`,
-    hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: false,
+    hidden: false, unlock: "", password: "", folder: "大大笨蛋", favorite: index + 1 === 19,
     outgoing: false, read: true, likes: 0, comments: [],
   }));
   const newDadabendanItems: Item[] = Array.from({ length: 10 }, (_, index) => ({
