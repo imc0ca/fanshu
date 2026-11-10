@@ -552,6 +552,7 @@ const burgerOctoberPhoto = `${import.meta.env.BASE_URL}ig-posts/burgerSc_0913-20
 const igDateValue = (value: string) => { const match = value.match(/(20\d{2})\D+(\d{1,2})\D+(\d{1,2})/); return match ? Number(match[1])*10000+Number(match[2])*100+Number(match[3]) : 0; };
 const newIgPosts = [
   { id:"seok-20260314", user:"seok.wav", date:"2026.3.14", caption:"🖤🎧", images:["01.jpeg","02.jpeg","03.jpeg"] },
+  { id:"seok-20251120", user:"seok.wav", date:"2025.11.20", caption:"🐩🎮", images:["1.jpeg","2.jpeg","3.jpeg"] },
   { id:"seok-20260125", user:"seok.wav", date:"2026.1.25", caption:"☔️🫴🏻📚🫖", images:["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg"] },
   { id:"seok-20250927", user:"seok.wav", date:"2025.9.27", caption:"🌊🌊🌊\n@s2taro @burgerSc_0913 @ddori.zip", images:["1.jpeg","2.jpeg","3.jpeg","4.jpeg"] },
   { id:"ddori-20260303", user:"ddori.zip", date:"2026.3.3", caption:"summer moments 🌿", images:["1.jpeg","2.jpeg","3.jpeg"] },
