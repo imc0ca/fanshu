@@ -818,12 +818,13 @@ export function MymyInstagram(p: SkinProps) {
             <>
               <input
                 className="mymy-search"
+                style={{display:"block",width:"calc(100% - 32px)",margin:"12px 16px",boxSizing:"border-box",textAlign:"left"}}
                 aria-label="搜索Instagram"
                 placeholder="搜索"
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
               />
-              {["seok.wav",...igFriends].filter(id=>id.toLowerCase().includes(draft.toLowerCase())).map(id=><button key={id} onClick={()=>{setIgViewed(id);setIgList(null)}} style={{display:"flex",alignItems:"center",gap:12,padding:10,width:"100%",border:0,background:"white"}}><IGPortrait id={id} size={40}/><b>{id}</b></button>)}
+              {["seok.wav",...igFriends].filter(id=>id.toLowerCase().includes(draft.toLowerCase())).map(id=><button key={id} onClick={()=>{setIgViewed(id);setIgList(null)}} style={{display:"flex",flexDirection:"row",alignItems:"center",justifyContent:"flex-start",textAlign:"left",gap:14,padding:"10px 16px",width:"100%",minHeight:66,border:0,background:"white",boxSizing:"border-box"}}><span style={{display:"flex",width:48,minWidth:48,justifyContent:"flex-start",alignItems:"center",flexShrink:0}}><IGPortrait id={id} size={46}/></span><b style={{flex:"1 1 auto",textAlign:"left",margin:0}}>{id}</b></button>)}
               {posts
                 .filter((i) => (i.title + i.body + i.sender).includes(draft))
                 .map(post)}
