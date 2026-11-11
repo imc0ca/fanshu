@@ -26,6 +26,13 @@ jobs:
       - run: npm run story:validate
       - run: npm run story:test
       - run: npm run build
+      - name: Include Dongchan's phone in the same Pages site
+        run: |
+          mkdir -p dist/dongchan
+          curl --fail --location --retry 3 --max-time 180 --output dist/dongchan/index.html \
+            https://raw.githubusercontent.com/imyum1/foundphone-fanshu/main/index.html
+          test -s dist/dongchan/index.html
+          echo "Dongchan page size: $(wc -c < dist/dongchan/index.html) bytes"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
