@@ -36,6 +36,8 @@ jobs:
           node scripts/inject-dongchan-switch.mjs
           mkdir -p dist/dongchan/camera-photo
           cp public/dongchan-camera/photo.jpg dist/dongchan/camera-photo/photo.jpg
+          cp public/dongchan-camera/camera-view.css dist/dongchan/camera-photo/camera-view.css
+          cp public/dongchan-camera/camera-view.js dist/dongchan/camera-photo/camera-view.js
           test -s dist/dongchan/camera-photo/photo.jpg
           node scripts/inject-dongchan-camera.mjs
           echo "Dongchan page size: $(wc -c < dist/dongchan/index.html) bytes"
