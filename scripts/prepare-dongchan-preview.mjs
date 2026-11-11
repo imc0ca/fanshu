@@ -8,7 +8,7 @@ const base = "dist/dongchan-preview";
 const media = join(base, "media");
 mkdirSync(media, {recursive:true});
 copyFileSync(source, join(base, "original.html"));
-const matches = [...original.matchAll(/data:image\\/(jpeg|jpg|png|gif|webp|avif);base64,([A-Za-z0-9+/=]{2800,})/gi)];
+const matches = [...original.matchAll(/data:image\/(jpeg|jpg|png|gif|webp|avif);base64,([A-Za-z0-9+/=]{2800,})/gi)];
 const manifest = [];
 const extensions = {jpeg:"jpg",jpg:"jpg",png:"png",gif:"gif",webp:"webp",avif:"avif"};
 let output = original;
