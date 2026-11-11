@@ -23,26 +23,36 @@ const injection = `
   // Target that placeholder directly so the existing camera controls remain intact.
   function refresh() {
     if (!available) return;
-    const placeholders = [...document.querySelectorAll("body *")].filter(el =>
-      el.children.length === 0 && /未设置取景画面/.test((el.textContent || "").trim())
+    const labels = [...document.querySelectorAll("body *")].filter(el =>
+      el.children.length === 0 && (el.textContent || "").trim() === "未设置取景画面"
     );
-    for (const label of placeholders) {
-      let view = label;
-      for (let i = 0; i < 6 && view.parentElement; i++) {
-        const r = view.getBoundingClientRect();
-        if (r.width >= 220 && r.height >= 300) break;
-        view = view.parentElement;
-      }
-      const rect = view.getBoundingClientRect();
-      if (rect.width < 220 || rect.height < 300) continue;
-      if (view.dataset.fanshuCameraPhoto === "1") continue;
-      view.dataset.fanshuCameraPhoto = "1";
-      view.style.backgroundImage = 'url("' + photoUrl + '")';
-      view.style.backgroundPosition = "center center";
-      view.style.backgroundSize = "cover";
-      view.style.backgroundRepeat = "no-repeat";
-      label.style.visibility = "hidden";
+    const old = document.getElementById("fanshu-camera-photo");
+    if (!labels.length) { if (old) old.remove(); return; }
+    const label = labels.find(el => {
+      const r = el.getBoundingClientRect();
+      return r.width > 0 && r.height > 0;
+    });
+    if (!label) return;
+    // The preview is the large camera area containing this centered placeholder.
+    // Walk up to the first portrait-sized ancestor, rather than searching for
+    // nonexistent <video> or <canvas> nodes in this simulated camera app.
+    let view = label.parentElement;
+    while (view && view !== document.body) {
+      const r = view.getBoundingClientRect();
+      if (r.width >= 220 && r.height >= 350 && r.height <= window.innerHeight * 0.86) break;
+      view = view.parentElement;
     }
+    if (!view || view === document.body) return;
+    if (getComputedStyle(view).position === "static") view.style.position = "relative";
+    let overlay = view.querySelector("#fanshu-camera-photo");
+    if (!overlay) {
+      overlay = document.createElement("div");
+      overlay.id = "fanshu-camera-photo";
+      overlay.setAttribute("aria-hidden", "true");
+      view.appendChild(overlay);
+    }
+    overlay.style.cssText = 'position:absolute;inset:0;z-index:5;pointer-events:none;background-image:url("' + photoUrl + '");background-position:center;background-size:cover;background-repeat:no-repeat;';
+    label.style.visibility = "hidden";
   }
   const observer = new MutationObserver(() => { if (!available) return; requestAnimationFrame(refresh); });
   observer.observe(document.documentElement,{subtree:true,childList:true});
