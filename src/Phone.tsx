@@ -518,6 +518,31 @@ function PhoneRuntime({
               />
             )}
           </AnimatePresence>
+          {!locked && !app && new URLSearchParams(window.location.search).get("phone") === "b" && (
+            <a
+              href="./"
+              aria-label="切换手机视角"
+              title="返回双视角选择页面"
+              style={{
+                position: "absolute",
+                right: 12,
+                bottom: 153,
+                zIndex: 35,
+                padding: "9px 13px",
+                borderRadius: 24,
+                background: "rgba(20, 23, 38, 0.72)",
+                border: "1px solid rgba(255,255,255,.35)",
+                color: "#fff",
+                fontSize: 12,
+                fontWeight: 600,
+                textDecoration: "none",
+                backdropFilter: "blur(12px)",
+                boxShadow: "0 3px 12px rgba(0,0,0,.18)",
+              }}
+            >
+              ⇄ 切换视角
+            </a>
+          )}
           {folder && (
             <div className="folder-overlay" onClick={() => setFolder("")}>
               <h2>{folder}</h2>
