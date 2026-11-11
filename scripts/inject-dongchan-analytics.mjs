@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 const path = "dist/dongchan/index.html";
 let html = readFileSync(path, "utf8");
 if (!html.includes("</head>")) throw new Error("Dongchan HTML missing </head>");
-const websiteId = "e651e3fa-3e7f-40f2-8c82-b771b075119c";
+const websiteId = "1bac7e2f-e90e-485a-b3f7-5d9f22a654ad";
 if (html.includes('id="fanshu-dongchan-umami"')) process.exit(0);
 // Same existing Umami dashboard, with Dongchan visits distinguishable by page URL.
 if (html.includes('data-website-id="' + websiteId + '"')) {
