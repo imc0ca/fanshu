@@ -32,6 +32,7 @@ jobs:
           curl --fail --location --retry 3 --max-time 180 --output dist/dongchan/index.html \
             https://raw.githubusercontent.com/imyum1/foundphone-fanshu/main/index.html
           test -s dist/dongchan/index.html
+          node scripts/inject-dongchan-switch.mjs
           echo "Dongchan page size: $(wc -c < dist/dongchan/index.html) bytes"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
