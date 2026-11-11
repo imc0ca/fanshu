@@ -45,7 +45,6 @@ jobs:
           test -s dist/dongchan/camera-photo/photo.jpg
           node scripts/inject-dongchan-camera.mjs
           node scripts/inject-dongchan-analytics.mjs
-          node scripts/fix-dongchan-kkt-typo.mjs
           # Isolated preview only: production Dongchan HTML and images remain unchanged.
           node scripts/prepare-dongchan-preview.mjs
           echo "Dongchan page size: $(wc -c < dist/dongchan/index.html) bytes"
