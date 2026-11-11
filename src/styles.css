@@ -4935,7 +4935,7 @@ label {
 
 /* Custom photo wallpaper shared by the lock screen and home screen. */
 .phone-screen:not(.in-app) {
-  background-image: url("/fanshu/fanshu-wallpaper.jpg") !important;
+  background-image: url("/fanshu-wallpaper.jpg") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
