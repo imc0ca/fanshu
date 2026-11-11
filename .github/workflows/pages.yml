@@ -34,7 +34,10 @@ jobs:
           test -s dist/dongchan/index.html
           # Preserve the original embedded images and avatars in Dongchan's phone.
           # Do not extract or rewrite base64 assets: that can break references.
-          # node scripts/optimize-dongchan.mjs
+          # Keep an untouched original fallback so no photos or content are lost.
+          cp dist/dongchan/index.html dist/dongchan/original.html
+          node scripts/optimize-dongchan.mjs
+          test -s dist/dongchan/original.html
           node scripts/inject-dongchan-switch.mjs
           mkdir -p dist/dongchan/camera-photo
           cp public/dongchan-camera/photo.jpg dist/dongchan/camera-photo/photo.jpg
