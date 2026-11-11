@@ -8,9 +8,56 @@
     />
     <meta name="theme-color" content="#f5f4f0" />
     <title>捡手机</title>
+    <style>
+      .view-gate{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 10%,#30334a,#10121d 70%);color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:24px;box-sizing:border-box}
+      .view-gate[hidden],.friend-view[hidden]{display:none!important}
+      .gate-inner{width:min(100%,520px);text-align:center}
+      .gate-eyebrow{font-size:12px;letter-spacing:.26em;color:#b5b8ce}
+      .gate-inner h1{font-size:29px;margin:14px 0 8px;font-weight:650}
+      .gate-inner p{color:#bec1d0;font-size:14px;line-height:1.7;margin:0 0 30px}
+      .gate-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+      .gate-choice{display:flex;align-items:center;flex-direction:column;gap:12px;text-decoration:none;color:white;padding:22px 8px;border:1px solid #ffffff38;border-radius:20px;background:#ffffff12;transition:background .2s}
+      .gate-choice:active,.gate-choice:hover{background:#ffffff28}
+      .gate-phone{width:78px;height:145px;border:5px solid #262830;border-radius:19px;background:linear-gradient(145deg,#b4c7e8,#9d658b);box-shadow:0 9px 24px #0005;position:relative}
+      .gate-phone:before{content:"";position:absolute;top:6px;left:50%;transform:translateX(-50%);width:29px;height:9px;background:#15151a;border-radius:10px}
+      .gate-phone.friend{background:linear-gradient(145deg,#e4b3bc,#8b8dbf)}
+      .gate-choice strong{font-size:16px}.gate-choice small{font-size:11px;color:#c4c7d5}
+      .friend-view{position:fixed;inset:0;background:#10121d;z-index:99998}
+      .friend-view iframe{width:100%;height:100%;border:0;background:#fff}
+      .friend-back{position:absolute;z-index:2;top:12px;left:12px;border:0;border-radius:30px;padding:10px 16px;background:#111c;color:#fff;font-size:13px;cursor:pointer}
+      .friend-open{position:absolute;z-index:2;top:12px;right:12px;border-radius:30px;padding:10px 14px;background:#111c;color:white;text-decoration:none;font-size:13px}
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <section class="view-gate" id="view-gate" hidden aria-label="选择手机视角">
+      <div class="gate-inner"><div class="gate-eyebrow">FOUND PHONE · TWO STORIES</div><h1>你想打开哪部手机？</h1><p>同一个故事，两个人的视角。选择一部手机开始阅读。</p>
+        <div class="gate-choices">
+          <a class="gate-choice" href="?phone=b"><span class="gate-phone"></span><strong>宋小鱼</strong><small>打开我的手机</small></a>
+          <a class="gate-choice" href="?phone=a"><span class="gate-phone friend"></span><strong>另一个视角</strong><small>打开朋友的手机</small></a>
+        </div>
+      </div>
+    </section>
+    <section class="friend-view" id="friend-view" hidden aria-label="朋友的手机">
+      <a class="friend-back" href="./">← 切换视角</a>
+      <a class="friend-open" href="https://imyum1.github.io/foundphone-fanshu/?phone=a" target="_blank" rel="noopener noreferrer">独立打开 ↗</a>
+      <iframe id="friend-frame" title="朋友的捡手机视角" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+    <script>
+      (function () {
+        var phone = new URLSearchParams(location.search).get("phone");
+        var gate = document.getElementById("view-gate");
+        var friend = document.getElementById("friend-view");
+        if (!phone) gate.hidden = false;
+        if (phone === "a") {
+          friend.hidden = false;
+          document.getElementById("friend-frame").src = "https://imyum1.github.io/foundphone-fanshu/?phone=a";
+        }
+        // Keep the original phone mounted so its app content and saves are untouched.
+        if (!phone || phone === "a") document.getElementById("root").style.visibility = "hidden";
+      })();
+    </script>
+
     <script>
       // Older installed service workers can keep serving an outdated phone UI.
       // Clear their cached assets once per release, then load the latest build.
