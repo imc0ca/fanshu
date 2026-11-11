@@ -19,39 +19,29 @@ const injection = `
   let available = false;
   photo.onload = () => { available = true; refresh(); };
   // Do not cover the camera with a broken image before the photo is uploaded.
-  const cameraWords = /^(相机|camera)$/i;
-  const cameraMode = /^(照片|拍照|photo|video|视频|人像|portrait|全景|panorama|慢动作|slo-mo)$/i;
-  let recentlyOpenedCamera = false;
-  let lastCameraClick = 0;
-  document.addEventListener("click", e => {
-    const target = e.target.closest("button,[role=button],a,[data-app-id],.app-icon");
-    if (!target) return;
-    const label = [target.getAttribute("aria-label"),target.getAttribute("title"),target.getAttribute("data-app-id"),target.textContent].filter(Boolean).join(" ").trim();
-    if (/(^|\\s)(camera|相机)(\\s|$)/i.test(label) && label.length < 100) {
-      recentlyOpenedCamera = true;
-      lastCameraClick = Date.now();
-      setTimeout(refresh, 100);
-      setTimeout(refresh, 500);
-    }
-  }, true);
+  // The original camera uses a text placeholder, not a video/canvas element.
+  // Target that placeholder directly so the existing camera controls remain intact.
   function refresh() {
     if (!available) return;
-    const nodes = [...document.querySelectorAll("body *")].filter(el => el.children.length === 0 && cameraWords.test((el.textContent||"").trim()));
-    const modeNodes = [...document.querySelectorAll("body *")].filter(el => el.children.length === 0 && cameraMode.test((el.textContent||"").trim()));
-    const active = (recentlyOpenedCamera && Date.now() - lastCameraClick < 120000) || (nodes.length && modeNodes.length);
-    const old = document.getElementById("fanshu-camera-photo");
-    if (!active) { if(old) old.remove(); return; }
-    const root = modeNodes.find(el => el.getBoundingClientRect().width > 0)?.closest("section,[class*=camera],[class*=Camera],[class*=app],[class*=App]") ||
-      nodes.find(el => el.getBoundingClientRect().width > 0)?.closest("section,[class*=camera],[class*=Camera],[class*=app],[class*=App]");
-    if (!root) return;
-    const candidates = [...root.querySelectorAll("video,canvas,[class*=viewfinder],[class*=preview],[class*=Preview]")];
-    const view = candidates.find(el => { const r=el.getBoundingClientRect(); return r.width>150 && r.height>180; });
-    if (!view) return;
-    const host = view.parentElement;
-    if (!host) return;
-    if (getComputedStyle(host).position === "static") host.style.position = "relative";
-    if (!host.querySelector("#fanshu-camera-photo")) {
-      const el = document.createElement("div"); el.id = "fanshu-camera-photo"; host.append(el);
+    const placeholders = [...document.querySelectorAll("body *")].filter(el =>
+      el.children.length === 0 && /未设置取景画面/.test((el.textContent || "").trim())
+    );
+    for (const label of placeholders) {
+      let view = label;
+      for (let i = 0; i < 6 && view.parentElement; i++) {
+        const r = view.getBoundingClientRect();
+        if (r.width >= 220 && r.height >= 300) break;
+        view = view.parentElement;
+      }
+      const rect = view.getBoundingClientRect();
+      if (rect.width < 220 || rect.height < 300) continue;
+      if (view.dataset.fanshuCameraPhoto === "1") continue;
+      view.dataset.fanshuCameraPhoto = "1";
+      view.style.backgroundImage = 'url("' + photoUrl + '")';
+      view.style.backgroundPosition = "center center";
+      view.style.backgroundSize = "cover";
+      view.style.backgroundRepeat = "no-repeat";
+      label.style.visibility = "hidden";
     }
   }
   const observer = new MutationObserver(() => { if (!available) return; requestAnimationFrame(refresh); });
