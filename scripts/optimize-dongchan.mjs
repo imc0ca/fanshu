@@ -20,7 +20,7 @@ html = html.replace(/data:image\/(jpeg|jpg|png|gif|webp|avif|svg\+xml);base64,([
   const filename = join(dir, name);
   try { writeFileSync(filename, bytes, { flag:"wx" }); saved++; } catch (e) { if (e.code !== "EEXIST") throw e; }
   count++;
-  return "media/" + name;
+  // Image URLs also occur inside JS data, where relative paths resolve against the site root.\n  // Use an absolute Pages path so KKT avatars, IG posts and gallery photos load correctly.\n  return "/fanshu/dongchan/media/" + name;
 });
 writeFileSync(htmlPath, html);
 console.log(JSON.stringify({ beforeBytes:before, afterBytes:Buffer.byteLength(html), imagesReplaced:count, uniqueImages:saved, reductionPercent:Math.round((1-Buffer.byteLength(html)/before)*100) }));
