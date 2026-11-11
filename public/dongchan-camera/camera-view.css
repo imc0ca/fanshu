@@ -1,0 +1,14 @@
+/* Dongchan-only camera viewfinder. The original camera controls and grid stay on top. */
+.native-camera .camera-view,
+.native-camera [class*="camera-view"],
+.native-camera [class*="camera-preview"] {
+  background-image: url("./photo.jpg") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.native-camera .camera-view > p,
+.native-camera [class*="camera-view"] > p {
+  visibility: hidden !important;
+}
+.native-camera .camera-grid { position: relative; z-index: 2; pointer-events: none; }
