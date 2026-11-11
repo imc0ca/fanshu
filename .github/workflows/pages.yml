@@ -42,6 +42,7 @@ jobs:
           cp public/dongchan-camera/camera-view.js dist/dongchan/camera-photo/camera-view.js
           test -s dist/dongchan/camera-photo/photo.jpg
           node scripts/inject-dongchan-camera.mjs
+          node scripts/inject-dongchan-analytics.mjs
           echo "Dongchan page size: $(wc -c < dist/dongchan/index.html) bytes"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
