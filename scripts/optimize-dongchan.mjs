@@ -9,7 +9,7 @@ let html = readFileSync(htmlPath, "utf8");
 const before = Buffer.byteLength(html);
 mkdirSync(dir, { recursive: true });
 let count = 0, saved = 0;
-const types = { jpeg:"jpg", jpg:"jpg", png:"png", gif:"gif", webp:"webp", avif:"avif", svg+xml:"svg" };
+const types = { jpeg:"jpg", jpg:"jpg", png:"png", gif:"gif", webp:"webp", avif:"avif", "svg+xml":"svg" };
 // Extract embedded images to independently cacheable resources.
 // Keep the exact image bytes, so no photo or story content is altered.
 html = html.replace(/data:image\/(jpeg|jpg|png|gif|webp|avif|svg\+xml);base64,([A-Za-z0-9+/=]{2800,})/gi, (match, type, encoded) => {
