@@ -34,7 +34,7 @@
       <div class="gate-inner"><div class="gate-eyebrow">FOUND PHONE · TWO STORIES</div><h1>你想打开哪部手机？</h1><p>同一个故事，两个人的视角。选择一部手机开始阅读。</p>
         <div class="gate-choices">
           <a class="gate-choice" href="?phone=b"><span class="gate-phone"></span><strong>宋小鱼</strong><small>打开我的手机</small></a>
-          <a class="gate-choice" href="?phone=a"><span class="gate-phone friend"></span><strong>咚灿</strong><small>打开咚灿的手机</small></a>
+          <a class="gate-choice" href="./dongchan/?phone=a"><span class="gate-phone friend"></span><strong>咚灿</strong><small>打开咚灿的手机</small></a>
         </div>
       </div>
     </section>
@@ -51,7 +51,7 @@
         if (!phone) gate.hidden = false;
         if (phone === "a") {
           friend.hidden = false;
-          document.getElementById("friend-frame").src = "./dongchan/?phone=a";
+          location.replace("./dongchan/?phone=a");
         }
         // Keep the original phone mounted so its app content and saves are untouched.
         if (!phone || phone === "a") document.getElementById("root").style.visibility = "hidden";
