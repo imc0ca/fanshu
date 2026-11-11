@@ -26,6 +26,22 @@
       .friend-view iframe{width:100%;height:100%;border:0;background:#fff}
       .friend-back{position:absolute;z-index:2;top:12px;left:12px;border:0;border-radius:30px;padding:10px 16px;background:#111c;color:#fff;font-size:13px;cursor:pointer}
       .friend-open{position:absolute;z-index:2;top:12px;right:12px;border-radius:30px;padding:10px 14px;background:#111c;color:white;text-decoration:none;font-size:13px}
+
+      /* The perspective chooser is a phone-sized screen, even on desktop. */
+      .view-gate{padding:14px;background:#101116}
+      .gate-inner{position:relative;box-sizing:border-box;width:min(100%,390px,calc((100dvh - 28px)*.49));height:min(820px,calc(100dvh - 28px));max-height:calc(100dvh - 28px);border:7px solid #24252d;border-radius:48px;background:radial-gradient(ellipse at 50% 15%,#33374f,#171923 72%);box-shadow:0 0 0 2px #5b5c66,0 18px 55px #0009;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:72px 17px 64px;overflow:hidden}
+      .gate-inner:before{content:"";position:absolute;top:13px;left:50%;transform:translateX(-50%);width:105px;height:27px;border-radius:30px;background:#090a0f}
+      .gate-inner:after{content:"";position:absolute;bottom:13px;left:50%;transform:translateX(-50%);width:110px;height:4px;border-radius:8px;background:#f0f0f3}
+      .gate-eyebrow{font-size:9px;letter-spacing:.16em}
+      .gate-inner h1{font-size:clamp(19px,5vw,24px);margin:15px 0 8px}
+      .gate-inner p{font-size:12px;line-height:1.6;margin:0 0 26px}
+      .gate-choices{width:100%;gap:10px}
+      .gate-choice{min-width:0;padding:18px 5px;border-radius:16px;gap:11px}
+      .gate-phone{width:65px;height:123px;border-width:4px;border-radius:16px}
+      .gate-phone:before{width:24px;height:7px}
+      .gate-choice strong{font-size:16px}
+      .gate-choice small{font-size:11px;line-height:1.5}
+      @media(max-height:610px){.gate-inner{padding-top:45px;padding-bottom:40px}.gate-inner p{margin-bottom:12px}.gate-choice{padding:10px 4px;gap:5px}.gate-phone{height:78px;width:43px}.gate-inner h1{margin:8px 0 4px}}
     </style>
   </head>
   <body>
@@ -33,8 +49,8 @@
     <section class="view-gate" id="view-gate" hidden aria-label="选择手机视角">
       <div class="gate-inner"><div class="gate-eyebrow">FOUND PHONE · TWO STORIES</div><h1>你想打开哪部手机？</h1><p>同一个故事，两个人的视角。选择一部手机开始阅读。</p>
         <div class="gate-choices">
-          <a class="gate-choice" href="?phone=b"><span class="gate-phone"></span><strong>宋小鱼</strong><small>打开我的手机</small></a>
-          <a class="gate-choice" href="./dongchan/?phone=a"><span class="gate-phone friend"></span><strong>咚灿</strong><small>打开咚灿的手机</small></a>
+          <a class="gate-choice" href="?phone=b"><span class="gate-phone"></span><strong>宋小鱼</strong><small>打开宋银硕的手机</small></a>
+          <a class="gate-choice" href="./dongchan/?phone=a"><span class="gate-phone friend"></span><strong>咚灿</strong><small>打开郑成灿的手机</small></a>
         </div>
       </div>
     </section>
