@@ -35,7 +35,7 @@
       .gate-eyebrow{font-size:9px;letter-spacing:.16em}
       .gate-inner h1{font-size:clamp(19px,5vw,24px);margin:15px 0 8px}
       .gate-inner p{font-size:12px;line-height:1.6;margin:0 0 26px}
-      .gate-choices{width:100%;gap:10px}
+      .gate-intro{width:100%;text-align:center;margin-bottom:18px}\n      .gate-inner .gate-intro p{font-size:clamp(10px,2.7vw,12px);line-height:1.65;margin:0 0 11px;color:#f0f0f6;overflow-wrap:anywhere}\n      .gate-inner .gate-intro .gate-welcome{font-size:clamp(14px,3.5vw,17px);font-weight:750;letter-spacing:.025em;color:#fff;margin:13px 0 0}\n      .gate-choices{width:100%;gap:10px}
       .gate-choice{min-width:0;padding:18px 5px;border-radius:16px;gap:11px}
       .gate-phone{width:65px;height:123px;border-width:4px;border-radius:16px}
       .gate-phone:before{width:24px;height:7px}
@@ -48,7 +48,7 @@
   <body>
     <div id="root"></div>
     <section class="view-gate" id="view-gate" hidden aria-label="选择手机视角">
-      <div class="gate-inner"><div class="gate-eyebrow">FOUND PHONE · TWO STORIES</div><h1>你想打开哪部手机？</h1><p>同一个故事，两个人的视角。选择一部手机开始阅读。</p>
+      <div class="gate-inner"><div class="gate-intro"><p>本游戏是改编自微博 @ipomoea_batatas__ 原创作品《这样的关系》的 RIIZE 宋银硕与郑成灿同人互动网页，所有人物身份及情节均为虚构，请勿上升现实，感谢并尊重原作。</p><p>您可以通过切换视角探索两部手机，寻找隐藏的故事线索；建议先浏览各 App 了解故事背景，再触发后续剧情，祝您游玩愉快。</p><p class="gate-welcome">Welcome to Fanshutopia！</p></div>
         <div class="gate-choices">
           <a class="gate-choice" href="?phone=b"><span class="gate-phone"></span><strong>宋小鱼</strong><small>打开宋银硕的手机</small></a>
           <a class="gate-choice" href="./dongchan/?phone=a"><span class="gate-phone friend"></span><strong>咚灿</strong><small>打开郑成灿的手机</small></a>
