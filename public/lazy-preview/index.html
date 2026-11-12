@@ -7,7 +7,7 @@ main{width:min(100%,390px);text-align:center}h1{font:800 28px Georgia,serif;marg
 #screen{position:fixed;inset:0;background:#111;display:none}#screen.active{display:block}iframe{width:100%;height:100%;border:0;background:#fff}#back{position:absolute;top:max(12px,env(safe-area-inset-top));left:12px;z-index:2;border:0;border-radius:24px;padding:9px 14px;background:#151524dd;color:white}
 </style></head><body>
 <main id="chooser"><h1>Fanshutopia</h1><p>按需加载测试：先显示选择界面，点击后才加载对应的完整手机。原站与照片均不改变。</p>
-<div class="choices"><button class="choice" data-url="/fanshu/?phone=b"><span class="phone"></span><strong>宋小鱼</strong><span class="hint">点击后加载</span></button><button class="choice" data-url="/fanshu/dongchan/?phone=a"><span class="phone friend"></span><strong>咚灿</strong><span class="hint">点击后加载</span></button></div><p class="hint">此页面只验证首次加载与视角切换；App 内图片按需加载仍需后续改造。</p></main>
+<div class="choices"><button class="choice" data-url="/fanshu/?phone=b"><span class="phone"></span><strong>宋小鱼</strong><span class="hint">点击后加载</span></button><button class="choice" data-url="/fanshu/dongchan-preview/"><span class="phone friend"></span><strong>咚灿</strong><span class="hint">点击后加载</span></button></div><p class="hint">咚灿测试视角使用图片分离版，正式版保持原样。此版本仍需检查照片与软件功能。</p></main>
 <div id="screen"><button id="back" type="button">← 返回选择</button><iframe id="phone-frame" title="手机测试视角"></iframe></div>
 <script>
 const chooser=document.getElementById("chooser"),screen=document.getElementById("screen"),frame=document.getElementById("phone-frame");
