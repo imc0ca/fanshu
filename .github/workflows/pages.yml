@@ -47,6 +47,11 @@ jobs:
           node scripts/inject-dongchan-analytics.mjs
           # Isolated preview only: production Dongchan HTML and images remain unchanged.
           node scripts/prepare-dongchan-preview.mjs
+          # The preview script verifies every extracted image checksum and retains the original HTML.
+          # Serve the smaller HTML at the unchanged Dongchan URL; images remain at stable preview/media URLs.
+          test -s dist/dongchan-preview/index.html
+          test -s dist/dongchan-preview/manifest.json
+          cp dist/dongchan-preview/index.html dist/dongchan/index.html
           echo "Dongchan page size: $(wc -c < dist/dongchan/index.html) bytes"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
