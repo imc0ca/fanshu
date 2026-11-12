@@ -53,7 +53,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <section class="view-gate" id="view-gate" hidden aria-label="选择手机视角">
+    <section class="view-gate" id="view-gate" aria-label="选择手机视角">
       <div class="gate-inner"><div class="gate-intro"><p>本游戏是改编自微博 @ipomoea_batatas__ 原创作品《这样的关系》的同人互动网页，主人公为 RIIZE 的cp 01z宋银硕与郑成灿，所有人物身份及情节均为虚构，请勿上升现实。本作的一切建立在尊重原作的基础上。</p><p>您可以通过切换视角探索两部手机，寻找隐藏的故事线索；建议先浏览各 App 了解故事背景，再触发后续剧情，祝您游玩愉快。</p><p class="gate-welcome">Welcome to Fanshutopia！</p></div>
         <div class="gate-choices">
           <a class="gate-choice" href="?phone=b"><span class="gate-phone"></span><strong>宋小鱼</strong><small>打开宋银硕的手机</small></a>
@@ -71,7 +71,7 @@
         var phone = new URLSearchParams(location.search).get("phone");
         var gate = document.getElementById("view-gate");
         var friend = document.getElementById("friend-view");
-        if (!phone) gate.hidden = false;
+        gate.hidden = (phone === "b");
         if (phone === "a") {
           friend.hidden = false;
           location.replace("./dongchan/?phone=a");
