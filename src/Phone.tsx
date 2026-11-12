@@ -1,5 +1,7 @@
 import { StatusGlyph } from "./ios/StatusGlyph";
-import { SocialDetail, socialDetailApps } from "./skins/SocialDetails";
+import { lazy } from "react";
+const SocialDetail = lazy(() => import("./skins/SocialDetails").then((module) => ({ default: module.SocialDetail })));
+const socialDetailApps = new Set(["twitter", "weibo"]);
 import { NativeCalculator } from "./ios/Calculator";
 import { HomeLauncher } from "./launcher/HomeLauncher";
 import { useDeviceLayout } from "./launcher/layout";
@@ -1032,7 +1034,7 @@ function AppContent({
         {detail &&
           (socialDetailApps.has(app.id) &&
           (!detail.password || unlocks.includes(detail.id)) ? (
-            <SocialDetail
+            <Suspense fallback={<div className="catalog-loading">正在打开…</div>}><SocialDetail
               app={app.id}
               item={detail}
               items={shown}
@@ -1040,7 +1042,7 @@ function AppContent({
               owner={work.phone.owner}
               ui={state.ui?.[app.id]}
               onUi={onUi}
-            />
+            /></Suspense>
           ) : nativeDetailApps.has(app.id) &&
             (!detail.password || unlocks.includes(detail.id)) ? (
             <NativeDetail app={app.id} item={detail} back={back} />
