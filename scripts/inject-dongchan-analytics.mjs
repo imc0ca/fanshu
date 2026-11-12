@@ -18,7 +18,7 @@ const recovery = `<script id="fanshu-dongchan-cache-recovery">
   }).then(function(){if(navigator.serviceWorker.controller)location.reload()}).catch(function(){});
 })();
 </script>`;
-html = html.replace("</head>", recovery + "\\n</head>");
+html = html.replace("</head>", recovery + "\n</head>");
 const websiteId = "1bac7e2f-e90e-485a-b3f7-5d9f22a654ad";
 if (html.includes('id="fanshu-dongchan-umami"')) process.exit(0);
 // Same existing Umami dashboard, with Dongchan visits distinguishable by page URL.
