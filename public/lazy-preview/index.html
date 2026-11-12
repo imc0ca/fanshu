@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Fanshutopia · 按需加载测试</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100dvh;background:radial-gradient(ellipse at 50% 15%,#363650,#10111b 72%);color:white;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;display:grid;place-items:center;padding:20px}
+main{width:min(100%,390px);text-align:center}h1{font:800 28px Georgia,serif;margin:0 0 12px;color:#f6dcff}p{color:#d8d6e3;line-height:1.7}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}.choice{border:1px solid #ffffff55;background:#ffffff12;border-radius:20px;padding:16px 6px;color:white;cursor:pointer;font:inherit}.phone{display:block;width:76px;height:150px;border:5px solid #252631;border-radius:19px;margin:0 auto 12px;background:center/cover url("/fanshu/fanshu-wallpaper.jpg")}.friend{background-image:url("/fanshu/dongchan-wallpaper.png")}strong{display:block;font-size:17px}.hint{font-size:12px;color:#bdb9d2;margin-top:7px}
+#screen{position:fixed;inset:0;background:#111;display:none}#screen.active{display:block}iframe{width:100%;height:100%;border:0;background:#fff}#back{position:absolute;top:max(12px,env(safe-area-inset-top));left:12px;z-index:2;border:0;border-radius:24px;padding:9px 14px;background:#151524dd;color:white}
+</style></head><body>
+<main id="chooser"><h1>Fanshutopia</h1><p>按需加载测试：先显示选择界面，点击后才加载对应的完整手机。原站与照片均不改变。</p>
+<div class="choices"><button class="choice" data-url="/fanshu/?phone=b"><span class="phone"></span><strong>宋小鱼</strong><span class="hint">点击后加载</span></button><button class="choice" data-url="/fanshu/dongchan/?phone=a"><span class="phone friend"></span><strong>咚灿</strong><span class="hint">点击后加载</span></button></div><p class="hint">此页面只验证首次加载与视角切换；App 内图片按需加载仍需后续改造。</p></main>
+<div id="screen"><button id="back" type="button">← 返回选择</button><iframe id="phone-frame" title="手机测试视角"></iframe></div>
+<script>
+const chooser=document.getElementById("chooser"),screen=document.getElementById("screen"),frame=document.getElementById("phone-frame");
+document.querySelectorAll("[data-url]").forEach(button=>button.addEventListener("click",()=>{screen.classList.add("active");chooser.hidden=true;frame.src=button.dataset.url;}));
+document.getElementById("back").addEventListener("click",()=>{frame.removeAttribute("src");screen.classList.remove("active");chooser.hidden=false;});
+</script></body></html>
