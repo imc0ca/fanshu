@@ -116,7 +116,8 @@ export function Avatar({
           key={image}
           src={image}
           alt={`${name}的头像`}
-          loading="eager"
+          loading="lazy"
+          decoding="async"
           onError={(e) => {
             const local = image.match(/\/x-avatars\/([^/?#]+\.jpg)/)?.[1];
             if (local && image.startsWith("https://raw.githubusercontent.com/")) {
