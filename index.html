@@ -103,6 +103,12 @@
         }).catch(function () {});
       })();
     </script>
-    <script type="module" src="/src/runtime/StoryPlayer.tsx"></script>
+    <script type="module">
+      // The chooser must stay lightweight: load the full story only for Song Xiaoyu.
+      // Vite bundles this static import target, but does not execute it on the chooser.
+      if (new URLSearchParams(window.location.search).get("phone") === "b") {
+        import("/src/runtime/StoryPlayer.tsx");
+      }
+    </script>
   </body>
 </html>
